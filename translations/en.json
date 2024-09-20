@@ -5,6 +5,9 @@
         "ticket_answer": {
             "description": "Un ticket a reçu une réponse",
             "title": "Réponse à un ticket..."
+        },
+        "ticket": {
+            "description": "Un nouveau ticket a été créé"
         }
     }
 }
