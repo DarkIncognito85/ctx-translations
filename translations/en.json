@@ -1,13 +1,8 @@
 {
     "language": "Anglais",
-    "test": "Test.",
     "lang.fr.webhook": {
         "ticket_answer": {
-            "description": "Un ticket a reçu une réponse",
-            "title": "Réponse à un ticket..."
-        },
-        "ticket": {
-            "description": "Un nouveau ticket a été créé"
+            "description": "Un ticket a reçu une réponse"
         }
     }
 }
