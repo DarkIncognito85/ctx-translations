@@ -3,7 +3,8 @@
     "test": "Test.",
     "lang.fr.webhook": {
         "ticket_answer": {
-            "description": "Un ticket a reçu une réponse"
+            "description": "Un ticket a reçu une réponse",
+            "title": "Réponse à un ticket..."
         }
     }
 }
