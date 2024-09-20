@@ -1,4 +1,9 @@
 {
     "language": "Anglais",
-    "test": "Test."
+    "test": "Test.",
+    "lang.fr.webhook": {
+        "ticket_answer": {
+            "description": "Un ticket a reçu une réponse"
+        }
+    }
 }
