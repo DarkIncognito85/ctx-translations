@@ -1,373 +1,6 @@
 {
     "language": "Anglais",
-    "addons.page.lang.lang": [],
-    "addons.sameipdetector.lang.lang": [],
-    "lang.auth": {
-        "failed": "These credentials do not match our records.",
-        "password": "The password is incorrect.",
-        "throttle": "Too many login attempts. Please try again in :seconds seconds.",
-        "signed_in_as": "Logged in as",
-        "login": {
-            "btn": "Sign in",
-            "title": "Connection",
-            "heading": "Connection",
-            "subheading": "Enter your login details to access your personal space.",
-            "remember": "Remember Me",
-            "forgot": "Forgot your password?",
-            "login": "Log",
-            "no_account": "Don't have an account?"
-        },
-        "confirm": {
-            "btn": "Confirm",
-            "title": "Confirm Password",
-            "heading": "Confirm Password",
-            "subheading": "For security reasons, please confirm your password to continue."
-        },
-        "register": {
-            "btn": "To register",
-            "title": "Registration",
-            "heading": "Create an account",
-            "subheading": "Welcome to your customer area.",
-            "already": "Already have an account?",
-            "register": "Sign up",
-            "accept": "I accept the",
-            "terms": "Terms and conditions of use",
-            "success": "Your account has been successfully created.",
-            "success_need_validation": "You must validate it by clicking on the link you received by email.",
-            "success_validation_done": "Your account has been successfully verified.",
-            "error_banned_email": "Your email address is banned. Please contact support.",
-            "error_registration_disabled": "Registration is disabled at this time."
-        },
-        "forgot": {
-            "btn": "Send the reset link",
-            "title": "Forgot your password",
-            "forgot_password": "Forgot your password?",
-            "heading": "Reset your password",
-            "success": "A reset email has been sent to you if the account exists.",
-            "subheading": "Enter your email address to reset your password.",
-            "error_disabled": "Password reset is disabled at this time."
-        },
-        "reset": {
-            "btn": "Reset Password",
-            "title": "Reset Password",
-            "heading": "Reset Password",
-            "success": "Your password has been successfully reset.",
-            "subheading": "Enter your new password to recover your account."
-        },
-        "authentication": "Authentication"
-    },
-    "lang.http-statuses": {
-        "0": "Unknown Error",
-        "100": "Continue",
-        "101": "Switching Protocols",
-        "102": "Processing",
-        "200": "OK",
-        "201": "Created",
-        "202": "Accepted",
-        "203": "Non-Authoritative Information",
-        "204": "No Content",
-        "205": "Reset Content",
-        "206": "Partial Content",
-        "207": "Multi-Status",
-        "208": "Already Reported",
-        "226": "IM Used",
-        "300": "Multiple Choices",
-        "301": "Moved Permanently",
-        "302": "Found",
-        "303": "See Other",
-        "304": "Not Modified",
-        "305": "Use Proxy",
-        "307": "Temporary Redirect",
-        "308": "Permanent Redirect",
-        "400": "Bad Request",
-        "401": "Unauthorized",
-        "402": "Payment Required",
-        "403": "Forbidden",
-        "404": "Not Found",
-        "405": "Method Not Allowed",
-        "406": "Not Acceptable",
-        "407": "Proxy Authentication Required",
-        "408": "Request Timeout",
-        "409": "Conflict",
-        "410": "Gone",
-        "411": "Length Required",
-        "412": "Precondition Failed",
-        "413": "Payload Too Large",
-        "414": "URI Too Long",
-        "415": "Unsupported Media Type",
-        "416": "Range Not Satisfiable",
-        "417": "Expectation Failed",
-        "418": "I'm a teapot",
-        "419": "Session Has Expired",
-        "421": "Misdirected Request",
-        "422": "Unprocessable Entity",
-        "423": "Locked",
-        "424": "Failed Dependency",
-        "425": "Too Early",
-        "426": "Upgrade Required",
-        "428": "Precondition Required",
-        "429": "Too Many Requests",
-        "431": "Request Header Fields Too Large",
-        "444": "Connection Closed Without Response",
-        "449": "Retry With",
-        "451": "Unavailable For Legal Reasons",
-        "499": "Client Closed Request",
-        "500": "Internal Server Error",
-        "501": "Not Implemented",
-        "502": "Bad Gateway",
-        "503": "Maintenance Mode",
-        "504": "Gateway Timeout",
-        "505": "HTTP Version Not Supported",
-        "506": "Variant Also Negotiates",
-        "507": "Insufficient Storage",
-        "508": "Loop Detected",
-        "509": "Bandwidth Limit Exceeded",
-        "510": "Not Extended",
-        "511": "Network Authentication Required",
-        "520": "Unknown Error",
-        "521": "Web Server is Down",
-        "522": "Connection Timed Out",
-        "523": "Origin Is Unreachable",
-        "524": "A Timeout Occurred",
-        "525": "SSL Handshake Failed",
-        "526": "Invalid SSL Certificate",
-        "527": "Railgun Error",
-        "598": "Network Read Timeout Error",
-        "599": "Network Connect Timeout Error",
-        "unknownError": "Unknown Error"
-    },
-    "lang.pagination": {
-        "next": "Next &raquo;",
-        "previous": "&laquo; Previous"
-    },
-    "lang.passwords": {
-        "reset": "Your password has been reset.",
-        "sent": "We have emailed your password reset link.",
-        "throttled": "Please wait before retrying.",
-        "token": "This password reset token is invalid.",
-        "user": "We can't find a user with that email address."
-    },
-    "lang.validation": {
-        "accepted": "The :attribute must be accepted.",
-        "accepted_if": "The :attribute must be accepted when :other is :value.",
-        "active_url": "The :attribute is not a valid URL.",
-        "after": "The :attribute must be a date after :date.",
-        "after_or_equal": "The :attribute must be a date after or equal to :date.",
-        "alpha": "The :attribute may only contain letters.",
-        "alpha_dash": "The :attribute may only contain letters, numbers, and dashes.",
-        "alpha_num": "The :attribute may only contain letters and numbers.",
-        "array": "The :attribute must be an array.",
-        "ascii": "The :attribute field must only contain single-byte alphanumeric characters and symbols.",
-        "before": "The :attribute must be a date before :date.",
-        "before_or_equal": "The :attribute must be a date before or equal to :date.",
-        "phone": "The :attribute field must be a valid number.",
-        "between": {
-            "array": "The :attribute must have between :min and :max items.",
-            "file": "The :attribute must be between :min and :max kilobytes.",
-            "numeric": "The :attribute must be between :min and :max.",
-            "string": "The :attribute must be between :min and :max characters."
-        },
-        "boolean": "The :attribute field must be true or false.",
-        "can": "The :attribute field contains an unauthorized value.",
-        "confirmed": "The :attribute confirmation does not match.",
-        "current_password": "The password is incorrect.",
-        "date": "The :attribute is not a valid date.",
-        "date_equals": "The :attribute must be a date equal to :date.",
-        "date_format": "The :attribute does not match the format :format.",
-        "decimal": "The :attribute field must have :decimal decimal places.",
-        "declined": "The :attribute must be declined.",
-        "declined_if": "The :attribute must be declined when :other is :value.",
-        "different": "The :attribute and :other must be different.",
-        "digits": "The :attribute must be :digits digits.",
-        "digits_between": "The :attribute must be between :min and :max digits.",
-        "dimensions": "The :attribute has invalid image dimensions.",
-        "distinct": "The :attribute field has a duplicate value.",
-        "doesnt_end_with": "The :attribute field must not end with one of the following: :values.",
-        "doesnt_start_with": "The :attribute field must not start with one of the following: :values.",
-        "email": "The :attribute must be a valid email address.",
-        "ends_with": "The :attribute must end with one of the following: :values.",
-        "enum": "The selected :attribute is invalid.",
-        "exists": "The selected :attribute is invalid.",
-        "file": "The :attribute must be a file.",
-        "filled": "The :attribute field is required.",
-        "gt": {
-            "array": "The :attribute must have more than :value items.",
-            "file": "The :attribute must be greater than :value kilobytes.",
-            "numeric": "The :attribute must be greater than :value.",
-            "string": "The :attribute must be greater than :value characters."
-        },
-        "gte": {
-            "array": "The :attribute must have :value items or more.",
-            "file": "The :attribute must be greater than or equal :value kilobytes.",
-            "numeric": "The :attribute must be greater than or equal :value.",
-            "string": "The :attribute must be greater than or equal :value characters."
-        },
-        "image": "The :attribute must be an image.",
-        "in": "The selected :attribute is invalid.",
-        "in_array": "The :attribute field does not exist in :other.",
-        "integer": "The :attribute must be an integer.",
-        "ip": "The :attribute must be a valid IP address.",
-        "ipv4": "The :attribute must be a valid IPv4 address.",
-        "ipv6": "The :attribute must be a valid IPv6 address.",
-        "json": "The :attribute must be a valid JSON string.",
-        "lowercase": "The :attribute field must be lowercase.",
-        "lt": {
-            "array": "The :attribute must have less than :value items.",
-            "file": "The :attribute must be less than :value kilobytes.",
-            "numeric": "The :attribute must be less than :value.",
-            "string": "The :attribute must be less than :value characters."
-        },
-        "lte": {
-            "array": "The :attribute must not have more than :value items.",
-            "file": "The :attribute must be less than or equal :value kilobytes.",
-            "numeric": "The :attribute must be less than or equal :value.",
-            "string": "The :attribute must be less than or equal :value characters."
-        },
-        "mac_address": "The :attribute must be a valid MAC address.",
-        "max": {
-            "array": "The :attribute may not have more than :max items.",
-            "file": "The :attribute may not be greater than :max kilobytes.",
-            "numeric": "The :attribute may not be greater than :max.",
-            "string": "The :attribute may not be greater than :max characters."
-        },
-        "max_digits": "The :attribute field must not have more than :max digits.",
-        "mimes": "The :attribute must be a file of type: :values.",
-        "mimetypes": "The :attribute must be a file of type: :values.",
-        "min": {
-            "array": "The :attribute must have at least :min items.",
-            "file": "The :attribute must be at least :min kilobytes.",
-            "numeric": "The :attribute must be at least :min.",
-            "string": "The :attribute must be at least :min characters."
-        },
-        "min_digits": "The :attribute field must have at least :min digits.",
-        "missing": "The :attribute field must be missing.",
-        "missing_if": "The :attribute field must be missing when :other is :value.",
-        "missing_unless": "The :attribute field must be missing unless :other is :value.",
-        "missing_with": "The :attribute field must be missing when :values is present.",
-        "missing_with_all": "The :attribute field must be missing when :values are present.",
-        "multiple_of": "The :attribute must be a multiple of :value.",
-        "not_in": "The selected :attribute is invalid.",
-        "not_regex": "The :attribute format is invalid.",
-        "numeric": "The :attribute must be a number.",
-        "password": {
-            "letters": "The :attribute field must contain at least one letter.",
-            "mixed": "The :attribute field must contain at least one uppercase and one lowercase letter.",
-            "numbers": "The :attribute field must contain at least one number.",
-            "symbols": "The :attribute field must contain at least one symbol.",
-            "uncompromised": "The given :attribute has appeared in a data leak. Please choose a different :attribute."
-        },
-        "present": "The :attribute field must be present.",
-        "present_if": "The :attribute field must be present when :other is :value.",
-        "present_unless": "The :attribute field must be present unless :other is :value.",
-        "present_with": "The :attribute field must be present when :values is present.",
-        "present_with_all": "The :attribute field must be present when :values are present.",
-        "prohibited": "The :attribute field is prohibited.",
-        "prohibited_if": "The :attribute field is prohibited when :other is :value.",
-        "prohibited_unless": "The :attribute field is prohibited unless :other is in :values.",
-        "prohibits": "The :attribute field prohibits :other from being present.",
-        "regex": "The :attribute format is invalid.",
-        "required": "The :attribute field is required.",
-        "required_array_keys": "The :attribute field must contain entries for: :values.",
-        "required_if": "The :attribute field is required when :other is :value.",
-        "required_if_accepted": "The :attribute field is required when :other is accepted.",
-        "required_unless": "The :attribute field is required unless :other is in :values.",
-        "required_with": "The :attribute field is required when :values is present.",
-        "required_with_all": "The :attribute field is required when :values is present.",
-        "required_without": "The :attribute field is required when :values is not present.",
-        "required_without_all": "The :attribute field is required when none of :values are present.",
-        "same": "The :attribute and :other must match.",
-        "size": {
-            "array": "The :attribute must contain :size items.",
-            "file": "The :attribute must be :size kilobytes.",
-            "numeric": "The :attribute must be :size.",
-            "string": "The :attribute must be :size characters."
-        },
-        "starts_with": "The :attribute must start with one of the following: :values",
-        "string": "The :attribute must be a string.",
-        "timezone": "The :attribute must be a valid zone.",
-        "ulid": "The :attribute field must be a valid ULID.",
-        "unique": "The :attribute has already been taken.",
-        "uploaded": "The :attribute failed to upload.",
-        "uppercase": "The :attribute field must be uppercase.",
-        "url": "The :attribute format is invalid.",
-        "uuid": "The :attribute must be a valid UUID.",
-        "attributes": {
-            "address": "address",
-            "age": "age",
-            "amount": "amount",
-            "area": "area",
-            "available": "available",
-            "birthday": "birthday",
-            "body": "body",
-            "city": "city",
-            "content": "content",
-            "country": "country",
-            "created_at": "created at",
-            "creator": "creator",
-            "current_password": "current password",
-            "date": "date",
-            "date_of_birth": "date of birth",
-            "day": "day",
-            "deleted_at": "deleted at",
-            "description": "description",
-            "district": "district",
-            "duration": "duration",
-            "email": "email",
-            "excerpt": "excerpt",
-            "filter": "filter",
-            "first_name": "first name",
-            "gender": "gender",
-            "group": "group",
-            "hour": "hour",
-            "image": "image",
-            "last_name": "last name",
-            "lesson": "lesson",
-            "line_address_1": "line address 1",
-            "line_address_2": "line address 2",
-            "message": "message",
-            "middle_name": "middle name",
-            "minute": "minute",
-            "mobile": "mobile",
-            "month": "month",
-            "name": "name",
-            "national_code": "national code",
-            "number": "number",
-            "password": "password",
-            "password_confirmation": "password confirmation",
-            "phone": "phone",
-            "photo": "photo",
-            "postal_code": "postal code",
-            "price": "price",
-            "province": "province",
-            "recaptcha_response_field": "recaptcha response field",
-            "remember": "remember",
-            "restored_at": "restored at",
-            "result_text_under_image": "result text under image",
-            "role": "role",
-            "second": "second",
-            "sex": "sex",
-            "short_text": "short text",
-            "size": "size",
-            "state": "state",
-            "street": "street",
-            "student": "student",
-            "subject": "subject",
-            "teacher": "teacher",
-            "terms": "terms",
-            "test_description": "test description",
-            "test_locale": "test locale",
-            "test_name": "test name",
-            "text": "text",
-            "time": "time",
-            "title": "title",
-            "updated_at": "updated at",
-            "username": "username",
-            "year": "year",
-            "firstname": "forename"
-        },
-        "2fa_code": "The two-factor authentication code is invalid."
-    },
-    "addons.discordlink.lang.messages": {
+    "addons.discordlink.lang.fr.messages": {
         "modulename": "Discord Link",
         "description": "Managing the link with your Discord server of your hosting provider",
         "step1": "Step 1",
@@ -404,7 +37,7 @@
         "found": "Synced account detected: Do you want to view the data in this ticket?",
         "infosync": "This data is based on accounts that have synchronized their Discord account with their customer account via the SocialAuth+ module."
     },
-    "addons.import.lang.import": {
+    "addons.import.lang.fr.import": {
         "title": "Import",
         "description": "Import a database with the existing old version or from other vendors into NextGen",
         "importwhmcs": "Import via WHMCS will be available soon",
@@ -460,7 +93,7 @@
         "delay": "Please wait, it may take some time for the page to load.",
         "truncate": "Empty tables before import (highly recommended)"
     },
-    "addons.page.lang.messages": {
+    "addons.page.lang.fr.messages": {
         "must_be_logged": "You must be logged in to access this page.",
         "logged_only": "Page reserved for logged-in users.",
         "admin": {
@@ -476,7 +109,7 @@
             }
         }
     },
-    "addons.sameipdetector.lang.admin": {
+    "addons.sameipdetector.lang.fr.admin": {
         "dashboard": {
             "sameip_reports": "Dual Accounts",
             "pendingusers": "Users detected as dual accounts awaiting verification",
@@ -491,7 +124,7 @@
             "action": "Action to be taken"
         }
     },
-    "addons.socialauth.lang.messages": {
+    "addons.socialauth.lang.fr.messages": {
         "logged_in": "You're connected.",
         "login_with": "Log in with :p rovider",
         "register_with": "Sign up with :p rovider",
@@ -514,7 +147,7 @@
         "count_linked": "There are :count account(s) linked.",
         "finish_subtitle": "Please enter the missing information to complete your registration."
     },
-    "modules.proxmox.lang.messages": {
+    "modules.proxmox.lang.fr.messages": {
         "settings": {
             "title": "Proxmox",
             "description": "Manage the different options of the Proxmox module (IPAM, Templates, Oses)."
@@ -672,7 +305,7 @@
             }
         }
     },
-    "modules.pterobox.lang.messages": {
+    "modules.pterobox.lang.fr.messages": {
         "my_servers": "My Servers",
         "create_server": "Create a server",
         "server_name": "Server Name",
@@ -693,7 +326,7 @@
         "no_servers_available": "No more servers can be created in the box.",
         "no_servers_created": "No servers have been created at this time."
     },
-    "modules.virtualizor.lang.messages": {
+    "modules.virtualizor.lang.fr.messages": {
         "server_group": "Server Group",
         "data": {
             "os": "Operating system",
@@ -735,7 +368,7 @@
             }
         }
     },
-    "lang.actionslog": {
+    "lang.fr.actionslog": {
         "settings": {
             "title": "History of actions",
             "description": "A list of actions taken by staff and the system.",
@@ -776,7 +409,7 @@
             "theme_changed": "Theme changed"
         }
     },
-    "lang.admin": {
+    "lang.fr.admin": {
         "security": {
             "title": "Security",
             "description": "Security settings in the customer area"
@@ -1473,7 +1106,61 @@
         "backtostore": "Back to the shop",
         "doyouwantreally": "Do you really want to do this?"
     },
-    "lang.client": {
+    "lang.fr.auth": {
+        "failed": "These identifiers do not correspond to our records.",
+        "password": "The password is incorrect",
+        "throttle": "Too many login attempts. Please try again in the second seconds.",
+        "signed_in_as": "Logged in as",
+        "login": {
+            "btn": "Sign in",
+            "title": "Connection",
+            "heading": "Connection",
+            "subheading": "Enter your login details to access your personal space.",
+            "remember": "Remember Me",
+            "forgot": "Forgot your password?",
+            "login": "Log",
+            "no_account": "Don't have an account?"
+        },
+        "confirm": {
+            "btn": "Confirm",
+            "title": "Confirm Password",
+            "heading": "Confirm Password",
+            "subheading": "For security reasons, please confirm your password to continue."
+        },
+        "register": {
+            "btn": "To register",
+            "title": "Registration",
+            "heading": "Create an account",
+            "subheading": "Welcome to your customer area.",
+            "already": "Already have an account?",
+            "register": "Sign up",
+            "accept": "I accept the",
+            "terms": "Terms and conditions of use",
+            "success": "Your account has been successfully created.",
+            "success_need_validation": "You must validate it by clicking on the link you received by email.",
+            "success_validation_done": "Your account has been successfully verified.",
+            "error_banned_email": "Your email address is banned. Please contact support.",
+            "error_registration_disabled": "Registration is disabled at this time."
+        },
+        "forgot": {
+            "btn": "Send the reset link",
+            "title": "Forgot your password",
+            "forgot_password": "Forgot your password?",
+            "heading": "Reset your password",
+            "success": "A reset email has been sent to you if the account exists.",
+            "subheading": "Enter your email address to reset your password.",
+            "error_disabled": "Password reset is disabled at this time."
+        },
+        "reset": {
+            "btn": "Reset Password",
+            "title": "Reset Password",
+            "heading": "Reset Password",
+            "success": "Your password has been successfully reset.",
+            "subheading": "Enter your new password to recover your account."
+        },
+        "authentication": "Authentication"
+    },
+    "lang.fr.client": {
         "invoices": {
             "billto": "Billed at:name",
             "itemname": "Item Name",
@@ -1665,7 +1352,7 @@
             "email_must_be_verified": "Your email address must be verified to access this page"
         }
     },
-    "lang.coupon": {
+    "lang.fr.coupon": {
         "not_found": "Coupon not found",
         "coupon_not_started": "The coupon has not started yet",
         "coupon_expired": "Coupon has expired",
@@ -1726,7 +1413,7 @@
             }
         }
     },
-    "lang.errors": {
+    "lang.fr.errors": {
         "404": {
             "title": "Page not found",
             "description": "Sorry, the page you are looking for could not be found.",
@@ -1738,7 +1425,7 @@
             "back": "Return to previous page"
         }
     },
-    "lang.extensions": {
+    "lang.fr.extensions": {
         "title": "Extensions",
         "description": "Manage CLIENTXCMS extensions, enable or disable installed extensions.",
         "settings": {
@@ -1766,7 +1453,7 @@
             "cache_cleared": "The cache has been cleared successfully."
         }
     },
-    "lang.global": {
+    "lang.fr.global": {
         "firstname": "Forename",
         "lastname": "Name",
         "email": "Email",
@@ -1891,7 +1578,87 @@
         "none": "None",
         "delete": "Delete"
     },
-    "lang.install": {
+    "lang.fr.http-statuses": {
+        "0": "Unknown error",
+        "100": "Continue",
+        "101": "Switching Protocols",
+        "102": "Processing",
+        "200": "All right",
+        "201": "Created",
+        "202": "Accepted",
+        "203": "Unauthorized Information",
+        "204": "Not happy",
+        "205": "Reset content",
+        "206": "Partial content",
+        "207": "Multi-status",
+        "208": "Already reported",
+        "226": "I'm used to it",
+        "300": "Multiple choices",
+        "301": "Permanently moved",
+        "302": "Found",
+        "303": "See more",
+        "304": "Unmodified",
+        "305": "Use a proxy",
+        "307": "Temporary redirection",
+        "308": "Permanent redirection",
+        "400": "Bad Demand",
+        "401": "Not allowed",
+        "402": "Payment Required",
+        "403": "Forbidden",
+        "404": "Page not found",
+        "405": "Method not allowed",
+        "406": "Not acceptable",
+        "407": "Proxy authentication required",
+        "408": "Application expiry time",
+        "409": "Conflict",
+        "410": "Disappeared",
+        "411": "Required length",
+        "412": "Precondition failed",
+        "413": "Payload too large",
+        "414": "URI too long",
+        "415": "Unsupported Media Type",
+        "416": "Unsatisfactory range",
+        "417": "Waiting Failure",
+        "418": "I'm a Teapot",
+        "419": "Session has expired",
+        "421": "Poorly directed request",
+        "422": "Non-treatable entity",
+        "423": "Locked",
+        "424": "Dependency failed",
+        "425": "Too early",
+        "426": "Upgrade required",
+        "428": "Prerequisite",
+        "429": "Too many requests",
+        "431": "Asking for header fields that are too large",
+        "444": "Closed connection with no response",
+        "449": "Try again with",
+        "451": "Unavailable for legal reasons",
+        "499": "Client Request Closed",
+        "500": "Internal Server Error",
+        "501": "Not implemented",
+        "502": "Bad gateway",
+        "503": "Mode de Maintenance",
+        "504": "Gateway timeout",
+        "505": "HTTP version not supported",
+        "506": "The variant also negotiates",
+        "507": "Insufficient space",
+        "508": "Loop detected",
+        "509": "Bandwidth limit exceeded",
+        "510": "Not Extended",
+        "511": "Network authentication required",
+        "520": "Unknown error",
+        "521": "The web server is down",
+        "522": "Connection timed out",
+        "523": "The origin is inaccessible",
+        "524": "A time limit has been exceeded",
+        "525": "SSL handshake failed",
+        "526": "Invalid SSL certificate",
+        "527": "Railway gun error",
+        "598": "Network Read Timeout Error",
+        "599": "Network connection timeout error",
+        "unknownError": "Unknown error"
+    },
+    "lang.fr.install": {
         "install": "Installation",
         "step": "Stage",
         "settings": {
@@ -1913,7 +1680,7 @@
         },
         "submit": "Send"
     },
-    "lang.maintenance": {
+    "lang.fr.maintenance": {
         "settings": {
             "title": "Maintenance Mode",
             "description": "Enable or disable maintenance mode in the customer area",
@@ -1930,7 +1697,18 @@
         "in_maintenance_title": "Ongoing Maintenance",
         "in_maintenance_message": "The site is currently undergoing maintenance. Please check back later."
     },
-    "lang.permissions": {
+    "lang.fr.pagination": {
+        "next": "Next »",
+        "previous": "« Previous"
+    },
+    "lang.fr.passwords": {
+        "reset": "Your password has been reset!",
+        "sent": "We have emailed you the password reset link!",
+        "throttled": "Please wait before trying again.",
+        "token": "This password reset token is invalid.",
+        "user": "No users found with this email address."
+    },
+    "lang.fr.permissions": {
         "admin": "Admin permissions",
         "services": "Service Permissions",
         "helpdesk": "Help Center permissions",
@@ -1975,7 +1753,7 @@
         "manage_personalization": "Manage customizations",
         "staff_permissions": "Staff permissions"
     },
-    "lang.personalization": {
+    "lang.fr.personalization": {
         "title": "Customization",
         "icon": "Bootstrap",
         "addmenu": "Add a menu",
@@ -2133,7 +1911,7 @@
             }
         }
     },
-    "lang.provisioning": {
+    "lang.fr.provisioning": {
         "disk": "Disk",
         "in_gb": "Value in GB",
         "memory": "Memory",
@@ -2198,7 +1976,7 @@
             "use_owndomain": "Use an existing domain"
         }
     },
-    "lang.recurring": {
+    "lang.fr.recurring": {
         "onetime": "Lifelong",
         "monthly": "Monthly",
         "quarterly": "Quarterly",
@@ -2214,7 +1992,7 @@
         "week": "week",
         "weekly": "Weekly"
     },
-    "lang.store": {
+    "lang.fr.store": {
         "basket": {
             "title": "Basket",
             "empty": "Your cart is empty",
@@ -2289,11 +2067,230 @@
         "setup_price": "Installation Fees",
         "title": "Shop",
         "subtitle": "Discover our offers",
-        "ht": "Inc. VAT",
-        "ttc": "Excl. VAT",
+        "ht": "HT",
+        "ttc": "TTC",
         "transaction_fee": "Transaction fees"
     },
-    "lang.webhook": {
+    "lang.fr.validation": {
+        "accepted": "The :attribute field must be accepted.",
+        "accepted_if": "The :attribute field must be accepted when :other is set to :value.",
+        "active_url": "The :attribute field is not a valid URL.",
+        "after": "The :attribute field must be a date after the :d ate.",
+        "after_or_equal": "The :attribute field must be a date less than or equal to the :d ate.",
+        "alpha": "The :attribute field must contain only letters.",
+        "alpha_dash": "The :attribute field must contain only letters, numbers, and hyphens.",
+        "alpha_num": "The :attribute field must contain only numbers and letters.",
+        "array": "The :attribute field must be an array.",
+        "ascii": "The :attribute field must contain only alphanumeric characters and single-byte symbols.",
+        "before": "The :attribute field must be a date prior to the :d ate.",
+        "before_or_equal": "The :attribute field must be a date before or equal to the :d ate.",
+        "phone": "The :attribute field must be a valid phone number.",
+        "between": {
+            "array": "The :attribute array must contain between :min and :max elements.",
+            "file": "The file size of :attribute must be between :min and :max kilobytes.",
+            "numeric": "The value of :attribute must be between :min and :max.",
+            "string": "The :attribute text must contain between :min and :max characters."
+        },
+        "2fa_code": "The two-factor authentication code is invalid.",
+        "boolean": "The :attribute field must be true or false.",
+        "can": "The :attribute field contains an unauthorized value.",
+        "confirmed": "The :attribute confirmation field does not match.",
+        "current_password": "The password is incorrect.",
+        "date": "The :attribute field is not a valid date.",
+        "date_equals": "The :attribute field must be a date equal to :d ate.",
+        "date_format": "The :attribute field does not match the :format format.",
+        "decimal": "The :attribute field must have :d decimal ecimals.",
+        "declined": "The :attribute field must be declined.",
+        "declined_if": "The :attribute field must be declined when :other is set to :value.",
+        "different": "The :attribute and :other fields must be different.",
+        "digits": "The :attribute field must contain :d same digits.",
+        "digits_between": "The :attribute field must contain between :min and :max digits.",
+        "dimensions": "The size of the :attribute image is not compliant.",
+        "distinct": "The :attribute field has a duplicate value.",
+        "doesnt_end_with": "The :attribute field must not end with one of the following values: :values.",
+        "doesnt_start_with": "The :attribute field must not start with one of the following values: :values.",
+        "email": "The :attribute field must be a valid email address.",
+        "ends_with": "The :attribute field must end with one of the following values: :values.",
+        "enum": "The selected :attribute field is invalid.",
+        "exists": "The selected :attribute field is invalid.",
+        "file": "The :attribute field must be a file.",
+        "filled": "The :attribute field must have a value.",
+        "gt": {
+            "array": "The :attribute array must contain more :value elements.",
+            "file": "The file size of :attribute must be greater than :value kilobytes.",
+            "numeric": "The value of :attribute must be greater than :value.",
+            "string": "The :attribute text must contain more than :value characters."
+        },
+        "gte": {
+            "array": "The :attribute array must contain at least :value elements.",
+            "file": "The file size of :attribute must be greater than or equal to :value kilobytes.",
+            "numeric": "The value of :attribute must be greater than or equal to :value.",
+            "string": "The :attribute text must contain at least :value characters."
+        },
+        "image": "The :attribute field must be an image.",
+        "in": "The :attribute field is invalid.",
+        "in_array": "The :attribute field does not exist in :other.",
+        "integer": "The :attribute field must be an integer.",
+        "ip": "The :attribute field must be a valid IP address.",
+        "ipv4": "The :attribute field must be a valid IPv4 address.",
+        "ipv6": "The :attribute field must be a valid IPv6 address.",
+        "json": "The :attribute field must be a valid JSON document.",
+        "lowercase": "The :attribute field must be lowercase.",
+        "lt": {
+            "array": "The :attribute array must contain fewer than :value elements.",
+            "file": "The file size of :attribute must be less than :value kilobytes.",
+            "numeric": "The value of :attribute must be less than :value.",
+            "string": "The :attribute text must contain fewer than :value characters."
+        },
+        "lte": {
+            "array": "The :attribute array must contain at most :value elements.",
+            "file": "The file size of :attribute must be less than or equal to :value kilobytes.",
+            "numeric": "The value of :attribute must be less than or equal to :value.",
+            "string": "The :attribute text must contain no more than :value characters."
+        },
+        "mac_address": "The :attribute field must be a valid MAC address.",
+        "max": {
+            "array": "The :attribute array cannot contain more than :max elements.",
+            "file": "The size of the :attribute file cannot exceed :max kilobytes.",
+            "numeric": "The value of :attribute cannot be greater than :max.",
+            "string": "The text of :attribute cannot contain more than :max characters."
+        },
+        "max_digits": "The :attribute field must not have more than :max digits.",
+        "mimes": "The :attribute field must be a file of type: :values.",
+        "mimetypes": "The :attribute field must be a file of type: :values.",
+        "min": {
+            "array": "The :attribute array must contain at least :min elements.",
+            "file": "The file size of :attribute must be greater than or equal to :min kilobytes.",
+            "numeric": "The value of :attribute must be greater than or equal to :min.",
+            "string": "The text of :attribute must contain at least :min characters."
+        },
+        "min_digits": "The :attribute field must have at least :min digits.",
+        "missing": "The :attribute field must be missing.",
+        "missing_if": "The :attribute field should be missing when :other is set to :value.",
+        "missing_unless": "The :attribute field should be missing unless :other is set to :value.",
+        "missing_with": "The :attribute field must be missing when :values is present.",
+        "missing_with_all": "The :attribute field must be missing when :values are present.",
+        "multiple_of": "The value of :attribute must be a multiple of :value.",
+        "not_in": "The selected :attribute field is invalid.",
+        "not_regex": "The format of the :attribute field is invalid.",
+        "numeric": "The :attribute field must contain a number.",
+        "password": {
+            "letters": "The :attribute field must contain at least one letter.",
+            "mixed": "The :attribute field must contain at least one uppercase and one lowercase letter.",
+            "numbers": "The :attribute field must contain at least one digit.",
+            "symbols": "The :attribute field must contain at least one symbol.",
+            "uncompromised": "The value of the :attribute field appeared in a data leak. Please choose a different value."
+        },
+        "present": "The :attribute field must be present.",
+        "present_if": "The :attribute field must be present when :other is :value.",
+        "present_unless": "The :attribute field must be present unless :other is :value.",
+        "present_with": "The :attribute field must be present when :values is present.",
+        "present_with_all": "The :attribute field must be present when :values are present.",
+        "prohibited": "The :attribute field is prohibited.",
+        "prohibited_if": "The :attribute field is forbidden when :other is set to :value.",
+        "prohibited_unless": "The :attribute field is forbidden unless :other is one of the :values.",
+        "prohibits": "The :attribute field prohibits :other from being present.",
+        "regex": "The format of the :attribute field is invalid.",
+        "required": "The :attribute field is required.",
+        "required_array_keys": "The :attribute field must contain entries for: :values.",
+        "required_if": "The :attribute field is required when the value of :other is :value.",
+        "required_if_accepted": "The :attribute field is required when the :other field has been accepted.",
+        "required_unless": "The :attribute field is required unless :other is :values.",
+        "required_with": "The :attribute field is required when :values is present.",
+        "required_with_all": "The :attribute field is required when :values are present.",
+        "required_without": "The :attribute field is required when :values is not present.",
+        "required_without_all": "The :attribute field is required when none of :values are present.",
+        "same": "The :attribute and :other fields must be identical.",
+        "size": {
+            "array": "The :attribute array must contain :size elements.",
+            "file": "The size of the :attribute file must be :size kilobytes.",
+            "numeric": "The value of :attribute must be :size.",
+            "string": "The text of :attribute must contain :size characters."
+        },
+        "starts_with": "The :attribute field must start with one of the following values: :values.",
+        "string": "The :attribute field must be a string.",
+        "timezone": "The :attribute field must be a valid time zone.",
+        "ulid": "The :attribute field must be a valid ULID.",
+        "unique": "The value of the :attribute field is already in use.",
+        "uploaded": "The file in the :attribute field could not be uploaded.",
+        "uppercase": "The :attribute field must be uppercase.",
+        "url": "The URL format of :attribute is invalid.",
+        "uuid": "The :attribute field must be a valid UUID.",
+        "attributes": {
+            "address": "address",
+            "age": "age",
+            "amount": "amount",
+            "area": "zone",
+            "available": "available",
+            "birthday": "anniversary",
+            "body": "body",
+            "city": "town",
+            "content": "content",
+            "country": "country",
+            "created_at": "Created in",
+            "creator": "creator",
+            "current_password": "Current password",
+            "date": "date",
+            "date_of_birth": "Date of birth",
+            "day": "day",
+            "deleted_at": "Deleted at",
+            "description": "description",
+            "district": "quarter",
+            "duration": "duration",
+            "email": "Email address",
+            "excerpt": "extract",
+            "filter": "filter",
+            "firstname": "forename",
+            "gender": "gender",
+            "group": "group",
+            "hour": "hour",
+            "image": "image",
+            "last_name": "name",
+            "lesson": "lesson",
+            "line_address_1": "Address Line 1",
+            "line_address_2": "Address Line 2",
+            "message": "message",
+            "middle_name": "middle name",
+            "minute": "minute",
+            "mobile": "portable",
+            "month": "month",
+            "name": "name",
+            "national_code": "National Code",
+            "number": "number",
+            "password": "Password",
+            "password_confirmation": "Password confirmation",
+            "phone": "telephone",
+            "photo": "photo",
+            "postal_code": "Zip code",
+            "price": "price",
+            "province": "region",
+            "recaptcha_response_field": "ReCAPTCHA response field",
+            "remember": "remember",
+            "restored_at": "restored to",
+            "result_text_under_image": "Result text below the image",
+            "role": "role",
+            "second": "second",
+            "sex": "sex",
+            "short_text": "Short text",
+            "size": "waist",
+            "state": "state",
+            "street": "street",
+            "student": "student",
+            "subject": "subject",
+            "teacher": "teacher",
+            "terms": "conditions",
+            "test_description": "Description Test",
+            "test_locale": "Test location",
+            "test_name": "Test Name",
+            "text": "text",
+            "time": "hour",
+            "title": "title",
+            "updated_at": "Updated at",
+            "username": "Username",
+            "year": "year"
+        }
+    },
+    "lang.fr.webhook": {
         "url": "Webhook URL",
         "variables": "Available variables: :variables",
         "checkout": {

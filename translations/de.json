@@ -1,89 +1,6 @@
 {
     "language": "Allemand",
-    "addons": {
-        "discordlink": {
-            "lang": {
-                "modulename": "Discord-Link",
-                "description": "Verwalten der Verbindung mit Ihrem Discord-Server Ihres Hosting-Providers",
-                "step1": "Schritt 1",
-                "step2": "Schritt 2",
-                "step3": "Schritt 3",
-                "step4": "Schritt 4",
-                "invitation": "Server-Einladungslink",
-                "dropkey": "Schlüssel zurücksetzen",
-                "step1text": "Fügen Sie den Bot zu Ihrem Discord-Server hinzu, indem Sie auf <a href=\"https://clientxcms.com/ref/discordlinkbot\" class=\"text-primary\" target=\"_blank\">diesen Einladungslink klicken</a>. Es stellt die Verbindung zwischen Ihrem Discord-Server und Ihrem Host her.",
-                "step2text": "Kopieren Sie den folgenden Befehl auf Ihren Server. <b><u>Bitte beachten Sie, dass der Schlüssel nur einmal angezeigt wird</u></b>. Im Falle eines Verlustes muss es zurückgesetzt werden.",
-                "step3text": "Führen Sie den folgenden Befehl auf Ihrem Discord-Server aus, indem Sie ihm die Client-Rolle hinzufügen. Bei Erfolg antwortet der Bot mit einer Erfolgsmeldung.",
-                "step4text": "Stellen Sie sicher, dass der Bot über die erforderlichen Berechtigungen zum Hinzufügen der Rolle verfügt. (Der Bot muss sich über der Rolle befinden, die hinzugefügt werden soll.)",
-                "detectedcustomers": "Kunden erkannt",
-                "discordid": "ID-Zwietracht",
-                "cardinfo": "Treten Sie unserem Discord-Server bei, um unsere Community zu finden, Hilfe und zusätzliche Informationen wie unsere neuesten Aktionen zu erhalten.",
-                "installation": "Installation des Discord-Bots",
-                "joinserver": "Treten Sie dem Server bei",
-                "guildid": "Server-ID",
-                "accept": "Annehmen",
-                "decline": "Verweigern",
-                "help": "Benötigen Sie Hilfe?",
-                "found": "Synchronisiertes Konto erkannt: Möchten Sie die Daten in diesem Ticket anzeigen?",
-                "infosync": "Diese Daten basieren auf Accounts, die ihren Discord-Account über das SocialAuth+-Modul mit ihrem Kundenkonto synchronisiert haben."
-            }
-        },
-        "import": {
-            "lang": {
-                "title": "Importieren",
-                "test": "Dies ist ein Test!",
-                "description": "Importieren Sie eine Datenbank mit der alten Version, die bereits vorhanden ist, oder von anderen Anbietern in NextGen",
-                "importwhmcs": "Import über WHMCS wird in Kürze verfügbar sein",
-                "importclientxcms": "Importieren aus der alten Version von ClientXCMS",
-                "db": {
-                    "host": "Gastgeber",
-                    "port": "Hafen",
-                    "database": "Datenbank",
-                    "username": "Nutzername",
-                    "password": "Passwort"
-                },
-                "v1": {
-                    "importables": {
-                        "products": "Produzieren",
-                        "groups": "Gruppen",
-                        "servers": "Diener",
-                        "services": "Dienste",
-                        "invoices": "Rechnungen",
-                        "clients": "Kundschaft",
-                        "pterodactyl": "Pterodactyl-Konfiguration",
-                        "proxmox": "Proxmox-Konfiguration",
-                        "oses": "Proxmox Betriebssysteme",
-                        "templates": "Vorlagen Proxmox",
-                        "plesk": "Konfiguration Plesk"
-                    },
-                    "fromv1": "Importieren aus der alten Version von ClientXCMS",
-                    "title": "ClientXCMS v1",
-                    "description": "Importieren aus der alten Version von ClientXCMS"
-                },
-                "whmcs": {
-                    "importables": {
-                        "products": "Produzieren",
-                        "groups": "Gruppen",
-                        "servers": "Diener",
-                        "services": "Dienste",
-                        "clients": "Kundschaft",
-                        "pterodata": "Pterodactyl-Konfiguration",
-                        "invoices": "Rechnungen"
-                    },
-                    "fromwhmcs": "Importieren aus WHMCS",
-                    "title": "WHMCS",
-                    "key": "Encoder-Taste",
-                    "keyhelp": "Der Encoder-Schlüssel wird verwendet, um die Daten von WHMCS zu entschlüsseln. Es ist in der WHMCS-configuration.php Datei verfügbar",
-                    "description": "Importieren aus WHMCS"
-                },
-                "downloadreport": "Laden Sie den Bericht herunter",
-                "import": "Importieren",
-                "delay": "Bitte warten Sie, es kann einige Zeit dauern, bis die Seite geladen ist.",
-                "truncate": "Leere Tabellen vor dem Import (dringend empfohlen)"
-            }
-        }
-    },
-    "addons.discordlink.lang.messages": {
+    "addons.discordlink.lang.fr.messages": {
         "modulename": "Discord-Link",
         "description": "Verwalten der Verbindung mit Ihrem Discord-Server Ihres Hosting-Providers",
         "step1": "Schritt 1",
@@ -120,7 +37,7 @@
         "found": "Synchronisiertes Konto erkannt: Möchten Sie die Daten in diesem Ticket anzeigen?",
         "infosync": "Diese Daten basieren auf Accounts, die ihren Discord-Account über das SocialAuth+-Modul mit ihrem Kundenkonto synchronisiert haben."
     },
-    "addons.import.lang.import": {
+    "addons.import.lang.fr.import": {
         "title": "Importieren",
         "description": "Importieren Sie eine Datenbank mit der vorhandenen alten Version oder von anderen Anbietern in NextGen",
         "importwhmcs": "Import über WHMCS wird in Kürze verfügbar sein",
@@ -176,7 +93,7 @@
         "delay": "Bitte warten Sie, es kann einige Zeit dauern, bis die Seite geladen ist.",
         "truncate": "Leere Tabellen vor dem Import (dringend empfohlen)"
     },
-    "addons.page.lang.messages": {
+    "addons.page.lang.fr.messages": {
         "must_be_logged": "Sie müssen angemeldet sein, um auf diese Seite zugreifen zu können.",
         "logged_only": "Die Seite ist für angemeldete Benutzer reserviert.",
         "admin": {
@@ -192,7 +109,7 @@
             }
         }
     },
-    "addons.sameipdetector.lang.admin": {
+    "addons.sameipdetector.lang.fr.admin": {
         "dashboard": {
             "sameip_reports": "Doppelte Konten",
             "pendingusers": "Benutzer, die als Doppelkonten erkannt wurden und auf die Verifizierung warten",
@@ -207,7 +124,7 @@
             "action": "Zu ergreifende Maßnahmen"
         }
     },
-    "addons.socialauth.lang.messages": {
+    "addons.socialauth.lang.fr.messages": {
         "logged_in": "Sie sind verbunden.",
         "login_with": "Melden Sie sich mit :p rovider an",
         "register_with": "Melden Sie sich bei :p rovider an",
@@ -230,7 +147,7 @@
         "count_linked": "Es sind :count-Konten verknüpft.",
         "finish_subtitle": "Bitte geben Sie die fehlenden Informationen ein, um Ihre Registrierung abzuschließen."
     },
-    "modules.proxmox.lang.messages": {
+    "modules.proxmox.lang.fr.messages": {
         "settings": {
             "title": "Proxmox",
             "description": "Verwalten Sie die verschiedenen Optionen des Proxmox-Moduls (IPAM, Templates, Oses)."
@@ -388,7 +305,7 @@
             }
         }
     },
-    "modules.pterobox.lang.messages": {
+    "modules.pterobox.lang.fr.messages": {
         "my_servers": "Meine Server",
         "create_server": "Erstellen eines Servers",
         "server_name": "Name des Servers",
@@ -409,7 +326,7 @@
         "no_servers_available": "In der Box können keine Server mehr erstellt werden.",
         "no_servers_created": "Zu diesem Zeitpunkt wurden noch keine Server erstellt."
     },
-    "modules.virtualizor.lang.messages": {
+    "modules.virtualizor.lang.fr.messages": {
         "server_group": "Server-Gruppe",
         "data": {
             "os": "Betriebssystem",
@@ -451,7 +368,7 @@
             }
         }
     },
-    "lang.actionslog": {
+    "lang.fr.actionslog": {
         "settings": {
             "title": "Geschichte der Aktionen",
             "description": "Eine Liste der Maßnahmen, die von Mitarbeitern und dem System ergriffen wurden.",
@@ -492,7 +409,7 @@
             "theme_changed": "Thema geändert"
         }
     },
-    "lang.admin": {
+    "lang.fr.admin": {
         "security": {
             "title": "Sicherheit",
             "description": "Sicherheitseinstellungen im Kundenbereich"
@@ -1189,7 +1106,7 @@
         "backtostore": "Zurück zum Shop",
         "doyouwantreally": "Wollen Sie das wirklich tun?"
     },
-    "lang.auth": {
+    "lang.fr.auth": {
         "failed": "Diese Identifikatoren stimmen nicht mit unseren Aufzeichnungen überein.",
         "password": "Das Passwort ist falsch",
         "throttle": "Zu viele Anmeldeversuche. Bitte versuchen Sie es in den zweiten Sekunden erneut.",
@@ -1243,7 +1160,7 @@
         },
         "authentication": "Authentifizierung"
     },
-    "lang.client": {
+    "lang.fr.client": {
         "invoices": {
             "billto": "Abgerechnet am:name",
             "itemname": "Artikelname",
@@ -1435,7 +1352,7 @@
             "email_must_be_verified": "Ihre E-Mail-Adresse muss verifiziert sein, um auf diese Seite zugreifen zu können"
         }
     },
-    "lang.coupon": {
+    "lang.fr.coupon": {
         "not_found": "Gutschein nicht gefunden",
         "coupon_not_started": "Der Gutschein hat noch nicht begonnen",
         "coupon_expired": "Gutschein ist abgelaufen",
@@ -1496,7 +1413,7 @@
             }
         }
     },
-    "lang.errors": {
+    "lang.fr.errors": {
         "404": {
             "title": "Seite nicht gefunden",
             "description": "Die von Ihnen gesuchte Seite konnte leider nicht gefunden werden.",
@@ -1508,7 +1425,7 @@
             "back": "Zurück zur vorherigen Seite"
         }
     },
-    "lang.extensions": {
+    "lang.fr.extensions": {
         "title": "Erweiterungen",
         "description": "Verwalten Sie CLIENTXCMS-Erweiterungen, aktivieren oder deaktivieren Sie installierte Erweiterungen.",
         "settings": {
@@ -1536,7 +1453,7 @@
             "cache_cleared": "Der Cache wurde erfolgreich geleert."
         }
     },
-    "lang.global": {
+    "lang.fr.global": {
         "firstname": "Vorname",
         "lastname": "Name",
         "email": "E-Mail",
@@ -1661,7 +1578,7 @@
         "none": "Nichts",
         "delete": "Löschen"
     },
-    "lang.http-statuses": {
+    "lang.fr.http-statuses": {
         "0": "Unbekannter Fehler",
         "100": "Fortsetzen",
         "101": "Umschalten von Protokollen",
@@ -1741,7 +1658,7 @@
         "599": "Fehler beim Timeout der Netzwerkverbindung",
         "unknownError": "Unbekannter Fehler"
     },
-    "lang.install": {
+    "lang.fr.install": {
         "install": "Installation",
         "step": "Bühne",
         "settings": {
@@ -1763,7 +1680,7 @@
         },
         "submit": "Senden"
     },
-    "lang.maintenance": {
+    "lang.fr.maintenance": {
         "settings": {
             "title": "Wartungsmodus",
             "description": "Aktivieren oder deaktivieren Sie den Wartungsmodus im Kundenbereich",
@@ -1780,18 +1697,18 @@
         "in_maintenance_title": "Laufende Wartung",
         "in_maintenance_message": "Die Website wird derzeit gewartet. Bitte schauen Sie später noch einmal vorbei."
     },
-    "lang.pagination": {
+    "lang.fr.pagination": {
         "next": "Weiter »",
         "previous": "« Vorherige"
     },
-    "lang.passwords": {
+    "lang.fr.passwords": {
         "reset": "Ihr Passwort wurde zurückgesetzt!",
         "sent": "Wir haben Ihnen den Link zum Zurücksetzen des Passworts per E-Mail geschickt!",
         "throttled": "Bitte warten Sie, bevor Sie es erneut versuchen.",
         "token": "Dieses Token zum Zurücksetzen des Kennworts ist ungültig.",
         "user": "Es wurden keine Benutzer mit dieser E-Mail-Adresse gefunden."
     },
-    "lang.permissions": {
+    "lang.fr.permissions": {
         "admin": "Admin-Berechtigungen",
         "services": "Service-Berechtigungen",
         "helpdesk": "Help-Center-Berechtigungen",
@@ -1836,7 +1753,7 @@
         "manage_personalization": "Verwalten von Anpassungen",
         "staff_permissions": "Berechtigungen für Mitarbeiter"
     },
-    "lang.personalization": {
+    "lang.fr.personalization": {
         "title": "Anpassung",
         "icon": "Urlader",
         "addmenu": "Hinzufügen eines Menüs",
@@ -1994,7 +1911,7 @@
             }
         }
     },
-    "lang.provisioning": {
+    "lang.fr.provisioning": {
         "disk": "Scheibe",
         "in_gb": "Wert in GB",
         "memory": "Gedächtnis",
@@ -2059,7 +1976,7 @@
             "use_owndomain": "Verwenden einer vorhandenen Domäne"
         }
     },
-    "lang.recurring": {
+    "lang.fr.recurring": {
         "onetime": "Lebenslänglich",
         "monthly": "Monatlich",
         "quarterly": "Vierteljährlich",
@@ -2075,7 +1992,7 @@
         "week": "Woche",
         "weekly": "Wöchentlich"
     },
-    "lang.store": {
+    "lang.fr.store": {
         "basket": {
             "title": "Korb",
             "empty": "Ihr Warenkorb ist leer",
@@ -2154,7 +2071,7 @@
         "ttc": "TTC",
         "transaction_fee": "Transaktionsgebühren"
     },
-    "lang.validation": {
+    "lang.fr.validation": {
         "accepted": "Das Feld :attribute muss akzeptiert werden.",
         "accepted_if": "Das Feld :attribute muss akzeptiert werden, wenn :other auf :value gesetzt ist.",
         "active_url": "Das Feld :attribute ist keine gültige URL.",
@@ -2373,7 +2290,7 @@
             "year": "Jahr"
         }
     },
-    "lang.webhook": {
+    "lang.fr.webhook": {
         "url": "Webhook-URL",
         "variables": "Verfügbare Variablen: :variables",
         "checkout": {
