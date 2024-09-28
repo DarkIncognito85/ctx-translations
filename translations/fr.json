@@ -416,8 +416,8 @@
         },
         "dashboard": {
             "title": "Tableau de bord",
-            "frozen": "Le système est actuellement en mode gelé. Certaines fonctionnalités peuvent être désactivées. Pour sortir du mode gelé, veuillez contacter le support.",
             "autologin_success": "Vous êtes maintenant connecté en tant que :name",
+            "frozen": "Le système est actuellement en mode gelé. Certaines fonctionnalités peuvent être désactivées. Pour sortir du mode gelé, veuillez contacter le support.",
             "in_debug": "Vous êtes actuellement en mode debug. Des informations sensibles peuvent être affichées. Pour des raisons de sécurité, veuillez désactiver le mode debug dans les paramètres généraux.",
             "subheading": "Bienvenue sur le tableau de bord de l'administration",
             "notification_error": "Une erreur est survenue dans les dernières 24 heures sur l'envoi de mail. Erreur : :message",
@@ -470,8 +470,8 @@
                 "last_7_days": "7 derniers jours",
                 "today": "Aujourd'hui",
                 "gateway_canvas": "Moyens de paiement des clients",
-                "service_can_renewal": "Services renouvelables ce mois-ci",
-                "already_renewed": "Déjà renouvelé",
+                "service_can_renewal": "Services renouvelables",
+                "already_renewed": "Services renouvelés",
                 "last_orders": "Dernières commandes",
                 "expire_soon": "Expire bientôt",
                 "graph_month": "Gains mensuels"
@@ -498,63 +498,6 @@
             "show": {
                 "title": "Fiche rôle :name",
                 "subheading": "Voici les informations liées à ce rôle créé le :date"
-            }
-        },
-        "helpdesk": {
-            "title": "Centre d'aide",
-            "description": "Paramétrez le centre d'aide et gérez les tickets de support",
-            "tooltips": {
-                "tickets": {
-                    "label": "Tickets",
-                    "new": ":count nouveaux tickets"
-                }
-            },
-            "widgets": {
-                "tickets": "Tickets ouverts"
-            },
-            "settings": {
-                "title": "Paramètres du centre d'aide",
-                "success": "Les paramètres du centre d'aide ont été enregistrés avec succès.",
-                "description": "Configuration des tickets de support et du centre d'aide",
-                "fields": {
-                    "ticket_auto_close_days": "Fermeture automatique des tickets après inactivité (jours)",
-                    "ticket_auto_close_days_help": "0 pour désactiver",
-                    "allow_attachments": "Autoriser les pièces jointes",
-                    "allow_attachments_help": "Permet aux utilisateurs de joindre des fichiers à leurs tickets",
-                    "attachments_max_size": "Taille maximale des pièces jointes (Mo)",
-                    "attachments_allowed_types": "Types de fichiers autorisés",
-                    "attachments_allowed_types_help": "Séparés par des virgules",
-                    "webhook_url": "URL du webhook",
-                    "reopen_days": "Autorisation de re-ouverture des tickets (jours)",
-                    "reopen_days_help": "0 pour désactiver la réouverture, -1 pour autoriser indéfiniment"
-                }
-            },
-            "tickets": {
-                "pending_title": "Tickets en attente",
-                "last_update": "Dernière mise à jour",
-                "title": "Tickets",
-                "subheading": "Voici la liste de tous les tickets du système",
-                "edit": "Modifier le ticket",
-                "customer_not_found": "Le client n'a pas été trouvé",
-                "create": {
-                    "title": "Créer un ticket",
-                    "subheading": "Créer un nouveau ticket pour un client"
-                }
-            },
-            "departments": {
-                "icon": "Icône (Bootstrap)",
-                "icon_help": "Voir la liste des icônes sur icons.getbootstrap.com",
-                "title": "Départements",
-                "description": "Configurez les départements de support pour les tickets",
-                "subheading": "Voici la liste de tous les départements du système",
-                "create": {
-                    "title": "Créer un département",
-                    "subheading": "Créer un nouveau département pour le support"
-                },
-                "show": {
-                    "title": "Fiche département :name",
-                    "subheading": "Voici les informations liées à ce département créé le :date"
-                }
             }
         },
         "history": {
@@ -668,6 +611,7 @@
                 "invoices": "Factures du client",
                 "services": "Services du client",
                 "tickets": "Tickets du client",
+                "payment-methods": "Moyens de paiement du client",
                 "emails": "Emails envoyés au client",
                 "passwordhelp": "Laissez vide pour ne pas changer",
                 "login": "Dernières connexions du client",
@@ -724,7 +668,6 @@
             },
             "customproduct": "Produit personnalisé",
             "invoice_number": "Numéro de facture",
-            "deliveredsuccess": "Le produit a été livré avec succès",
             "draft": {
                 "add": "Ajouter un article",
                 "unitprice": "Prix unitaire",
@@ -756,130 +699,6 @@
             "title": "Factures",
             "subheading": "Voici la liste de toutes les factures du système"
         },
-        "subdomains": {
-            "title": "Sous-domaines",
-            "subdomain": "Sous-domaine",
-            "subheading": "Gérez les domaines pouvant être utilisés avec un sous-domaine par les clients pour leurs sites web.",
-            "create": {
-                "title": "Créer un sous-domaine",
-                "subheading": "Créer un nouveau sous-domaine pour les clients."
-            },
-            "show": {
-                "title": "Fiche sous-domaine :name",
-                "subheading": "Voici les informations liées à ce sous-domaine créé le :date"
-            }
-        },
-        "servers": {
-            "testconnection": {
-                "title": "Tester la connexion",
-                "button": "Vérifier",
-                "data": "Données renvoyées",
-                "statuscode": "Code de statut"
-            },
-            "title": "Serveurs",
-            "subheading": "Retrouvez la liste de tous les serveurs du système",
-            "hostname": "Nom d'hôte",
-            "address": "Adresse IP",
-            "port": "Port",
-            "type": "Type de serveur",
-            "show": {
-                "title": "Fiche serveur :name",
-                "subheading": "Voici les informations liées à ce serveur créé le :date"
-            },
-            "create": {
-                "title": "Créer un serveur",
-                "subheading": "Créer un nouveau serveur pour le relier au système"
-            }
-        },
-        "services": {
-            "no_gateway": "Aucune passerelle de paiement n'est configurée pour ce service",
-            "invoice_not_found": "La facture n'a pas été trouvée",
-            "invalid_status": "Statut invalide",
-            "invalid_customer": "Client invalide",
-            "status_change_failed": "Impossible de changer le statut du service : :error",
-            "title": "Services",
-            "add_days": "Ajouter des jours",
-            "sub_days": "Soustraire des jours",
-            "add_days_question": "Combien de jours voulez-vous ajouter ?",
-            "sub_days_question": "Combien de jours voulez-vous soustraire ?",
-            "invalid_product_type": "Type de service invalide. Vous avez demandé un produit de type :product et sélectionné un type :type. Veuillez choisir un même type.",
-            "expired": "Ce service a expiré ou est terminé.",
-            "delete_failed": "Impossible de supprimer le service sur le serveur : :error",
-            "customer": "Client",
-            "imported": "Service importé avec succès",
-            "create": {
-                "nothingtoshow": "Aucune configuration de service n'est disponible pour le moment. Vous pouvez créer le service",
-                "title": "Créer un service",
-                "subheading": "Créer un nouveau service ou importer un existant",
-                "btn1": "Suivant",
-                "btn2": "Importer",
-                "choose": "Choisissez un serveur déjà existant",
-                "import": "<u> OU <\/u>&nbsp; Importer un service",
-                "new": "Créer un nouveau service",
-                "created": "Le service a été créé avec succès"
-            },
-            "show": {
-                "customerbtn": "Fiche client",
-                "type": "Type de service",
-                "notes": "Notes sur le service",
-                "title": "Fiche service :name",
-                "initial_price": "Prix initial",
-                "max_renewals": "Renouvellements maximum",
-                "expires_at": "Expiration",
-                "subheading": "Voici les informations liées au service de :owner créé le :date"
-            },
-            "subheading": "Voici la liste de tous les services du système",
-            "renewals": {
-                "btn": "Renouvellement",
-                "title": "Renouvellement du service",
-                "create": "Émettre une facture de renouvellement",
-                "btn2": "Émettre la facture",
-                "remove": "Retirer la facture",
-                "removed": "La facture a été retirée avec succès",
-                "fromexistinginvoice": "Ajouter sur une facture existante en attente"
-            },
-            "delivery": {
-                "btn": "Livrer le service",
-                "btn2": "Relivrer le service",
-                "success": "Le service a été livré avec succès",
-                "reinstall": "Le service va être livré à nouveau",
-                "not_pending": "Le service n'est pas en attente de livraison"
-            },
-            "suspend": {
-                "btn": "Suspendre",
-                "title": "Suspendre le service",
-                "reason": "Raison de la suspension",
-                "success": "Le service a été suspendu avec succès",
-                "notify": "Envoyer un mail de notification",
-                "suspend_at": "Suspendu le"
-            },
-            "unsuspend": {
-                "btn": "Réactiver",
-                "title": "Réactiver le service",
-                "success": "Le service a été réactivé avec succès"
-            },
-            "terminate": {
-                "btn": "Terminer",
-                "title": "Terminer le service",
-                "success": "Le service a été expiré avec succès"
-            },
-            "data": {
-                "title": "Données du service",
-                "btn": "Données",
-                "orderdata": "Données de la commande"
-            },
-            "cancel": {
-                "btn": "Annulation",
-                "message": "Message transmis",
-                "title": "Annuler le service",
-                "restore": "Restaurer le service",
-                "reason": "Raison de l'annulation",
-                "success": "Le service a été annulé avec succès"
-            },
-            "uncancel": {
-                "success": "Le service a été restauré avec succès"
-            }
-        },
         "admins": {
             "title": "Personnels",
             "expires_at": "Expiration",
@@ -902,9 +721,6 @@
                 "details": "Détails sur le personnel",
                 "subheading": "Voici les informations liées à ce personnel créé le :date"
             }
-        },
-        "modules": {
-            "title": "Modules"
         },
         "settings": {
             "title": "Paramètres",
@@ -954,17 +770,6 @@
                         "invoice_terms": "Termes et conditions de la facture"
                     }
                 },
-                "services": {
-                    "title": "Paramètres des services",
-                    "webhookonrenew": "Webhook au renouvellement",
-                    "success": "Les paramètres des services ont été enregistrés avec succès.",
-                    "description": "Paramètres des services (renouvellement, facturation, etc.)",
-                    "fields": {
-                        "days_before_creation_renewal_invoice": "Jours avant la création de la facture de renouvellement",
-                        "days_before_expiration": "Jours avant l'expiration",
-                        "notify_expiration_days": "Jours de notification avant expiration"
-                    }
-                },
                 "security": {
                     "title": "Paramètres de sécurité",
                     "description": "Paramètres de sécurité de l'espace client",
@@ -1000,35 +805,6 @@
             "store": {
                 "title": "Paramètres de la boutique",
                 "description": "Paramètres de la boutique (PayPal, TVA, etc.)",
-                "checkout": {
-                    "title": "Facturation",
-                    "description": "Paramètres de facturation de la boutique. Vous pouvez activer la TVA, définir la devise, ou le mode de taxe.",
-                    "success": "Les paramètres de facturation ont été enregistrés avec succès.",
-                    "webhookoncheckout": "Webhook au checkout",
-                    "fields": {
-                        "store_vat_enabled": "Activer la TVA",
-                        "customermustbeconfirmed": "Le client doit être confirmé pour commander",
-                        "toslink": "Lien des conditions générales de vente",
-                        "currency": "Devise",
-                        "invoice_prefix": "Préfixe des factures",
-                        "billing_mode": "Mode de facturation",
-                        "billing_modes": {
-                            "proforma": "Proforma",
-                            "invoice": "Facture"
-                        },
-                        "remove_pending_invoice": "Action sur les factures en attente après (jours)",
-                        "remove_pending_invoice_help": "0 pour désactiver",
-                        "remove_pending_invoice_types": {
-                            "delete": "Supprimer",
-                            "cancel": "Annuler"
-                        },
-                        "mode_tax": {
-                            "title": "Mode de taxe",
-                            "included": "Inclus - Le prix affiché est TTC",
-                            "excluded": "Exclus - Le prix affiché est HT"
-                        }
-                    }
-                },
                 "gateways": {
                     "description": "Configuration de la passerelle de paiement :name",
                     "fields": {
@@ -1046,9 +822,6 @@
                     "success": "La configuration de la passerelle a été enregistrée avec succès."
                 }
             }
-        },
-        "themes": {
-            "title": "Thèmes"
         },
         "license": {
             "click_to_activate": "Cliquez ici pour activer votre licence",
@@ -1160,6 +933,59 @@
         },
         "authentication": "Authentification"
     },
+    "lang.fr.billing": {
+        "admin": {
+            "settings": {
+                "title": "Facturation",
+                "description": "Paramètres de facturation de la boutique. Activer la TVA, définir la devise, ou autre.",
+                "success": "Les paramètres de facturation ont été enregistrés avec succès.",
+                "webhookoncheckout": "Webhook au checkout",
+                "fields": {
+                    "store_vat_enabled": "Activer la TVA",
+                    "customermustbeconfirmed": "Le client doit être confirmé pour commander",
+                    "toslink": "Lien des conditions générales de vente",
+                    "currency": "Devise",
+                    "invoice_prefix": "Préfixe des factures",
+                    "billing_mode": "Mode de facturation",
+                    "billing_modes": {
+                        "proforma": "Proforma",
+                        "invoice": "Facture"
+                    },
+                    "remove_pending_invoice": "Action sur les factures en attente après (jours)",
+                    "remove_pending_invoice_help": "0 pour désactiver",
+                    "remove_pending_invoice_types": {
+                        "delete": "Supprimer",
+                        "cancel": "Annuler"
+                    },
+                    "mode_tax": {
+                        "title": "Mode de taxe",
+                        "included": "Inclus - Le prix affiché est TTC",
+                        "excluded": "Exclus - Le prix affiché est HT"
+                    }
+                }
+            },
+            "title": "Facturation",
+            "subheading": "Gestion des abonnements et des paiements",
+            "subscriptions": {
+                "create": {
+                    "title": "Créer un abonnement",
+                    "subheading": "Créer un abonnement pour un client"
+                },
+                "title": "Abonnements",
+                "description": "Gestion des abonnements",
+                "last_payment_at": "Dernier paiement",
+                "active_subscription": "Abonnements actifs",
+                "services_empty": "Aucun service trouvé",
+                "earn": {
+                    "service_subscription_help": "Pourcentage de services ayant un abonnement actif",
+                    "monthly": "Abonnements mensuels",
+                    "monthly_earn": "Renouvellement mensuels",
+                    "subscription_and_services": "Abonnements et renouvellement de services",
+                    "monthly_help": "Les abonnements sont comptabilisés dans les renouvellements mensuels"
+                }
+            }
+        }
+    },
     "lang.fr.client": {
         "invoices": {
             "billto": "Facturé à :name",
@@ -1174,7 +1000,6 @@
             "thank": "Merci pour votre paiement",
             "thankmessage": "Si vous avez des questions, n'hésitez pas à nous contacter.",
             "details": "Détails de la facture",
-            "deliver": "Livrer",
             "index": "Mes factures",
             "paymethod": "Moyen de paiement",
             "index_description": "Vous trouverez ci-dessous la liste de vos factures.",
@@ -1186,76 +1011,30 @@
                 "flash": "Veuillez effectuer le paiement sur le compte bancaire indiqué sur la facture. Votre commande sera traitée une fois le paiement reçu."
             }
         },
-        "support": {
-            "index": "Mes tickets",
-            "index_description": "Vous trouverez ci-dessous la liste de vos tickets de support.",
-            "ticket": "Ticket",
-            "subject": "Sujet",
-            "status": "Statut",
-            "priority": "Priorité",
-            "attachments": "Pièces jointes",
-            "attachments_help": "Taille maximale :size Mo. Types de fichiers autorisés : :types",
-            "ticket_reopen_days": "Vous ne pouvez pas rouvrir le ticket. Vous pouvez en ouvrir un nouveau.",
-            "priorities": {
-                "low": "Basse",
-                "medium": "Moyenne",
-                "high": "Haute"
-            },
-            "department": "Département",
-            "ticket_closed": "Le ticket a été fermé",
-            "ticket_reopened": "Le ticket a été rouvert",
-            "ticket_replied": "Votre réponse a été envoyée",
-            "show": {
-                "replybystaff": "Réponse de :app",
-                "messagebystaff": "Message de :app",
-                "replybycustomer1": "Votre réponse",
-                "replybycustomer2": "Réponse du client",
-                "your_demand": "Votre demande",
-                "reply": "Répondre",
-                "replyandclose": "Répondre et fermer",
-                "close": "Fermer",
-                "customer_demand": "Demande du client",
-                "reopen": "Rouvrir",
-                "open_on": "Ouvert le :date",
-                "closed_on": "Fermé le :date",
-                "attachments": "Une ou plusieurs pièces jointes ont été ajoutées à ce ticket",
-                "closed": "Ce ticket est fermé. Vous ne pouvez pas répondre. Si vous avez besoin d'aide, veuillez ouvrir un nouveau ticket ou rouvrir ce ticket.",
-                "replyinticket": "Répondre au ticket",
-                "closed2": "Ce ticket est fermé. Vous ne pouvez pas répondre.",
-                "index_description": "Vous trouverez ci-dessous les détails du ticket de support."
-            },
-            "create": {
-                "index": "Nouveau ticket",
-                "index_description": "Ouvrez un nouveau ticket de support",
-                "relatedto": "Relatif à",
-                "newticket": "Nouveau ticket",
-                "send": "Envoyer",
-                "relatednone": "Aucun",
-                "messagehelp": "Veuillez fournir autant de détails que possible pour nous aider à résoudre votre problème."
-            },
-            "departmentsseeder": {
-                "general": {
-                    "name": "Général",
-                    "description": "Département général"
-                },
-                "billing": {
-                    "name": "Facturation",
-                    "description": "Département de la facturation"
-                },
-                "technical": {
-                    "name": "Technique",
-                    "description": "Département technique"
-                },
-                "sales": {
-                    "name": "Commercial",
-                    "description": "Département commercial"
-                }
-            }
-        },
         "emails": {
             "index": "Mes emails",
             "subject": "Sujet",
             "index_description": "Vous trouverez ci-dessous la liste de vos emails reçus par notre système."
+        },
+        "payment-methods": {
+            "paymentmethod": "Moyen de paiement",
+            "index": "Mes moyens de paiement",
+            "index_description": "Vous trouverez ci-dessous la liste de vos moyens de paiement enregistrés.",
+            "card": "Carte",
+            "expiration": "Expiration",
+            "add": "Ajouter un moyen de paiement",
+            "add_description": "Ajoutez un nouveau moyen de paiement à votre compte.",
+            "success": "Moyen de paiement ajouté avec succès",
+            "default": "Défaut",
+            "defaultsucces": "Moyen de paiement par défaut mis à jour",
+            "set_default": "Définir comme défaut",
+            "manage": "Gérer",
+            "deleted": "Moyen de paiement supprimé",
+            "add_paypal": "Ajouter un compte PayPal",
+            "errors": {
+                "not_supported": "Ce moyen de paiement n'est pas supporté",
+                "not_found": "Ce moyen de paiement n'a pas été trouvé"
+            }
         },
         "services": {
             "index": "Mes services",
@@ -1302,6 +1081,16 @@
                 "saveandrenew": "Enregistrer et renouveler",
                 "date": "Date",
                 "manage": "Vous trouverez ci-dessous la liste des renouvellements de votre service déjà effectués."
+            },
+            "subscription": {
+                "cancelled": "Le renouvellement automatique a été annulé. Votre service expirera le :date.",
+                "index": "Abonnement",
+                "cancel": "Annuler l'abonnement",
+                "failed": "Le renouvellement automatique a échoué le :date (:tries essaie(s)). Veuillez vérifier vos informations de paiement.",
+                "cannot": "Ce service ne peut pas être renouvelé automatiquement",
+                "success": "Le renouvellement automatique a été activé. Le prochain paiement sera effectué le :date.",
+                "add_payments_method": "Vous devez ajouter un moyen de paiement pour activer le renouvellement automatique. Vous pouvez le faire depuis la page <a href=\":url\" class=\"text-primary\">des moyens de paiement<\/a>.",
+                "enabled": "Le renouvellement automatique est activé pour ce service. La facture sera générée automatiquement puis payer le :date."
             }
         },
         "profile": {
@@ -1578,6 +1367,120 @@
         "none": "Aucun",
         "delete": "Supprimer"
     },
+    "lang.fr.helpdesk": {
+        "ticket": "Ticket",
+        "tickets": "Tickets",
+        "subject": "Sujet",
+        "priority": "Priorité",
+        "attachments": "Pièces jointes",
+        "priorities": {
+            "low": "Basse",
+            "medium": "Moyenne",
+            "high": "Haute"
+        },
+        "department": "Département",
+        "support": {
+            "index": "Mes tickets",
+            "index_description": "Vous trouverez ci-dessous la liste de vos tickets de support.",
+            "attachments_help": "Taille maximale :size Mo. Types de fichiers autorisés : :types",
+            "ticket_reopen_days": "Vous ne pouvez pas rouvrir le ticket. Vous pouvez en ouvrir un nouveau.",
+            "ticket_closed": "Le ticket a été fermé",
+            "ticket_reopened": "Le ticket a été rouvert",
+            "ticket_replied": "Votre réponse a été envoyée",
+            "show": {
+                "replybystaff": "Réponse de :app",
+                "messagebystaff": "Message de :app",
+                "replybycustomer1": "Votre réponse",
+                "replybycustomer2": "Réponse du client",
+                "your_demand": "Votre demande",
+                "reply": "Répondre",
+                "replyandclose": "Répondre et fermer",
+                "close": "Fermer",
+                "customer_demand": "Demande du client",
+                "reopen": "Rouvrir",
+                "open_on": "Ouvert le :date",
+                "closed_on": "Fermé le :date",
+                "attachments": "Une ou plusieurs pièces jointes ont été ajoutées à ce ticket",
+                "closed": "Ce ticket est fermé. Vous ne pouvez pas répondre. Si vous avez besoin d'aide, veuillez ouvrir un nouveau ticket ou rouvrir ce ticket.",
+                "replyinticket": "Répondre au ticket",
+                "closed2": "Ce ticket est fermé. Vous ne pouvez pas répondre.",
+                "index_description": "Vous trouverez ci-dessous les détails du ticket de support."
+            },
+            "create": {
+                "index": "Nouveau ticket",
+                "index_description": "Ouvrez un nouveau ticket de support",
+                "relatedto": "Relatif à",
+                "newticket": "Nouveau ticket",
+                "send": "Envoyer",
+                "relatednone": "Aucun",
+                "messagehelp": "Veuillez fournir autant de détails que possible pour nous aider à résoudre votre problème."
+            },
+            "departmentsseeder": {
+                "general": {
+                    "name": "Général",
+                    "description": "Département général"
+                },
+                "billing": {
+                    "name": "Facturation",
+                    "description": "Département de la facturation"
+                },
+                "technical": {
+                    "name": "Technique",
+                    "description": "Département technique"
+                },
+                "sales": {
+                    "name": "Commercial",
+                    "description": "Département commercial"
+                }
+            }
+        },
+        "admin": {
+            "title": "Centre d'aide",
+            "description": "Paramétrez le centre d'aide et gérez les tickets de support",
+            "open_tickets": "Tickets ouverts",
+            "settings": {
+                "title": "Paramètres du centre d'aide",
+                "success": "Les paramètres du centre d'aide ont été enregistrés avec succès.",
+                "description": "Configuration des tickets de support et du centre d'aide",
+                "fields": {
+                    "ticket_auto_close_days": "Fermeture automatique des tickets après inactivité (jours)",
+                    "ticket_auto_close_days_help": "0 pour désactiver",
+                    "allow_attachments": "Autoriser les pièces jointes",
+                    "allow_attachments_help": "Permet aux utilisateurs de joindre des fichiers à leurs tickets",
+                    "attachments_max_size": "Taille maximale des pièces jointes (Mo)",
+                    "attachments_allowed_types": "Types de fichiers autorisés",
+                    "attachments_allowed_types_help": "Séparés par des virgules",
+                    "webhook_url": "URL du webhook",
+                    "reopen_days": "Autorisation de re-ouverture des tickets (jours)",
+                    "reopen_days_help": "0 pour désactiver la réouverture, -1 pour autoriser indéfiniment"
+                }
+            },
+            "tickets": {
+                "pending_title": "Tickets en attente",
+                "last_update": "Dernière mise à jour",
+                "subheading": "Voici la liste de tous les tickets du système",
+                "edit": "Modifier le ticket",
+                "customer_not_found": "Le client n'a pas été trouvé",
+                "create": {
+                    "title": "Créer un ticket",
+                    "subheading": "Créer un nouveau ticket pour un client"
+                }
+            },
+            "departments": {
+                "title": "Départements de support",
+                "description": "Configurez les départements de support pour les tickets",
+                "subheading": "Voici la liste de tous les départements du système",
+                "create": {
+                    "title": "Créer un département",
+                    "subheading": "Créer un nouveau département pour le support"
+                },
+                "show": {
+                    "title": "Fiche département :name",
+                    "subheading": "Voici les informations liées à ce département créé le :date"
+                }
+            }
+        }
+    },
     "lang.fr.http-statuses": {
         "0": "Erreur inconnue",
         "100": "Continuer",
@@ -1739,6 +1642,7 @@
         "manage_extensions": "Gérer les extensions",
         "manage_staff_profile": "Modification du profil staff",
         "manage_database": "Gérer la base de données",
+        "show_payment_methods": "Voir les moyens de paiement",
         "manage_services": "Gérer les services",
         "create_tickets": "Créer des tickets",
         "show_tickets": "Voir les tickets",
@@ -1970,10 +1874,155 @@
             "starting": "Démarrage en cours",
             "stopping": "Arrêt en cours"
         },
-        "subdomains": {
-            "choose_domain": "Choisir un domaine",
-            "use_subdomain": "Choisir un sous-domaine :app_name",
-            "use_owndomain": "Utiliser un domaine existant"
+        "admin": {
+            "title": "Provisionnement",
+            "subheading": "Gérez l'approvisionnement des services pour les clients.",
+            "settings": {
+                "services": {
+                    "title": "Paramètres des services",
+                    "webhookonrenew": "Webhook au renouvellement",
+                    "success": "Les paramètres des services ont été enregistrés avec succès.",
+                    "description": "Paramètres des services",
+                    "subscription": "Abonnement",
+                    "fields": {
+                        "days_before_creation_invoice_renewal": "Jours avant la création de la facture de renouvellement",
+                        "days_before_expiration": "Jours avant l'expiration",
+                        "service_days_before_subscription_renewal": "Jours avant le renouvellement des abonnements",
+                        "max_subscription_tries": "Nombre maximum de tentatives de renouvellement automatique",
+                        "max_subscription_tries_help": "Après ce nombre, l'abonnement sera annulé .0 pour désactiver",
+                        "service_days_before_subscription_renewal_help": "Il définit le nombre de jours avant la date d'expiration pour executer le paiement de la facture. Il doit être inférieur au nombre de jour avant la création de facture de renouvellement.",
+                        "notifications_expiration_days": "Jours de notification avant expiration",
+                        "days_before_expiration_help": "Nombre de jours après la suspension du service avant la suppression du service"
+                    }
+                }
+            },
+            "servers": {
+                "testconnection": {
+                    "title": "Tester la connexion",
+                    "button": "Vérifier",
+                    "data": "Données renvoyées",
+                    "statuscode": "Code de statut"
+                },
+                "title": "Serveurs",
+                "subheading": "Retrouvez la liste de tous les serveurs",
+                "hostname": "Nom d'hôte",
+                "address": "Adresse IP",
+                "port": "Port",
+                "type": "Type de serveur",
+                "show": {
+                    "title": "Fiche serveur :name",
+                    "subheading": "Voici les informations liées à ce serveur créé le :date"
+                },
+                "create": {
+                    "title": "Créer un serveur",
+                    "subheading": "Créer un nouveau serveur pour le relier au système"
+                }
+            },
+            "services": {
+                "no_gateway": "Aucune passerelle de paiement n'est configurée pour ce service",
+                "invoice_not_found": "La facture n'a pas été trouvée",
+                "invalid_status": "Statut invalide",
+                "invalid_customer": "Client invalide",
+                "status_change_failed": "Impossible de changer le statut du service : :error",
+                "title": "Services",
+                "add_days": "Ajouter des jours",
+                "sub_days": "Soustraire des jours",
+                "add_days_question": "Combien de jours voulez-vous ajouter ?",
+                "sub_days_question": "Combien de jours voulez-vous soustraire ?",
+                "invalid_product_type": "Type de service invalide. Vous avez demandé un produit de type :product et sélectionné un type :type. Veuillez choisir un même type.",
+                "expired": "Ce service a expiré ou est terminé.",
+                "delete_failed": "Impossible de supprimer le service sur le serveur : :error",
+                "customer": "Client",
+                "imported": "Service importé avec succès",
+                "create": {
+                    "nothingtoshow": "Aucune configuration de service n'est disponible pour le moment. Vous pouvez créer le service",
+                    "title": "Créer un service",
+                    "subheading": "Créer un nouveau service ou importer un existant",
+                    "btn1": "Suivant",
+                    "btn2": "Importer",
+                    "choose": "Choisissez un serveur déjà existant",
+                    "import": "<u> OU <\/u>&nbsp; Importer un service",
+                    "new": "Créer un nouveau service",
+                    "created": "Le service a été créé avec succès"
+                },
+                "show": {
+                    "customerbtn": "Fiche client",
+                    "type": "Type de service",
+                    "notes": "Notes sur le service",
+                    "title": "Fiche service :name",
+                    "initial_price": "Prix initial",
+                    "max_renewals": "Renouvellements maximum",
+                    "expires_at": "Expiration",
+                    "subheading": "Voici les informations liées au service de :owner créé le :date"
+                },
+                "subheading": "Voici la liste de tous les services du système",
+                "renewals": {
+                    "btn": "Renouvellement",
+                    "title": "Renouvellement du service",
+                    "create": "Émettre une facture de renouvellement",
+                    "btn2": "Émettre la facture",
+                    "remove": "Retirer la facture",
+                    "removed": "La facture a été retirée avec succès",
+                    "fromexistinginvoice": "Ajouter sur une facture existante en attente"
+                },
+                "delivery": {
+                    "btn": "Livrer le service",
+                    "btn2": "Relivrer le service",
+                    "success": "Le service a été livré avec succès",
+                    "reinstall": "Le service va être livré à nouveau",
+                    "not_pending": "Le service n'est pas en attente de livraison"
+                },
+                "suspend": {
+                    "btn": "Suspendre",
+                    "title": "Suspendre le service",
+                    "reason": "Raison de la suspension",
+                    "success": "Le service a été suspendu avec succès",
+                    "notify": "Envoyer un mail de notification",
+                    "suspend_at": "Suspendu le"
+                },
+                "unsuspend": {
+                    "btn": "Réactiver",
+                    "title": "Réactiver le service",
+                    "success": "Le service a été réactivé avec succès"
+                },
+                "terminate": {
+                    "btn": "Terminer",
+                    "title": "Terminer le service",
+                    "success": "Le service a été expiré avec succès"
+                },
+                "data": {
+                    "title": "Données du service",
+                    "btn": "Données",
+                    "orderdata": "Données de la commande"
+                },
+                "cancel": {
+                    "btn": "Annulation",
+                    "message": "Message transmis",
+                    "title": "Annuler le service",
+                    "restore": "Restaurer le service",
+                    "reason": "Raison de l'annulation",
+                    "success": "Le service a été annulé avec succès"
+                },
+                "uncancel": {
+                    "success": "Le service a été restauré avec succès"
+                }
+            },
+            "subdomains_hosts": {
+                "title": "Sous-domaines",
+                "subdomain": "Sous-domaine",
+                "subheading": "Gérez les domaines pouvant être utilisés avec un sous-domaine par les clients.",
+                "create": {
+                    "title": "Créer un sous-domaine",
+                    "subheading": "Créer un nouveau sous-domaine pour les clients."
+                },
+                "show": {
+                    "title": "Fiche sous-domaine :name",
+                    "subheading": "Voici les informations liées à ce sous-domaine créé le :date"
+                },
+                "choose_domain": "Choisir un domaine",
+                "use_subdomain": "Choisir un sous-domaine :app_name",
+                "use_owndomain": "Utiliser un domaine existant"
+            }
         }
     },
     "lang.fr.recurring": {
@@ -1993,6 +2042,7 @@
         "weekly": "Hebdomadaire"
     },
     "lang.fr.store": {
+        "admin": [],
         "basket": {
             "title": "Panier",
             "empty": "Votre panier est vide",
