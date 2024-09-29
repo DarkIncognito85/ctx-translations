@@ -55,7 +55,7 @@
                 "groups": "Groups",
                 "servers": "Servers",
                 "services": "Services",
-                "invoices": "Bills",
+                "invoices": "Factures",
                 "clients": "Customers",
                 "pterodactyl": "Pterodactyl Configuration",
                 "proxmox": "Proxmox Configuration",
@@ -80,7 +80,7 @@
                 "clients": "Customers",
                 "pterodactyl": "Pterodactyl Configuration",
                 "wisp": "Wisp configuration",
-                "invoices": "Bills"
+                "invoices": "Factures"
             },
             "fromwhmcs": "Import from WHMCS",
             "title": "WHMCS",
@@ -431,7 +431,7 @@
                     "new": "{_count} new customers"
                 },
                 "invoices": {
-                    "label": "Bills",
+                    "label": "Factures",
                     "paied": "{_count} Paid Invoices"
                 },
                 "cron": {
@@ -696,7 +696,7 @@
                 "subheading": "Create a new invoice for the system",
                 "btn": "Create"
             },
-            "title": "Bills",
+            "title": "Factures",
             "subheading": "Here is the list of all the invoices in the system"
         },
         "admins": {
@@ -723,7 +723,7 @@
             }
         },
         "settings": {
-            "title": "Parameters",
+            "title": "Settings",
             "core": {
                 "title": "General Settings",
                 "description": "General parameters of CLIENTXCMS (name, address, logo, favicon, mail)",
@@ -1330,7 +1330,7 @@
         "invoice_was_cancelled": "The invoice has just been cancelled",
         "invoice_cancelled": "The invoice was cancelled on {_date}",
         "invoice": "Invoice",
-        "invoices": "Bills",
+        "invoices": "Factures",
         "service": "Service",
         "preview": "Glimpse",
         "services": "Services",
