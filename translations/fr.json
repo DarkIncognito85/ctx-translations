@@ -126,25 +126,25 @@
     },
     "addons.socialauth.lang.fr.messages": {
         "logged_in": "Vous êtes connecté.",
-        "login_with": "Se connecter avec :provider",
-        "register_with": "S'inscrire avec :provider",
+        "login_with": "Se connecter avec {_provider}",
+        "register_with": "S'inscrire avec {_provider}",
         "modulename": "Social Auth+",
         "description": "Social Auth+ est un addon qui permet aux utilisateurs de se connecter à votre site Web via des fournisseurs de services tiers.",
         "client_id": "ID client",
         "client_secret": "Secret client",
         "redirect": "URL de redirection",
-        "redirect_help": "URL de redirection : :url",
+        "redirect_help": "URL de redirection : {_url}",
         "configurate": "Configurer",
         "error": "Une erreur s'est produite. Veuillez réessayer.",
-        "sync_with": "Synchroniser avec :provider",
-        "unlink": "Dissocier de :provider",
+        "sync_with": "Synchroniser avec {_provider}",
+        "unlink": "Dissocier de {_provider}",
         "linked": "Votre compte a été lié avec succès.",
         "already_linked": "Votre compte est déjà lié à ce fournisseur.",
         "unlinked": "Votre compte a été dissocié avec succès.",
         "finish_signup": "Veuillez terminer votre inscription.",
         "finish_title": "Terminer l'inscription",
         "signup_success": "Votre inscription a été effectuée avec succès.",
-        "count_linked": "Il y a :count compte(s) lié(s).",
+        "count_linked": "Il y a {_count} compte(s) lié(s).",
         "finish_subtitle": "Veuillez saisir les informations manquantes pour terminer votre inscription."
     },
     "modules.proxmox.lang.fr.messages": {
@@ -202,7 +202,7 @@
             "title": "Réinstallation",
             "description": "Réinstaller la machine virtuelle.",
             "limited": "Vous avez atteint le nombre maximum de réinstallations.",
-            "limit_text": "Vous avez fait :current sur les :max autorisées.",
+            "limit_text": "Vous avez fait {_current} sur les {_max} autorisées.",
             "submit": "Réinstaller",
             "reinstall_success": "La machine virtuelle a été réinstallée avec succès.",
             "reinstall_error": "Une erreur est survenue lors de la réinstallation de la machine virtuelle.",
@@ -278,7 +278,7 @@
                     "block_help": "Il doit contenir \".XX\" qui sera remplace par l'addresse.",
                     "description": "Importez facilement des ranges d'addresse dans votre IPAM.",
                     "range": "Range",
-                    "success": ":count adresses IP ont été ajoutées avec succès.",
+                    "success": "{_count} adresses IP ont été ajoutées avec succès.",
                     "import": "Importer"
                 }
             },
@@ -383,29 +383,29 @@
             "newvalue": "Nouvelle valeur",
             "show": {
                 "title": "Détails de l'action",
-                "subheading": "Détails de l'action executée le :date"
+                "subheading": "Détails de l'action executée le {_date}"
             }
         },
         "actions": {
             "settings_updated": "Paramètres mis à jour",
-            "new_login": "Nouvelle connexion Adresse IP : :ip",
-            "resource_created": "Ressource :model créée",
-            "resource_updated": "Ressource :model mise à jour",
-            "resource_deleted": "Ressource :model supprimée",
-            "resource_cloned": "Ressource :model clonée",
+            "new_login": "Nouvelle connexion Adresse IP : {_ip}",
+            "resource_created": "Ressource {_model} créée",
+            "resource_updated": "Ressource {_model} mise à jour",
+            "resource_deleted": "Ressource {_model} supprimée",
+            "resource_cloned": "Ressource {_model} clonée",
             "checkout_completed": "Commande complétée",
-            "service_delivered": "Service :id livré",
-            "service_cancelled": "Service :id annulé",
-            "service_uncancelled": "Service :id non annulé",
-            "service_suspended": "Service :id suspendu",
-            "service_unsuspended": "Service :id non suspendu",
-            "invoice_paid": "Facture :id payée",
-            "service_renewed": "Service :id renouvelé",
+            "service_delivered": "Service {_id} livré",
+            "service_cancelled": "Service {_id} annulé",
+            "service_uncancelled": "Service {_id} non annulé",
+            "service_suspended": "Service {_id} suspendu",
+            "service_unsuspended": "Service {_id} non suspendu",
+            "invoice_paid": "Facture {_id} payée",
+            "service_renewed": "Service {_id} renouvelé",
             "other": "Autre",
-            "service_expired": "Service :id expiré",
-            "extension_enabled": "Extension :extension activée",
-            "extension_disabled": "Extension :extension désactivée",
-            "extension_installed": "Extension :extension installée",
+            "service_expired": "Service {_id} expiré",
+            "extension_enabled": "Extension {_extension} activée",
+            "extension_disabled": "Extension {_extension} désactivée",
+            "extension_installed": "Extension {_extension} installée",
             "theme_changed": "Thème changé"
         }
     },
@@ -416,23 +416,23 @@
         },
         "dashboard": {
             "title": "Tableau de bord",
-            "autologin_success": "Vous êtes maintenant connecté en tant que :name",
+            "autologin_success": "Vous êtes maintenant connecté en tant que {_name}",
             "frozen": "Le système est actuellement en mode gelé. Certaines fonctionnalités peuvent être désactivées. Pour sortir du mode gelé, veuillez contacter le support.",
             "in_debug": "Vous êtes actuellement en mode debug. Des informations sensibles peuvent être affichées. Pour des raisons de sécurité, veuillez désactiver le mode debug dans les paramètres généraux.",
             "subheading": "Bienvenue sur le tableau de bord de l'administration",
-            "notification_error": "Une erreur est survenue dans les dernières 24 heures sur l'envoi de mail. Erreur : :message",
+            "notification_error": "Une erreur est survenue dans les dernières 24 heures sur l'envoi de mail. Erreur : {_message}",
             "tooltips": {
                 "users": {
                     "label": "Utilisateurs",
-                    "new": ":count nouveaux utilisateurs"
+                    "new": "{_count} nouveaux utilisateurs"
                 },
                 "customers": {
                     "label": "Clients",
-                    "new": ":count nouveaux clients"
+                    "new": "{_count} nouveaux clients"
                 },
                 "invoices": {
                     "label": "Factures",
-                    "paied": ":count factures payées"
+                    "paied": "{_count} factures payées"
                 },
                 "cron": {
                     "never": "Jamais"
@@ -449,8 +449,8 @@
                 "best_selling": {
                     "title": "Meilleures ventes en termes de quantité",
                     "title2": "Meilleures ventes en termes de revenus",
-                    "last_month": "Mois de :month",
-                    "last_week": "Semaine du :date"
+                    "last_month": "Mois de {_month}",
+                    "last_week": "Semaine du {_date}"
                 }
             },
             "earn": {
@@ -496,16 +496,16 @@
                 "subheading": "Créer un nouveau rôle pour le système"
             },
             "show": {
-                "title": "Fiche rôle :name",
-                "subheading": "Voici les informations liées à ce rôle créé le :date"
+                "title": "Fiche rôle {_name}",
+                "subheading": "Voici les informations liées à ce rôle créé le {_date}"
             }
         },
         "history": {
             "title": "Historique",
             "subheading": "Voici l'historique des messages d'erreur du système",
-            "file": "Fichier  :file",
+            "file": "Fichier  {_file}",
             "description": "Récupérez les messages de logs du système pour le débogage du système.",
-            "bigfile": "Ce fichier est trop volumineux pour être affiché (max :size)"
+            "bigfile": "Ce fichier est trop volumineux pour être affiché (max {_size})"
         },
         "database": {
             "migrateextension": "Choisissez une extension à migrer",
@@ -546,8 +546,8 @@
                 "subheading": "Créer un nouveau produit pour la boutique"
             },
             "show": {
-                "title": "Fiche produit :name",
-                "subheading": "Voici les informations liées à ce produit créé le :date"
+                "title": "Fiche produit {_name}",
+                "subheading": "Voici les informations liées à ce produit créé le {_date}"
             },
             "config": {
                 "btn": "Configurer l'offre",
@@ -569,8 +569,8 @@
             "image": "Image",
             "groupcannotdeleted": "Ce groupe ne peut pas être supprimé car des produits y sont encore liés.",
             "show": {
-                "title": "Fiche groupe :name",
-                "subheading": "Voici les informations liées à ce groupe créé le :date"
+                "title": "Fiche groupe {_name}",
+                "subheading": "Voici les informations liées à ce groupe créé le {_date}"
             },
             "create": {
                 "title": "Créer un groupe",
@@ -595,16 +595,16 @@
                 "btn": "Connexion automatique",
                 "logout": "Se déconnecter du compte client",
                 "logoutsuccess": "Vous avez été déconnecté du compte client",
-                "success": "Vous êtes maintenant connecté en tant que :name"
+                "success": "Vous êtes maintenant connecté en tant que {_name}"
             },
             "show": {
                 "email_sent": "L'email a été envoyé avec succès",
                 "email_confirmed": "Le compte a été confirmé avec succès",
                 "resend": "Renvoyer l'email de confirmation",
                 "confirm": "Confirmer le compte",
-                "title": "Fiche client de :name",
+                "title": "Fiche client de {_name}",
                 "login_ip": "IP de connexion",
-                "subheading": "Voici les informations liées à ce client créé le :date",
+                "subheading": "Voici les informations liées à ce client créé le {_date}",
                 "details": "Détails sur le client",
                 "billing": "Adresse de facturation",
                 "notes": "Notes sur l'utilisateur",
@@ -635,8 +635,8 @@
                 "suspend_services": "Suspendre les services du client",
                 "unsuspend_services": "Réactiver les services du client",
                 "expire_services": "Expire les services du client",
-                "is_banned": "Ce client a été banni le :date par :username pour raison :reason",
-                "is_suspended": "Ce client a été suspendu le :date par :username pour raison :reason"
+                "is_banned": "Ce client a été banni le {_date} par {_username} pour raison {_reason}",
+                "is_suspended": "Ce client a été suspendu le {_date} par {_username} pour raison {_reason}"
             },
             "create": {
                 "title": "Créer un client",
@@ -649,7 +649,7 @@
         },
         "profile": {
             "show": {
-                "title": "Profil de :name",
+                "title": "Profil de {_name}",
                 "subheading": "Voici vos informations & permissions de l'espace administrateur",
                 "details": "Détails du profil",
                 "login": "Dernières connexions"
@@ -683,13 +683,13 @@
                 "validated": "La facture a été validée avec succès",
                 "validatebtn": "Valider la facture",
                 "empty": "Aucun article n'a été ajouté à cette facture",
-                "invoiceserviceinfo": "Une facture déjà existante est disponible pour ce service. En ajoutant ce produit, la facture #:id sera annulée."
+                "invoiceserviceinfo": "Une facture déjà existante est disponible pour ce service. En ajoutant ce produit, la facture #{_id} sera annulée."
             },
             "show": {
                 "notes": "Notes sur la facture",
                 "external_id": "ID externe",
-                "title": "Fiche facture :id",
-                "subheading": "Voici les informations liées à cette facture créée le :date"
+                "title": "Fiche facture {_id}",
+                "subheading": "Voici les informations liées à cette facture créée le {_date}"
             },
             "create": {
                 "title": "Créer une facture",
@@ -705,8 +705,8 @@
             "subheading": "Voici la liste de tout le personnel du système",
             "description": "Gérez les accréditations du personnel pour l'espace d'administration",
             "badge": {
-                "expires_at": "Expire le :date",
-                "expired_at": "Expiré le :date"
+                "expires_at": "Expire le {_date}",
+                "expired_at": "Expiré le {_date}"
             },
             "create": {
                 "title": "Créer un personnel",
@@ -716,10 +716,10 @@
             "signature": "Signature",
             "expiration": "Expiration",
             "show": {
-                "title": "Fiche personnel :name",
+                "title": "Fiche personnel {_name}",
                 "login": "Dernières connexions du personnel",
                 "details": "Détails sur le personnel",
-                "subheading": "Voici les informations liées à ce personnel créé le :date"
+                "subheading": "Voici les informations liées à ce personnel créé le {_date}"
             }
         },
         "settings": {
@@ -781,9 +781,9 @@
                             "driver_help": "Vous devez avoir une clé secrète pour le driver reCaptcha",
                             "site_key": "Clé du site",
                             "secret_key": "Clé secrète",
-                            "driver_recaptcha_help": "Vous pouvez obtenir une clé sur <a href=\"https:\/\/:url\" class=\"text-primary\" target=\"_blank\" rel=\"noopener noreferrer\">:url<\/a>. Vous avez besoin d'utiliser les clés v2 invisibles",
-                            "driver_hcaptcha_help": "Vous pouvez obtenir une clé sur <a href=\"https:\/\/:url\" class=\"text-primary\" target=\"_blank\" rel=\"noopener noreferrer\">:url<\/a>",
-                            "driver_cloudflare_help": "Vous pouvez obtenir une clé sur <a href=\"https:\/\/:url\" class=\"text-primary\" target=\"_blank\" rel=\"noopener noreferrer\">:url<\/a>. Vous devez sélectionner le widget \"managed\""
+                            "driver_recaptcha_help": "Vous pouvez obtenir une clé sur <a href=\"https:\/\/{_url}\" class=\"text-primary\" target=\"_blank\" rel=\"noopener noreferrer\">{_url}<\/a>. Vous avez besoin d'utiliser les clés v2 invisibles",
+                            "driver_hcaptcha_help": "Vous pouvez obtenir une clé sur <a href=\"https:\/\/{_url}\" class=\"text-primary\" target=\"_blank\" rel=\"noopener noreferrer\">{_url}<\/a>",
+                            "driver_cloudflare_help": "Vous pouvez obtenir une clé sur <a href=\"https:\/\/{_url}\" class=\"text-primary\" target=\"_blank\" rel=\"noopener noreferrer\">{_url}<\/a>. Vous devez sélectionner le widget \"managed\""
                         }
                     },
                     "fields": {
@@ -806,7 +806,7 @@
                 "title": "Paramètres de la boutique",
                 "description": "Paramètres de la boutique (PayPal, TVA, etc.)",
                 "gateways": {
-                    "description": "Configuration de la passerelle de paiement :name",
+                    "description": "Configuration de la passerelle de paiement {_name}",
                     "fields": {
                         "name": "Nom de la passerelle",
                         "minimal_amount": "Montant minimal",
@@ -815,7 +815,7 @@
                         "sandbox": "Mode sandbox",
                         "enabled": "Activer la passerelle",
                         "webhook": "Webhook",
-                        "webhookhelp": "URL de notification : :url",
+                        "webhookhelp": "URL de notification : {_url}",
                         "payments_types": "Types de paiement autorisés",
                         "paypal_email": "Adresse e-mail PayPal"
                     },
@@ -828,14 +828,14 @@
             "title": "Licence",
             "subheading": "Veuillez valider votre licence pour activer votre produit",
             "subheading2": "Gérez votre licence et les informations liées ou mettez à jour vos modules disponibles.",
-            "expiration": "Votre licence expire le :date",
+            "expiration": "Votre licence expire le {_date}",
             "onetime": "Licence à vie",
             "modules": "Modules inclus",
-            "extensions": "Extensions disponibles : :extensions",
-            "domain": "Domaine : :domain",
-            "max_customers": "Nombre maximum de clients : :count",
-            "current_customers": "Nombre de clients actuels :  :count",
-            "last_check": "Dernière vérification :date",
+            "extensions": "Extensions disponibles : {_extensions}",
+            "domain": "Domaine : {_domain}",
+            "max_customers": "Nombre maximum de clients : {_count}",
+            "current_customers": "Nombre de clients actuels :  {_count}",
+            "last_check": "Dernière vérification {_date}",
             "client_id": "ID client",
             "description": "Gérez votre licence et les informations liées ou mettez à jour vos modules disponibles.",
             "force": "Forcer la vérification"
@@ -868,7 +868,7 @@
             "created": "Élément créé avec succès.",
             "deleted": "Élément supprimé avec succès.",
             "updated": "Les informations ont été mises à jour avec succès.",
-            "updated_elements": "Les :counts éléments ont été mis à jour avec succès.",
+            "updated_elements": "Les {_counts} éléments ont été mis à jour avec succès.",
             "no_items_selected": "Aucun élément sélectionné"
         },
         "create": "Créer",
@@ -882,7 +882,7 @@
     "lang.fr.auth": {
         "failed": "Ces identifiants ne correspondent pas à nos enregistrements.",
         "password": "Le mot de passe est incorrect",
-        "throttle": "Tentatives de connexion trop nombreuses. Veuillez essayer de nouveau dans :seconds secondes.",
+        "throttle": "Tentatives de connexion trop nombreuses. Veuillez essayer de nouveau dans {_seconds} secondes.",
         "signed_in_as": "Connecté en tant que",
         "login": {
             "btn": "Se connecter",
@@ -988,7 +988,7 @@
     },
     "lang.fr.client": {
         "invoices": {
-            "billto": "Facturé à :name",
+            "billto": "Facturé à {_name}",
             "itemname": "Nom de l'article",
             "qty": "Qté",
             "due_date": "Date d'échéance",
@@ -1050,12 +1050,12 @@
             "changename": "Changer le nom du service",
             "managerenew": "Gérer le cycle du service",
             "manageserviceonadmin": "Gérer le service depuis l'administration",
-            "dayremaining": ":days jour restant",
-            "daysremaining": ":days jours restants",
-            "expirationtooltip": "Le service expirera le :date",
-            "expirationtooltipexpired": "Le service a expiré le :date",
+            "dayremaining": "{_days} jour restant",
+            "daysremaining": "{_days} jours restants",
+            "expirationtooltip": "Le service expirera le {_date}",
+            "expirationtooltipexpired": "Le service a expiré le {_date}",
             "expirationtooltipneverexpire": "Le service n'expire jamais",
-            "expirationtooltipsuspended": "Le service a été suspendu le :date",
+            "expirationtooltipsuspended": "Le service a été suspendu le {_date}",
             "subusers": {
                 "index": "Sous-utilisateurs",
                 "manage": "Gérer les accès"
@@ -1083,14 +1083,14 @@
                 "manage": "Vous trouverez ci-dessous la liste des renouvellements de votre service déjà effectués."
             },
             "subscription": {
-                "cancelled": "Le renouvellement automatique a été annulé. Votre service expirera le :date.",
+                "cancelled": "Le renouvellement automatique a été annulé. Votre service expirera le {_date}.",
                 "index": "Abonnement",
                 "cancel": "Annuler l'abonnement",
-                "failed": "Le renouvellement automatique a échoué le :date (:tries essaie(s)). Veuillez vérifier vos informations de paiement.",
+                "failed": "Le renouvellement automatique a échoué le {_date} ({_tries} essaie(s)). Veuillez vérifier vos informations de paiement.",
                 "cannot": "Ce service ne peut pas être renouvelé automatiquement",
-                "success": "Le renouvellement automatique a été activé. Le prochain paiement sera effectué le :date.",
-                "add_payments_method": "Vous devez ajouter un moyen de paiement pour activer le renouvellement automatique. Vous pouvez le faire depuis la page <a href=\":url\" class=\"text-primary\">des moyens de paiement<\/a>.",
-                "enabled": "Le renouvellement automatique est activé pour ce service. La facture sera générée automatiquement puis payer le :date."
+                "success": "Le renouvellement automatique a été activé. Le prochain paiement sera effectué le {_date}.",
+                "add_payments_method": "Vous devez ajouter un moyen de paiement pour activer le renouvellement automatique. Vous pouvez le faire depuis la page <a href=\"{_url}\" class=\"text-primary\">des moyens de paiement<\/a>.",
+                "enabled": "Le renouvellement automatique est activé pour ce service. La facture sera générée automatiquement puis payer le {_date}."
             }
         },
         "profile": {
@@ -1111,10 +1111,10 @@
                 "heading": "Vériﬁcation à deux facteurs",
                 "subheading": "Veuillez saisir le code d'authentiﬁcation à deux facteurs généré par votre application mobile.",
                 "info": "Scannez le code QR avec votre application d'authentification à deux facteurs.",
-                "download_codes": "Télécharger les codes de récupération <a href=\":url\" class=\"text-primary\">en cliquant ici<\/a>."
+                "download_codes": "Télécharger les codes de récupération <a href=\"{_url}\" class=\"text-primary\">en cliquant ici<\/a>."
             }
         },
-        "pending_invoices": ":count facture(s) en attente de paiement. Veuillez les payer pour éviter une interruption de service.",
+        "pending_invoices": "{_count} facture(s) en attente de paiement. Veuillez les payer pour éviter une interruption de service.",
         "logout": "Déconnexion",
         "alerts": {
             "servernotfound": "Le serveur n'a pas été trouvé",
@@ -1122,8 +1122,8 @@
             "service_suspended": "Le service est suspendu",
             "power_success": "L'action a été effectuée avec succès",
             "power_error": "Une erreur est survenue lors de l'exécution de l'action",
-            "email_not_verified": "Votre adresse email n'est pas vérifiée. &nbsp;<a href=\":url\">Cliquez ici<\/a>&nbsp; pour recevoir un nouveau lien de vérification.",
-            "service_not_paid": "La facture de renouvellement est disponible. &nbsp;<a href=\":url\">Cliquez ici<\/a>&nbsp; pour la payer et éviter une interruption.",
+            "email_not_verified": "Votre adresse email n'est pas vérifiée. &nbsp;<a href=\"{_url}\">Cliquez ici<\/a>&nbsp; pour recevoir un nouveau lien de vérification.",
+            "service_not_paid": "La facture de renouvellement est disponible. &nbsp;<a href=\"{_url}\">Cliquez ici<\/a>&nbsp; pour la payer et éviter une interruption.",
             "email_verification_sent": "Un nouveau lien de vérification a été envoyé à votre adresse email.",
             "internalerror": "Une erreur interne est survenue lors de l'affichage du service",
             "cannot_renew": "Ce service ne peut pas être renouvelé",
@@ -1148,7 +1148,7 @@
         "first_order_only": "Ce coupon est valable uniquement pour la première commande",
         "coupon_max_uses": "Ce coupon a atteint le nombre maximum d'utilisations",
         "coupon_max_uses_per_customer": "Ce coupon a atteint le nombre maximum d'utilisations par client",
-        "minimum_order_amount": "Le montant de la commande doit être supérieur à :amount",
+        "minimum_order_amount": "Le montant de la commande doit être supérieur à {_amount}",
         "coupon_not_valid_product": "Ce coupon n'est pas valable pour les produits de votre panier",
         "coupon": "Coupon",
         "coupons": "Coupons",
@@ -1163,7 +1163,7 @@
         "discount_price": "Réduction appliquée sur le prix",
         "discount_setup": "Réduction appliquée sur les frais d'installation",
         "free_setup": "Frais d'installation offerts",
-        "coupon_label": "Code : :code | :discount",
+        "coupon_label": "Code : {_code} | {_discount}",
         "admin": {
             "description": "Configurez les coupons de réduction de votre boutique.",
             "subheading": "Gestion des coupons",
@@ -1180,7 +1180,7 @@
             "max_uses_per_customer": "Nombre maximum d'utilisations par client",
             "uses_help": "0 pour non limité",
             "required_products": "Produits requis",
-            "all_products_in_group": "Tous les produits du groupe :group",
+            "all_products_in_group": "Tous les produits du groupe {_group}",
             "usages": "Nombre d'utilisations",
             "products_required": "Produits requis",
             "minimum_order_amount": "Montant minimum de la commande",
@@ -1233,12 +1233,12 @@
         "monthly": "Mensuel",
         "flash": {
             "already_enabled": "L'extension est déjà activée.",
-            "extension_not_enabled": "L'extension :extension n'est pas activée et est requis pour cette extension.",
+            "extension_not_enabled": "L'extension {_extension} n'est pas activée et est requis pour cette extension.",
             "cannot_enable": "Impossible d'activer l'extension.",
             "composer_not_found": "Le fichier composer.json n'a pas été trouvé.",
-            "extension_not_loaded": "L'extension :extension est requise pour l'activation de cette extension.",
-            "extension_not_installed": "L'extension :extension n'est pas installée.",
-            "extension_version_not_compatible": "La version de l'extension :extension (:current) n'est pas compatible avec la version requise (:version).",
+            "extension_not_loaded": "L'extension {_extension} est requise pour l'activation de cette extension.",
+            "extension_not_installed": "L'extension {_extension} n'est pas installée.",
+            "extension_version_not_compatible": "La version de l'extension {_extension} ({_current}) n'est pas compatible avec la version requise ({_version}).",
             "cache_cleared": "Le cache a été vidé avec succès."
         }
     },
@@ -1328,7 +1328,7 @@
         },
         "add": "Ajouter",
         "invoice_was_cancelled": "La facture vient d'être annulée",
-        "invoice_cancelled": "La facture a été annulée le :date",
+        "invoice_cancelled": "La facture a été annulée le {_date}",
         "invoice": "Facture",
         "invoices": "Factures",
         "service": "Service",
@@ -1359,7 +1359,7 @@
         "hiddenhelp": "Invisible pour tout le monde",
         "drop-file": {
             "label": "Déposez vos fichiers ici ou cliquez pour les importer",
-            "help": "Seuls les fichiers avec une extension :extensions sont autorisés"
+            "help": "Seuls les fichiers avec une extension {_extensions} sont autorisés"
         },
         "back": "Retour",
         "customer": "Client",
@@ -1382,14 +1382,14 @@
         "support": {
             "index": "Mes tickets",
             "index_description": "Vous trouverez ci-dessous la liste de vos tickets de support.",
-            "attachments_help": "Taille maximale :size Mo. Types de fichiers autorisés : :types",
+            "attachments_help": "Taille maximale {_size} Mo. Types de fichiers autorisés : {_types}",
             "ticket_reopen_days": "Vous ne pouvez pas rouvrir le ticket. Vous pouvez en ouvrir un nouveau.",
             "ticket_closed": "Le ticket a été fermé",
             "ticket_reopened": "Le ticket a été rouvert",
             "ticket_replied": "Votre réponse a été envoyée",
             "show": {
-                "replybystaff": "Réponse de :app",
-                "messagebystaff": "Message de :app",
+                "replybystaff": "Réponse de {_app}",
+                "messagebystaff": "Message de {_app}",
                 "replybycustomer1": "Votre réponse",
                 "replybycustomer2": "Réponse du client",
                 "your_demand": "Votre demande",
@@ -1398,8 +1398,8 @@
                 "close": "Fermer",
                 "customer_demand": "Demande du client",
                 "reopen": "Rouvrir",
-                "open_on": "Ouvert le :date",
-                "closed_on": "Fermé le :date",
+                "open_on": "Ouvert le {_date}",
+                "closed_on": "Fermé le {_date}",
                 "attachments": "Une ou plusieurs pièces jointes ont été ajoutées à ce ticket",
                 "closed": "Ce ticket est fermé. Vous ne pouvez pas répondre. Si vous avez besoin d'aide, veuillez ouvrir un nouveau ticket ou rouvrir ce ticket.",
                 "replyinticket": "Répondre au ticket",
@@ -1475,8 +1475,8 @@
                     "subheading": "Créer un nouveau département pour le support"
                 },
                 "show": {
-                    "title": "Fiche département :name",
-                    "subheading": "Voici les informations liées à ce département créé le :date"
+                    "title": "Fiche département {_name}",
+                    "subheading": "Voici les informations liées à ce département créé le {_date}"
                 }
             }
         }
@@ -1571,7 +1571,7 @@
             "hosting_name": "Nom de la société",
             "connect": "Se connecter",
             "migrationwarning": "Attention : la base de données n'a pas été migrée. Veuillez exécuter \"php artisan migrate --force\" pour migrer la base de données.",
-            "detecteddomain": "Domaine détecté : :domain. Assurez-vous que le domaine correspond exactement à celui de votre licence (y compris le sous-domaine le cas échéant)."
+            "detecteddomain": "Domaine détecté : {_domain}. Assurez-vous que le domaine correspond exactement à celui de votre licence (y compris le sous-domaine le cas échéant)."
         },
         "register": {
             "title": "Inscription",
@@ -1672,8 +1672,8 @@
             "button_text": "Texte du bouton",
             "subject": "Sujet du e-mail",
             "show": {
-                "title": "Fiche modèle d'email :name",
-                "subheading": "Voici les informations liées à ce modèle d'email créé le :date"
+                "title": "Fiche modèle d'email {_name}",
+                "subheading": "Voici les informations liées à ce modèle d'email créé le {_date}"
             },
             "create": {
                 "title": "Créer un modèle d'email",
@@ -1709,8 +1709,8 @@
                 "subheading": "Créer un nouveau réseau social pour l'entreprise"
             },
             "show": {
-                "title": "Fiche réseau social :name",
-                "subheading": "Voici les informations liées à ce réseau social créé le :date"
+                "title": "Fiche réseau social {_name}",
+                "subheading": "Voici les informations liées à ce réseau social créé le {_date}"
             }
         },
         "config": {
@@ -1772,14 +1772,14 @@
             "disable": "Désactiver",
             "enable": "Activer",
             "types": {
-                "subheading": "Voici la liste des sections ajoutables facilement dans la catégorie :name"
+                "subheading": "Voici la liste des sections ajoutables facilement dans la catégorie {_name}"
             },
             "pages": {
                 "page_home": "Page d'accueil",
                 "page_store": "Boutique",
                 "title": "Page",
                 "subheading": "Voici la liste des sections pour cette pages",
-                "page_group": "Page de groupe :name",
+                "page_group": "Page de groupe {_name}",
                 "page_checkout": "Page de paiement",
                 "page_basket": "Page Panier"
             }
@@ -1866,7 +1866,7 @@
         "clients": "Clients",
         "website_info": "Informations sur le site web",
         "product_not_configured": "Le produit n'est pas encore configuré. Veuillez configurer le produit depuis l'interface administrateur.",
-        "planname_help": "Vous pouvez configurer le nom du plan d'hébergement dans le panneau :plateform",
+        "planname_help": "Vous pouvez configurer le nom du plan d'hébergement dans le panneau {_plateform}",
         "server_variables": "%owner_email%, %owner_username%, %owner_firstname%, %owner_lastname%, %product_name%, %service_id%, %service_expiration%",
         "states": {
             "running": "Allumé",
@@ -1910,8 +1910,8 @@
                 "port": "Port",
                 "type": "Type de serveur",
                 "show": {
-                    "title": "Fiche serveur :name",
-                    "subheading": "Voici les informations liées à ce serveur créé le :date"
+                    "title": "Fiche serveur {_name}",
+                    "subheading": "Voici les informations liées à ce serveur créé le {_date}"
                 },
                 "create": {
                     "title": "Créer un serveur",
@@ -1923,15 +1923,15 @@
                 "invoice_not_found": "La facture n'a pas été trouvée",
                 "invalid_status": "Statut invalide",
                 "invalid_customer": "Client invalide",
-                "status_change_failed": "Impossible de changer le statut du service : :error",
+                "status_change_failed": "Impossible de changer le statut du service : {_error}",
                 "title": "Services",
                 "add_days": "Ajouter des jours",
                 "sub_days": "Soustraire des jours",
                 "add_days_question": "Combien de jours voulez-vous ajouter ?",
                 "sub_days_question": "Combien de jours voulez-vous soustraire ?",
-                "invalid_product_type": "Type de service invalide. Vous avez demandé un produit de type :product et sélectionné un type :type. Veuillez choisir un même type.",
+                "invalid_product_type": "Type de service invalide. Vous avez demandé un produit de type {_product} et sélectionné un type {_type}. Veuillez choisir un même type.",
                 "expired": "Ce service a expiré ou est terminé.",
-                "delete_failed": "Impossible de supprimer le service sur le serveur : :error",
+                "delete_failed": "Impossible de supprimer le service sur le serveur : {_error}",
                 "customer": "Client",
                 "imported": "Service importé avec succès",
                 "create": {
@@ -1949,11 +1949,11 @@
                     "customerbtn": "Fiche client",
                     "type": "Type de service",
                     "notes": "Notes sur le service",
-                    "title": "Fiche service :name",
+                    "title": "Fiche service {_name}",
                     "initial_price": "Prix initial",
                     "max_renewals": "Renouvellements maximum",
                     "expires_at": "Expiration",
-                    "subheading": "Voici les informations liées au service de :owner créé le :date"
+                    "subheading": "Voici les informations liées au service de {_owner} créé le {_date}"
                 },
                 "subheading": "Voici la liste de tous les services du système",
                 "renewals": {
@@ -2016,11 +2016,11 @@
                     "subheading": "Créer un nouveau sous-domaine pour les clients."
                 },
                 "show": {
-                    "title": "Fiche sous-domaine :name",
-                    "subheading": "Voici les informations liées à ce sous-domaine créé le :date"
+                    "title": "Fiche sous-domaine {_name}",
+                    "subheading": "Voici les informations liées à ce sous-domaine créé le {_date}"
                 },
                 "choose_domain": "Choisir un domaine",
-                "use_subdomain": "Choisir un sous-domaine :app_name",
+                "use_subdomain": "Choisir un sous-domaine {_app_name}",
                 "use_owndomain": "Utiliser un domaine existant"
             }
         }
@@ -2069,7 +2069,7 @@
             "removed": "Ce produit a été retiré de votre panier",
             "added": "Ce produit a été ajouté à votre panier",
             "quantity_changed": "La quantité a été modifiée",
-            "already_ordered": "Vous avez déjà commandé un service :product"
+            "already_ordered": "Vous avez déjà commandé un service {_product}"
         },
         "checkout": {
             "title": "Commande",
@@ -2077,15 +2077,15 @@
             "invalidproduct": "Votre panier contient des produits invalides. Ces produits ont été retirés de votre panier",
             "choose_payment": "Choisissez votre moyen de paiement",
             "terms": "conditions générales de vente",
-            "minimal_amount": "Le montant minimum pour ce moyen de paiement est de :amount",
+            "minimal_amount": "Le montant minimum pour ce moyen de paiement est de {_amount}",
             "mustbelogged": "Vous devez être connecté pour passer commande",
             "gateway_not_found": "Moyen de paiement non trouvé",
             "email_must_be_verified": "Vous devez confirmer votre compte pour passer commande",
             "wrong_payment": "Quelque chose s'est mal passé avec votre paiement"
         },
         "product": {
-            "setupmessage": "Premier paiement de :first :currency :tax puis :recurring :currency :tax par :unit",
-            "nocharge": "Paiement de :first :currency :tax par :unit",
+            "setupmessage": "Premier paiement de {_first} {_currency} {_tax} puis {_recurring} {_currency} {_tax} par {_unit}",
+            "nocharge": "Paiement de {_first} {_currency} {_tax} par {_unit}",
             "freemessage": "Ce produit est gratuit jusqu'à annulation ou expiration.",
             "outofstock": "En rupture de stock",
             "personalized": "Personnalisé",
@@ -2104,7 +2104,7 @@
         "store": "Boutique",
         "subtotal": "Sous-total",
         "store_subheading": "Découvrez nos offres",
-        "from_price": "À partir de :price :currency",
+        "from_price": "À partir de {_price} {_currency}",
         "taxes": "Taxes",
         "total": "Total",
         "price": "Prix",
@@ -2122,150 +2122,150 @@
         "transaction_fee": "Frais de transaction"
     },
     "lang.fr.validation": {
-        "accepted": "Le champ :attribute doit être accepté.",
-        "accepted_if": "Le champ :attribute doit être accepté lorsque :other a la valeur :value.",
-        "active_url": "Le champ :attribute n'est pas une URL valide.",
-        "after": "Le champ :attribute doit être une date postérieure au :date.",
-        "after_or_equal": "Le champ :attribute doit être une date postérieure ou égale au :date.",
-        "alpha": "Le champ :attribute doit contenir uniquement des lettres.",
-        "alpha_dash": "Le champ :attribute doit contenir uniquement des lettres, des chiffres et des tirets.",
-        "alpha_num": "Le champ :attribute doit contenir uniquement des chiffres et des lettres.",
-        "array": "Le champ :attribute doit être un tableau.",
-        "ascii": "Le champ :attribute ne doit contenir que des caractères alphanumériques et des symboles codés sur un octet.",
-        "before": "Le champ :attribute doit être une date antérieure au :date.",
-        "before_or_equal": "Le champ :attribute doit être une date antérieure ou égale au :date.",
-        "phone": "Le champ :attribute doit être un numéro de téléphone valide.",
+        "accepted": "Le champ {_attribute} doit être accepté.",
+        "accepted_if": "Le champ {_attribute} doit être accepté lorsque {_other} a la valeur {_value}.",
+        "active_url": "Le champ {_attribute} n'est pas une URL valide.",
+        "after": "Le champ {_attribute} doit être une date postérieure au {_date}.",
+        "after_or_equal": "Le champ {_attribute} doit être une date postérieure ou égale au {_date}.",
+        "alpha": "Le champ {_attribute} doit contenir uniquement des lettres.",
+        "alpha_dash": "Le champ {_attribute} doit contenir uniquement des lettres, des chiffres et des tirets.",
+        "alpha_num": "Le champ {_attribute} doit contenir uniquement des chiffres et des lettres.",
+        "array": "Le champ {_attribute} doit être un tableau.",
+        "ascii": "Le champ {_attribute} ne doit contenir que des caractères alphanumériques et des symboles codés sur un octet.",
+        "before": "Le champ {_attribute} doit être une date antérieure au {_date}.",
+        "before_or_equal": "Le champ {_attribute} doit être une date antérieure ou égale au {_date}.",
+        "phone": "Le champ {_attribute} doit être un numéro de téléphone valide.",
         "between": {
-            "array": "Le tableau :attribute doit contenir entre :min et :max éléments.",
-            "file": "La taille du fichier de :attribute doit être comprise entre :min et :max kilo-octets.",
-            "numeric": "La valeur de :attribute doit être comprise entre :min et :max.",
-            "string": "Le texte :attribute doit contenir entre :min et :max caractères."
+            "array": "Le tableau {_attribute} doit contenir entre {_min} et {_max} éléments.",
+            "file": "La taille du fichier de {_attribute} doit être comprise entre {_min} et {_max} kilo-octets.",
+            "numeric": "La valeur de {_attribute} doit être comprise entre {_min} et {_max}.",
+            "string": "Le texte {_attribute} doit contenir entre {_min} et {_max} caractères."
         },
         "2fa_code": "Le code de double authentification est invalide.",
-        "boolean": "Le champ :attribute doit être vrai ou faux.",
-        "can": "Le champ :attribute contient une valeur non autorisée.",
-        "confirmed": "Le champ de confirmation :attribute ne correspond pas.",
+        "boolean": "Le champ {_attribute} doit être vrai ou faux.",
+        "can": "Le champ {_attribute} contient une valeur non autorisée.",
+        "confirmed": "Le champ de confirmation {_attribute} ne correspond pas.",
         "current_password": "Le mot de passe est incorrect.",
-        "date": "Le champ :attribute n'est pas une date valide.",
-        "date_equals": "Le champ :attribute doit être une date égale à :date.",
-        "date_format": "Le champ :attribute ne correspond pas au format :format.",
-        "decimal": "Le champ :attribute doit comporter :decimal décimales.",
-        "declined": "Le champ :attribute doit être décliné.",
-        "declined_if": "Le champ :attribute doit être décliné lorsque :other a la valeur :value.",
-        "different": "Les champs :attribute et :other doivent être différents.",
-        "digits": "Le champ :attribute doit contenir :digits chiffres.",
-        "digits_between": "Le champ :attribute doit contenir entre :min et :max chiffres.",
-        "dimensions": "La taille de l'image :attribute n'est pas conforme.",
-        "distinct": "Le champ :attribute a une valeur en double.",
-        "doesnt_end_with": "Le champ :attribute ne doit pas finir avec une des valeurs suivantes : :values.",
-        "doesnt_start_with": "Le champ :attribute ne doit pas commencer avec une des valeurs suivantes : :values.",
-        "email": "Le champ :attribute doit être une adresse e-mail valide.",
-        "ends_with": "Le champ :attribute doit se terminer par une des valeurs suivantes : :values.",
-        "enum": "Le champ :attribute sélectionné est invalide.",
-        "exists": "Le champ :attribute sélectionné est invalide.",
-        "file": "Le champ :attribute doit être un fichier.",
-        "filled": "Le champ :attribute doit avoir une valeur.",
+        "date": "Le champ {_attribute} n'est pas une date valide.",
+        "date_equals": "Le champ {_attribute} doit être une date égale à {_date}.",
+        "date_format": "Le champ {_attribute} ne correspond pas au format {_format}.",
+        "decimal": "Le champ {_attribute} doit comporter {_decimal} décimales.",
+        "declined": "Le champ {_attribute} doit être décliné.",
+        "declined_if": "Le champ {_attribute} doit être décliné lorsque {_other} a la valeur {_value}.",
+        "different": "Les champs {_attribute} et {_other} doivent être différents.",
+        "digits": "Le champ {_attribute} doit contenir {_digits} chiffres.",
+        "digits_between": "Le champ {_attribute} doit contenir entre {_min} et {_max} chiffres.",
+        "dimensions": "La taille de l'image {_attribute} n'est pas conforme.",
+        "distinct": "Le champ {_attribute} a une valeur en double.",
+        "doesnt_end_with": "Le champ {_attribute} ne doit pas finir avec une des valeurs suivantes : {_values}.",
+        "doesnt_start_with": "Le champ {_attribute} ne doit pas commencer avec une des valeurs suivantes : {_values}.",
+        "email": "Le champ {_attribute} doit être une adresse e-mail valide.",
+        "ends_with": "Le champ {_attribute} doit se terminer par une des valeurs suivantes : {_values}.",
+        "enum": "Le champ {_attribute} sélectionné est invalide.",
+        "exists": "Le champ {_attribute} sélectionné est invalide.",
+        "file": "Le champ {_attribute} doit être un fichier.",
+        "filled": "Le champ {_attribute} doit avoir une valeur.",
         "gt": {
-            "array": "Le tableau :attribute doit contenir plus de :value éléments.",
-            "file": "La taille du fichier de :attribute doit être supérieure à :value kilo-octets.",
-            "numeric": "La valeur de :attribute doit être supérieure à :value.",
-            "string": "Le texte :attribute doit contenir plus de :value caractères."
+            "array": "Le tableau {_attribute} doit contenir plus de {_value} éléments.",
+            "file": "La taille du fichier de {_attribute} doit être supérieure à {_value} kilo-octets.",
+            "numeric": "La valeur de {_attribute} doit être supérieure à {_value}.",
+            "string": "Le texte {_attribute} doit contenir plus de {_value} caractères."
         },
         "gte": {
-            "array": "Le tableau :attribute doit contenir au moins :value éléments.",
-            "file": "La taille du fichier de :attribute doit être supérieure ou égale à :value kilo-octets.",
-            "numeric": "La valeur de :attribute doit être supérieure ou égale à :value.",
-            "string": "Le texte :attribute doit contenir au moins :value caractères."
+            "array": "Le tableau {_attribute} doit contenir au moins {_value} éléments.",
+            "file": "La taille du fichier de {_attribute} doit être supérieure ou égale à {_value} kilo-octets.",
+            "numeric": "La valeur de {_attribute} doit être supérieure ou égale à {_value}.",
+            "string": "Le texte {_attribute} doit contenir au moins {_value} caractères."
         },
-        "image": "Le champ :attribute doit être une image.",
-        "in": "Le champ :attribute est invalide.",
-        "in_array": "Le champ :attribute n'existe pas dans :other.",
-        "integer": "Le champ :attribute doit être un entier.",
-        "ip": "Le champ :attribute doit être une adresse IP valide.",
-        "ipv4": "Le champ :attribute doit être une adresse IPv4 valide.",
-        "ipv6": "Le champ :attribute doit être une adresse IPv6 valide.",
-        "json": "Le champ :attribute doit être un document JSON valide.",
-        "lowercase": "Le champ :attribute doit être en minuscules.",
+        "image": "Le champ {_attribute} doit être une image.",
+        "in": "Le champ {_attribute} est invalide.",
+        "in_array": "Le champ {_attribute} n'existe pas dans {_other}.",
+        "integer": "Le champ {_attribute} doit être un entier.",
+        "ip": "Le champ {_attribute} doit être une adresse IP valide.",
+        "ipv4": "Le champ {_attribute} doit être une adresse IPv4 valide.",
+        "ipv6": "Le champ {_attribute} doit être une adresse IPv6 valide.",
+        "json": "Le champ {_attribute} doit être un document JSON valide.",
+        "lowercase": "Le champ {_attribute} doit être en minuscules.",
         "lt": {
-            "array": "Le tableau :attribute doit contenir moins de :value éléments.",
-            "file": "La taille du fichier de :attribute doit être inférieure à :value kilo-octets.",
-            "numeric": "La valeur de :attribute doit être inférieure à :value.",
-            "string": "Le texte :attribute doit contenir moins de :value caractères."
+            "array": "Le tableau {_attribute} doit contenir moins de {_value} éléments.",
+            "file": "La taille du fichier de {_attribute} doit être inférieure à {_value} kilo-octets.",
+            "numeric": "La valeur de {_attribute} doit être inférieure à {_value}.",
+            "string": "Le texte {_attribute} doit contenir moins de {_value} caractères."
         },
         "lte": {
-            "array": "Le tableau :attribute doit contenir au plus :value éléments.",
-            "file": "La taille du fichier de :attribute doit être inférieure ou égale à :value kilo-octets.",
-            "numeric": "La valeur de :attribute doit être inférieure ou égale à :value.",
-            "string": "Le texte :attribute doit contenir au plus :value caractères."
+            "array": "Le tableau {_attribute} doit contenir au plus {_value} éléments.",
+            "file": "La taille du fichier de {_attribute} doit être inférieure ou égale à {_value} kilo-octets.",
+            "numeric": "La valeur de {_attribute} doit être inférieure ou égale à {_value}.",
+            "string": "Le texte {_attribute} doit contenir au plus {_value} caractères."
         },
-        "mac_address": "Le champ :attribute doit être une adresse MAC valide.",
+        "mac_address": "Le champ {_attribute} doit être une adresse MAC valide.",
         "max": {
-            "array": "Le tableau :attribute ne peut pas contenir plus que :max éléments.",
-            "file": "La taille du fichier de :attribute ne peut pas dépasser :max kilo-octets.",
-            "numeric": "La valeur de :attribute ne peut pas être supérieure à :max.",
-            "string": "Le texte de :attribute ne peut pas contenir plus de :max caractères."
+            "array": "Le tableau {_attribute} ne peut pas contenir plus que {_max} éléments.",
+            "file": "La taille du fichier de {_attribute} ne peut pas dépasser {_max} kilo-octets.",
+            "numeric": "La valeur de {_attribute} ne peut pas être supérieure à {_max}.",
+            "string": "Le texte de {_attribute} ne peut pas contenir plus de {_max} caractères."
         },
-        "max_digits": "Le champ :attribute ne doit pas avoir plus de :max chiffres.",
-        "mimes": "Le champ :attribute doit être un fichier de type : :values.",
-        "mimetypes": "Le champ :attribute doit être un fichier de type : :values.",
+        "max_digits": "Le champ {_attribute} ne doit pas avoir plus de {_max} chiffres.",
+        "mimes": "Le champ {_attribute} doit être un fichier de type : {_values}.",
+        "mimetypes": "Le champ {_attribute} doit être un fichier de type : {_values}.",
         "min": {
-            "array": "Le tableau :attribute doit contenir au moins :min éléments.",
-            "file": "La taille du fichier de :attribute doit être supérieure ou égale à :min kilo-octets.",
-            "numeric": "La valeur de :attribute doit être supérieure ou égale à :min.",
-            "string": "Le texte de :attribute doit contenir au moins :min caractères."
+            "array": "Le tableau {_attribute} doit contenir au moins {_min} éléments.",
+            "file": "La taille du fichier de {_attribute} doit être supérieure ou égale à {_min} kilo-octets.",
+            "numeric": "La valeur de {_attribute} doit être supérieure ou égale à {_min}.",
+            "string": "Le texte de {_attribute} doit contenir au moins {_min} caractères."
         },
-        "min_digits": "Le champ :attribute doit avoir au moins :min chiffres.",
-        "missing": "Le champ :attribute doit être manquant.",
-        "missing_if": "Le champ :attribute doit être manquant quand :other a la valeur :value.",
-        "missing_unless": "Le champ :attribute doit être manquant sauf si :other a la valeur :value.",
-        "missing_with": "Le champ :attribute doit être manquant quand :values est présent.",
-        "missing_with_all": "Le champ :attribute doit être manquant quand :values sont présents.",
-        "multiple_of": "La valeur de :attribute doit être un multiple de :value.",
-        "not_in": "Le champ :attribute sélectionné n'est pas valide.",
-        "not_regex": "Le format du champ :attribute n'est pas valide.",
-        "numeric": "Le champ :attribute doit contenir un nombre.",
+        "min_digits": "Le champ {_attribute} doit avoir au moins {_min} chiffres.",
+        "missing": "Le champ {_attribute} doit être manquant.",
+        "missing_if": "Le champ {_attribute} doit être manquant quand {_other} a la valeur {_value}.",
+        "missing_unless": "Le champ {_attribute} doit être manquant sauf si {_other} a la valeur {_value}.",
+        "missing_with": "Le champ {_attribute} doit être manquant quand {_values} est présent.",
+        "missing_with_all": "Le champ {_attribute} doit être manquant quand {_values} sont présents.",
+        "multiple_of": "La valeur de {_attribute} doit être un multiple de {_value}.",
+        "not_in": "Le champ {_attribute} sélectionné n'est pas valide.",
+        "not_regex": "Le format du champ {_attribute} n'est pas valide.",
+        "numeric": "Le champ {_attribute} doit contenir un nombre.",
         "password": {
-            "letters": "Le champ :attribute doit contenir au moins une lettre.",
-            "mixed": "Le champ :attribute doit contenir au moins une majuscule et une minuscule.",
-            "numbers": "Le champ :attribute doit contenir au moins un chiffre.",
-            "symbols": "Le champ :attribute doit contenir au moins un symbole.",
-            "uncompromised": "La valeur du champ :attribute est apparue dans une fuite de données. Veuillez choisir une valeur différente."
+            "letters": "Le champ {_attribute} doit contenir au moins une lettre.",
+            "mixed": "Le champ {_attribute} doit contenir au moins une majuscule et une minuscule.",
+            "numbers": "Le champ {_attribute} doit contenir au moins un chiffre.",
+            "symbols": "Le champ {_attribute} doit contenir au moins un symbole.",
+            "uncompromised": "La valeur du champ {_attribute} est apparue dans une fuite de données. Veuillez choisir une valeur différente."
         },
-        "present": "Le champ :attribute doit être présent.",
-        "present_if": "Le champ :attribute doit être présent lorsque :other est :value.",
-        "present_unless": "Le champ :attribute doit être présent sauf si :other vaut :value.",
-        "present_with": "Le champ :attribute doit être présent lorsque :values est présent.",
-        "present_with_all": "Le champ :attribute doit être présent lorsque :values sont présents.",
-        "prohibited": "Le champ :attribute est interdit.",
-        "prohibited_if": "Le champ :attribute est interdit quand :other a la valeur :value.",
-        "prohibited_unless": "Le champ :attribute est interdit à moins que :other est l'une des valeurs :values.",
-        "prohibits": "Le champ :attribute interdit :other d'être présent.",
-        "regex": "Le format du champ :attribute est invalide.",
-        "required": "Le champ :attribute est obligatoire.",
-        "required_array_keys": "Le champ :attribute doit contenir des entrées pour : :values.",
-        "required_if": "Le champ :attribute est obligatoire quand la valeur de :other est :value.",
-        "required_if_accepted": "Le champ :attribute est obligatoire quand le champ :other a été accepté.",
-        "required_unless": "Le champ :attribute est obligatoire sauf si :other est :values.",
-        "required_with": "Le champ :attribute est obligatoire quand :values est présent.",
-        "required_with_all": "Le champ :attribute est obligatoire quand :values sont présents.",
-        "required_without": "Le champ :attribute est obligatoire quand :values n'est pas présent.",
-        "required_without_all": "Le champ :attribute est requis quand aucun de :values n'est présent.",
-        "same": "Les champs :attribute et :other doivent être identiques.",
+        "present": "Le champ {_attribute} doit être présent.",
+        "present_if": "Le champ {_attribute} doit être présent lorsque {_other} est {_value}.",
+        "present_unless": "Le champ {_attribute} doit être présent sauf si {_other} vaut {_value}.",
+        "present_with": "Le champ {_attribute} doit être présent lorsque {_values} est présent.",
+        "present_with_all": "Le champ {_attribute} doit être présent lorsque {_values} sont présents.",
+        "prohibited": "Le champ {_attribute} est interdit.",
+        "prohibited_if": "Le champ {_attribute} est interdit quand {_other} a la valeur {_value}.",
+        "prohibited_unless": "Le champ {_attribute} est interdit à moins que {_other} est l'une des valeurs {_values}.",
+        "prohibits": "Le champ {_attribute} interdit {_other} d'être présent.",
+        "regex": "Le format du champ {_attribute} est invalide.",
+        "required": "Le champ {_attribute} est obligatoire.",
+        "required_array_keys": "Le champ {_attribute} doit contenir des entrées pour : {_values}.",
+        "required_if": "Le champ {_attribute} est obligatoire quand la valeur de {_other} est {_value}.",
+        "required_if_accepted": "Le champ {_attribute} est obligatoire quand le champ {_other} a été accepté.",
+        "required_unless": "Le champ {_attribute} est obligatoire sauf si {_other} est {_values}.",
+        "required_with": "Le champ {_attribute} est obligatoire quand {_values} est présent.",
+        "required_with_all": "Le champ {_attribute} est obligatoire quand {_values} sont présents.",
+        "required_without": "Le champ {_attribute} est obligatoire quand {_values} n'est pas présent.",
+        "required_without_all": "Le champ {_attribute} est requis quand aucun de {_values} n'est présent.",
+        "same": "Les champs {_attribute} et {_other} doivent être identiques.",
         "size": {
-            "array": "Le tableau :attribute doit contenir :size éléments.",
-            "file": "La taille du fichier de :attribute doit être de :size kilo-octets.",
-            "numeric": "La valeur de :attribute doit être :size.",
-            "string": "Le texte de :attribute doit contenir :size caractères."
+            "array": "Le tableau {_attribute} doit contenir {_size} éléments.",
+            "file": "La taille du fichier de {_attribute} doit être de {_size} kilo-octets.",
+            "numeric": "La valeur de {_attribute} doit être {_size}.",
+            "string": "Le texte de {_attribute} doit contenir {_size} caractères."
         },
-        "starts_with": "Le champ :attribute doit commencer avec une des valeurs suivantes : :values.",
-        "string": "Le champ :attribute doit être une chaîne de caractères.",
-        "timezone": "Le champ :attribute doit être un fuseau horaire valide.",
-        "ulid": "Le champ :attribute doit être un ULID valide.",
-        "unique": "La valeur du champ :attribute est déjà utilisée.",
-        "uploaded": "Le fichier du champ :attribute n'a pu être téléversé.",
-        "uppercase": "Le champ :attribute doit être en majuscules.",
-        "url": "Le format de l'URL de :attribute n'est pas valide.",
-        "uuid": "Le champ :attribute doit être un UUID valide.",
+        "starts_with": "Le champ {_attribute} doit commencer avec une des valeurs suivantes : {_values}.",
+        "string": "Le champ {_attribute} doit être une chaîne de caractères.",
+        "timezone": "Le champ {_attribute} doit être un fuseau horaire valide.",
+        "ulid": "Le champ {_attribute} doit être un ULID valide.",
+        "unique": "La valeur du champ {_attribute} est déjà utilisée.",
+        "uploaded": "Le fichier du champ {_attribute} n'a pu être téléversé.",
+        "uppercase": "Le champ {_attribute} doit être en majuscules.",
+        "url": "Le format de l'URL de {_attribute} n'est pas valide.",
+        "uuid": "Le champ {_attribute} doit être un UUID valide.",
         "attributes": {
             "address": "adresse",
             "age": "âge",
@@ -2342,7 +2342,7 @@
     },
     "lang.fr.webhook": {
         "url": "URL du webhook",
-        "variables": "Variables disponibles : :variables",
+        "variables": "Variables disponibles : {_variables}",
         "checkout": {
             "title": "Nouvelle commande",
             "description": "Une nouvelle commande a été passée"
