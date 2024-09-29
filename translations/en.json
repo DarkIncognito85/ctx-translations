@@ -191,11 +191,11 @@
             "disk": "Disk",
             "network": "Network",
             "timeframes": {
-                "hour": "Breaking News",
+                "hour": "Last hour",
                 "day": "Last day",
                 "week": "Last week",
                 "month": "Last month",
-                "year": "Final Year"
+                "year": "Last year"
             }
         },
         "reinstallation": {
