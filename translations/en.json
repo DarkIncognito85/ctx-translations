@@ -24,7 +24,7 @@
             "step4text": "Make sure the bot has the necessary permissions to add the role. (The bot must be above the role to be added)."
         },
         "detectedcustomers": "Customers detected",
-        "discordid": "ID Discord",
+        "discordid": "Discord ID",
         "cardinfo": "Join our Discord server to find our community, get help and additional information like our latest promotions.",
         "installation": "Installing the Community Discord Bot",
         "joinserver": "Join the server",
@@ -51,20 +51,20 @@
         },
         "v1": {
             "importables": {
-                "products": "Produce",
+                "products": "Product",
                 "groups": "Groups",
                 "servers": "Servers",
                 "services": "Services",
-                "invoices": "Factures",
+                "invoices": "Invoices",
                 "clients": "Customers",
                 "pterodactyl": "Pterodactyl Configuration",
                 "proxmox": "Proxmox Configuration",
                 "oses": "Proxmox Operating Systems",
                 "templates": "Templates Proxmox",
                 "plesk": "Configuration Plesk",
-                "socialauth": "Social linkAuth",
+                "socialauth": "SocialAuth Link",
                 "support": "Tickets & Support Departments",
-                "wisp": "Configuration Wisp",
+                "wisp": "Wisp Configuration",
                 "proxmox_ipam": "Configuration IPAM Proxmox"
             },
             "fromv1": "Importing from the old version of ClientXCMS",
@@ -73,7 +73,7 @@
         },
         "whmcs": {
             "importables": {
-                "products": "Produce",
+                "products": "Product",
                 "groups": "Groups",
                 "servers": "Servers",
                 "services": "Services",
@@ -534,7 +534,7 @@
                 "subheading": "Give the discount you want to apply on the different rates"
             },
             "showmorepricing": "Set up more rates",
-            "title": "Produce",
+            "title": "Product",
             "description": "Set up products, manage inventory, or set up offers for your store.",
             "subheading": "Here is the list of all the products in the system",
             "stock": "Stock available",
@@ -1282,7 +1282,7 @@
         "closemodal": "Close",
         "year": "year",
         "product": "Product",
-        "products": "Produce",
+        "products": "Product",
         "description": "Description",
         "slug": "Slug",
         "darkmode": "Dark Mode",
