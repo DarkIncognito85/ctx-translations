@@ -944,7 +944,7 @@
                     "store_vat_enabled": "Activate VAT",
                     "customermustbeconfirmed": "Customer must be confirmed to order",
                     "toslink": "Link to the general terms and conditions of sale",
-                    "currency": "Motto",
+                    "currency": "Currency",
                     "invoice_prefix": "Invoice prefix",
                     "billing_mode": "Billing method",
                     "billing_modes": {
@@ -995,7 +995,7 @@
             "invoice_date": "Invoice date",
             "print": "Print",
             "download": "Download",
-            "pay": "Pay the bill",
+            "pay": "Pay the invoice",
             "invoice_not_payable": "This invoice cannot be paid",
             "thank": "Thank you for your payment",
             "thankmessage": "If you have any questions, please do not hesitate to contact us.",
