@@ -431,7 +431,7 @@
                     "new": "{_count} new customers"
                 },
                 "invoices": {
-                    "label": "Factures",
+                    "label": "Invoices",
                     "paied": "{_count} Paid Invoices"
                 },
                 "cron": {
@@ -534,7 +534,7 @@
                 "subheading": "Give the discount you want to apply on the different rates"
             },
             "showmorepricing": "Set up more rates",
-            "title": "Product",
+            "title": "Products",
             "description": "Set up products, manage inventory, or set up offers for your store.",
             "subheading": "Here is the list of all the products in the system",
             "stock": "Stock available",
@@ -659,7 +659,7 @@
             "title": "Users"
         },
         "invoices": {
-            "currency": "Motto",
+            "currency": "Currency",
             "mass": {
                 "complete": "Mark as Paid",
                 "refund": "Mark as refunded",
@@ -681,14 +681,14 @@
                 "itemadded": "The article has been added successfully",
                 "edit": "Edit article",
                 "validated": "The invoice has been successfully validated",
-                "validatebtn": "Post the invoice",
+                "validatebtn": "Validate the invoice",
                 "empty": "No items have been added to this invoice",
                 "invoiceserviceinfo": "An existing invoice is available for this service. By adding this product, the invoice #{_id} will be cancelled."
             },
             "show": {
                 "notes": "Notes on the invoice",
                 "external_id": "External ID",
-                "title": "Invoice card {_id}",
+                "title": "Invoice sheet {_id}",
                 "subheading": "Here is the information related to this invoice created on {_date}"
             },
             "create": {
@@ -696,11 +696,11 @@
                 "subheading": "Create a new invoice for the system",
                 "btn": "Create"
             },
-            "title": "Factures",
+            "title": "Invoices",
             "subheading": "Here is the list of all the invoices in the system"
         },
         "admins": {
-            "title": "Personal",
+            "title": "Staffs",
             "expires_at": "Expiration",
             "subheading": "Here is the list of all the personnel in the system",
             "description": "Manage staff credentials for the admin area",
@@ -847,7 +847,7 @@
             "subheading": "Metadata Management",
             "add": "Add metadata",
             "editwarning": "Be careful, modifying or deleting metadata can have consequences on the system. Please be sure of what you are doing.",
-            "updated": "The metadata has been updated successfully."
+            "updated": "Metadatas was successfully updated."
         },
         "schedules": {
             "title": "Scheduled tasks",
@@ -891,7 +891,7 @@
             "subheading": "Enter your login details to access your personal space.",
             "remember": "Remember Me",
             "forgot": "Forgot your password?",
-            "login": "Log",
+            "login": "Log in",
             "no_account": "Don't have an account?"
         },
         "confirm": {
@@ -901,7 +901,7 @@
             "subheading": "For security reasons, please confirm your password to continue."
         },
         "register": {
-            "btn": "To register",
+            "btn": "Register",
             "title": "Registration",
             "heading": "Create an account",
             "subheading": "Welcome to your customer area.",
@@ -1025,7 +1025,7 @@
             "add": "Add a payment method",
             "add_description": "Add a new payment method to your account.",
             "success": "Payment method successfully added",
-            "default": "Defect",
+            "default": "Default",
             "defaultsucces": "Updated default payment method",
             "set_default": "Set as default",
             "manage": "Manage",
@@ -1061,17 +1061,17 @@
                 "manage": "Manage access"
             },
             "cancel": {
-                "index": "Cancel Service",
+                "index": "Cancel the service",
                 "subtitle": "Do you really want to leave us?",
                 "index_description": "Please select a reason to cancel your service.",
                 "back": "Continue to use the service",
-                "message": "Message to Us",
+                "message": "Message to send to us",
                 "reason": "Reason",
-                "submit": "Cancel Service",
+                "submit": "Cancel the service",
                 "uncancel": "Undo Cancellation",
                 "success": "The service was successfully cancelled",
                 "expiration": "Service Expiration",
-                "expiration_now": "Right now",
+                "expiration_now": "Now",
                 "expiration_end": "At the end of the period"
             },
             "renewals": {
@@ -1132,7 +1132,7 @@
             "service_cancelled_and_not_expired": "The service has been cancelled but has not yet expired. It will be active until the expiration date.",
             "cannot_cancel": "This service cannot be cancelled",
             "service_uncancelled": "The service has been reactivated",
-            "vpsnotfound": "VPS Was Not Found",
+            "vpsnotfound": "VPS was not found",
             "spam": "Spam detected",
             "account_blocked": "Your account has been blocked",
             "account_suspended": "Your account has been suspended",
@@ -1225,7 +1225,7 @@
             "disable": "Deactivate",
             "enabled": "Activated",
             "disabled": "Disabled",
-            "activable": "Activated",
+            "activable": "Activable",
             "notactivable": "Not activatable",
             "buy": "Buy"
         },
@@ -1243,15 +1243,15 @@
         }
     },
     "lang.fr.global": {
-        "firstname": "Forename",
-        "lastname": "Name",
+        "firstname": "First name",
+        "lastname": "Last name",
         "email": "Email",
         "password": "Password",
-        "locale": "Tongue",
+        "locale": "Language",
         "username": "Username",
         "password_confirmation": "Password confirmation",
         "address": "Address",
-        "currency": "Motto",
+        "currency": "Currency",
         "title": "Title",
         "content": "Content",
         "address2": "Additional address",
