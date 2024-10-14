@@ -37,6 +37,60 @@
         "found": "Compte synchronisé détecté : voulez vous afficher les données dans ce ticket ?",
         "infosync": "Ces données ce base sur les comptes ayant synchronisé leur compte Discord avec leur compte client via le module SocialAuth+."
     },
+    "addons.fund.lang.fr.messages": {
+        "transfer_title": "Transférer des fonds",
+        "credit_title": "Créditer des fonds",
+        "invoice": {
+            "add_credit": "Ajout de {_amount} crédits"
+        },
+        "recipient": "Destinataire",
+        "transfer": {
+            "not_enough_funds": "Vous n'avez pas assez de fonds pour effectuer ce transfert",
+            "max_amount": "Le montant maximum de transfert est de {_amount}",
+            "min_amount": "Le montant minimum de transfert est de {_amount}",
+            "min_invoice": "Vous devez ajouter au moins {_amount} à votre compte pour effectuer un transfert",
+            "title": "Transférer des fonds",
+            "description": "Transférer des fonds entre deux comptes",
+            "recipient": "E-mail du compte destinataire",
+            "btn": "Transférer",
+            "cancel": "Le transfert a été annulé",
+            "success": "Transfert effectué avec succès. Vous pouvez annuler ce transfert dans les {_minutes} minutes."
+        },
+        "card": {
+            "title": "Créditer mon compte",
+            "description": "Créditer votre compte pour effectuer des achats sur notre plateforme",
+            "amount": "Montant à créditer",
+            "gateway": "Moyen de paiement",
+            "currentbalance": "Solde actuel",
+            "error": "Impossible de créditer votre compte. Aucun moyen de paiement n'est disponible. Veuillez contacter le support."
+        },
+        "transfer_table": {
+            "title": "Historique des transferts"
+        },
+        "admin": {
+            "transfers": {
+                "title": "Transferts de fonds",
+                "transferred_at": "Transférer à",
+                "subtitle": "Retrouvez ici la liste des transferts de fonds effectués"
+            },
+            "settings": {
+                "title": "Paramètres Fonds",
+                "subtitle": "Gestion des paramètres de l'extension Fonds",
+                "success": "Paramètres enregistrés avec succès",
+                "fields": {
+                    "max_amount": "Montant maximum",
+                    "min_amount": "Montant minimum",
+                    "for_add_credit": "Pour l'ajout de crédit",
+                    "for_transfer": "Pour les transferts entre comptes",
+                    "minutes_delay": "Délai de transfers (en minutes)",
+                    "minutes_delay_description": "Délai de transfert entre les comptes",
+                    "min_invoice": "Dépôt minimum pour pouvoir effectuer un transfert",
+                    "min_invoice_description": "Montant ajouté au compte pour pouvoir effectuer un transfert. 0 pour désactiver",
+                    "authorize_between_accounts": "Autoriser les transferts entre les comptes"
+                }
+            }
+        }
+    },
     "addons.import.lang.fr.import": {
         "title": "Importation",
         "description": "Importez une base de données avec l'ancienne version déjà existante ou depuis d'autre fournisseur dans NextGen",
@@ -406,13 +460,28 @@
             "extension_enabled": "Extension {_extension} activée",
             "extension_disabled": "Extension {_extension} désactivée",
             "extension_installed": "Extension {_extension} installée",
-            "theme_changed": "Thème changé"
+            "theme_changed": "Thème changé",
+            "balance_changed": "Solde du client modifié de {_old} à {_new}"
         }
     },
     "lang.fr.admin": {
         "security": {
             "title": "Sécurité",
             "description": "Paramètres de sécurité de l'espace client"
+        },
+        "locales": {
+            "translations_saved": "Les traductions ont été enregistrées avec succès.",
+            "subheading": "Traduction",
+            "title": "Langues",
+            "is_downloaded": "Téléchargée",
+            "is_default": "Par défaut",
+            "download": "Télécharger",
+            "update": "Mettre à jour",
+            "changedefaulthelp": "Vous pouvez changer la langue par défaut dans les paramètres globaux.",
+            "is_enabled": "Activée",
+            "disabled": "Désactivée",
+            "download_success": "Les fichiers de traduction ont été téléchargés avec succès.",
+            "description": "Retrouvez la liste des langues disponibles pour l'espace client. Activez ou désactivez les langues selon vos besoins."
         },
         "dashboard": {
             "title": "Tableau de bord",
@@ -563,10 +632,13 @@
             "subheading": "Voici la liste de tous les groupes du système",
             "description": "Configurez les groupes et les sous-groupes de produits pour votre boutique.",
             "parent_id": "Groupe parent",
+            "order_products": "Vous pouvez réorganiser les produits en les glissant-déposant puis en sauvegardant",
             "clonewithproducts": "Cloner avec les produits",
             "clonewithoutproducts": "Cloner sans les produits",
             "doubleclone": "Le groupe ne peut pas être cloné car il a déjà été cloné",
             "image": "Image",
+            "use_image_as_background": "Utiliser l'image comme arrière-plan",
+            "see_group": "Voir le groupe",
             "groupcannotdeleted": "Ce groupe ne peut pas être supprimé car des produits y sont encore liés.",
             "show": {
                 "title": "Fiche groupe {_name}",
@@ -598,10 +670,6 @@
                 "success": "Vous êtes maintenant connecté en tant que {_name}"
             },
             "show": {
-                "email_sent": "L'email a été envoyé avec succès",
-                "email_confirmed": "Le compte a été confirmé avec succès",
-                "resend": "Renvoyer l'email de confirmation",
-                "confirm": "Confirmer le compte",
                 "title": "Fiche client de {_name}",
                 "login_ip": "IP de connexion",
                 "subheading": "Voici les informations liées à ce client créé le {_date}",
@@ -668,6 +736,7 @@
             },
             "customproduct": "Produit personnalisé",
             "invoice_number": "Numéro de facture",
+            "deliveredsuccess": "Le produit a été livré avec succès",
             "draft": {
                 "add": "Ajouter un article",
                 "unitprice": "Prix unitaire",
@@ -824,7 +893,7 @@
             }
         },
         "license": {
-            "click_to_activate": "Cliquez ici pour activer votre licence",
+            "click_to_activate": "Cliquez ici pour activer ou réactiver votre licence",
             "title": "Licence",
             "subheading": "Veuillez valider votre licence pour activer votre produit",
             "subheading2": "Gérez votre licence et les informations liées ou mettez à jour vos modules disponibles.",
@@ -900,6 +969,25 @@
             "heading": "Confirmer le mot de passe",
             "subheading": "Pour des raisons de sécurité, veuillez confirmer votre mot de passe pour continuer."
         },
+        "confirm_register": {
+            "heading": "Vérification de l'adresse e-mail",
+            "subheading": "Nous avons envoyé un email de vérification à {_email} avec un lien pour activer votre compte.",
+            "help": {
+                "not_received": "Si vous n'avez pas reçu l'email",
+                "check_spam": "vérifiez votre dossier de spam",
+                "valid_email": "assurez-vous que l'adresse email est valide",
+                "firewall": "vérifiez que votre pare-feu n'a pas bloqué l'email",
+                "request_another": "Recevoir un autre email"
+            }
+        },
+        "verified": {
+            "heading": "Adresse email vérifiée",
+            "subheading": "Votre adresse email a bien été vérifiée.",
+            "continue": "Continuer sur l'espace client",
+            "continue_order": "Continuer sur la page de paiement",
+            "allowed": "Vous pouvez maintenant accéder à toutes les fonctionnalités de votre compte.",
+            "support": "Si vous avez des questions, n'hésitez pas à contacter le support."
+        },
         "register": {
             "btn": "S'inscrire",
             "title": "Inscription",
@@ -935,6 +1023,7 @@
     },
     "lang.fr.billing": {
         "admin": {
+            "global_balance": "Solde global",
             "settings": {
                 "title": "Facturation",
                 "description": "Paramètres de facturation de la boutique. Activer la TVA, définir la devise, ou autre.",
@@ -992,6 +1081,7 @@
             "itemname": "Nom de l'article",
             "qty": "Qté",
             "due_date": "Date d'échéance",
+            "paid_date": "Date de paiement",
             "invoice_date": "Date de facturation",
             "print": "Imprimer",
             "download": "Télécharger",
@@ -1000,6 +1090,7 @@
             "thank": "Merci pour votre paiement",
             "thankmessage": "Si vous avez des questions, n'hésitez pas à nous contacter.",
             "details": "Détails de la facture",
+            "deliver": "Livrer",
             "index": "Mes factures",
             "paymethod": "Moyen de paiement",
             "index_description": "Vous trouverez ci-dessous la liste de vos factures.",
@@ -1302,7 +1393,7 @@
         "clicktoremove": "Cliquez pour supprimer",
         "separebycomma": "Séparés par des virgules",
         "mail": {
-            "greeting": "Bonjour",
+            "greeting": "Bonjour %firstname%,",
             "salutation": "Cordialement"
         },
         "states": {
@@ -1324,9 +1415,11 @@
             "open": "Ouvert",
             "closed": "Fermé",
             "approved": "Approuvé",
-            "rejected": "Rejeté"
+            "rejected": "Rejeté",
+            "completed": "Terminé"
         },
         "add": "Ajouter",
+        "cancel": "Annuler",
         "invoice_was_cancelled": "La facture vient d'être annulée",
         "invoice_cancelled": "La facture a été annulée le {_date}",
         "invoice": "Facture",
@@ -1342,6 +1435,7 @@
         "ticket": "Ticket",
         "tickets": "Tickets",
         "name": "Nom",
+        "amount": "Montant",
         "status": "Statut",
         "created": "Créé",
         "filter": "Filtrer",
@@ -1365,7 +1459,9 @@
         "customer": "Client",
         "details": "Détails",
         "none": "Aucun",
-        "delete": "Supprimer"
+        "delete": "Supprimer",
+        "already_sent": "Déjà envoyé",
+        "email_trouble_clicking_button": "Si vous avez des problèmes pour cliquer sur le bouton \"{_actionText}\", copiez et collez l'URL ci-dessous\n"
     },
     "lang.fr.helpdesk": {
         "ticket": "Ticket",
@@ -1570,7 +1666,7 @@
             "client_secret": "Secret client",
             "hosting_name": "Nom de la société",
             "connect": "Se connecter",
-            "migrationwarning": "Attention : la base de données n'a pas été migrée. Veuillez exécuter \"php artisan migrate --force\" pour migrer la base de données.",
+            "migrationwarning": "Attention : la base de données n'a pas été migrée. Veuillez exécuter \"php artisan migrate --force --seed\" pour migrer la base de données.",
             "detecteddomain": "Domaine détecté : {_domain}. Assurez-vous que le domaine correspond exactement à celui de votre licence (y compris le sous-domaine le cas échéant)."
         },
         "register": {
@@ -1586,7 +1682,7 @@
     "lang.fr.maintenance": {
         "settings": {
             "title": "Mode maintenance",
-            "description": "Activez ou désactiver le mode maintenance sur l'espaces client",
+            "description": "Activez ou désactiver le mode maintenance sur l'espace client",
             "maintenance_enabled": "Activer le mode maintenance",
             "maintenance_url": "URL de maintenance",
             "maintenance_url_help": "URL permettant de passer outre le mode maintenance",
@@ -1625,7 +1721,7 @@
         "manage_roles": "Gérer les rôles",
         "show_email_messages": "Voir les emails",
         "dashboard_last_login": "Dernière connexion à l'espace client",
-        "show_logs": "Voir l'historique",
+        "show_logs": "Voir l'historique des actions",
         "show_customers": "Voir les clients",
         "manage_customers": "Gérer les clients",
         "manage_staff": "Gérer le personnel",
@@ -1696,7 +1792,8 @@
                 "proxmox": "Livraison Proxmox",
                 "support_admin_ticket_created": "Ticket de support créé",
                 "support_admin_ticket_reply": "Réponse d'un client à un ticket de support",
-                "support_customer_ticket_reply": "Réponse à un ticket de support"
+                "support_customer_ticket_reply": "Réponse à un ticket de support",
+                "notify_subscription_failed": "Notification d'échec de paiement d'abonnement"
             }
         },
         "description": "Personnalisez les menus de l'espaces client et les réseaux sociaux de l'entreprise.",
@@ -1758,6 +1855,10 @@
             "restoresuccess": "La section a été restaurée avec succès.",
             "restore": "Restaurer",
             "title": "Sections",
+            "errors": {
+                "notfound": "La section n'a pas été trouvée",
+                "advanced_personalization": "Veuillez activer le module de personnalisation avancée pour accéder à cette section"
+            },
             "subheading": "Voici la liste de toutes les sections du système",
             "description": "Personnalisez les sections de l'espace client",
             "content": "Contenu",
@@ -1862,6 +1963,7 @@
         "ip_addresses": "Adresses IP",
         "unlimited": "Illimité",
         "traffic": "Trafic",
+        "active_services": "Services actifs",
         "domains": "Domaines",
         "clients": "Clients",
         "website_info": "Informations sur le site web",
@@ -1875,7 +1977,7 @@
             "stopping": "Arrêt en cours"
         },
         "admin": {
-            "title": "Provisionnement",
+            "title": "Approvisionnement",
             "subheading": "Gérez l'approvisionnement des services pour les clients.",
             "settings": {
                 "services": {
