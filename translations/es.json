@@ -406,7 +406,8 @@
             "extension_enabled": "{_extension} extensión habilitada",
             "extension_disabled": "{_extension} extensión deshabilitada",
             "extension_installed": "{_extension} extensión instalada",
-            "theme_changed": "Tema cambiado"
+            "theme_changed": "Tema cambiado",
+            "balance_changed": "El saldo del cliente ha cambiado de {_old} a {_new}"
         }
     },
     "lang.fr.admin": {
@@ -575,7 +576,10 @@
             "create": {
                 "title": "Crear un grupo",
                 "subheading": "Crear un nuevo grupo para la tienda"
-            }
+            },
+            "order_products": "Puede reorganizar los productos arrastrándolos y soltándolos y, a continuación, guardándolos",
+            "use_image_as_background": "Usa la imagen como fondo",
+            "see_group": "Ver el grupo"
         },
         "login": {
             "title": "Iniciar sesión - Administración",
@@ -697,7 +701,8 @@
                 "btn": "Crear"
             },
             "title": "Cuentas",
-            "subheading": "Aquí está la lista de todas las facturas en el sistema"
+            "subheading": "Aquí está la lista de todas las facturas en el sistema",
+            "deliveredsuccess": "El producto se entregó con éxito"
         },
         "admins": {
             "title": "Personal",
@@ -877,7 +882,21 @@
         "updatedetails": "Detalles de la actualización",
         "backtosite": "Volver al sitio web",
         "backtostore": "Volver a la tienda",
-        "doyouwantreally": "¿De verdad quieres hacer esto?"
+        "doyouwantreally": "¿De verdad quieres hacer esto?",
+        "locales": {
+            "translations_saved": "Las traducciones fueron grabadas con éxito.",
+            "subheading": "Traducción",
+            "title": "Idiomas",
+            "is_downloaded": "Descargó",
+            "is_default": "De forma predeterminada",
+            "download": "Descargar",
+            "update": "Actualizar",
+            "changedefaulthelp": "Puede cambiar el idioma predeterminado en la configuración global.",
+            "is_enabled": "Activado",
+            "disabled": "Deshabilitado",
+            "download_success": "Los archivos de traducción se han cargado correctamente.",
+            "description": "Encuentre la lista de idiomas disponibles para el área de clientes. Activa o desactiva los idiomas según sea necesario."
+        }
     },
     "lang.fr.auth": {
         "failed": "Estos identificadores no se corresponden con nuestros registros.",
@@ -931,7 +950,26 @@
             "success": "Su contraseña se ha restablecido con éxito.",
             "subheading": "Ingresa tu nueva contraseña para recuperar tu cuenta."
         },
-        "authentication": "Autenticación"
+        "authentication": "Autenticación",
+        "confirm_register": {
+            "heading": "Verificación de la dirección de correo electrónico",
+            "subheading": "Hemos enviado un correo electrónico de verificación a {_email} con un enlace para activar su cuenta.",
+            "help": {
+                "not_received": "Si no ha recibido el correo electrónico",
+                "check_spam": "Revisa tu carpeta de correo no deseado",
+                "valid_email": "Asegúrate de que la dirección de correo electrónico sea válida",
+                "firewall": "Comprueba que el cortafuegos no haya bloqueado el correo electrónico",
+                "request_another": "Recibir otro correo electrónico"
+            }
+        },
+        "verified": {
+            "heading": "Dirección de correo electrónico verificada",
+            "subheading": "Su dirección de correo electrónico ha sido verificada.",
+            "continue": "Continuar al área de clientes",
+            "continue_order": "Continuar en la página de pago",
+            "allowed": "Ahora puedes acceder a todas las funciones de tu cuenta.",
+            "support": "Si tiene alguna pregunta, no dude en ponerse en contacto con el servicio de asistencia."
+        }
     },
     "lang.fr.billing": {
         "admin": {
@@ -983,7 +1021,8 @@
                     "subscription_and_services": "Suscripciones y renovaciones de servicios",
                     "monthly_help": "Las suscripciones cuentan para las renovaciones mensuales"
                 }
-            }
+            },
+            "global_balance": "Equilibrio general"
         }
     },
     "lang.fr.client": {
@@ -1009,7 +1048,9 @@
                 "title": "Nuestra información bancaria",
                 "setting_fielddescription": "Información bancaria que se mostrará en la factura",
                 "flash": "Realice el pago a la cuenta bancaria indicada en la factura. Su pedido será procesado una vez que se reciba el pago."
-            }
+            },
+            "paid_date": "Fecha de pago",
+            "deliver": "Entregar"
         },
         "emails": {
             "index": "Mis correos electrónicos",
@@ -1324,7 +1365,8 @@
             "open": "Abrir",
             "closed": "Cerrado",
             "approved": "Aprobado",
-            "rejected": "Rechazado"
+            "rejected": "Rechazado",
+            "completed": "Terminado"
         },
         "add": "Agregar",
         "invoice_was_cancelled": "La factura acaba de ser cancelada",
@@ -1365,7 +1407,11 @@
         "customer": "Cliente",
         "details": "Detalles",
         "none": "Ninguno",
-        "delete": "Borrar"
+        "delete": "Borrar",
+        "cancel": "Cancelar",
+        "amount": "Importe",
+        "already_sent": "Ya enviado",
+        "email_trouble_clicking_button": "Si tiene problemas para hacer clic en el botón \"{_actionText}\", copie y pegue la URL a continuación"
     },
     "lang.fr.helpdesk": {
         "ticket": "Boleto",
@@ -1696,7 +1742,8 @@
                 "proxmox": "Entrega de Proxmox",
                 "support_admin_ticket_created": "Ticket de soporte creado",
                 "support_admin_ticket_reply": "Respuesta de un cliente a un ticket de soporte",
-                "support_customer_ticket_reply": "Respuesta a un ticket de soporte"
+                "support_customer_ticket_reply": "Respuesta a un ticket de soporte",
+                "notify_subscription_failed": "Notificación de error de pago de suscripción"
             }
         },
         "description": "Personaliza los menús en el área de clientes y en las redes sociales de la empresa.",
@@ -1782,6 +1829,10 @@
                 "page_group": "{_name} página de grupo",
                 "page_checkout": "Página de pago",
                 "page_basket": "Página del carrito"
+            },
+            "errors": {
+                "notfound": "Sección no encontrada",
+                "advanced_personalization": "Habilite el módulo de personalización avanzada para acceder a esta sección"
             }
         },
         "home": {
@@ -2023,7 +2074,8 @@
                 "use_subdomain": "Elija un subdominio {_app_name}",
                 "use_owndomain": "Usar un dominio existente"
             }
-        }
+        },
+        "active_services": "Servicios activos"
     },
     "lang.fr.recurring": {
         "onetime": "Toda la vida",
@@ -2359,6 +2411,60 @@
         "ticket_answer": {
             "title": "Responder a un ticket",
             "description": "Un ticket ha sido respondido"
+        }
+    },
+    "addons.fund.lang.fr.messages": {
+        "transfer_title": "Transferir fondos",
+        "credit_title": "Acreditación de fondos",
+        "invoice": {
+            "add_credit": "Añadidos {_amount} créditos"
+        },
+        "recipient": "Destinatario",
+        "transfer": {
+            "not_enough_funds": "No tienes fondos suficientes para realizar esta transferencia",
+            "max_amount": "El importe máximo de la transferencia es {_amount}",
+            "min_amount": "El monto mínimo de transferencia es {_amount}",
+            "min_invoice": "Debes agregar al menos {_amount} a tu cuenta para realizar una transferencia",
+            "title": "Transferir fondos",
+            "description": "Transferir fondos entre dos cuentas",
+            "recipient": "Correo electrónico de la cuenta del destinatario",
+            "btn": "Transferencia",
+            "cancel": "La transferencia ha sido cancelada",
+            "success": "La transferencia se ha completado con éxito. Puede cancelar esta transferencia en {_minutes} minutos."
+        },
+        "card": {
+            "title": "Depositar fondos en mi cuenta",
+            "description": "Acreditar su cuenta para realizar compras en nuestra plataforma",
+            "amount": "Importe a acreditar",
+            "gateway": "Forma de pago",
+            "currentbalance": "Saldo actual",
+            "error": "No se puede acreditar su cuenta. No hay ningún método de pago disponible. Póngase en contacto con el servicio de asistencia."
+        },
+        "transfer_table": {
+            "title": "Historial de transferencias"
+        },
+        "admin": {
+            "transfers": {
+                "title": "Transferencias de fondos",
+                "transferred_at": "Transferir a",
+                "subtitle": "Encuentre aquí la lista de transferencias de fondos realizadas"
+            },
+            "settings": {
+                "title": "Configuración de fondos",
+                "subtitle": "Administración de la configuración de la extensión de fondos",
+                "success": "Ajustes guardados con éxito",
+                "fields": {
+                    "max_amount": "Montante máximo",
+                    "min_amount": "Cantidad mínima",
+                    "for_add_credit": "Para agregar crédito",
+                    "for_transfer": "Para transferencias entre cuentas",
+                    "minutes_delay": "Tiempo de transferencia (en minutos)",
+                    "minutes_delay_description": "Tiempo de transferencia entre cuentas",
+                    "min_invoice": "Depósito mínimo para poder realizar una transferencia",
+                    "min_invoice_description": "El importe añadido a la cuenta para poder realizar una transferencia. 0 para deshabilitar",
+                    "authorize_between_accounts": "Permitir transferencias entre cuentas"
+                }
+            }
         }
     }
 }

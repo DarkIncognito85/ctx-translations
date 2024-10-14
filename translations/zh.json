@@ -406,7 +406,8 @@
             "extension_enabled": "已启用 {_extension} 扩展",
             "extension_disabled": "{_extension} 扩展已禁用",
             "extension_installed": "已安装 {_extension} 扩展",
-            "theme_changed": "主题已更改"
+            "theme_changed": "主题已更改",
+            "balance_changed": "客户余额从 {_old} 更改为 {_new}"
         }
     },
     "lang.fr.admin": {
@@ -575,7 +576,10 @@
             "create": {
                 "title": "创建组",
                 "subheading": "为商店创建新组"
-            }
+            },
+            "order_products": "您可以通过拖放然后保存产品来重新排列产品",
+            "use_image_as_background": "将图像用作背景",
+            "see_group": "查看群组"
         },
         "login": {
             "title": "登录 - 管理",
@@ -697,7 +701,8 @@
                 "btn": "创造"
             },
             "title": "条例 草案",
-            "subheading": "这是系统中所有发票的列表"
+            "subheading": "这是系统中所有发票的列表",
+            "deliveredsuccess": "产品已成功交付"
         },
         "admins": {
             "title": "个人",
@@ -877,7 +882,21 @@
         "updatedetails": "更新详细信息",
         "backtosite": "返回网站",
         "backtostore": "返回商店",
-        "doyouwantreally": "您真的想这样做吗？"
+        "doyouwantreally": "您真的想这样做吗？",
+        "locales": {
+            "translations_saved": "翻译被成功录制。",
+            "subheading": "译本",
+            "title": "语言",
+            "is_downloaded": "下载",
+            "is_default": "默认情况下",
+            "download": "下载",
+            "update": "更新",
+            "changedefaulthelp": "您可以在全局设置中更改默认语言。",
+            "is_enabled": "激活",
+            "disabled": "禁用",
+            "download_success": "翻译文件已成功上传。",
+            "description": "查找 Customer Area 的可用语言列表。根据需要开启或关闭语言。"
+        }
     },
     "lang.fr.auth": {
         "failed": "这些标识符与我们的记录不对应。",
@@ -931,7 +950,26 @@
             "success": "您的密码已成功重置。",
             "subheading": "输入您的新密码以恢复您的帐户。"
         },
-        "authentication": "认证"
+        "authentication": "认证",
+        "confirm_register": {
+            "heading": "电子邮件地址验证",
+            "subheading": "我们已向 {_email} 发送了一封验证电子邮件，其中包含用于激活您帐户的链接。",
+            "help": {
+                "not_received": "如果您没有收到电子邮件",
+                "check_spam": "检查您的垃圾邮件文件夹",
+                "valid_email": "确保电子邮件地址有效",
+                "firewall": "检查您的防火墙是否未阻止该电子邮件",
+                "request_another": "接收另一封电子邮件"
+            }
+        },
+        "verified": {
+            "heading": "已验证的电子邮件地址",
+            "subheading": "您的电子邮件地址已经过验证。",
+            "continue": "继续前往 Customer Area",
+            "continue_order": "在结帐页面上继续",
+            "allowed": "您现在可以访问您帐户的所有功能。",
+            "support": "如果您有任何问题，请随时联系支持人员。"
+        }
     },
     "lang.fr.billing": {
         "admin": {
@@ -983,7 +1021,8 @@
                     "subscription_and_services": "订阅和服务续订",
                     "monthly_help": "订阅计入每月续订"
                 }
-            }
+            },
+            "global_balance": "整体平衡"
         }
     },
     "lang.fr.client": {
@@ -1009,7 +1048,9 @@
                 "title": "我们的银行信息",
                 "setting_fielddescription": "要在发票上显示的银行信息",
                 "flash": "请向发票上显示的银行账户付款。一旦收到付款，您的订单将被处理。"
-            }
+            },
+            "paid_date": "付款日期",
+            "deliver": "提供"
         },
         "emails": {
             "index": "我的电子邮件",
@@ -1324,7 +1365,8 @@
             "open": "打开",
             "closed": "闭",
             "approved": "批准",
-            "rejected": "拒绝"
+            "rejected": "拒绝",
+            "completed": "完成"
         },
         "add": "加",
         "invoice_was_cancelled": "发票刚刚被取消",
@@ -1365,7 +1407,11 @@
         "customer": "客户",
         "details": "详",
         "none": "没有",
-        "delete": "删除"
+        "delete": "删除",
+        "cancel": "取消",
+        "amount": "量",
+        "already_sent": "已发送",
+        "email_trouble_clicking_button": "如果您在点击“{_actionText}”按钮时遇到问题，请复制并粘贴下面的 URL"
     },
     "lang.fr.helpdesk": {
         "ticket": "票",
@@ -1696,7 +1742,8 @@
                 "proxmox": "Proxmox 送货",
                 "support_admin_ticket_created": "已创建支持票证",
                 "support_admin_ticket_reply": "客户对支持工单的响应",
-                "support_customer_ticket_reply": "对支持票证的响应"
+                "support_customer_ticket_reply": "对支持票证的响应",
+                "notify_subscription_failed": "订阅付款失败通知"
             }
         },
         "description": "自定义客户区和公司社交网络中的菜单。",
@@ -1782,6 +1829,10 @@
                 "page_group": "{_name} 群组页面",
                 "page_checkout": "结帐页面",
                 "page_basket": "购物车页面"
+            },
+            "errors": {
+                "notfound": "未找到部分",
+                "advanced_personalization": "请启用 Advanced Customization 模块以访问此部分"
             }
         },
         "home": {
@@ -2023,7 +2074,8 @@
                 "use_subdomain": "选择子域 {_app_name}",
                 "use_owndomain": "使用现有域"
             }
-        }
+        },
+        "active_services": "主动服务"
     },
     "lang.fr.recurring": {
         "onetime": "终身",
@@ -2359,6 +2411,60 @@
         "ticket_answer": {
             "title": "响应工单",
             "description": "工单已得到解答"
+        }
+    },
+    "addons.fund.lang.fr.messages": {
+        "transfer_title": "转账",
+        "credit_title": "存入资金",
+        "invoice": {
+            "add_credit": "添加了 {_amount} 个积分"
+        },
+        "recipient": "收件人",
+        "transfer": {
+            "not_enough_funds": "您没有足够的资金进行此笔转账",
+            "max_amount": "最高转账金额为 {_amount}",
+            "min_amount": "最低转账金额为 {_amount}",
+            "min_invoice": "您必须向您的账户添加至少 {_amount} 才能进行转账",
+            "title": "转账",
+            "description": "在两个账户之间转账",
+            "recipient": "收款人账户电子邮件",
+            "btn": "转移",
+            "cancel": "转移已被取消",
+            "success": "传输已成功完成。您可以在 {_minutes} 分钟内取消此转移。"
+        },
+        "card": {
+            "title": "为我的账户注资",
+            "description": "记入您的帐户以在我们的平台上购物",
+            "amount": "贷记金额",
+            "gateway": "付款方式",
+            "currentbalance": "当前余额",
+            "error": "无法记入您的账户。没有可用的付款方式。请联系支持人员。"
+        },
+        "transfer_table": {
+            "title": "转移历史"
+        },
+        "admin": {
+            "transfers": {
+                "title": "资金转账",
+                "transferred_at": "转移到",
+                "subtitle": "在此处查找资金转账列表"
+            },
+            "settings": {
+                "title": "资金设置",
+                "subtitle": "管理资金扩展设置",
+                "success": "已成功保存设置",
+                "fields": {
+                    "max_amount": "最大蒙量",
+                    "min_amount": "最低金额",
+                    "for_add_credit": "用于添加信用",
+                    "for_transfer": "账户间转账",
+                    "minutes_delay": "传输时间（分钟）",
+                    "minutes_delay_description": "账户间转移时间",
+                    "min_invoice": "能够进行转账的最低存款额",
+                    "min_invoice_description": "为能够进行转账而添加到账户的金额。0 表示禁用",
+                    "authorize_between_accounts": "允许在账户之间转账"
+                }
+            }
         }
     }
 }

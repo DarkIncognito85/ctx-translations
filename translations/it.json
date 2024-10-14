@@ -406,7 +406,8 @@
             "extension_enabled": "Estensione {_extension} abilitata",
             "extension_disabled": "Estensione {_extension} disabilitata",
             "extension_installed": "Estensione {_extension} installata",
-            "theme_changed": "Tema cambiato"
+            "theme_changed": "Tema cambiato",
+            "balance_changed": "Saldo clienti modificato da {_old} a {_new}"
         }
     },
     "lang.fr.admin": {
@@ -575,7 +576,10 @@
             "create": {
                 "title": "Creare un gruppo",
                 "subheading": "Creare un nuovo gruppo per il negozio"
-            }
+            },
+            "order_products": "Puoi riorganizzare i prodotti trascinandoli e rilasciandoli e quindi salvandoli",
+            "use_image_as_background": "Usa l'immagine come sfondo",
+            "see_group": "Vedi il gruppo"
         },
         "login": {
             "title": "Login - Amministrazione",
@@ -697,7 +701,8 @@
                 "btn": "Creare"
             },
             "title": "Bollette",
-            "subheading": "Ecco l'elenco di tutte le fatture presenti nel sistema"
+            "subheading": "Ecco l'elenco di tutte le fatture presenti nel sistema",
+            "deliveredsuccess": "Il prodotto è stato consegnato con successo"
         },
         "admins": {
             "title": "Personale",
@@ -877,7 +882,21 @@
         "updatedetails": "Dettagli dell'aggiornamento",
         "backtosite": "Torna al sito",
         "backtostore": "Torna allo shop",
-        "doyouwantreally": "Vuoi davvero fare questo?"
+        "doyouwantreally": "Vuoi davvero fare questo?",
+        "locales": {
+            "translations_saved": "Le traduzioni sono state registrate con successo.",
+            "subheading": "Traduzione",
+            "title": "Lingue",
+            "is_downloaded": "Scaricato",
+            "is_default": "Per impostazione predefinita",
+            "download": "Scaricare",
+            "update": "Aggiornare",
+            "changedefaulthelp": "È possibile modificare la lingua predefinita nelle impostazioni globali.",
+            "is_enabled": "Attivante",
+            "disabled": "Disabile",
+            "download_success": "I file di traduzione sono stati caricati con successo.",
+            "description": "Trova l'elenco delle lingue disponibili per l'area clienti. Attiva o disattiva le lingue in base alle esigenze."
+        }
     },
     "lang.fr.auth": {
         "failed": "Questi identificatori non corrispondono ai nostri registri.",
@@ -931,7 +950,26 @@
             "success": "La password è stata reimpostata correttamente.",
             "subheading": "Inserisci la tua nuova password per recuperare il tuo account."
         },
-        "authentication": "Autenticazione"
+        "authentication": "Autenticazione",
+        "confirm_register": {
+            "heading": "Verifica dell'indirizzo e-mail",
+            "subheading": "Abbiamo inviato un'e-mail di verifica a {_email} con un link per attivare il tuo account.",
+            "help": {
+                "not_received": "Se non hai ricevuto l'email",
+                "check_spam": "Controlla la cartella spam",
+                "valid_email": "Assicurati che l'indirizzo e-mail sia valido",
+                "firewall": "Verifica che il tuo firewall non abbia bloccato l'e-mail",
+                "request_another": "Ricevi un'altra email"
+            }
+        },
+        "verified": {
+            "heading": "Indirizzo email verificato",
+            "subheading": "Il tuo indirizzo email è stato verificato.",
+            "continue": "Vai all'area clienti",
+            "continue_order": "Continua nella pagina di pagamento",
+            "allowed": "Ora puoi accedere a tutte le funzionalità del tuo account.",
+            "support": "In caso di domande, non esitare a contattare l'assistenza."
+        }
     },
     "lang.fr.billing": {
         "admin": {
@@ -983,7 +1021,8 @@
                     "subscription_and_services": "Abbonamenti e rinnovi dei servizi",
                     "monthly_help": "Gli abbonamenti contano per i rinnovi mensili"
                 }
-            }
+            },
+            "global_balance": "Bilancio complessivo"
         }
     },
     "lang.fr.client": {
@@ -1009,7 +1048,9 @@
                 "title": "Le nostre informazioni bancarie",
                 "setting_fielddescription": "Informazioni bancarie da visualizzare in fattura",
                 "flash": "Si prega di effettuare il pagamento sul conto bancario indicato sulla fattura. Il tuo ordine verrà elaborato una volta ricevuto il pagamento."
-            }
+            },
+            "paid_date": "Data di pagamento",
+            "deliver": "Consegnare"
         },
         "emails": {
             "index": "Le mie email",
@@ -1324,7 +1365,8 @@
             "open": "Aperto",
             "closed": "Chiuso",
             "approved": "Approvato",
-            "rejected": "Respinto"
+            "rejected": "Respinto",
+            "completed": "Finito"
         },
         "add": "Aggiungere",
         "invoice_was_cancelled": "La fattura è stata appena annullata",
@@ -1365,7 +1407,11 @@
         "customer": "Cliente",
         "details": "Dettagli",
         "none": "Nessuno",
-        "delete": "Cancellare"
+        "delete": "Cancellare",
+        "cancel": "Annulla",
+        "amount": "Importo",
+        "already_sent": "Già inviato",
+        "email_trouble_clicking_button": "Se hai problemi a cliccare sul pulsante \"{_actionText}\", copia e incolla l'URL qui sotto"
     },
     "lang.fr.helpdesk": {
         "ticket": "Biglietto",
@@ -1696,7 +1742,8 @@
                 "proxmox": "Consegna Proxmox",
                 "support_admin_ticket_created": "Ticket di supporto creato",
                 "support_admin_ticket_reply": "Risposta di un cliente a un ticket di supporto",
-                "support_customer_ticket_reply": "Risposta a un ticket di supporto"
+                "support_customer_ticket_reply": "Risposta a un ticket di supporto",
+                "notify_subscription_failed": "Notifica di mancato pagamento dell'abbonamento"
             }
         },
         "description": "Personalizza i menu nell'area clienti e i social network dell'azienda.",
@@ -1782,6 +1829,10 @@
                 "page_group": "Pagina del gruppo {_name}",
                 "page_checkout": "Pagina di pagamento",
                 "page_basket": "Pagina del carrello"
+            },
+            "errors": {
+                "notfound": "Sezione non trovata",
+                "advanced_personalization": "Abilita il modulo di personalizzazione avanzata per accedere a questa sezione"
             }
         },
         "home": {
@@ -2023,7 +2074,8 @@
                 "use_subdomain": "Scegli un sottodominio {_app_name}",
                 "use_owndomain": "Utilizzare un dominio esistente"
             }
-        }
+        },
+        "active_services": "Servizi attivi"
     },
     "lang.fr.recurring": {
         "onetime": "Vitalizio",
@@ -2359,6 +2411,60 @@
         "ticket_answer": {
             "title": "Rispondere a un ticket",
             "description": "Un ticket ha ricevuto risposta"
+        }
+    },
+    "addons.fund.lang.fr.messages": {
+        "transfer_title": "Trasferisci fondi",
+        "credit_title": "Accredito dei fondi",
+        "invoice": {
+            "add_credit": "Aggiunti {_amount} crediti"
+        },
+        "recipient": "Destinatario",
+        "transfer": {
+            "not_enough_funds": "Non hai fondi sufficienti per effettuare questo trasferimento",
+            "max_amount": "L'importo massimo del trasferimento è di {_amount}",
+            "min_amount": "L'importo minimo del trasferimento è di {_amount}",
+            "min_invoice": "Devi aggiungere almeno {_amount} al tuo account per effettuare un trasferimento",
+            "title": "Trasferisci fondi",
+            "description": "Trasferisci fondi tra due conti",
+            "recipient": "E-mail dell'account del destinatario",
+            "btn": "Trasferimento",
+            "cancel": "Il trasferimento è stato annullato",
+            "success": "Trasferimento completato con successo. Puoi annullare questo trasferimento entro {_minutes} minuti."
+        },
+        "card": {
+            "title": "Finanzia il mio conto",
+            "description": "Accredito sul tuo account per effettuare acquisti sulla nostra piattaforma",
+            "amount": "Importo da accreditare",
+            "gateway": "Metodo di pagamento",
+            "currentbalance": "Saldo corrente",
+            "error": "Impossibile accreditare il tuo account. Non è disponibile alcun metodo di pagamento. Contatta l'assistenza."
+        },
+        "transfer_table": {
+            "title": "Cronologia dei trasferimenti"
+        },
+        "admin": {
+            "transfers": {
+                "title": "Trasferimenti di fondi",
+                "transferred_at": "Trasferimento a",
+                "subtitle": "Trova qui l'elenco dei trasferimenti di fondi effettuati"
+            },
+            "settings": {
+                "title": "Impostazioni dei fondi",
+                "subtitle": "Gestione delle impostazioni dell'estensione del fondo",
+                "success": "Impostazioni salvate correttamente",
+                "fields": {
+                    "max_amount": "Montante massimo",
+                    "min_amount": "Importo minimo",
+                    "for_add_credit": "Per l'aggiunta di credito",
+                    "for_transfer": "Per i trasferimenti tra conti",
+                    "minutes_delay": "Tempo di trasferimento (in minuti)",
+                    "minutes_delay_description": "Trasferisci tempo tra account",
+                    "min_invoice": "Deposito minimo per poter effettuare un trasferimento",
+                    "min_invoice_description": "L'importo aggiunto al conto per poter effettuare un trasferimento. 0 per disabilitare",
+                    "authorize_between_accounts": "Consenti trasferimenti tra conti"
+                }
+            }
         }
     }
 }

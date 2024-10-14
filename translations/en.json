@@ -406,7 +406,8 @@
             "extension_enabled": "{_extension} extension enabled",
             "extension_disabled": "{_extension} extension disabled",
             "extension_installed": "{_extension} extension installed",
-            "theme_changed": "Theme changed"
+            "theme_changed": "Theme changed",
+            "balance_changed": "Customer balance changed from {_old} to {_new}"
         }
     },
     "lang.fr.admin": {
@@ -575,7 +576,10 @@
             "create": {
                 "title": "Create a group",
                 "subheading": "Create a new group for the store"
-            }
+            },
+            "order_products": "You can rearrange products by dragging and dropping them and then saving them",
+            "use_image_as_background": "Use the image as a background",
+            "see_group": "See the group"
         },
         "login": {
             "title": "Login - Administration",
@@ -697,7 +701,8 @@
                 "btn": "Create"
             },
             "title": "Invoices",
-            "subheading": "Here is the list of all the invoices in the system"
+            "subheading": "Here is the list of all the invoices in the system",
+            "deliveredsuccess": "The product was successfully delivered"
         },
         "admins": {
             "title": "Staffs",
@@ -877,7 +882,21 @@
         "updatedetails": "Update details",
         "backtosite": "Back to the website",
         "backtostore": "Back to the shop",
-        "doyouwantreally": "Do you really want to do this?"
+        "doyouwantreally": "Do you really want to do this?",
+        "locales": {
+            "translations_saved": "The translations were successfully recorded.",
+            "subheading": "Translation",
+            "title": "Languages",
+            "is_downloaded": "Downloaded",
+            "is_default": "By default",
+            "download": "Download",
+            "update": "Update",
+            "changedefaulthelp": "You can change the default language in the global settings.",
+            "is_enabled": "Activated",
+            "disabled": "Disabled",
+            "download_success": "The translation files have been successfully uploaded.",
+            "description": "Find the list of languages available for the customer area. Turn languages on or off as needed."
+        }
     },
     "lang.fr.auth": {
         "failed": "These identifiers do not correspond to our records.",
@@ -931,7 +950,26 @@
             "success": "Your password has been successfully reset.",
             "subheading": "Enter your new password to recover your account."
         },
-        "authentication": "Authentication"
+        "authentication": "Authentication",
+        "confirm_register": {
+            "heading": "Email Address Verification",
+            "subheading": "We have sent a verification email to {_email} with a link to activate your account.",
+            "help": {
+                "not_received": "If you have not received the email",
+                "check_spam": "Check your spam folder",
+                "valid_email": "Make sure the email address is valid",
+                "firewall": "Check that your firewall hasn't blocked the email",
+                "request_another": "Receive another email"
+            }
+        },
+        "verified": {
+            "heading": "Verified email address",
+            "subheading": "Your email address has been verified.",
+            "continue": "Continue to the customer area",
+            "continue_order": "Continue on the checkout page",
+            "allowed": "You can now access all the features of your account.",
+            "support": "If you have any questions, please feel free to contact support."
+        }
     },
     "lang.fr.billing": {
         "admin": {
@@ -983,7 +1021,8 @@
                     "subscription_and_services": "Subscriptions and Service Renewals",
                     "monthly_help": "Subscriptions count towards monthly renewals"
                 }
-            }
+            },
+            "global_balance": "Overall balance"
         }
     },
     "lang.fr.client": {
@@ -1009,7 +1048,9 @@
                 "title": "Our banking information",
                 "setting_fielddescription": "Bank information to display on the invoice",
                 "flash": "Please make the payment to the bank account indicated on the invoice. Your order will be processed once payment is received."
-            }
+            },
+            "paid_date": "Payment Date",
+            "deliver": "Deliver"
         },
         "emails": {
             "index": "My emails",
@@ -1324,7 +1365,8 @@
             "open": "Open",
             "closed": "Closed",
             "approved": "Approved",
-            "rejected": "Rejected"
+            "rejected": "Rejected",
+            "completed": "Finished"
         },
         "add": "Add",
         "invoice_was_cancelled": "The invoice has just been cancelled",
@@ -1365,7 +1407,11 @@
         "customer": "Customer",
         "details": "Details",
         "none": "None",
-        "delete": "Delete"
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "amount": "Amount",
+        "already_sent": "Already Sent",
+        "email_trouble_clicking_button": "If you have problems clicking on the \"{_actionText}\" button, copy and paste the URL below"
     },
     "lang.fr.helpdesk": {
         "ticket": "Ticket",
@@ -1696,7 +1742,8 @@
                 "proxmox": "Proxmox Delivery",
                 "support_admin_ticket_created": "Support ticket created",
                 "support_admin_ticket_reply": "A customer's response to a support ticket",
-                "support_customer_ticket_reply": "Response to a support ticket"
+                "support_customer_ticket_reply": "Response to a support ticket",
+                "notify_subscription_failed": "Subscription payment failure notification"
             }
         },
         "description": "Customize the menus in the customer area and the company's social networks.",
@@ -1782,6 +1829,10 @@
                 "page_group": "{_name} group page",
                 "page_checkout": "Checkout Page",
                 "page_basket": "Cart Page"
+            },
+            "errors": {
+                "notfound": "Section not found",
+                "advanced_personalization": "Please enable the Advanced Customization module to access this section"
             }
         },
         "home": {
@@ -2023,7 +2074,8 @@
                 "use_subdomain": "Choose a subdomain {_app_name}",
                 "use_owndomain": "Use an existing domain"
             }
-        }
+        },
+        "active_services": "Active services"
     },
     "lang.fr.recurring": {
         "onetime": "Lifelong",
@@ -2359,6 +2411,60 @@
         "ticket_answer": {
             "title": "Responding to a ticket",
             "description": "A ticket has been answered"
+        }
+    },
+    "addons.fund.lang.fr.messages": {
+        "transfer_title": "Transfer funds",
+        "credit_title": "Crediting funds",
+        "invoice": {
+            "add_credit": "Added {_amount} credits"
+        },
+        "recipient": "Addressee",
+        "transfer": {
+            "not_enough_funds": "You don't have enough funds to make this transfer",
+            "max_amount": "The maximum transfer amount is {_amount}",
+            "min_amount": "The minimum transfer amount is {_amount}",
+            "min_invoice": "You must add at least {_amount} to your account to make a transfer",
+            "title": "Transfer funds",
+            "description": "Transfer funds between two accounts",
+            "recipient": "Recipient Account Email",
+            "btn": "Transfer",
+            "cancel": "The transfer has been cancelled",
+            "success": "Transfer completed successfully. You can cancel this transfer within {_minutes} minutes."
+        },
+        "card": {
+            "title": "Fund my account",
+            "description": "Crediting your account to make purchases on our platform",
+            "amount": "Amount to be credited",
+            "gateway": "Payment method",
+            "currentbalance": "Current Balance",
+            "error": "Unable to credit your account. No payment method is available. Please contact support."
+        },
+        "transfer_table": {
+            "title": "Transfer history"
+        },
+        "admin": {
+            "transfers": {
+                "title": "Transfers of funds",
+                "transferred_at": "Transfer to",
+                "subtitle": "Find here the list of transfers of funds made"
+            },
+            "settings": {
+                "title": "Funds Settings",
+                "subtitle": "Managing Fund Extension Settings",
+                "success": "Successfully saved settings",
+                "fields": {
+                    "max_amount": "Montant maximum",
+                    "min_amount": "Minimum amount",
+                    "for_add_credit": "For adding credit",
+                    "for_transfer": "For transfers between accounts",
+                    "minutes_delay": "Transfer time (in minutes)",
+                    "minutes_delay_description": "Transfer time between accounts",
+                    "min_invoice": "Minimum deposit to be able to make a transfer",
+                    "min_invoice_description": "The amount added to the account to be able to make a transfer. 0 to disable",
+                    "authorize_between_accounts": "Allow transfers between accounts"
+                }
+            }
         }
     }
 }

@@ -406,7 +406,8 @@
             "extension_enabled": "{_extension}-Erweiterung aktiviert",
             "extension_disabled": "{_extension}-Erweiterung deaktiviert",
             "extension_installed": "{_extension}-Erweiterung installiert",
-            "theme_changed": "Thema geändert"
+            "theme_changed": "Thema geändert",
+            "balance_changed": "Der Kundensaldo wurde von {_old} in {_new} geändert."
         }
     },
     "lang.fr.admin": {
@@ -575,7 +576,10 @@
             "create": {
                 "title": "Erstellen einer Gruppe",
                 "subheading": "Erstellen einer neuen Gruppe für den Shop"
-            }
+            },
+            "order_products": "Sie können Produkte neu anordnen, indem Sie sie per Drag & Drop verschieben und dann speichern",
+            "use_image_as_background": "Verwenden Sie das Bild als Hintergrund",
+            "see_group": "Gruppe anzeigen"
         },
         "login": {
             "title": "Login - Administration",
@@ -697,7 +701,8 @@
                 "btn": "Schaffen"
             },
             "title": "Rechnungen",
-            "subheading": "Hier ist die Liste aller Rechnungen im System"
+            "subheading": "Hier ist die Liste aller Rechnungen im System",
+            "deliveredsuccess": "Das Produkt wurde erfolgreich ausgeliefert"
         },
         "admins": {
             "title": "Persönlich",
@@ -877,7 +882,21 @@
         "updatedetails": "Details zum Update",
         "backtosite": "Zurück zur Website",
         "backtostore": "Zurück zum Shop",
-        "doyouwantreally": "Wollen Sie das wirklich tun?"
+        "doyouwantreally": "Wollen Sie das wirklich tun?",
+        "locales": {
+            "translations_saved": "Die Übersetzungen wurden erfolgreich aufgenommen.",
+            "subheading": "Übersetzung",
+            "title": "Sprachen",
+            "is_downloaded": "Gedownloadet",
+            "is_default": "Standardmäßig",
+            "download": "Herunterladen",
+            "update": "Aktualisieren",
+            "changedefaulthelp": "Sie können die Standardsprache in den globalen Einstellungen ändern.",
+            "is_enabled": "Aktiviert",
+            "disabled": "Arbeitsunfähig",
+            "download_success": "Die Übersetzungsdateien wurden erfolgreich hochgeladen.",
+            "description": "Suchen Sie die Liste der Sprachen, die für den Kundenbereich verfügbar sind. Schalten Sie Sprachen nach Bedarf ein oder aus."
+        }
     },
     "lang.fr.auth": {
         "failed": "Diese Identifikatoren stimmen nicht mit unseren Aufzeichnungen überein.",
@@ -931,7 +950,26 @@
             "success": "Ihr Passwort wurde erfolgreich zurückgesetzt.",
             "subheading": "Geben Sie Ihr neues Passwort ein, um Ihr Konto wiederherzustellen."
         },
-        "authentication": "Authentifizierung"
+        "authentication": "Authentifizierung",
+        "confirm_register": {
+            "heading": "Überprüfung der E-Mail-Adresse",
+            "subheading": "Wir haben eine Bestätigungs-E-Mail an {_email} mit einem Link zur Aktivierung Ihres Kontos gesendet.",
+            "help": {
+                "not_received": "Wenn Sie die E-Mail nicht erhalten haben",
+                "check_spam": "Überprüfen Sie Ihren Spam-Ordner",
+                "valid_email": "Stellen Sie sicher, dass die E-Mail-Adresse gültig ist.",
+                "firewall": "Stellen Sie sicher, dass Ihre Firewall die E-Mail nicht blockiert hat.",
+                "request_another": "Eine weitere E-Mail erhalten"
+            }
+        },
+        "verified": {
+            "heading": "Verifizierte E-Mail-Adresse",
+            "subheading": "Ihre E-Mail-Adresse wurde verifiziert.",
+            "continue": "Weiter zum Kundenbereich",
+            "continue_order": "Weiter auf der Checkout-Seite",
+            "allowed": "Sie können jetzt auf alle Funktionen Ihres Kontos zugreifen.",
+            "support": "Bei Fragen können Sie sich gerne an den Support wenden."
+        }
     },
     "lang.fr.billing": {
         "admin": {
@@ -983,7 +1021,8 @@
                     "subscription_and_services": "Abonnements und Serviceverlängerungen",
                     "monthly_help": "Abonnements werden auf monatliche Verlängerungen angerechnet"
                 }
-            }
+            },
+            "global_balance": "Gesamtbilanz"
         }
     },
     "lang.fr.client": {
@@ -1009,7 +1048,9 @@
                 "title": "Unsere Bankverbindung",
                 "setting_fielddescription": "Bankinformationen, die auf der Rechnung angezeigt werden sollen",
                 "flash": "Bitte überweisen Sie die Zahlung auf das auf der Rechnung angegebene Bankkonto. Ihre Bestellung wird bearbeitet, sobald die Zahlung eingegangen ist."
-            }
+            },
+            "paid_date": "Zahlungsdatum",
+            "deliver": "Liefern"
         },
         "emails": {
             "index": "Meine E-Mails",
@@ -1324,7 +1365,8 @@
             "open": "Offen",
             "closed": "Geschlossen",
             "approved": "Gebilligt",
-            "rejected": "Zurückgewiesen"
+            "rejected": "Zurückgewiesen",
+            "completed": "Fertig"
         },
         "add": "Hinzufügen",
         "invoice_was_cancelled": "Die Rechnung wurde gerade storniert",
@@ -1365,7 +1407,11 @@
         "customer": "Kunde",
         "details": "Details",
         "none": "Nichts",
-        "delete": "Löschen"
+        "delete": "Löschen",
+        "cancel": "Abbrechen",
+        "amount": "Menge",
+        "already_sent": "Bereits gesendet",
+        "email_trouble_clicking_button": "Wenn Sie Probleme haben, auf die Schaltfläche \"{_actionText}\" zu klicken, kopieren Sie die untenstehende URL und fügen Sie sie ein"
     },
     "lang.fr.helpdesk": {
         "ticket": "Fahrkarte",
@@ -1696,7 +1742,8 @@
                 "proxmox": "Proxmox Lieferung",
                 "support_admin_ticket_created": "Support-Ticket erstellt",
                 "support_admin_ticket_reply": "Die Antwort eines Kunden auf ein Support-Ticket",
-                "support_customer_ticket_reply": "Antwort auf ein Support-Ticket"
+                "support_customer_ticket_reply": "Antwort auf ein Support-Ticket",
+                "notify_subscription_failed": "Benachrichtigung über fehlgeschlagene Abonnementzahlung"
             }
         },
         "description": "Passen Sie die Menüs im Kundenbereich und in den sozialen Netzwerken des Unternehmens an.",
@@ -1782,6 +1829,10 @@
                 "page_group": "{_name} Gruppenseite",
                 "page_checkout": "Checkout-Seite",
                 "page_basket": "Warenkorb-Seite"
+            },
+            "errors": {
+                "notfound": "Abschnitt nicht gefunden",
+                "advanced_personalization": "Bitte aktivieren Sie das Modul Erweiterte Anpassung, um auf diesen Abschnitt zuzugreifen"
             }
         },
         "home": {
@@ -2023,7 +2074,8 @@
                 "use_subdomain": "Wählen Sie eine Subdomain {_app_name}",
                 "use_owndomain": "Verwenden einer vorhandenen Domäne"
             }
-        }
+        },
+        "active_services": "Aktive Dienstleistungen"
     },
     "lang.fr.recurring": {
         "onetime": "Lebenslänglich",
@@ -2359,6 +2411,60 @@
         "ticket_answer": {
             "title": "Auf ein Ticket antworten",
             "description": "Ein Ticket wurde beantwortet"
+        }
+    },
+    "addons.fund.lang.fr.messages": {
+        "transfer_title": "Geld überweisen",
+        "credit_title": "Gutschrift von Geldern",
+        "invoice": {
+            "add_credit": "{_amount} Credits hinzugefügt"
+        },
+        "recipient": "Empfänger",
+        "transfer": {
+            "not_enough_funds": "Sie haben nicht genügend Geld, um diese Überweisung vorzunehmen",
+            "max_amount": "Der maximale Überweisungsbetrag beträgt {_amount}",
+            "min_amount": "Der Mindestüberweisungsbetrag beträgt {_amount}",
+            "min_invoice": "Sie müssen mindestens {_amount} zu Ihrem Konto hinzufügen, um eine Überweisung vornehmen zu können",
+            "title": "Geld überweisen",
+            "description": "Überweisen Sie Geld zwischen zwei Konten",
+            "recipient": "E-Mail-Adresse des Empfängerkontos",
+            "btn": "Übertragung",
+            "cancel": "Die Überweisung wurde storniert",
+            "success": "Übertragung erfolgreich abgeschlossen. Sie können diese Überweisung innerhalb von {_minutes} Minuten stornieren."
+        },
+        "card": {
+            "title": "Auf mein Konto einzahlen",
+            "description": "Gutschrift auf Ihr Konto, um Einkäufe auf unserer Plattform zu tätigen",
+            "amount": "Betrag, der gutgeschrieben werden soll",
+            "gateway": "Zahlungsmethode",
+            "currentbalance": "Aktueller Saldo",
+            "error": "Es kann keine Gutschrift auf Ihr Konto erfolgen. Es ist keine Zahlungsmethode verfügbar. Bitte wenden Sie sich an den Support."
+        },
+        "transfer_table": {
+            "title": "Verlauf der Überweisung"
+        },
+        "admin": {
+            "transfers": {
+                "title": "Überweisungen von Geldern",
+                "transferred_at": "Übertragen nach",
+                "subtitle": "Hier finden Sie die Liste der getätigten Geldüberweisungen"
+            },
+            "settings": {
+                "title": "Einstellungen für Fonds",
+                "subtitle": "Verwalten der Einstellungen für Fondserweiterungen",
+                "success": "Erfolgreich gespeicherte Einstellungen",
+                "fields": {
+                    "max_amount": "Montant maximal",
+                    "min_amount": "Mindestbetrag",
+                    "for_add_credit": "Zum Hinzufügen von Guthaben",
+                    "for_transfer": "Für Überweisungen zwischen Konten",
+                    "minutes_delay": "Übertragungszeit (in Minuten)",
+                    "minutes_delay_description": "Zeit zwischen Konten übertragen",
+                    "min_invoice": "Mindesteinzahlung, um eine Überweisung vornehmen zu können",
+                    "min_invoice_description": "Der Betrag, der dem Konto gutgeschrieben wird, um eine Überweisung vornehmen zu können. 0 zum Deaktivieren",
+                    "authorize_between_accounts": "Überweisungen zwischen Konten zulassen"
+                }
+            }
         }
     }
 }
