@@ -1,7 +1,7 @@
 {
     "language": "Espagnol",
     "addons.discordlink.lang.fr.messages": {
-        "modulename": "Enlace de Discordia",
+        "modulename": "Discord Link",
         "description": "Gestionar el enlace con tu servidor de Discord de tu proveedor de alojamiento",
         "step1": "Paso 1",
         "step2": "Paso 2",
