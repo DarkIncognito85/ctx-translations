@@ -628,7 +628,7 @@
                     "reset": "Reset URLs"
                 },
                 "stats": {
-                    "paid": "Amounts paid",
+                    "paid": "Paid amounts",
                     "unpaid": "Unpaid amounts",
                     "services": "Active services"
                 },
