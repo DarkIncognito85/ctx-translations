@@ -384,7 +384,8 @@
             "show": {
                 "title": "Details zur Aktion",
                 "subheading": "Details zur Aktion, die auf {_date} ausgeführt wurde"
-            }
+            },
+            "see_staff_actions_log": "Zeigen Sie den Verlauf der Mitarbeiteraktionen an"
         },
         "actions": {
             "settings_updated": "Aktualisierte Einstellungen",
@@ -519,7 +520,10 @@
             "password": "Passwort",
             "output": "Ausgang",
             "description": "Navigieren Sie zum PHPMyAdmin Ihrer Instanz oder migrieren Sie Ihre Datenbank.",
-            "subheading": "Achtung, diese Seite ist für fortgeschrittene Administratoren gedacht"
+            "subheading": "Achtung, diese Seite ist für fortgeschrittene Administratoren gedacht",
+            "seed": "Saatgut-Datenbank",
+            "migratesuccess": "Die Datenbank wurde erfolgreich migriert",
+            "seedsuccess": "Für die Datenbank wurde ein erfolgreiches Seeding durchgeführt"
         },
         "emails": {
             "title": "E-Mails",
@@ -640,7 +644,11 @@
                 "unsuspend_services": "Reaktivieren Sie die Services des Kunden",
                 "expire_services": "Die Leistungen des Kunden verfallen",
                 "is_banned": "Dieser Client wurde am {_date} von {_username} aus Gründen {_reason} gesperrt.",
-                "is_suspended": "Dieser Client wurde am {_date} von {_username} aus dem Grund {_reason} angehalten."
+                "is_suspended": "Dieser Client wurde am {_date} von {_username} aus dem Grund {_reason} angehalten.",
+                "password_reset_sent": "Die E-Mail zum Zurücksetzen wurde erfolgreich gesendet",
+                "resend_confirm": "Erneutes Senden einer Bestätigungs-E-Mail",
+                "send_password": "Senden Sie eine E-Mail zum Zurücksetzen",
+                "history": "Historie der Kundenaktionen"
             },
             "create": {
                 "title": "Erstellen eines Clients",
@@ -999,8 +1007,15 @@
                         "title": "Steuermethode",
                         "included": "Inbegriffen - Der angezeigte Preis versteht sich inklusive Mehrwertsteuer",
                         "excluded": "Ausgeschlossen - Der angezeigte Preis versteht sich zzgl. MwSt."
+                    },
+                    "vat_default_country": "Standardland für die Mehrwertsteuer",
+                    "rates": {
+                        "title": "Mehrwertsteuersatz",
+                        "vat_rate_by_country": "Mehrwertsteuersatz nach Land des Kunden",
+                        "vat_rate_fixed": "Fester Mehrwertsteuersatz"
                     }
-                }
+                },
+                "tax": "Verwaltung der Mehrwertsteuer"
             },
             "title": "Fakturierung",
             "subheading": "Abonnement- und Zahlungsverwaltung",
@@ -1366,7 +1381,8 @@
             "closed": "Geschlossen",
             "approved": "Gebilligt",
             "rejected": "Zurückgewiesen",
-            "completed": "Fertig"
+            "completed": "Fertig",
+            "disabled": "Arbeitsunfähig"
         },
         "add": "Hinzufügen",
         "invoice_was_cancelled": "Die Rechnung wurde gerade storniert",
@@ -2430,7 +2446,9 @@
             "recipient": "E-Mail-Adresse des Empfängerkontos",
             "btn": "Übertragung",
             "cancel": "Die Überweisung wurde storniert",
-            "success": "Übertragung erfolgreich abgeschlossen. Sie können diese Überweisung innerhalb von {_minutes} Minuten stornieren."
+            "success": "Übertragung erfolgreich abgeschlossen. Sie können diese Überweisung innerhalb von {_minutes} Minuten stornieren.",
+            "already_pending": "Eine Überweisung steht bereits an. Bitte warten Sie, bevor Sie einen neuen erstellen",
+            "recipient_not_found": "Der Empfänger wurde nicht gefunden"
         },
         "card": {
             "title": "Auf mein Konto einzahlen",
@@ -2466,5 +2484,56 @@
                 }
             }
         }
+    },
+    "modules.download.lang.fr.admin": {
+        "download_files": {
+            "title": "Dateien herunterladen",
+            "description": "Verwalten von Dateien und Download-Versionen",
+            "external_file": "Externe Datei",
+            "local_file": "Lokale Datei",
+            "adapter": "Anpassen",
+            "downloads": "Downloads",
+            "downloads_limit": "Download-Limit",
+            "downloads_limit_help": "Leave 0 für Unbegrenzt",
+            "protected": "Schützling",
+            "last_version": "Neueste Version",
+            "add_version": "Hinzufügen einer Version",
+            "version": "Version",
+            "version_created_at": "Version hat die {_date} erstellt. {_downloads} Downloads",
+            "protected_help": "Wenn diese Option aktiviert ist, müssen Kunden sie kaufen, um sie herunterladen zu können",
+            "max_upload_size": "Die maximale Upload-Größe beträgt {_size}",
+            "create": {
+                "title": "Erstellen einer Download-Datei",
+                "subheading": "Erstellen einer neuen Download-Datei"
+            },
+            "show": {
+                "title": "Download-Datei anzeigen",
+                "subheading": "Details zur Download-Datei anzeigen"
+            }
+        },
+        "logs": {
+            "title": "Protokolle herunterladen",
+            "description": "Protokolle herunterladen",
+            "downloaded": "Gedownloadet",
+            "ip": "IP",
+            "user_agent": "Benutzer-Agent",
+            "show": {
+                "title": "Download-Protokoll anzeigen",
+                "subheading": "Anzeigen von Download-Protokolldetails"
+            }
+        }
+    },
+    "modules.download.lang.fr.messages": {
+        "my_downloads": "Meine Downloads",
+        "errors": {
+            "file_not_active": "Die Datei ist nicht aktiv",
+            "file_is_protected": "Die Datei ist geschützt",
+            "download_limit_reached": "Download-Limit erreicht"
+        },
+        "download_version": "Version herunterladen",
+        "downloads": "Downloads",
+        "public_downloads": "Öffentliche Downloads",
+        "no_downloads": "Keine Downloads",
+        "downloads_left": "Sie haben noch {_downloads} Downloads übrig"
     }
 }

@@ -384,7 +384,8 @@
             "show": {
                 "title": "Dettagli dell'azione",
                 "subheading": "Dettagli dell'azione eseguita il {_date}"
-            }
+            },
+            "see_staff_actions_log": "Visualizzare la cronologia delle azioni del personale"
         },
         "actions": {
             "settings_updated": "Impostazioni aggiornate",
@@ -519,7 +520,10 @@
             "password": "Parola d’ordine",
             "output": "Uscita",
             "description": "Accedi a PHPMyAdmin della tua istanza o esegui la migrazione del database.",
-            "subheading": "Attenzione, questa pagina è fatta per gli amministratori avanzati"
+            "subheading": "Attenzione, questa pagina è fatta per gli amministratori avanzati",
+            "seed": "Database dei semi",
+            "migratesuccess": "La migrazione del database è stata completata correttamente",
+            "seedsuccess": "Il seeding del database è stato eseguito correttamente"
         },
         "emails": {
             "title": "E-mail",
@@ -640,7 +644,11 @@
                 "unsuspend_services": "Riattivare i servizi del cliente",
                 "expire_services": "Scade i servizi del cliente",
                 "is_banned": "Questo client è stato bannato il {_date} da {_username} per motivi {_reason}",
-                "is_suspended": "Questo client è stato sospeso il {_date} da {_username} per il motivo {_reason}"
+                "is_suspended": "Questo client è stato sospeso il {_date} da {_username} per il motivo {_reason}",
+                "password_reset_sent": "L'e-mail di reimpostazione è stata inviata correttamente",
+                "resend_confirm": "Inviare nuovamente un'e-mail di conferma",
+                "send_password": "Inviare un'e-mail di reimpostazione",
+                "history": "Cronologia delle azioni dei clienti"
             },
             "create": {
                 "title": "Creare un client",
@@ -999,8 +1007,15 @@
                         "title": "Metodo fiscale",
                         "included": "Incluso - Il prezzo visualizzato è comprensivo di IVA",
                         "excluded": "Escluso - Il prezzo visualizzato è IVA esclusa"
+                    },
+                    "vat_default_country": "Paese predefinito per l'IVA",
+                    "rates": {
+                        "title": "Aliquota IVA",
+                        "vat_rate_by_country": "Aliquota IVA in base al paese del cliente",
+                        "vat_rate_fixed": "Aliquota IVA fissa"
                     }
-                }
+                },
+                "tax": "Gestione IVA"
             },
             "title": "Fatturazione",
             "subheading": "Gestione degli abbonamenti e dei pagamenti",
@@ -1366,7 +1381,8 @@
             "closed": "Chiuso",
             "approved": "Approvato",
             "rejected": "Respinto",
-            "completed": "Finito"
+            "completed": "Finito",
+            "disabled": "Disabile"
         },
         "add": "Aggiungere",
         "invoice_was_cancelled": "La fattura è stata appena annullata",
@@ -2430,7 +2446,9 @@
             "recipient": "E-mail dell'account del destinatario",
             "btn": "Trasferimento",
             "cancel": "Il trasferimento è stato annullato",
-            "success": "Trasferimento completato con successo. Puoi annullare questo trasferimento entro {_minutes} minuti."
+            "success": "Trasferimento completato con successo. Puoi annullare questo trasferimento entro {_minutes} minuti.",
+            "already_pending": "Un trasferimento è già in sospeso. Si prega di attendere prima di farne un altro",
+            "recipient_not_found": "Il destinatario non è stato trovato"
         },
         "card": {
             "title": "Finanzia il mio conto",
@@ -2466,5 +2484,56 @@
                 }
             }
         }
+    },
+    "modules.download.lang.fr.admin": {
+        "download_files": {
+            "title": "Scarica i file",
+            "description": "Gestione dei file e download delle versioni",
+            "external_file": "File esterno",
+            "local_file": "File locale",
+            "adapter": "Adattare",
+            "downloads": "Download",
+            "downloads_limit": "Limite di download",
+            "downloads_limit_help": "Lascia 0 per un numero illimitato",
+            "protected": "Allievo",
+            "last_version": "Ultima versione",
+            "add_version": "Aggiungere una versione",
+            "version": "Versione",
+            "version_created_at": "La versione ha creato il {_date}. {_downloads} Scarica",
+            "protected_help": "Se abilitato, i clienti dovranno acquistarlo per scaricarlo",
+            "max_upload_size": "La dimensione massima di caricamento è {_size}",
+            "create": {
+                "title": "Creare un file di download",
+                "subheading": "Creare un nuovo file di download"
+            },
+            "show": {
+                "title": "Visualizza il file di download",
+                "subheading": "Visualizza i dettagli del file di download"
+            }
+        },
+        "logs": {
+            "title": "Scarica i log",
+            "description": "Scarica i log",
+            "downloaded": "Scaricato",
+            "ip": "IP",
+            "user_agent": "Agente utente",
+            "show": {
+                "title": "Visualizza il registro dei download",
+                "subheading": "Visualizza i dettagli del registro dei download"
+            }
+        }
+    },
+    "modules.download.lang.fr.messages": {
+        "my_downloads": "I miei download",
+        "errors": {
+            "file_not_active": "Il file non è attivo",
+            "file_is_protected": "Il file è protetto",
+            "download_limit_reached": "Limite di download raggiunto"
+        },
+        "download_version": "Scarica la versione",
+        "downloads": "Download",
+        "public_downloads": "Download pubblici",
+        "no_downloads": "Nessun download",
+        "downloads_left": "Ti rimangono {_downloads} download"
     }
 }

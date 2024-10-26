@@ -384,7 +384,8 @@
             "show": {
                 "title": "Detalhes da ação",
                 "subheading": "Detalhes da ação executada em {_date}"
-            }
+            },
+            "see_staff_actions_log": "Exibir o histórico de ações da equipe"
         },
         "actions": {
             "settings_updated": "Configurações atualizadas",
@@ -519,7 +520,10 @@
             "password": "Senha",
             "output": "Sair",
             "description": "Navegue até o PHPMyAdmin da sua instância ou migre seu banco de dados.",
-            "subheading": "Atenção, esta página é feita para administradores avançados"
+            "subheading": "Atenção, esta página é feita para administradores avançados",
+            "seed": "Banco de dados de sementes",
+            "migratesuccess": "O banco de dados foi migrado com sucesso",
+            "seedsuccess": "O banco de dados foi propagado com sucesso"
         },
         "emails": {
             "title": "E-mails",
@@ -640,7 +644,11 @@
                 "unsuspend_services": "Reativar os serviços do cliente",
                 "expire_services": "Expira os serviços do cliente",
                 "is_banned": "Este cliente foi banido em {_date} por {_username} por motivos {_reason}",
-                "is_suspended": "Este cliente foi suspenso em {_date} por {_username} pelo motivo {_reason}"
+                "is_suspended": "Este cliente foi suspenso em {_date} por {_username} pelo motivo {_reason}",
+                "password_reset_sent": "O e-mail de redefinição foi enviado com sucesso",
+                "resend_confirm": "Reenviar um e-mail de confirmação",
+                "send_password": "Enviar um e-mail de redefinição",
+                "history": "Histórico de ações do cliente"
             },
             "create": {
                 "title": "Criar um cliente",
@@ -999,8 +1007,15 @@
                         "title": "Método tributário",
                         "included": "Incluído - O preço apresentado inclui IVA",
                         "excluded": "Excluído - O preço apresentado é sem IVA"
+                    },
+                    "vat_default_country": "País padrão para IVA",
+                    "rates": {
+                        "title": "Taxa de IVA",
+                        "vat_rate_by_country": "Taxa de IVA por país do cliente",
+                        "vat_rate_fixed": "Taxa fixa de IVA"
                     }
-                }
+                },
+                "tax": "Gestão do IVA"
             },
             "title": "Facturação",
             "subheading": "Gestão de assinaturas e pagamentos",
@@ -1366,7 +1381,8 @@
             "closed": "Fechado",
             "approved": "Aprovado",
             "rejected": "Indeferido",
-            "completed": "Terminado"
+            "completed": "Terminado",
+            "disabled": "Desactivado"
         },
         "add": "Adicionar",
         "invoice_was_cancelled": "A fatura acaba de ser cancelada",
@@ -2430,7 +2446,9 @@
             "recipient": "E-mail da conta do destinatário",
             "btn": "Transferência",
             "cancel": "A transferência foi cancelada",
-            "success": "Transferência concluída com sucesso. Você pode cancelar esta transferência em {_minutes} minutos."
+            "success": "Transferência concluída com sucesso. Você pode cancelar esta transferência em {_minutes} minutos.",
+            "already_pending": "Uma transferência já está pendente. Por favor, aguarde antes de fazer outro",
+            "recipient_not_found": "O destinatário não foi encontrado"
         },
         "card": {
             "title": "Financiar minha conta",
@@ -2466,5 +2484,56 @@
                 }
             }
         }
+    },
+    "modules.download.lang.fr.admin": {
+        "download_files": {
+            "title": "Baixar arquivos",
+            "description": "Gerenciando arquivos e baixando versões",
+            "external_file": "Arquivo externo",
+            "local_file": "Arquivo local",
+            "adapter": "Adaptar",
+            "downloads": "Downloads",
+            "downloads_limit": "Limite de download",
+            "downloads_limit_help": "Deixe 0 para ilimitado",
+            "protected": "Protegido",
+            "last_version": "Última versão",
+            "add_version": "Adicionar uma versão",
+            "version": "Versão",
+            "version_created_at": "Versão criou o {_date}. {_downloads} downloads",
+            "protected_help": "Se ativado, os clientes precisarão comprá-lo para baixá-lo",
+            "max_upload_size": "O tamanho máximo de upload é {_size}",
+            "create": {
+                "title": "Criar um arquivo de download",
+                "subheading": "Criar um novo arquivo de download"
+            },
+            "show": {
+                "title": "Ver arquivo de download",
+                "subheading": "Ver detalhes do arquivo de download"
+            }
+        },
+        "logs": {
+            "title": "Baixar logs",
+            "description": "Baixar logs",
+            "downloaded": "Baixado",
+            "ip": "IP",
+            "user_agent": "Agente do usuário",
+            "show": {
+                "title": "Exibir registro de download",
+                "subheading": "Exibir detalhes do registro de download"
+            }
+        }
+    },
+    "modules.download.lang.fr.messages": {
+        "my_downloads": "Meus downloads",
+        "errors": {
+            "file_not_active": "O arquivo não está ativo",
+            "file_is_protected": "O arquivo está protegido",
+            "download_limit_reached": "Limite de download atingido"
+        },
+        "download_version": "Baixar versão",
+        "downloads": "Downloads",
+        "public_downloads": "Downloads públicos",
+        "no_downloads": "Sem downloads",
+        "downloads_left": "Você tem {_downloads} downloads restantes"
     }
 }

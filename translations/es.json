@@ -384,7 +384,8 @@
             "show": {
                 "title": "Detalles de la acción",
                 "subheading": "Detalles de la acción realizada en {_date}"
-            }
+            },
+            "see_staff_actions_log": "Ver el historial de acciones del personal"
         },
         "actions": {
             "settings_updated": "Ajustes actualizados",
@@ -519,7 +520,10 @@
             "password": "Contraseña",
             "output": "Salida",
             "description": "Navegue hasta el PHPMyAdmin de su instancia o migre su base de datos.",
-            "subheading": "Advertencia, esta página está hecha para administradores avanzados"
+            "subheading": "Advertencia, esta página está hecha para administradores avanzados",
+            "seed": "Base de datos de semillas",
+            "migratesuccess": "La base de datos se ha migrado correctamente",
+            "seedsuccess": "La base de datos se ha sembrado correctamente"
         },
         "emails": {
             "title": "Correos electrónicos",
@@ -640,7 +644,11 @@
                 "unsuspend_services": "Reactivar los servicios del cliente",
                 "expire_services": "Caducan los servicios del cliente",
                 "is_banned": "Este cliente fue bloqueado en {_date} por {_username} por las razones {_reason}",
-                "is_suspended": "Este cliente fue suspendido el {_date} por {_username} por la razón {_reason}"
+                "is_suspended": "Este cliente fue suspendido el {_date} por {_username} por la razón {_reason}",
+                "password_reset_sent": "El correo electrónico de restablecimiento se ha enviado con éxito",
+                "resend_confirm": "Volver a enviar un correo electrónico de confirmación",
+                "send_password": "Enviar un correo electrónico de restablecimiento",
+                "history": "Historial de acciones de los clientes"
             },
             "create": {
                 "title": "Crear un cliente",
@@ -999,8 +1007,15 @@
                         "title": "Método impositivo",
                         "included": "Incluido - El precio que se muestra incluye el IVA",
                         "excluded": "Excluido: el precio que se muestra no incluye el IVA"
+                    },
+                    "vat_default_country": "País predeterminado para el IVA",
+                    "rates": {
+                        "title": "Tipo de IVA",
+                        "vat_rate_by_country": "Tipo de IVA por país del cliente",
+                        "vat_rate_fixed": "Tipo fijo de IVA"
                     }
-                }
+                },
+                "tax": "Gestión del IVA"
             },
             "title": "Facturación",
             "subheading": "Gestión de suscripciones y pagos",
@@ -1366,7 +1381,8 @@
             "closed": "Cerrado",
             "approved": "Aprobado",
             "rejected": "Rechazado",
-            "completed": "Terminado"
+            "completed": "Terminado",
+            "disabled": "Deshabilitado"
         },
         "add": "Agregar",
         "invoice_was_cancelled": "La factura acaba de ser cancelada",
@@ -2430,7 +2446,9 @@
             "recipient": "Correo electrónico de la cuenta del destinatario",
             "btn": "Transferencia",
             "cancel": "La transferencia ha sido cancelada",
-            "success": "La transferencia se ha completado con éxito. Puede cancelar esta transferencia en {_minutes} minutos."
+            "success": "La transferencia se ha completado con éxito. Puede cancelar esta transferencia en {_minutes} minutos.",
+            "already_pending": "Ya está pendiente una transferencia. Por favor, espere antes de hacer otro",
+            "recipient_not_found": "No se encontró al destinatario"
         },
         "card": {
             "title": "Depositar fondos en mi cuenta",
@@ -2466,5 +2484,56 @@
                 }
             }
         }
+    },
+    "modules.download.lang.fr.admin": {
+        "download_files": {
+            "title": "Descargar archivos",
+            "description": "Administración de archivos y versiones de descarga",
+            "external_file": "Archivo externo",
+            "local_file": "Archivo local",
+            "adapter": "Adaptar",
+            "downloads": "Descargas",
+            "downloads_limit": "Límite de descarga",
+            "downloads_limit_help": "Deja 0 para ilimitado",
+            "protected": "Protegido",
+            "last_version": "Última versión",
+            "add_version": "Agregar una versión",
+            "version": "Versión",
+            "version_created_at": "La versión creó el {_date}. {_downloads} descargas",
+            "protected_help": "Si está habilitado, los clientes deberán comprarlo para descargarlo",
+            "max_upload_size": "El tamaño máximo de carga es {_size}",
+            "create": {
+                "title": "Crear un archivo de descarga",
+                "subheading": "Crear un nuevo archivo de descarga"
+            },
+            "show": {
+                "title": "Ver archivo de descarga",
+                "subheading": "Ver detalles del archivo de descarga"
+            }
+        },
+        "logs": {
+            "title": "Descargar registros",
+            "description": "Descargar registros",
+            "downloaded": "Descargó",
+            "ip": "IP",
+            "user_agent": "Agente de usuario",
+            "show": {
+                "title": "Ver registro de descargas",
+                "subheading": "Ver los detalles del registro de descarga"
+            }
+        }
+    },
+    "modules.download.lang.fr.messages": {
+        "my_downloads": "Mis Descargas",
+        "errors": {
+            "file_not_active": "El archivo no está activo",
+            "file_is_protected": "El archivo está protegido",
+            "download_limit_reached": "Se ha alcanzado el límite de descargas"
+        },
+        "download_version": "Descargar versión",
+        "downloads": "Descargas",
+        "public_downloads": "Descargas públicas",
+        "no_downloads": "Sin descargas",
+        "downloads_left": "Te quedan {_downloads} descargas"
     }
 }

@@ -384,7 +384,8 @@
             "show": {
                 "title": "Action details",
                 "subheading": "Details of the action performed on {_date}"
-            }
+            },
+            "see_staff_actions_log": "View the history of staff actions"
         },
         "actions": {
             "settings_updated": "Updated settings",
@@ -519,7 +520,10 @@
             "password": "Password",
             "output": "Exit",
             "description": "Navigate to your instance's PHPMyAdmin or migrate your database.",
-            "subheading": "Warning, this page is made for advanced administrators"
+            "subheading": "Warning, this page is made for advanced administrators",
+            "seed": "Seed Database",
+            "migratesuccess": "The database has been successfully migrated",
+            "seedsuccess": "The database has been successfully seeded"
         },
         "emails": {
             "title": "Emails",
@@ -640,7 +644,11 @@
                 "unsuspend_services": "Reactivate the customer's services",
                 "expire_services": "Expires the customer's services",
                 "is_banned": "This client was banned on {_date} by {_username} for reasons {_reason}",
-                "is_suspended": "This client was suspended on {_date} by {_username} for reason {_reason}"
+                "is_suspended": "This client was suspended on {_date} by {_username} for reason {_reason}",
+                "password_reset_sent": "The reset email has been sent successfully",
+                "resend_confirm": "Resend a confirmation email",
+                "send_password": "Send a reset email",
+                "history": "History of customer actions"
             },
             "create": {
                 "title": "Create a client",
@@ -999,8 +1007,15 @@
                         "title": "Tax method",
                         "included": "Included - The price displayed is inclusive of VAT",
                         "excluded": "Excluded - The price displayed is excl. VAT"
+                    },
+                    "vat_default_country": "Default country for VAT",
+                    "rates": {
+                        "title": "VAT rate",
+                        "vat_rate_by_country": "VAT rate by customer's country",
+                        "vat_rate_fixed": "Fixed VAT rate"
                     }
-                }
+                },
+                "tax": "VAT management"
             },
             "title": "Invoicing",
             "subheading": "Subscription and payment management",
@@ -1366,7 +1381,8 @@
             "closed": "Closed",
             "approved": "Approved",
             "rejected": "Rejected",
-            "completed": "Finished"
+            "completed": "Finished",
+            "disabled": "Disabled"
         },
         "add": "Add",
         "invoice_was_cancelled": "The invoice has just been cancelled",
@@ -2430,7 +2446,9 @@
             "recipient": "Recipient Account Email",
             "btn": "Transfer",
             "cancel": "The transfer has been cancelled",
-            "success": "Transfer completed successfully. You can cancel this transfer within {_minutes} minutes."
+            "success": "Transfer completed successfully. You can cancel this transfer within {_minutes} minutes.",
+            "already_pending": "A transfer is already pending. Please wait before making another one",
+            "recipient_not_found": "The recipient was not found"
         },
         "card": {
             "title": "Fund my account",
@@ -2466,5 +2484,56 @@
                 }
             }
         }
+    },
+    "modules.download.lang.fr.admin": {
+        "download_files": {
+            "title": "Download Files",
+            "description": "Managing Files and Download Versions",
+            "external_file": "External file",
+            "local_file": "Local file",
+            "adapter": "Adapt",
+            "downloads": "Downloads",
+            "downloads_limit": "Download Limit",
+            "downloads_limit_help": "Leave 0 for Unlimited",
+            "protected": "Protégé",
+            "last_version": "Latest Version",
+            "add_version": "Add a version",
+            "version": "Version",
+            "version_created_at": "Version created the {_date}. {_downloads} downloads",
+            "protected_help": "If enabled, customers will need to purchase it to download it",
+            "max_upload_size": "Maximum upload size is {_size}",
+            "create": {
+                "title": "Create a download file",
+                "subheading": "Create a new download file"
+            },
+            "show": {
+                "title": "View Download File",
+                "subheading": "View download file details"
+            }
+        },
+        "logs": {
+            "title": "Download logs",
+            "description": "Download logs",
+            "downloaded": "Downloaded",
+            "ip": "IP",
+            "user_agent": "User Agent",
+            "show": {
+                "title": "View download log",
+                "subheading": "View download log details"
+            }
+        }
+    },
+    "modules.download.lang.fr.messages": {
+        "my_downloads": "My Downloads",
+        "errors": {
+            "file_not_active": "The file is not active",
+            "file_is_protected": "The file is protected",
+            "download_limit_reached": "Download limit reached"
+        },
+        "download_version": "Download version",
+        "downloads": "Downloads",
+        "public_downloads": "Public downloads",
+        "no_downloads": "No downloads",
+        "downloads_left": "You have {_downloads} downloads left"
     }
 }

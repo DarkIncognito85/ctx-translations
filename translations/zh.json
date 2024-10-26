@@ -384,7 +384,8 @@
             "show": {
                 "title": "操作详细信息",
                 "subheading": "对 {_date} 执行的操作的详细信息"
-            }
+            },
+            "see_staff_actions_log": "查看员工操作的历史记录"
         },
         "actions": {
             "settings_updated": "更新的设置",
@@ -519,7 +520,10 @@
             "password": "密码",
             "output": "退出",
             "description": "导航到实例的 PHPMyAdmin 或迁移数据库。",
-            "subheading": "警告，此页面适用于高级管理员"
+            "subheading": "警告，此页面适用于高级管理员",
+            "seed": "种子数据库",
+            "migratesuccess": "数据库已成功迁移",
+            "seedsuccess": "已成功设定数据库种子"
         },
         "emails": {
             "title": "电子邮件",
@@ -640,7 +644,11 @@
                 "unsuspend_services": "重新激活客户的服务",
                 "expire_services": "使客户的服务过期",
                 "is_banned": "此客户端在 {_date} 上被 {_username} 封禁，原因为 {_reason}",
-                "is_suspended": "此客户端在 {_date} 上被 {_username} 暂停，原因为 {_reason}"
+                "is_suspended": "此客户端在 {_date} 上被 {_username} 暂停，原因为 {_reason}",
+                "password_reset_sent": "重置电子邮件已成功发送",
+                "resend_confirm": "重新发送确认电子邮件",
+                "send_password": "发送重置电子邮件",
+                "history": "客户操作历史记录"
             },
             "create": {
                 "title": "创建客户端",
@@ -999,8 +1007,15 @@
                         "title": "税务方法",
                         "included": "包含 - 显示的价格包含增值税",
                         "excluded": "不包含 - 显示的价格不含增值税"
+                    },
+                    "vat_default_country": "增值税的默认国家/地区",
+                    "rates": {
+                        "title": "增值税税率",
+                        "vat_rate_by_country": "客户所在国家/地区的增值税税率",
+                        "vat_rate_fixed": "固定增值税税率"
                     }
-                }
+                },
+                "tax": "增值税管理"
             },
             "title": "发票",
             "subheading": "订阅和付款管理",
@@ -1366,7 +1381,8 @@
             "closed": "闭",
             "approved": "批准",
             "rejected": "拒绝",
-            "completed": "完成"
+            "completed": "完成",
+            "disabled": "禁用"
         },
         "add": "加",
         "invoice_was_cancelled": "发票刚刚被取消",
@@ -2430,7 +2446,9 @@
             "recipient": "收款人账户电子邮件",
             "btn": "转移",
             "cancel": "转移已被取消",
-            "success": "传输已成功完成。您可以在 {_minutes} 分钟内取消此转移。"
+            "success": "传输已成功完成。您可以在 {_minutes} 分钟内取消此转移。",
+            "already_pending": "转移已处于待处理状态。请稍候，然后再制作另一个",
+            "recipient_not_found": "未找到收件人"
         },
         "card": {
             "title": "为我的账户注资",
@@ -2466,5 +2484,56 @@
                 }
             }
         }
+    },
+    "modules.download.lang.fr.admin": {
+        "download_files": {
+            "title": "下载文件",
+            "description": "管理文件和下载版本",
+            "external_file": "外部文件",
+            "local_file": "本地文件",
+            "adapter": "适应",
+            "downloads": "下载",
+            "downloads_limit": "下载限制",
+            "downloads_limit_help": "Leave 0 表示 Unlimited",
+            "protected": "Protégé",
+            "last_version": "最新版本",
+            "add_version": "添加版本",
+            "version": "版本",
+            "version_created_at": "Version 创建了 {_date}。{_downloads} 次下载",
+            "protected_help": "如果启用，客户将需要购买它才能下载",
+            "max_upload_size": "最大上传大小为 {_size}",
+            "create": {
+                "title": "创建下载文件",
+                "subheading": "创建新的下载文件"
+            },
+            "show": {
+                "title": "查看下载文件",
+                "subheading": "查看下载文件详细信息"
+            }
+        },
+        "logs": {
+            "title": "下载日志",
+            "description": "下载日志",
+            "downloaded": "下载",
+            "ip": "知识产权",
+            "user_agent": "用户代理",
+            "show": {
+                "title": "查看下载日志",
+                "subheading": "查看下载日志详细信息"
+            }
+        }
+    },
+    "modules.download.lang.fr.messages": {
+        "my_downloads": "我的下载",
+        "errors": {
+            "file_not_active": "文件未处于活动状态",
+            "file_is_protected": "文件受到保护",
+            "download_limit_reached": "已达到下载限制"
+        },
+        "download_version": "下载版本",
+        "downloads": "下载",
+        "public_downloads": "公共下载",
+        "no_downloads": "无需下载",
+        "downloads_left": "您还剩下 {_downloads} 个下载"
     }
 }
