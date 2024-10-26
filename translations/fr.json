@@ -48,6 +48,8 @@
             "not_enough_funds": "Vous n'avez pas assez de fonds pour effectuer ce transfert",
             "max_amount": "Le montant maximum de transfert est de {_amount}",
             "min_amount": "Le montant minimum de transfert est de {_amount}",
+            "already_pending": "Un transfert est déjà en attente. Veuillez patienter avant d'en effectuer un autre",
+            "recipient_not_found": "Le destinataire n'a pas été trouvé",
             "min_invoice": "Vous devez ajouter au moins {_amount} à votre compte pour effectuer un transfert",
             "title": "Transférer des fonds",
             "description": "Transférer des fonds entre deux comptes",
@@ -200,6 +202,57 @@
         "signup_success": "Votre inscription a été effectuée avec succès.",
         "count_linked": "Il y a {_count} compte(s) lié(s).",
         "finish_subtitle": "Veuillez saisir les informations manquantes pour terminer votre inscription."
+    },
+    "modules.download.lang.fr.admin": {
+        "download_files": {
+            "title": "Fichiers de téléchargement",
+            "description": "Gestion des fichiers et versions de téléchargement",
+            "external_file": "Fichier externe",
+            "local_file": "Fichier local",
+            "adapter": "Adapter",
+            "downloads": "Téléchargements",
+            "downloads_limit": "Limite de téléchargements",
+            "downloads_limit_help": "Laisser 0 pour illimité",
+            "protected": "Protégé",
+            "last_version": "Dernière version",
+            "add_version": "Ajouter une version",
+            "version": "Version",
+            "version_created_at": "Version crée le {_date}. {_downloads} téléchargements",
+            "protected_help": "Si activé, les clients devront l'acheter pour le télécharger",
+            "max_upload_size": "Taille maximale de téléchargement est de {_size}",
+            "create": {
+                "title": "Créer un fichier de téléchargement",
+                "subheading": "Créer un nouveau fichier de téléchargement"
+            },
+            "show": {
+                "title": "Afficher le fichier de téléchargement",
+                "subheading": "Afficher les détails du fichier de téléchargement"
+            }
+        },
+        "logs": {
+            "title": "Logs de téléchargement",
+            "description": "Logs de téléchargement",
+            "downloaded": "Téléchargé",
+            "ip": "IP",
+            "user_agent": "User Agent",
+            "show": {
+                "title": "Afficher le log de téléchargement",
+                "subheading": "Afficher les détails du log de téléchargement"
+            }
+        }
+    },
+    "modules.download.lang.fr.messages": {
+        "my_downloads": "Mes téléchargements",
+        "errors": {
+            "file_not_active": "Le fichier n'est pas actif",
+            "file_is_protected": "Le fichier est protégé",
+            "download_limit_reached": "Limite de téléchargement atteinte"
+        },
+        "download_version": "Télécharger la version",
+        "downloads": "Téléchargements",
+        "public_downloads": "Téléchargements publics",
+        "no_downloads": "Aucun téléchargement",
+        "downloads_left": "Il vous reste {_downloads} téléchargements"
     },
     "modules.proxmox.lang.fr.messages": {
         "settings": {
@@ -427,6 +480,7 @@
             "title": "Historique des actions",
             "description": "Liste des actions effectuées par le personnel et le système.",
             "subheading": "Historique des actions",
+            "see_staff_actions_log": "Voir l'historique des actions du personnel",
             "user": "Utilisateur",
             "action": "Action",
             "model": "Modèle",
@@ -578,7 +632,10 @@
         },
         "database": {
             "migrateextension": "Choisissez une extension à migrer",
-            "migrate": "Migrer la base de données",
+            "seed": "Seed la base de données",
+            "migratesuccess": "La base de données a été migrée avec succès",
+            "seedsuccess": "La base de données a été seed avec succès",
+            "migrate": "Migrer",
             "pmaaccess": "Accès à PHPMyAdmin",
             "title": "Base de données",
             "host": "Hôte",
@@ -670,6 +727,12 @@
                 "success": "Vous êtes maintenant connecté en tant que {_name}"
             },
             "show": {
+                "email_sent": "L'email a été envoyé avec succès",
+                "password_reset_sent": "L'email de réinitialisation a été envoyé avec succès",
+                "email_confirmed": "Le compte a été confirmé avec succès",
+                "resend_confirm": "Renvoyer un email de confirmation",
+                "send_password": "Envoyer un email de réinitialisation",
+                "confirm": "Confirmer le compte",
                 "title": "Fiche client de {_name}",
                 "login_ip": "IP de connexion",
                 "subheading": "Voici les informations liées à ce client créé le {_date}",
@@ -683,6 +746,7 @@
                 "emails": "Emails envoyés au client",
                 "passwordhelp": "Laissez vide pour ne pas changer",
                 "login": "Dernières connexions du client",
+                "history": "Historique des actions du client",
                 "url": {
                     "confirmation": "URL de confirmation",
                     "reset": "URL de réinitialisation"
@@ -1029,6 +1093,7 @@
                 "description": "Paramètres de facturation de la boutique. Activer la TVA, définir la devise, ou autre.",
                 "success": "Les paramètres de facturation ont été enregistrés avec succès.",
                 "webhookoncheckout": "Webhook au checkout",
+                "tax": "Gestion de la TVA",
                 "fields": {
                     "store_vat_enabled": "Activer la TVA",
                     "customermustbeconfirmed": "Le client doit être confirmé pour commander",
@@ -1045,6 +1110,12 @@
                     "remove_pending_invoice_types": {
                         "delete": "Supprimer",
                         "cancel": "Annuler"
+                    },
+                    "vat_default_country": "Pays par défaut pour la TVA",
+                    "rates": {
+                        "title": "Taux de TVA",
+                        "vat_rate_by_country": "Taux de TVA par pays du client",
+                        "vat_rate_fixed": "Taux de TVA fixe"
                     },
                     "mode_tax": {
                         "title": "Mode de taxe",
@@ -1416,7 +1487,8 @@
             "closed": "Fermé",
             "approved": "Approuvé",
             "rejected": "Rejeté",
-            "completed": "Terminé"
+            "completed": "Terminé",
+            "disabled": "Désactivé"
         },
         "add": "Ajouter",
         "cancel": "Annuler",
@@ -1899,7 +1971,7 @@
             }
         },
         "theme": {
-            "title": "Paramètres du thème",
+            "title": "Theme",
             "description": "Paramètres du thème de l'espace client",
             "success": "Les paramètres du thème ont été enregistrés avec succès.",
             "fields": {
