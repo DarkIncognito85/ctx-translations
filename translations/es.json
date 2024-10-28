@@ -2172,7 +2172,7 @@
         "store": "Tienda",
         "subtotal": "Subtotal",
         "store_subheading": "Descubre nuestras ofertas",
-        "from_price": "De {_price} {_currency}",
+        "from_price": "From {_price} {_currency}",
         "taxes": "Impuestos",
         "total": "Total",
         "price": "Precio",
