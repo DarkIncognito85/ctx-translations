@@ -84,7 +84,7 @@
                     "min_amount": "Montant minimum",
                     "for_add_credit": "Pour l'ajout de crédit",
                     "for_transfer": "Pour les transferts entre comptes",
-                    "minutes_delay": "Délai de transfers (en minutes)",
+                    "minutes_delay": "Délai de transfert (en minutes)",
                     "minutes_delay_description": "Délai de transfert entre les comptes",
                     "min_invoice": "Dépôt minimum pour pouvoir effectuer un transfert",
                     "min_invoice_description": "Montant ajouté au compte pour pouvoir effectuer un transfert. 0 pour désactiver",
