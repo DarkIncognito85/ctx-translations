@@ -84,7 +84,7 @@
                     "min_amount": "Montant minimum",
                     "for_add_credit": "Pour l'ajout de crédit",
                     "for_transfer": "Pour les transferts entre comptes",
-                    "minutes_delay": "Délai de transfert (en minutes)",
+                    "minutes_delay": "Délai de transferts (en minutes)",
                     "minutes_delay_description": "Délai de transfert entre les comptes",
                     "min_invoice": "Dépôt minimum pour pouvoir effectuer un transfert",
                     "min_invoice_description": "Montant ajouté au compte pour pouvoir effectuer un transfert. 0 pour désactiver",
@@ -203,7 +203,7 @@
         "count_linked": "Il y a {_count} compte(s) lié(s).",
         "finish_subtitle": "Veuillez saisir les informations manquantes pour terminer votre inscription."
     },
-    "modules.download.lang.fr.admin": {
+        "modules.download.lang.fr.admin": {
         "download_files": {
             "title": "Fichiers de téléchargement",
             "description": "Gestion des fichiers et versions de téléchargement",
@@ -472,6 +472,37 @@
             "graphs": {
                 "title": "Graphiques",
                 "description": "Voir les graphiques de la machine virtuelle."
+            }
+        }
+    },
+    "modules.virtualizor_cloud.lang.fr.messages": {
+        "data": {
+            "os": "Système d'exploitation",
+            "security": "Sécurité"
+        },
+        "hostname": "Nom d'hôte",
+        "panel": {
+            "info": "Informations sur le VPS",
+            "reinstallation": {
+                "title": "Réinstallation",
+                "description": "Réinstaller la machine virtuelle.",
+                "submit": "Réinstaller",
+                "reinstall_success": "La réinstallation de la machine virtuelle a été effectuée avec succès.",
+                "reinstall_error": "Une erreur est survenue lors de la réinstallation de la machine virtuelle."
+            },
+            "password": {
+                "title": "Mot de passe",
+                "description": "Changer le mot de passe de la machine virtuelle.",
+                "submit": "Changer le mot de passe",
+                "password_success": "Le mot de passe de la machine virtuelle a été changé avec succès.",
+                "password_error": "Une erreur est survenue lors du changement du mot de passe de la machine virtuelle."
+            },
+            "hostname": {
+                "title": "Nom d'hôte",
+                "description": "Changer le nom d'hôte de la machine virtuelle.",
+                "submit": "Changer le nom d'hôte",
+                "hostname_success": "Le nom d'hôte de la machine virtuelle a été changé avec succès.",
+                "hostname_error": "Une erreur est survenue lors du changement du nom d'hôte de la machine virtuelle."
             }
         }
     },
@@ -1991,6 +2022,14 @@
     "lang.fr.provisioning": {
         "disk": "Disque",
         "in_gb": "Valeur en Go",
+        "in_mb": "Valeur en Mo",
+        "network_speed": "Vitesse du réseau",
+        "upload_speed": "Vitesse de téléversement",
+        "ips": "IPs",
+        "ip6": "IP6",
+        "ip6subnet": "Sous-réseau IP6",
+        "burstable_memory": "Mémoire burstable",
+        "guaranteed_memory": "Mémoire garantie",
         "memory": "Mémoire",
         "cpu": "Processeur",
         "io": "I\/O",
@@ -2022,6 +2061,9 @@
         "sockets": "Sockets",
         "oom_kill": "Oom kill",
         "used": "Utilisé",
+        "vnc": "VNC",
+        "region": "Région",
+        "oses": "Systèmes d'exploitation",
         "planname": "Nom du plan d'hébergement",
         "domain": "Domaine",
         "sites": "Sites autorisés",
