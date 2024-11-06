@@ -842,7 +842,7 @@
             "subheading": "Please validate your license to activate your product",
             "subheading2": "Manage your license and related information or update your available modules.",
             "expiration": "Your license expires on {_date}",
-            "onetime": "Lifetime License",
+            "onetime": "Onetime",
             "modules": "Modules Included",
             "extensions": "Available extensions: {_extensions}",
             "domain": "Domain: {_domain}",
@@ -1102,7 +1102,7 @@
             "noservices": "No services found",
             "startorder": "Start by ordering a service",
             "server": "Server",
-            "onetime": "Lifetime Service",
+            "onetime": "Onetime",
             "changename": "Change service name",
             "managerenew": "Manage the service cycle",
             "manageserviceonadmin": "Manage the service from the administration",
@@ -1285,7 +1285,7 @@
             "notactivable": "Not activatable",
             "buy": "Buy"
         },
-        "onetime": "Only once",
+        "onetime": "Onetime",
         "monthly": "Monthly",
         "flash": {
             "already_enabled": "The extension is already activated.",
@@ -2094,7 +2094,7 @@
         "active_services": "Active services"
     },
     "lang.fr.recurring": {
-        "onetime": "Lifelong",
+        "onetime": "Onetime",
         "monthly": "Monthly",
         "quarterly": "Quarterly",
         "semiannually": "Biannual",
