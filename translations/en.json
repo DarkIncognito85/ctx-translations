@@ -2091,7 +2091,18 @@
                 "use_owndomain": "Use an existing domain"
             }
         },
-        "active_services": "Active services"
+        "active_services": "Active services",
+        "in_mb": "Value in MB",
+        "network_speed": "Network Speed",
+        "upload_speed": "Upload speed",
+        "ips": "Ips",
+        "ip6": "IP6",
+        "ip6subnet": "IP6 subnet",
+        "burstable_memory": "Burstable memory",
+        "guaranteed_memory": "Guaranteed memory",
+        "vnc": "VNC",
+        "region": "Region",
+        "oses": "Operating systems"
     },
     "lang.fr.recurring": {
         "onetime": "Onetime",
@@ -2535,5 +2546,36 @@
         "public_downloads": "Public downloads",
         "no_downloads": "No downloads",
         "downloads_left": "You have {_downloads} downloads left"
+    },
+    "modules.virtualizor_cloud.lang.fr.messages": {
+        "data": {
+            "os": "Operating system",
+            "security": "Security"
+        },
+        "hostname": "Hostname",
+        "panel": {
+            "info": "VPS Information",
+            "reinstallation": {
+                "title": "Reinstallation",
+                "description": "Reinstall the VM.",
+                "submit": "Reinstall",
+                "reinstall_success": "The reinstallation of the VM was completed successfully.",
+                "reinstall_error": "An error occurred while reinstalling the VM."
+            },
+            "password": {
+                "title": "Password",
+                "description": "Change the password of the virtual machine.",
+                "submit": "Change Password",
+                "password_success": "The password for the virtual machine has been successfully changed.",
+                "password_error": "An error occurred while changing the password of the virtual machine."
+            },
+            "hostname": {
+                "title": "Hostname",
+                "description": "Change the host name of the virtual machine.",
+                "submit": "Change the hostname",
+                "hostname_success": "The hostname of the virtual machine has been successfully changed.",
+                "hostname_error": "An error occurred while changing the hostname of the virtual machine."
+            }
+        }
     }
 }

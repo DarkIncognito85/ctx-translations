@@ -2091,7 +2091,18 @@
                 "use_owndomain": "Verwenden einer vorhandenen Domäne"
             }
         },
-        "active_services": "Aktive Dienstleistungen"
+        "active_services": "Aktive Dienstleistungen",
+        "in_mb": "Wert in MB",
+        "network_speed": "Netzwerkgeschwindigkeit",
+        "upload_speed": "Upload-Geschwindigkeit",
+        "ips": "Ips",
+        "ip6": "Schutzart IP6",
+        "ip6subnet": "IP6-Subnetz",
+        "burstable_memory": "Stabiler Speicher",
+        "guaranteed_memory": "Garantierter Arbeitsspeicher",
+        "vnc": "VNC (VNC)",
+        "region": "Region",
+        "oses": "Betriebssysteme"
     },
     "lang.fr.recurring": {
         "onetime": "Lebenslänglich",
@@ -2535,5 +2546,36 @@
         "public_downloads": "Öffentliche Downloads",
         "no_downloads": "Keine Downloads",
         "downloads_left": "Sie haben noch {_downloads} Downloads übrig"
+    },
+    "modules.virtualizor_cloud.lang.fr.messages": {
+        "data": {
+            "os": "Betriebssystem",
+            "security": "Sicherheit"
+        },
+        "hostname": "Hostname",
+        "panel": {
+            "info": "VPS-Informationen",
+            "reinstallation": {
+                "title": "Neuinstallation",
+                "description": "Installieren Sie die VM neu.",
+                "submit": "Neuinstallieren",
+                "reinstall_success": "Die Neuinstallation der VM wurde erfolgreich abgeschlossen.",
+                "reinstall_error": "Bei der Neuinstallation der VM ist ein Fehler aufgetreten."
+            },
+            "password": {
+                "title": "Passwort",
+                "description": "Ändern Sie das Kennwort der virtuellen Maschine.",
+                "submit": "Passwort ändern",
+                "password_success": "Das Kennwort für die virtuelle Maschine wurde erfolgreich geändert.",
+                "password_error": "Beim Ändern des Kennworts der virtuellen Maschine ist ein Fehler aufgetreten."
+            },
+            "hostname": {
+                "title": "Hostname",
+                "description": "Ändern Sie den Hostnamen der virtuellen Maschine.",
+                "submit": "Ändern des Hostnamens",
+                "hostname_success": "Der Hostname der virtuellen Maschine wurde erfolgreich geändert.",
+                "hostname_error": "Beim Ändern des Hostnamens der virtuellen Maschine ist ein Fehler aufgetreten."
+            }
+        }
     }
 }

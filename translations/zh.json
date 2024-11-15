@@ -2091,7 +2091,18 @@
                 "use_owndomain": "使用现有域"
             }
         },
-        "active_services": "主动服务"
+        "active_services": "主动服务",
+        "in_mb": "值 （MB）",
+        "network_speed": "网络速度",
+        "upload_speed": "上传速度",
+        "ips": "IPS",
+        "ip6": "IP6 防护等级",
+        "ip6subnet": "IP6 子网",
+        "burstable_memory": "可突增内存",
+        "guaranteed_memory": "保证内存",
+        "vnc": "VNC",
+        "region": "地区",
+        "oses": "操作系统"
     },
     "lang.fr.recurring": {
         "onetime": "终身",
@@ -2535,5 +2546,36 @@
         "public_downloads": "公共下载",
         "no_downloads": "无需下载",
         "downloads_left": "您还剩下 {_downloads} 个下载"
+    },
+    "modules.virtualizor_cloud.lang.fr.messages": {
+        "data": {
+            "os": "操作系统",
+            "security": "安全"
+        },
+        "hostname": "主机名",
+        "panel": {
+            "info": "VPS 信息",
+            "reinstallation": {
+                "title": "重新安装",
+                "description": "重新安装 VM。",
+                "submit": "安装",
+                "reinstall_success": "VM 的重新安装已成功完成。",
+                "reinstall_error": "重新安装 VM 时出错。"
+            },
+            "password": {
+                "title": "密码",
+                "description": "更改虚拟机的密码。",
+                "submit": "更改密码",
+                "password_success": "已成功更改虚拟机的密码。",
+                "password_error": "更改虚拟机的密码时出错。"
+            },
+            "hostname": {
+                "title": "主机名",
+                "description": "更改虚拟机的主机名。",
+                "submit": "更改主机名",
+                "hostname_success": "已成功更改虚拟机的主机名。",
+                "hostname_error": "更改虚拟机的主机名时出错。"
+            }
+        }
     }
 }

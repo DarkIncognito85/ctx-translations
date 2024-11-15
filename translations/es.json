@@ -2091,7 +2091,18 @@
                 "use_owndomain": "Usar un dominio existente"
             }
         },
-        "active_services": "Servicios activos"
+        "active_services": "Servicios activos",
+        "in_mb": "Valor en MB",
+        "network_speed": "Velocidad de la red",
+        "upload_speed": "Velocidad de carga",
+        "ips": "Ips",
+        "ip6": "IP6",
+        "ip6subnet": "Subred IP6",
+        "burstable_memory": "Memoria ampliable",
+        "guaranteed_memory": "Memoria garantizada",
+        "vnc": "VNC",
+        "region": "Región",
+        "oses": "Sistemas operativos"
     },
     "lang.fr.recurring": {
         "onetime": "Toda la vida",
@@ -2535,5 +2546,36 @@
         "public_downloads": "Descargas públicas",
         "no_downloads": "Sin descargas",
         "downloads_left": "Te quedan {_downloads} descargas"
+    },
+    "modules.virtualizor_cloud.lang.fr.messages": {
+        "data": {
+            "os": "Sistema operativo",
+            "security": "Seguridad"
+        },
+        "hostname": "Nombre de host",
+        "panel": {
+            "info": "Información de VPS",
+            "reinstallation": {
+                "title": "Reinstalación",
+                "description": "Vuelva a instalar la máquina virtual.",
+                "submit": "Reinstalar",
+                "reinstall_success": "La reinstalación de la máquina virtual se completó correctamente.",
+                "reinstall_error": "Se ha producido un error al reinstalar la máquina virtual."
+            },
+            "password": {
+                "title": "Contraseña",
+                "description": "Cambie la contraseña de la máquina virtual.",
+                "submit": "Cambiar contraseña",
+                "password_success": "La contraseña de la máquina virtual se ha cambiado correctamente.",
+                "password_error": "Se ha producido un error al cambiar la contraseña de la máquina virtual."
+            },
+            "hostname": {
+                "title": "Nombre de host",
+                "description": "Cambie el nombre de host de la máquina virtual.",
+                "submit": "Cambiar el nombre de host",
+                "hostname_success": "El nombre de host de la máquina virtual se ha cambiado correctamente.",
+                "hostname_error": "Se ha producido un error al cambiar el nombre de host de la máquina virtual."
+            }
+        }
     }
 }

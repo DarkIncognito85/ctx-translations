@@ -2091,7 +2091,18 @@
                 "use_owndomain": "Utilizzare un dominio esistente"
             }
         },
-        "active_services": "Servizi attivi"
+        "active_services": "Servizi attivi",
+        "in_mb": "Valore in MB",
+        "network_speed": "Velocità di rete",
+        "upload_speed": "Velocità di caricamento",
+        "ips": "Ips",
+        "ip6": "Grado di protezione IP6",
+        "ip6subnet": "Sottorete IP6",
+        "burstable_memory": "Memoria espandibile",
+        "guaranteed_memory": "Memoria garantita",
+        "vnc": "VNC",
+        "region": "Regione",
+        "oses": "Sistemi operativi"
     },
     "lang.fr.recurring": {
         "onetime": "Vitalizio",
@@ -2535,5 +2546,36 @@
         "public_downloads": "Download pubblici",
         "no_downloads": "Nessun download",
         "downloads_left": "Ti rimangono {_downloads} download"
+    },
+    "modules.virtualizor_cloud.lang.fr.messages": {
+        "data": {
+            "os": "Sistema operativo",
+            "security": "Sicurezza"
+        },
+        "hostname": "Nome host",
+        "panel": {
+            "info": "Informazioni VPS",
+            "reinstallation": {
+                "title": "Reinstallazione",
+                "description": "Reinstallare la macchina virtuale.",
+                "submit": "Reinstallare",
+                "reinstall_success": "La reinstallazione della VM è stata completata correttamente.",
+                "reinstall_error": "Si è verificato un errore durante la reinstallazione della macchina virtuale."
+            },
+            "password": {
+                "title": "Parola d’ordine",
+                "description": "Modificare la password della macchina virtuale.",
+                "submit": "Cambia password",
+                "password_success": "La password per la macchina virtuale è stata modificata correttamente.",
+                "password_error": "Si è verificato un errore durante la modifica della password della macchina virtuale."
+            },
+            "hostname": {
+                "title": "Nome host",
+                "description": "Modificare il nome host della macchina virtuale.",
+                "submit": "Modificare il nome host",
+                "hostname_success": "Il nome host della macchina virtuale è stato modificato correttamente.",
+                "hostname_error": "Si è verificato un errore durante la modifica del nome host della macchina virtuale."
+            }
+        }
     }
 }

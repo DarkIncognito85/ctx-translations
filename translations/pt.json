@@ -2091,7 +2091,18 @@
                 "use_owndomain": "Usar um domínio existente"
             }
         },
-        "active_services": "Serviços ativos"
+        "active_services": "Serviços ativos",
+        "in_mb": "Valor em MB",
+        "network_speed": "Velocidade da rede",
+        "upload_speed": "Velocidade de upload",
+        "ips": "Ips",
+        "ip6": "IP6",
+        "ip6subnet": "Sub-rede IP6",
+        "burstable_memory": "Memória entupida",
+        "guaranteed_memory": "Memória garantida",
+        "vnc": "VNC",
+        "region": "Região",
+        "oses": "Sistemas operacionais"
     },
     "lang.fr.recurring": {
         "onetime": "Vitalício",
@@ -2535,5 +2546,36 @@
         "public_downloads": "Downloads públicos",
         "no_downloads": "Sem downloads",
         "downloads_left": "Você tem {_downloads} downloads restantes"
+    },
+    "modules.virtualizor_cloud.lang.fr.messages": {
+        "data": {
+            "os": "Sistema Operacional",
+            "security": "Segurança"
+        },
+        "hostname": "Nome do host",
+        "panel": {
+            "info": "Informações VPS",
+            "reinstallation": {
+                "title": "Reinstalação",
+                "description": "Reinstale a VM.",
+                "submit": "Reinstalar",
+                "reinstall_success": "A reinstalação da VM foi concluída com êxito.",
+                "reinstall_error": "Ocorreu um erro ao reinstalar a VM."
+            },
+            "password": {
+                "title": "Senha",
+                "description": "Altere a senha da máquina virtual.",
+                "submit": "Alterar senha",
+                "password_success": "A senha da máquina virtual foi alterada com êxito.",
+                "password_error": "Ocorreu um erro ao alterar a senha da máquina virtual."
+            },
+            "hostname": {
+                "title": "Nome do host",
+                "description": "Altere o nome do host da máquina virtual.",
+                "submit": "Alterar o nome do host",
+                "hostname_success": "O nome do host da máquina virtual foi alterado com êxito.",
+                "hostname_error": "Ocorreu um erro ao alterar o nome do host da máquina virtual."
+            }
+        }
     }
 }
