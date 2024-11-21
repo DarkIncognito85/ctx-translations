@@ -23,6 +23,12 @@
             "step3text": "Executez la commande suivante dans votre serveur Discord en y ajoutant le rôle client. En cas de succès, le bot répondra avec un message de succès.",
             "step4text": "Assurez vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au dessus du role à ajouter)."
         },
+        "detection_type": "Type de detection",
+        "detection_types": {
+            "sync": "Compte synchronisé",
+            "active_customers": "Clients ayant synchronisé leur compte avec un service actif",
+            "all_customers": "Tous les clients ayant synchronisé leur compte avec un service existant"
+        },
         "detectedcustomers": "Clients détectés",
         "discordid": "ID Discord",
         "cardinfo": "Rejoignez notre serveur Discord pour retrouver notre communauté, obtenir de l'aide et des informations supplémentaires comme nos dernières promotions.",
@@ -32,7 +38,7 @@
         "accept": "Accepter",
         "decline": "Refuser",
         "details": "Détails",
-        "nocustomers": "Aucun client détecté",
+        "nocustomers": "Aucun {_type} détecté",
         "help": "Besoin d'aide ?",
         "found": "Compte synchronisé détecté : voulez vous afficher les données dans ce ticket ?",
         "infosync": "Ces données ce base sur les comptes ayant synchronisé leur compte Discord avec leur compte client via le module SocialAuth+."
@@ -165,6 +171,15 @@
             }
         }
     },
+    "addons.purchasealert.lang.fr.messages": {
+        "neworder": "Un client à passé une nouvelle commande",
+        "admin": {
+            "title": "Notification d'achat",
+            "description": "Affichez des notifications d'achat récent sur votre site vitrine",
+            "timeout": "Durée d'affichage en millisecondes",
+            "interval": "Intervalle de temps entre les notifications en millisecondes"
+        }
+    },
     "addons.sameipdetector.lang.fr.admin": {
         "dashboard": {
             "sameip_reports": "Double comptes",
@@ -180,6 +195,18 @@
             "action": "Action à effectuer"
         }
     },
+    "addons.sentry.lang.fr.admin": {
+        "title": "Sentry",
+        "description": "Configurez le service de surveillance des erreurs Sentry.",
+        "saved": "Les paramètres ont été enregistrés avec succès.",
+        "fields": {
+            "dsn": "DSN",
+            "sample_rate": "Taux d'échantillonnage",
+            "traces_sample_rate": "Taux d'échantillonnage des traces",
+            "profiles_sample_rate": "Taux d'échantillonnage des profils",
+            "environment": "Environnement"
+        }
+    },
     "addons.socialauth.lang.fr.messages": {
         "logged_in": "Vous êtes connecté.",
         "login_with": "Se connecter avec {_provider}",
@@ -191,6 +218,7 @@
         "redirect": "URL de redirection",
         "redirect_help": "URL de redirection : {_url}",
         "configurate": "Configurer",
+        "email_exists": "Un compte avec cet e-mail existe déjà. Veuillez vous connecter et associer votre compte.",
         "error": "Une erreur s'est produite. Veuillez réessayer.",
         "sync_with": "Synchroniser avec {_provider}",
         "unlink": "Dissocier de {_provider}",
@@ -203,7 +231,7 @@
         "count_linked": "Il y a {_count} compte(s) lié(s).",
         "finish_subtitle": "Veuillez saisir les informations manquantes pour terminer votre inscription."
     },
-        "modules.download.lang.fr.admin": {
+            "modules.download.lang.fr.admin": {
         "download_files": {
             "title": "Fichiers de téléchargement",
             "description": "Gestion des fichiers et versions de téléchargement",
@@ -253,7 +281,7 @@
         "public_downloads": "Téléchargements publics",
         "no_downloads": "Aucun téléchargement",
         "downloads_left": "Il vous reste {_downloads} téléchargements"
-    },
+     },
     "modules.proxmox.lang.fr.messages": {
         "settings": {
             "title": "Proxmox",
@@ -679,7 +707,33 @@
         },
         "emails": {
             "title": "Emails",
-            "subheading": "Voici la liste de tous les emails du système"
+            "sendemail": "Envoyer un email",
+            "subheading": "Voici la liste de tous les emails du système",
+            "condition": "Condition",
+            "send_at": "Heure d'envoi",
+            "button_url": "URL du bouton",
+            "old_customers": "Anciens clients (clients ayant déjà commandé un service, ayant plus de service actif)",
+            "customers_has_no_services": "Clients n'ayant aucun service actif",
+            "customers_has_active_services": "Clients ayant un service actif",
+            "server": "Client ayant un service actif sur le serveur {_server}",
+            "product_active": "Client ayant un service actif du produit {_product}",
+            "product": "Client ayant un service du produit {_product}",
+            "product_active_type": "Client ayant un service du type {_type}",
+            "product_type": "Client ayant un service du type {_type}",
+            "all_customers": "Tous les clients ayant eu au moins un service",
+            "all_registered_customers": "Tous les clients enregistrés",
+            "emails": "Adresses e-mail précises (facultative)",
+            "selected_emails": "Emails sélectionnés",
+            "variables": "Variables disponibles",
+            "success_job": "L'envoi d'email a été planifié avec succès pour {_count} clients à {_date}",
+            "conditions_help": "Plusieurs conditions peuvent être utilisées en même temps pour envoyer à plusieurs conditions.",
+            "create": {
+                "title": "Envoyer un email",
+                "subheading": "Envoyer un email à un client ou un groupe de clients",
+                "next": "Suivant",
+                "send": "Envoyer",
+                "preview": "Prévisualisation"
+            }
         },
         "products": {
             "tariff": "Tarif",
@@ -832,6 +886,8 @@
             "customproduct": "Produit personnalisé",
             "invoice_number": "Numéro de facture",
             "deliveredsuccess": "Le produit a été livré avec succès",
+            "notified": "Le client a été notifié",
+            "notify": "Notifier le client",
             "draft": {
                 "add": "Ajouter un article",
                 "unitprice": "Prix unitaire",
@@ -861,7 +917,11 @@
                 "btn": "Créer"
             },
             "title": "Factures",
-            "subheading": "Voici la liste de toutes les factures du système"
+            "subheading": "Voici la liste de toutes les factures du système",
+            "paidsuccess": "La facture a été marquée comme payée avec succès",
+            "payinvoicebtn": "Débiter",
+            "payinvoicetitle": "Payer la facture",
+            "payinvoicedescription": "Débitez à partir d'une source du client pour payer la facture."
         },
         "admins": {
             "title": "Personnels",
@@ -1148,8 +1208,8 @@
                         "vat_rate_by_country": "Taux de TVA par pays du client",
                         "vat_rate_fixed": "Taux de TVA fixe"
                     },
-                    "mode_tax": {
-                        "title": "Mode de taxe",
+                    "display_product_price": {
+                        "title": "Affichage des prix des produits",
                         "included": "Inclus - Le prix affiché est TTC",
                         "excluded": "Exclus - Le prix affiché est HT"
                     }
@@ -1399,12 +1459,15 @@
         "404": {
             "title": "Page introuvable",
             "description": "Désolé, la page que vous recherchez est introuvable.",
-            "back": "Retourner à la page précédente"
+            "back": "Retourner à la page précédente",
+            "home": "Aller à la page d'accueil",
+            "dashboard": "Aller au tableau de bord"
         },
         "500": {
             "title": "Erreur interne du serveur",
             "description": "Désolé, une erreur interne s'est produite.",
-            "back": "Retourner à la page précédente"
+            "back": "Retourner à la page précédente",
+            "home": "Aller à la page d'accueil"
         }
     },
     "lang.fr.extensions": {
@@ -1449,6 +1512,7 @@
         "content": "Contenu",
         "address2": "Complément d'adresse",
         "city": "Ville",
+        "value": "Valeur",
         "state": "État",
         "edit": "Modifier",
         "url": "URL",
@@ -1494,6 +1558,7 @@
         "date": "Date",
         "clicktoremove": "Cliquez pour supprimer",
         "separebycomma": "Séparés par des virgules",
+        "week": "Semaine",
         "mail": {
             "greeting": "Bonjour %firstname%,",
             "salutation": "Cordialement"
@@ -1823,6 +1888,7 @@
         "manage_permissions": "Gérer les permissions",
         "manage_roles": "Gérer les rôles",
         "show_email_messages": "Voir les emails",
+        "send_email_messages": "Envoyer des emails",
         "dashboard_last_login": "Dernière connexion à l'espace client",
         "show_logs": "Voir l'historique des actions",
         "show_customers": "Voir les clients",
@@ -1870,6 +1936,12 @@
             "shouldnotchanged": "Ce champs est laisser modifiable mais ne devrait pas être modifié hors cas exceptionnel",
             "button_text": "Texte du bouton",
             "subject": "Sujet du e-mail",
+            "import": {
+                "title": "Importer un modèle d'email",
+                "btn": "Importer",
+                "invalid_file": "Le fichier doit être un fichier blade HTML valide",
+                "success": "Le modèle d'email a été importé avec succès."
+            },
             "show": {
                 "title": "Fiche modèle d'email {_name}",
                 "subheading": "Voici les informations liées à ce modèle d'email créé le {_date}"
@@ -1881,6 +1953,7 @@
             "names": {
                 "invoice_paid": "Facture payée",
                 "notify_expiration": "Notification d'expiration",
+                "virtualizor_cloud_vps": "Livraison VPS Revendeur Virtualizor",
                 "wisp": "Livraison Wisp",
                 "pterodactyl": "Livraison Pterodactyl",
                 "virtualizor_vps": "Livraison VPS Virtualizor",
@@ -2002,7 +2075,8 @@
             }
         },
         "theme": {
-            "title": "Theme",
+            "title": "Paramètres du thème",
+            "themename": "Nom du thème",
             "description": "Paramètres du thème de l'espace client",
             "success": "Les paramètres du thème ont été enregistrés avec succès.",
             "fields": {
@@ -2090,6 +2164,7 @@
             "starting": "Démarrage en cours",
             "stopping": "Arrêt en cours"
         },
+        "config_option": "Option de configuration",
         "admin": {
             "title": "Approvisionnement",
             "subheading": "Gérez l'approvisionnement des services pour les clients.",
@@ -2156,7 +2231,7 @@
                     "subheading": "Créer un nouveau service ou importer un existant",
                     "btn1": "Suivant",
                     "btn2": "Importer",
-                    "choose": "Choisissez un serveur déjà existant",
+                    "choose": "Choisissez un hébergement déjà existant",
                     "import": "<u> OU <\/u>&nbsp; Importer un service",
                     "new": "Créer un nouveau service",
                     "created": "Le service a été créé avec succès"
@@ -2169,7 +2244,10 @@
                     "initial_price": "Prix initial",
                     "max_renewals": "Renouvellements maximum",
                     "expires_at": "Expiration",
-                    "subheading": "Voici les informations liées au service de {_owner} créé le {_date}"
+                    "subheading": "Voici les informations liées au service de {_owner} créé le {_date}",
+                    "panel": {
+                        "title": "Panel de gestion"
+                    }
                 },
                 "subheading": "Voici la liste de tous les services du système",
                 "renewals": {
@@ -2180,6 +2258,9 @@
                     "remove": "Retirer la facture",
                     "removed": "La facture a été retirée avec succès",
                     "fromexistinginvoice": "Ajouter sur une facture existante en attente"
+                },
+                "configoptions": {
+                    "btn": "Options du service"
                 },
                 "delivery": {
                     "btn": "Livrer le service",
@@ -2238,6 +2319,23 @@
                 "choose_domain": "Choisir un domaine",
                 "use_subdomain": "Choisir un sous-domaine {_app_name}",
                 "use_owndomain": "Utiliser un domaine existant"
+            },
+            "configoptions_services": {
+                "title": "Options de configuration des services",
+                "subheading": "Gérez les options de configuration additionnelles des services.",
+                "show": {
+                    "title": "Fiche option de configuration {_name}",
+                    "see_service": "Voir le service",
+                    "subheading": "Voici les informations liées à cette option de configuration créée le {_date}"
+                }
+            },
+            "configoptions": {
+                "title": "Options de configuration",
+                "subheading": "Gérez les options de configuration lors d'une commande.",
+                "show": {
+                    "title": "Fiche option de configuration {_name}",
+                    "subheading": "Voici les informations liées à cette option de configuration créée le {_date}"
+                }
             }
         }
     },
@@ -2308,10 +2406,12 @@
         },
         "config": {
             "title": "Configurez votre offre",
+            "options": "Options supplémentaires",
             "summary": "Résumé",
             "summary_description": "Vérifiez votre commande",
             "billing": "Facturation",
-            "recurring_payment": "Paiement récurrent"
+            "recurring_payment": "Paiement récurrent",
+            "onetime_payment": "Paiement unique"
         },
         "mustpopular": "Les plus populaires",
         "qty": "Quantité",
@@ -2574,6 +2674,9 @@
         "ticket_answer": {
             "title": "Réponse à un ticket",
             "description": "Un ticket a reçu une réponse"
+        },
+        "ticket_staff": {
+            "title": "Réponse à un ticket par un personnel"
         }
     }
 }
