@@ -35,7 +35,13 @@
         "nocustomers": "No customers detected",
         "help": "Need help?",
         "found": "Synced account detected: Do you want to view the data in this ticket?",
-        "infosync": "This data is based on accounts that have synchronized their Discord account with their customer account via the SocialAuth+ module."
+        "infosync": "This data is based on accounts that have synchronized their Discord account with their customer account via the SocialAuth+ module.",
+        "detection_type": "Detection Type",
+        "detection_types": {
+            "sync": "Synced account",
+            "active_customers": "Customers who have synced their account with an active service",
+            "all_customers": "All customers who have synced their account with an existing service"
+        }
     },
     "addons.import.lang.fr.import": {
         "title": "Import",
@@ -145,7 +151,8 @@
         "finish_title": "Complete registration",
         "signup_success": "Your registration has been successful.",
         "count_linked": "There are {_count} linked account(s).",
-        "finish_subtitle": "Please enter the missing information to complete your registration."
+        "finish_subtitle": "Please enter the missing information to complete your registration.",
+        "email_exists": "An account with this email already exists. Please log in and link your account."
     },
     "modules.proxmox.lang.fr.messages": {
         "settings": {
@@ -527,7 +534,33 @@
         },
         "emails": {
             "title": "Emails",
-            "subheading": "Here is the list of all the emails in the system"
+            "subheading": "Here is the list of all the emails in the system",
+            "sendemail": "Send an email",
+            "condition": "Condition",
+            "send_at": "Shipping time",
+            "button_url": "Button URL",
+            "old_customers": "Former customers (customers who have already ordered a service, who have more active service)",
+            "customers_has_no_services": "Customers with no active service",
+            "customers_has_active_services": "Active Service Customers",
+            "server": "Client with an active service on server {_server}",
+            "product_active": "Customer with active service of product {_product}",
+            "product": "Customer with a service of the product {_product}",
+            "product_active_type": "Customer with a service of type {_type}",
+            "product_type": "Customer with a service of type {_type}",
+            "all_customers": "All customers who had at least one service",
+            "all_registered_customers": "All registered customers",
+            "emails": "Precise email addresses (optional)",
+            "selected_emails": "Selected Emails",
+            "variables": "Available variables",
+            "success_job": "Email was successfully scheduled for {_count} customers to {_date}",
+            "conditions_help": "Multiple conditions can be used at the same time to send to multiple conditions.",
+            "create": {
+                "title": "Send an email",
+                "subheading": "Send an email to a customer or group of customers",
+                "next": "Next",
+                "send": "Send",
+                "preview": "Preview"
+            }
         },
         "products": {
             "tariff": "Tariff",
@@ -710,7 +743,13 @@
             },
             "title": "Invoices",
             "subheading": "Here is the list of all the invoices in the system",
-            "deliveredsuccess": "The product was successfully delivered"
+            "deliveredsuccess": "The product was successfully delivered",
+            "notified": "The customer has been notified",
+            "notify": "Notify the customer",
+            "paidsuccess": "The invoice has been marked as successfully paid",
+            "payinvoicebtn": "Debit",
+            "payinvoicetitle": "Pay the bill",
+            "payinvoicedescription": "Charge from a customer source to pay the bill."
         },
         "admins": {
             "title": "Staffs",
@@ -1013,6 +1052,11 @@
                         "title": "VAT rate",
                         "vat_rate_by_country": "VAT rate by customer's country",
                         "vat_rate_fixed": "Fixed VAT rate"
+                    },
+                    "display_product_price": {
+                        "title": "Product price display",
+                        "included": "Included - The price displayed is inclusive of VAT",
+                        "excluded": "Excluded - The price displayed is excl. VAT"
                     }
                 },
                 "tax": "VAT management"
@@ -1262,12 +1306,15 @@
         "404": {
             "title": "Page not found",
             "description": "Sorry, the page you are looking for could not be found.",
-            "back": "Return to previous page"
+            "back": "Return to previous page",
+            "home": "Go to the homepage",
+            "dashboard": "Go to the dashboard"
         },
         "500": {
             "title": "Internal Server Error",
             "description": "Sorry, an internal error occurred.",
-            "back": "Return to previous page"
+            "back": "Return to previous page",
+            "home": "Go to the homepage"
         }
     },
     "lang.fr.extensions": {
@@ -1427,7 +1474,9 @@
         "cancel": "Cancel",
         "amount": "Amount",
         "already_sent": "Already Sent",
-        "email_trouble_clicking_button": "If you have problems clicking on the \"{_actionText}\" button, copy and paste the URL below"
+        "email_trouble_clicking_button": "If you have problems clicking on the \"{_actionText}\" button, copy and paste the URL below",
+        "value": "Value",
+        "week": "Week"
     },
     "lang.fr.helpdesk": {
         "ticket": "Ticket",
@@ -1717,7 +1766,8 @@
         "manage_coupons": "Manage coupons",
         "manage_servers": "Manage servers",
         "manage_personalization": "Manage customizations",
-        "staff_permissions": "Staff permissions"
+        "staff_permissions": "Staff permissions",
+        "send_email_messages": "Send emails"
     },
     "lang.fr.personalization": {
         "title": "Customization",
@@ -1759,7 +1809,14 @@
                 "support_admin_ticket_created": "Support ticket created",
                 "support_admin_ticket_reply": "A customer's response to a support ticket",
                 "support_customer_ticket_reply": "Response to a support ticket",
-                "notify_subscription_failed": "Subscription payment failure notification"
+                "notify_subscription_failed": "Subscription payment failure notification",
+                "virtualizor_cloud_vps": "VPS Delivery Virtualizor Reseller"
+            },
+            "import": {
+                "title": "Import an email template",
+                "btn": "Import",
+                "invalid_file": "The file must be a valid HTML blade file",
+                "success": "The email template has been successfully imported."
             }
         },
         "description": "Customize the menus in the customer area and the company's social networks.",
@@ -1879,7 +1936,8 @@
                     "dark": "Dark",
                     "both": "Both"
                 }
-            }
+            },
+            "themename": "Theme Name"
         }
     },
     "lang.fr.provisioning": {
@@ -2020,7 +2078,10 @@
                     "initial_price": "Initial price",
                     "max_renewals": "Maximum renewals",
                     "expires_at": "Expiration",
-                    "subheading": "Here is the information related to the {_owner} service created on {_date}"
+                    "subheading": "Here is the information related to the {_owner} service created on {_date}",
+                    "panel": {
+                        "title": "Management Panel"
+                    }
                 },
                 "subheading": "Here is the list of all the services in the system",
                 "renewals": {
@@ -2072,6 +2133,9 @@
                 },
                 "uncancel": {
                     "success": "The service has been successfully restored"
+                },
+                "configoptions": {
+                    "btn": "Service Options"
                 }
             },
             "subdomains_hosts": {
@@ -2089,6 +2153,23 @@
                 "choose_domain": "Choose a domain",
                 "use_subdomain": "Choose a subdomain {_app_name}",
                 "use_owndomain": "Use an existing domain"
+            },
+            "configoptions_services": {
+                "title": "Service configuration options",
+                "subheading": "Manage additional service configuration options.",
+                "show": {
+                    "title": "Configuration option card {_name}",
+                    "see_service": "View Service",
+                    "subheading": "Here is the information related to this configuration option created on {_date}"
+                }
+            },
+            "configoptions": {
+                "title": "Configuration Options",
+                "subheading": "Manage configuration options when placing an order.",
+                "show": {
+                    "title": "Configuration option card {_name}",
+                    "subheading": "Here is the information related to this configuration option created on {_date}"
+                }
             }
         },
         "active_services": "Active services",
@@ -2102,7 +2183,8 @@
         "guaranteed_memory": "Guaranteed memory",
         "vnc": "VNC",
         "region": "Region",
-        "oses": "Operating systems"
+        "oses": "Operating systems",
+        "config_option": "Configuration option"
     },
     "lang.fr.recurring": {
         "onetime": "Onetime",
@@ -2175,7 +2257,9 @@
             "summary": "Summary",
             "summary_description": "Check Your Order",
             "billing": "Invoicing",
-            "recurring_payment": "Recurring payment"
+            "recurring_payment": "Recurring payment",
+            "options": "Additional Options",
+            "onetime_payment": "One-time payment"
         },
         "mustpopular": "Most Popular",
         "qty": "Quantity",
@@ -2438,6 +2522,9 @@
         "ticket_answer": {
             "title": "Responding to a ticket",
             "description": "A ticket has been answered"
+        },
+        "ticket_staff": {
+            "title": "Responding to a ticket by staff"
         }
     },
     "addons.fund.lang.fr.messages": {
@@ -2576,6 +2663,27 @@
                 "hostname_success": "The hostname of the virtual machine has been successfully changed.",
                 "hostname_error": "An error occurred while changing the hostname of the virtual machine."
             }
+        }
+    },
+    "addons.purchasealert.lang.fr.messages": {
+        "neworder": "A customer has placed a new order",
+        "admin": {
+            "title": "Purchase Notification",
+            "description": "Display recent purchase notifications on your storefront",
+            "timeout": "Display time in milliseconds",
+            "interval": "Time interval between notifications in milliseconds"
+        }
+    },
+    "addons.sentry.lang.fr.admin": {
+        "title": "Sentry",
+        "description": "Set up the Sentry Error Monitoring Service.",
+        "saved": "The settings have been saved successfully.",
+        "fields": {
+            "dsn": "DSN",
+            "sample_rate": "Sampling rate",
+            "traces_sample_rate": "Trace sampling rate",
+            "profiles_sample_rate": "Profile sampling rate",
+            "environment": "Environment"
         }
     }
 }

@@ -35,7 +35,13 @@
         "nocustomers": "Keine Kunden erkannt",
         "help": "Benötigen Sie Hilfe?",
         "found": "Synchronisiertes Konto erkannt: Möchten Sie die Daten in diesem Ticket anzeigen?",
-        "infosync": "Diese Daten basieren auf Accounts, die ihren Discord-Account über das SocialAuth+-Modul mit ihrem Kundenkonto synchronisiert haben."
+        "infosync": "Diese Daten basieren auf Accounts, die ihren Discord-Account über das SocialAuth+-Modul mit ihrem Kundenkonto synchronisiert haben.",
+        "detection_type": "Art der Detektion",
+        "detection_types": {
+            "sync": "Synchronisiertes Konto",
+            "active_customers": "Kunden, die ihr Konto mit einem aktiven Dienst synchronisiert haben",
+            "all_customers": "Alle Kunden, die ihr Konto mit einem bestehenden Dienst synchronisiert haben"
+        }
     },
     "addons.import.lang.fr.import": {
         "title": "Importieren",
@@ -145,7 +151,8 @@
         "finish_title": "Registrierung abschließen",
         "signup_success": "Ihre Registrierung war erfolgreich.",
         "count_linked": "Es gibt {_count} verknüpfte Konten.",
-        "finish_subtitle": "Bitte geben Sie die fehlenden Informationen ein, um Ihre Registrierung abzuschließen."
+        "finish_subtitle": "Bitte geben Sie die fehlenden Informationen ein, um Ihre Registrierung abzuschließen.",
+        "email_exists": "Ein Konto mit dieser E-Mail-Adresse existiert bereits. Bitte loggen Sie sich ein und verknüpfen Sie Ihr Konto."
     },
     "modules.proxmox.lang.fr.messages": {
         "settings": {
@@ -527,7 +534,33 @@
         },
         "emails": {
             "title": "E-Mails",
-            "subheading": "Hier ist die Liste aller E-Mails im System"
+            "subheading": "Hier ist die Liste aller E-Mails im System",
+            "sendemail": "Senden Sie eine E-Mail",
+            "condition": "Zustand",
+            "send_at": "Lieferzeit",
+            "button_url": "Schaltflächen-URL",
+            "old_customers": "Ehemalige Kunden (Kunden, die bereits einen Service bestellt haben, die einen aktiveren Service haben)",
+            "customers_has_no_services": "Kunden ohne aktiven Service",
+            "customers_has_active_services": "Aktive Service-Kunden",
+            "server": "Client mit einem aktiven Dienst auf dem Server {_server}",
+            "product_active": "Kunde mit aktivem Service des Produkts {_product}",
+            "product": "Kunde mit einer Dienstleistung des Produkts {_product}",
+            "product_active_type": "Kunde mit einer Dienstleistung vom Typ {_type}",
+            "product_type": "Kunde mit einer Dienstleistung vom Typ {_type}",
+            "all_customers": "Alle Kunden, die mindestens einen Service in Anspruch genommen haben",
+            "all_registered_customers": "Alle registrierten Kunden",
+            "emails": "Genaue E-Mail-Adressen (optional)",
+            "selected_emails": "Ausgewählte E-Mails",
+            "variables": "Verfügbare Variablen",
+            "success_job": "E-Mail wurde erfolgreich für {_count}-Kunden an {_date} geplant.",
+            "conditions_help": "Mehrere Bedingungen können gleichzeitig verwendet werden, um an mehrere Bedingungen zu senden.",
+            "create": {
+                "title": "Senden Sie eine E-Mail",
+                "subheading": "Senden einer E-Mail an einen Kunden oder eine Gruppe von Kunden",
+                "next": "Nächster",
+                "send": "Senden",
+                "preview": "Vorschau"
+            }
         },
         "products": {
             "tariff": "Tarif",
@@ -710,7 +743,13 @@
             },
             "title": "Rechnungen",
             "subheading": "Hier ist die Liste aller Rechnungen im System",
-            "deliveredsuccess": "Das Produkt wurde erfolgreich ausgeliefert"
+            "deliveredsuccess": "Das Produkt wurde erfolgreich ausgeliefert",
+            "notified": "Der Kunde wurde benachrichtigt",
+            "notify": "Benachrichtigen Sie den Kunden",
+            "paidsuccess": "Die Rechnung wurde als erfolgreich bezahlt markiert",
+            "payinvoicebtn": "Soll",
+            "payinvoicetitle": "Bezahlen Sie die Rechnung",
+            "payinvoicedescription": "Belasten Sie die Rechnung von einer Kundenquelle, um die Rechnung zu bezahlen."
         },
         "admins": {
             "title": "Persönlich",
@@ -1013,6 +1052,11 @@
                         "title": "Mehrwertsteuersatz",
                         "vat_rate_by_country": "Mehrwertsteuersatz nach Land des Kunden",
                         "vat_rate_fixed": "Fester Mehrwertsteuersatz"
+                    },
+                    "display_product_price": {
+                        "title": "Anzeige des Produktpreises",
+                        "included": "Inbegriffen - Der angezeigte Preis versteht sich inklusive Mehrwertsteuer",
+                        "excluded": "Ausgeschlossen - Der angezeigte Preis versteht sich zzgl. MwSt."
                     }
                 },
                 "tax": "Verwaltung der Mehrwertsteuer"
@@ -1262,12 +1306,15 @@
         "404": {
             "title": "Seite nicht gefunden",
             "description": "Die von Ihnen gesuchte Seite konnte leider nicht gefunden werden.",
-            "back": "Zurück zur vorherigen Seite"
+            "back": "Zurück zur vorherigen Seite",
+            "home": "Zur Startseite",
+            "dashboard": "Gehen Sie zum Dashboard"
         },
         "500": {
             "title": "Interner Serverfehler",
             "description": "Leider ist ein interner Fehler aufgetreten.",
-            "back": "Zurück zur vorherigen Seite"
+            "back": "Zurück zur vorherigen Seite",
+            "home": "Zur Startseite"
         }
     },
     "lang.fr.extensions": {
@@ -1427,7 +1474,9 @@
         "cancel": "Abbrechen",
         "amount": "Menge",
         "already_sent": "Bereits gesendet",
-        "email_trouble_clicking_button": "Wenn Sie Probleme haben, auf die Schaltfläche \"{_actionText}\" zu klicken, kopieren Sie die untenstehende URL und fügen Sie sie ein"
+        "email_trouble_clicking_button": "Wenn Sie Probleme haben, auf die Schaltfläche \"{_actionText}\" zu klicken, kopieren Sie die untenstehende URL und fügen Sie sie ein",
+        "value": "Wert",
+        "week": "Woche"
     },
     "lang.fr.helpdesk": {
         "ticket": "Fahrkarte",
@@ -1717,7 +1766,8 @@
         "manage_coupons": "Gutscheine verwalten",
         "manage_servers": "Server verwalten",
         "manage_personalization": "Verwalten von Anpassungen",
-        "staff_permissions": "Berechtigungen für Mitarbeiter"
+        "staff_permissions": "Berechtigungen für Mitarbeiter",
+        "send_email_messages": "E-Mails senden"
     },
     "lang.fr.personalization": {
         "title": "Anpassung",
@@ -1759,7 +1809,14 @@
                 "support_admin_ticket_created": "Support-Ticket erstellt",
                 "support_admin_ticket_reply": "Die Antwort eines Kunden auf ein Support-Ticket",
                 "support_customer_ticket_reply": "Antwort auf ein Support-Ticket",
-                "notify_subscription_failed": "Benachrichtigung über fehlgeschlagene Abonnementzahlung"
+                "notify_subscription_failed": "Benachrichtigung über fehlgeschlagene Abonnementzahlung",
+                "virtualizor_cloud_vps": "VPS Delivery Virtualizor Reseller"
+            },
+            "import": {
+                "title": "Importieren einer E-Mail-Vorlage",
+                "btn": "Importieren",
+                "invalid_file": "Bei der Datei muss es sich um eine gültige HTML-Blade-Datei handeln",
+                "success": "Die E-Mail-Vorlage wurde erfolgreich importiert."
             }
         },
         "description": "Passen Sie die Menüs im Kundenbereich und in den sozialen Netzwerken des Unternehmens an.",
@@ -1879,7 +1936,8 @@
                     "dark": "Dunkel",
                     "both": "Beide"
                 }
-            }
+            },
+            "themename": "Name des Themas"
         }
     },
     "lang.fr.provisioning": {
@@ -2020,7 +2078,10 @@
                     "initial_price": "Ursprünglicher Preis",
                     "max_renewals": "Maximale Verlängerungen",
                     "expires_at": "Ablauf",
-                    "subheading": "Hier sind die Informationen zum {_owner}-Dienst, der auf {_date} erstellt wurde:"
+                    "subheading": "Hier sind die Informationen zum {_owner}-Dienst, der auf {_date} erstellt wurde:",
+                    "panel": {
+                        "title": "Management-Panel"
+                    }
                 },
                 "subheading": "Hier ist die Liste aller Dienste im System",
                 "renewals": {
@@ -2072,6 +2133,9 @@
                 },
                 "uncancel": {
                     "success": "Der Dienst wurde erfolgreich wiederhergestellt"
+                },
+                "configoptions": {
+                    "btn": "Service-Optionen"
                 }
             },
             "subdomains_hosts": {
@@ -2089,6 +2153,23 @@
                 "choose_domain": "Wählen Sie eine Domain",
                 "use_subdomain": "Wählen Sie eine Subdomain {_app_name}",
                 "use_owndomain": "Verwenden einer vorhandenen Domäne"
+            },
+            "configoptions_services": {
+                "title": "Optionen für die Dienstkonfiguration",
+                "subheading": "Verwalten Sie zusätzliche Servicekonfigurationsoptionen.",
+                "show": {
+                    "title": "Karte der Konfigurationsoption {_name}",
+                    "see_service": "Service anzeigen",
+                    "subheading": "Hier sind die Informationen zu dieser Konfigurationsoption, die am {_date} erstellt wurde."
+                }
+            },
+            "configoptions": {
+                "title": "Konfigurationsmöglichkeiten",
+                "subheading": "Verwalten Sie die Konfigurationsoptionen bei der Auftragserteilung.",
+                "show": {
+                    "title": "Karte der Konfigurationsoption {_name}",
+                    "subheading": "Hier sind die Informationen zu dieser Konfigurationsoption, die am {_date} erstellt wurde."
+                }
             }
         },
         "active_services": "Aktive Dienstleistungen",
@@ -2102,7 +2183,8 @@
         "guaranteed_memory": "Garantierter Arbeitsspeicher",
         "vnc": "VNC (VNC)",
         "region": "Region",
-        "oses": "Betriebssysteme"
+        "oses": "Betriebssysteme",
+        "config_option": "Konfigurationsoption"
     },
     "lang.fr.recurring": {
         "onetime": "Lebenslänglich",
@@ -2175,7 +2257,9 @@
             "summary": "Zusammenfassung",
             "summary_description": "Überprüfen Sie Ihre Bestellung",
             "billing": "Fakturierung",
-            "recurring_payment": "Wiederkehrende Zahlung"
+            "recurring_payment": "Wiederkehrende Zahlung",
+            "options": "Zusätzliche Optionen",
+            "onetime_payment": "Einmalige Zahlung"
         },
         "mustpopular": "Beliebteste",
         "qty": "Menge",
@@ -2438,6 +2522,9 @@
         "ticket_answer": {
             "title": "Auf ein Ticket antworten",
             "description": "Ein Ticket wurde beantwortet"
+        },
+        "ticket_staff": {
+            "title": "Beantworten eines Tickets durch Mitarbeiter"
         }
     },
     "addons.fund.lang.fr.messages": {
@@ -2576,6 +2663,27 @@
                 "hostname_success": "Der Hostname der virtuellen Maschine wurde erfolgreich geändert.",
                 "hostname_error": "Beim Ändern des Hostnamens der virtuellen Maschine ist ein Fehler aufgetreten."
             }
+        }
+    },
+    "addons.purchasealert.lang.fr.messages": {
+        "neworder": "Ein Kunde hat eine neue Bestellung aufgegeben",
+        "admin": {
+            "title": "Kauf-Benachrichtigung",
+            "description": "Zeigen Sie Benachrichtigungen über letzte Käufe in Ihrem Schaufenster an",
+            "timeout": "Anzeigezeit in Millisekunden",
+            "interval": "Zeitintervall zwischen Benachrichtigungen in Millisekunden"
+        }
+    },
+    "addons.sentry.lang.fr.admin": {
+        "title": "Wache",
+        "description": "Richten Sie den Sentry Error Monitoring Service ein.",
+        "saved": "Die Einstellungen wurden erfolgreich gespeichert.",
+        "fields": {
+            "dsn": "DSN",
+            "sample_rate": "Samplingrate",
+            "traces_sample_rate": "Trace-Sampling-Rate",
+            "profiles_sample_rate": "Profil-Abtastrate",
+            "environment": "Umwelt"
         }
     }
 }

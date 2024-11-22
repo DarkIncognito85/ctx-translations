@@ -35,7 +35,13 @@
         "nocustomers": "未检测到客户",
         "help": "需要帮助？",
         "found": "检测到已同步帐户：是否要查看此工单中的数据？",
-        "infosync": "此数据基于通过 SocialAuth+ 模块将其 Discord 帐户与其客户帐户同步的帐户。"
+        "infosync": "此数据基于通过 SocialAuth+ 模块将其 Discord 帐户与其客户帐户同步的帐户。",
+        "detection_type": "检测类型",
+        "detection_types": {
+            "sync": "已同步帐户",
+            "active_customers": "已将其账户与活动服务同步的客户",
+            "all_customers": "已将其账户与现有服务同步的所有客户"
+        }
     },
     "addons.import.lang.fr.import": {
         "title": "进口",
@@ -145,7 +151,8 @@
         "finish_title": "完成注册",
         "signup_success": "您的注册已成功。",
         "count_linked": "有 {_count} 个已关联的帐户。",
-        "finish_subtitle": "请输入缺失的信息以完成注册。"
+        "finish_subtitle": "请输入缺失的信息以完成注册。",
+        "email_exists": "包含此电子邮件的帐户已存在。请登录并关联您的帐户。"
     },
     "modules.proxmox.lang.fr.messages": {
         "settings": {
@@ -527,7 +534,33 @@
         },
         "emails": {
             "title": "电子邮件",
-            "subheading": "这是系统中所有电子邮件的列表"
+            "subheading": "这是系统中所有电子邮件的列表",
+            "sendemail": "发送电子邮件",
+            "condition": "条件",
+            "send_at": "发货时间",
+            "button_url": "按钮 URL",
+            "old_customers": "以前的客户（已订购服务的客户，拥有更活跃的服务）",
+            "customers_has_no_services": "没有有效服务的乘客",
+            "customers_has_active_services": "活跃服务客户",
+            "server": "在服务器上具有活动服务的客户端 {_server}",
+            "product_active": "具有产品 {_product} 的有效服务的客户",
+            "product": "使用产品 {_product} 服务的客户",
+            "product_active_type": "服务类型为 {_type} 的客户",
+            "product_type": "服务类型为 {_type} 的客户",
+            "all_customers": "至少拥有一项服务的所有客户",
+            "all_registered_customers": "所有注册客户",
+            "emails": "精确的电子邮件地址（可选）",
+            "selected_emails": "选定的电子邮件",
+            "variables": "可用变量",
+            "success_job": "已成功将 {_count} 客户的电子邮件安排到 {_date}",
+            "conditions_help": "可以同时使用多个条件来发送到多个条件。",
+            "create": {
+                "title": "发送电子邮件",
+                "subheading": "向客户或客户组发送电子邮件",
+                "next": "下一个",
+                "send": "发送",
+                "preview": "预览"
+            }
         },
         "products": {
             "tariff": "关税",
@@ -710,7 +743,13 @@
             },
             "title": "条例 草案",
             "subheading": "这是系统中所有发票的列表",
-            "deliveredsuccess": "产品已成功交付"
+            "deliveredsuccess": "产品已成功交付",
+            "notified": "客户已收到通知",
+            "notify": "通知客户",
+            "paidsuccess": "发票已标记为已成功支付",
+            "payinvoicebtn": "借方",
+            "payinvoicetitle": "支付账单",
+            "payinvoicedescription": "从客户来源收取费用以支付账单。"
         },
         "admins": {
             "title": "个人",
@@ -1013,6 +1052,11 @@
                         "title": "增值税税率",
                         "vat_rate_by_country": "客户所在国家/地区的增值税税率",
                         "vat_rate_fixed": "固定增值税税率"
+                    },
+                    "display_product_price": {
+                        "title": "产品价格显示",
+                        "included": "包含 - 显示的价格包含增值税",
+                        "excluded": "不包含 - 显示的价格不含增值税"
                     }
                 },
                 "tax": "增值税管理"
@@ -1262,12 +1306,15 @@
         "404": {
             "title": "找不到页面",
             "description": "抱歉，找不到您要查找的页面。",
-            "back": "返回上一页"
+            "back": "返回上一页",
+            "home": "前往主页",
+            "dashboard": "转到仪表板"
         },
         "500": {
             "title": "内部服务器错误",
             "description": "抱歉，发生了内部错误。",
-            "back": "返回上一页"
+            "back": "返回上一页",
+            "home": "前往主页"
         }
     },
     "lang.fr.extensions": {
@@ -1427,7 +1474,9 @@
         "cancel": "取消",
         "amount": "量",
         "already_sent": "已发送",
-        "email_trouble_clicking_button": "如果您在点击“{_actionText}”按钮时遇到问题，请复制并粘贴下面的 URL"
+        "email_trouble_clicking_button": "如果您在点击“{_actionText}”按钮时遇到问题，请复制并粘贴下面的 URL",
+        "value": "价值",
+        "week": "周"
     },
     "lang.fr.helpdesk": {
         "ticket": "票",
@@ -1717,7 +1766,8 @@
         "manage_coupons": "管理优惠券",
         "manage_servers": "管理服务器",
         "manage_personalization": "管理自定义项",
-        "staff_permissions": "员工权限"
+        "staff_permissions": "员工权限",
+        "send_email_messages": "发送电子邮件"
     },
     "lang.fr.personalization": {
         "title": "定制",
@@ -1759,7 +1809,14 @@
                 "support_admin_ticket_created": "已创建支持票证",
                 "support_admin_ticket_reply": "客户对支持工单的响应",
                 "support_customer_ticket_reply": "对支持票证的响应",
-                "notify_subscription_failed": "订阅付款失败通知"
+                "notify_subscription_failed": "订阅付款失败通知",
+                "virtualizor_cloud_vps": "VPS 交付虚拟经销商"
+            },
+            "import": {
+                "title": "导入电子邮件模板",
+                "btn": "进口",
+                "invalid_file": "该文件必须是有效的 HTML 刀片文件",
+                "success": "电子邮件模板已成功导入。"
             }
         },
         "description": "自定义客户区和公司社交网络中的菜单。",
@@ -1879,7 +1936,8 @@
                     "dark": "黑暗",
                     "both": "双"
                 }
-            }
+            },
+            "themename": "主题名称"
         }
     },
     "lang.fr.provisioning": {
@@ -2020,7 +2078,10 @@
                     "initial_price": "初始价格",
                     "max_renewals": "最大续订数",
                     "expires_at": "呼气",
-                    "subheading": "以下是与在 {_date} 创建的 {_owner} 服务的相关信息"
+                    "subheading": "以下是与在 {_date} 创建的 {_owner} 服务的相关信息",
+                    "panel": {
+                        "title": "管理面板"
+                    }
                 },
                 "subheading": "以下是系统中所有服务的列表",
                 "renewals": {
@@ -2072,6 +2133,9 @@
                 },
                 "uncancel": {
                     "success": "服务已成功恢复"
+                },
+                "configoptions": {
+                    "btn": "服务选项"
                 }
             },
             "subdomains_hosts": {
@@ -2089,6 +2153,23 @@
                 "choose_domain": "选择域",
                 "use_subdomain": "选择子域 {_app_name}",
                 "use_owndomain": "使用现有域"
+            },
+            "configoptions_services": {
+                "title": "服务配置选项",
+                "subheading": "管理其他服务配置选项。",
+                "show": {
+                    "title": "配置选项卡 {_name}",
+                    "see_service": "查看服务",
+                    "subheading": "以下是与在 {_date} 上创建的此配置选项相关的信息"
+                }
+            },
+            "configoptions": {
+                "title": "配置选项",
+                "subheading": "在下订单时管理配置选项。",
+                "show": {
+                    "title": "配置选项卡 {_name}",
+                    "subheading": "以下是与在 {_date} 上创建的此配置选项相关的信息"
+                }
             }
         },
         "active_services": "主动服务",
@@ -2102,7 +2183,8 @@
         "guaranteed_memory": "保证内存",
         "vnc": "VNC",
         "region": "地区",
-        "oses": "操作系统"
+        "oses": "操作系统",
+        "config_option": "配置选项"
     },
     "lang.fr.recurring": {
         "onetime": "终身",
@@ -2175,7 +2257,9 @@
             "summary": "总结",
             "summary_description": "检查您的订单",
             "billing": "发票",
-            "recurring_payment": "定期付款"
+            "recurring_payment": "定期付款",
+            "options": "其他选项",
+            "onetime_payment": "一次性付款"
         },
         "mustpopular": "最受欢迎",
         "qty": "数量",
@@ -2438,6 +2522,9 @@
         "ticket_answer": {
             "title": "响应工单",
             "description": "工单已得到解答"
+        },
+        "ticket_staff": {
+            "title": "工作人员对工单的回复"
         }
     },
     "addons.fund.lang.fr.messages": {
@@ -2576,6 +2663,27 @@
                 "hostname_success": "已成功更改虚拟机的主机名。",
                 "hostname_error": "更改虚拟机的主机名时出错。"
             }
+        }
+    },
+    "addons.purchasealert.lang.fr.messages": {
+        "neworder": "客户已下新订单",
+        "admin": {
+            "title": "购买须知",
+            "description": "在您的店面上显示最近的购买通知",
+            "timeout": "显示时间（以毫秒为单位）",
+            "interval": "通知之间的时间间隔（以毫秒为单位）"
+        }
+    },
+    "addons.sentry.lang.fr.admin": {
+        "title": "哨兵",
+        "description": "设置 Sentry 错误监控服务。",
+        "saved": "设置已成功保存。",
+        "fields": {
+            "dsn": "DSN 系列",
+            "sample_rate": "采样率",
+            "traces_sample_rate": "跟踪采样率",
+            "profiles_sample_rate": "配置文件采样率",
+            "environment": "环境"
         }
     }
 }

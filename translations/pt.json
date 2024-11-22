@@ -35,7 +35,13 @@
         "nocustomers": "Nenhum cliente detectado",
         "help": "Precisa de ajuda?",
         "found": "Conta sincronizada detectada: deseja visualizar os dados deste ticket?",
-        "infosync": "Esses dados são baseados em contas que sincronizaram sua conta do Discord com sua conta de cliente por meio do módulo SocialAuth+."
+        "infosync": "Esses dados são baseados em contas que sincronizaram sua conta do Discord com sua conta de cliente por meio do módulo SocialAuth+.",
+        "detection_type": "Tipo de detecção",
+        "detection_types": {
+            "sync": "Conta sincronizada",
+            "active_customers": "Clientes que sincronizaram sua conta com um serviço ativo",
+            "all_customers": "Todos os clientes que sincronizaram sua conta com um serviço existente"
+        }
     },
     "addons.import.lang.fr.import": {
         "title": "Importação",
@@ -145,7 +151,8 @@
         "finish_title": "Registro completo",
         "signup_success": "Seu registro foi bem-sucedido.",
         "count_linked": "Existem {_count} conta(s) vinculada(s).",
-        "finish_subtitle": "Insira as informações que faltam para concluir seu registro."
+        "finish_subtitle": "Insira as informações que faltam para concluir seu registro.",
+        "email_exists": "Já existe uma conta com este e-mail. Faça login e vincule sua conta."
     },
     "modules.proxmox.lang.fr.messages": {
         "settings": {
@@ -527,7 +534,33 @@
         },
         "emails": {
             "title": "E-mails",
-            "subheading": "Aqui está a lista de todos os e-mails no sistema"
+            "subheading": "Aqui está a lista de todos os e-mails no sistema",
+            "sendemail": "Envie um e-mail",
+            "condition": "Condição",
+            "send_at": "Tempo de envio",
+            "button_url": "URL do botão",
+            "old_customers": "Ex-clientes (clientes que já solicitaram um serviço, que têm um serviço mais ativo)",
+            "customers_has_no_services": "Clientes sem serviço ativo",
+            "customers_has_active_services": "Clientes de serviço ativo",
+            "server": "Cliente com um serviço ativo no servidor {_server}",
+            "product_active": "Cliente com serviço ativo do produto {_product}",
+            "product": "Cliente com um serviço do produto {_product}",
+            "product_active_type": "Cliente com um serviço do tipo {_type}",
+            "product_type": "Cliente com um serviço do tipo {_type}",
+            "all_customers": "Todos os clientes que tiveram pelo menos um serviço",
+            "all_registered_customers": "Todos os clientes registrados",
+            "emails": "Endereços de e-mail precisos (opcional)",
+            "selected_emails": "E-mails selecionados",
+            "variables": "Variáveis disponíveis",
+            "success_job": "O e-mail foi agendado com sucesso para clientes {_count} para {_date}",
+            "conditions_help": "Várias condições podem ser usadas ao mesmo tempo para enviar para várias condições.",
+            "create": {
+                "title": "Envie um e-mail",
+                "subheading": "Enviar um e-mail para um cliente ou grupo de clientes",
+                "next": "Próximo",
+                "send": "Enviar",
+                "preview": "Visualizar"
+            }
         },
         "products": {
             "tariff": "Tarifa",
@@ -710,7 +743,13 @@
             },
             "title": "Contas",
             "subheading": "Aqui está a lista de todas as faturas no sistema",
-            "deliveredsuccess": "O produto foi entregue com sucesso"
+            "deliveredsuccess": "O produto foi entregue com sucesso",
+            "notified": "O cliente foi notificado",
+            "notify": "Notifique o cliente",
+            "paidsuccess": "A fatura foi marcada como paga com sucesso",
+            "payinvoicebtn": "Debitar",
+            "payinvoicetitle": "Pague a conta",
+            "payinvoicedescription": "Cobrar de uma fonte do cliente para pagar a conta."
         },
         "admins": {
             "title": "Pessoal",
@@ -1013,6 +1052,11 @@
                         "title": "Taxa de IVA",
                         "vat_rate_by_country": "Taxa de IVA por país do cliente",
                         "vat_rate_fixed": "Taxa fixa de IVA"
+                    },
+                    "display_product_price": {
+                        "title": "Exibição de preço do produto",
+                        "included": "Incluído - O preço apresentado inclui IVA",
+                        "excluded": "Excluído - O preço apresentado é sem IVA"
                     }
                 },
                 "tax": "Gestão do IVA"
@@ -1262,12 +1306,15 @@
         "404": {
             "title": "Página não encontrada",
             "description": "Desculpe, a página que você está procurando não foi encontrada.",
-            "back": "Voltar à página anterior"
+            "back": "Voltar à página anterior",
+            "home": "Ir para a página inicial",
+            "dashboard": "Ir para o painel"
         },
         "500": {
             "title": "Erro interno do servidor",
             "description": "Desculpe, ocorreu um erro interno.",
-            "back": "Voltar à página anterior"
+            "back": "Voltar à página anterior",
+            "home": "Ir para a página inicial"
         }
     },
     "lang.fr.extensions": {
@@ -1427,7 +1474,9 @@
         "cancel": "Cancelar",
         "amount": "Quantidade",
         "already_sent": "Já enviado",
-        "email_trouble_clicking_button": "Se você tiver problemas ao clicar no botão \"{_actionText}\", copie e cole o URL abaixo"
+        "email_trouble_clicking_button": "Se você tiver problemas ao clicar no botão \"{_actionText}\", copie e cole o URL abaixo",
+        "value": "Valor",
+        "week": "Semana"
     },
     "lang.fr.helpdesk": {
         "ticket": "Bilhete",
@@ -1717,7 +1766,8 @@
         "manage_coupons": "Gerenciar cupons",
         "manage_servers": "Gerenciar servidores",
         "manage_personalization": "Gerenciar personalizações",
-        "staff_permissions": "Permissões da equipe"
+        "staff_permissions": "Permissões da equipe",
+        "send_email_messages": "Enviar e-mails"
     },
     "lang.fr.personalization": {
         "title": "Personalização",
@@ -1759,7 +1809,14 @@
                 "support_admin_ticket_created": "Ticket de suporte criado",
                 "support_admin_ticket_reply": "A resposta de um cliente a um tíquete de suporte",
                 "support_customer_ticket_reply": "Resposta a um tíquete de suporte",
-                "notify_subscription_failed": "Notificação de falha no pagamento da assinatura"
+                "notify_subscription_failed": "Notificação de falha no pagamento da assinatura",
+                "virtualizor_cloud_vps": "Revendedor Virtualizador de Entrega VPS"
+            },
+            "import": {
+                "title": "Importar um modelo de e-mail",
+                "btn": "Importação",
+                "invalid_file": "O arquivo deve ser um arquivo blade HTML válido",
+                "success": "O modelo de e-mail foi importado com sucesso."
             }
         },
         "description": "Personalize os menus na área de cliente e nas redes sociais da empresa.",
@@ -1879,7 +1936,8 @@
                     "dark": "Escuro",
                     "both": "Ambos"
                 }
-            }
+            },
+            "themename": "Nome do tema"
         }
     },
     "lang.fr.provisioning": {
@@ -2020,7 +2078,10 @@
                     "initial_price": "Preço inicial",
                     "max_renewals": "Renovações máximas",
                     "expires_at": "Expiração",
-                    "subheading": "Aqui estão as informações relacionadas ao serviço {_owner} criado em {_date}"
+                    "subheading": "Aqui estão as informações relacionadas ao serviço {_owner} criado em {_date}",
+                    "panel": {
+                        "title": "Painel de Gestão"
+                    }
                 },
                 "subheading": "Aqui está a lista de todos os serviços do sistema",
                 "renewals": {
@@ -2072,6 +2133,9 @@
                 },
                 "uncancel": {
                     "success": "O serviço foi restaurado com sucesso"
+                },
+                "configoptions": {
+                    "btn": "Opções de serviço"
                 }
             },
             "subdomains_hosts": {
@@ -2089,6 +2153,23 @@
                 "choose_domain": "Escolha um domínio",
                 "use_subdomain": "Escolha um subdomínio {_app_name}",
                 "use_owndomain": "Usar um domínio existente"
+            },
+            "configoptions_services": {
+                "title": "Opções de configuração de serviço",
+                "subheading": "Gerencie opções adicionais de configuração de serviço.",
+                "show": {
+                    "title": "Cartão de opção de configuração {_name}",
+                    "see_service": "Ver serviço",
+                    "subheading": "Aqui estão as informações relacionadas a esta opção de configuração criada em {_date}"
+                }
+            },
+            "configoptions": {
+                "title": "Opções de configuração",
+                "subheading": "Gerencie as opções de configuração ao fazer um pedido.",
+                "show": {
+                    "title": "Cartão de opção de configuração {_name}",
+                    "subheading": "Aqui estão as informações relacionadas a esta opção de configuração criada em {_date}"
+                }
             }
         },
         "active_services": "Serviços ativos",
@@ -2102,7 +2183,8 @@
         "guaranteed_memory": "Memória garantida",
         "vnc": "VNC",
         "region": "Região",
-        "oses": "Sistemas operacionais"
+        "oses": "Sistemas operacionais",
+        "config_option": "Opção de configuração"
     },
     "lang.fr.recurring": {
         "onetime": "Vitalício",
@@ -2175,7 +2257,9 @@
             "summary": "Resumo",
             "summary_description": "Verifique seu pedido",
             "billing": "Facturação",
-            "recurring_payment": "Pagamento recorrente"
+            "recurring_payment": "Pagamento recorrente",
+            "options": "Opções adicionais",
+            "onetime_payment": "Pagamento único"
         },
         "mustpopular": "Mais popular",
         "qty": "Quantidade",
@@ -2438,6 +2522,9 @@
         "ticket_answer": {
             "title": "Respondendo a um ticket",
             "description": "Um ticket foi respondido"
+        },
+        "ticket_staff": {
+            "title": "Resposta a um ticket pela equipe"
         }
     },
     "addons.fund.lang.fr.messages": {
@@ -2576,6 +2663,27 @@
                 "hostname_success": "O nome do host da máquina virtual foi alterado com êxito.",
                 "hostname_error": "Ocorreu um erro ao alterar o nome do host da máquina virtual."
             }
+        }
+    },
+    "addons.purchasealert.lang.fr.messages": {
+        "neworder": "Um cliente fez um novo pedido",
+        "admin": {
+            "title": "Notificação de compra",
+            "description": "Exiba notificações de compras recentes em sua vitrine",
+            "timeout": "Tempo de exibição em milissegundos",
+            "interval": "Intervalo de tempo entre notificações em milissegundos"
+        }
+    },
+    "addons.sentry.lang.fr.admin": {
+        "title": "Sentinela",
+        "description": "Configure o Serviço de Monitoramento de Erros do Sentry.",
+        "saved": "As configurações foram salvas com sucesso.",
+        "fields": {
+            "dsn": "DSN",
+            "sample_rate": "Taxa de amostragem",
+            "traces_sample_rate": "Taxa de amostragem de traços",
+            "profiles_sample_rate": "Taxa de amostragem de perfil",
+            "environment": "Ambiente"
         }
     }
 }

@@ -35,7 +35,13 @@
         "nocustomers": "Nessun cliente rilevato",
         "help": "Hai bisogno di aiuto?",
         "found": "Account sincronizzato rilevato: Vuoi visualizzare i dati in questo ticket?",
-        "infosync": "Questi dati si basano sugli account che hanno sincronizzato il loro account Discord con il loro account cliente tramite il modulo SocialAuth+."
+        "infosync": "Questi dati si basano sugli account che hanno sincronizzato il loro account Discord con il loro account cliente tramite il modulo SocialAuth+.",
+        "detection_type": "Tipo di rilevamento",
+        "detection_types": {
+            "sync": "Account sincronizzato",
+            "active_customers": "Clienti che hanno sincronizzato il proprio account con un servizio attivo",
+            "all_customers": "Tutti i clienti che hanno sincronizzato il proprio account con un servizio esistente"
+        }
     },
     "addons.import.lang.fr.import": {
         "title": "Importazione",
@@ -145,7 +151,8 @@
         "finish_title": "Completa la registrazione",
         "signup_success": "La tua registrazione è andata a buon fine.",
         "count_linked": "Ci sono {_count} account collegati.",
-        "finish_subtitle": "Inserisci le informazioni mancanti per completare la registrazione."
+        "finish_subtitle": "Inserisci le informazioni mancanti per completare la registrazione.",
+        "email_exists": "Esiste già un account con questa e-mail. Effettua l'accesso e collega il tuo account."
     },
     "modules.proxmox.lang.fr.messages": {
         "settings": {
@@ -527,7 +534,33 @@
         },
         "emails": {
             "title": "E-mail",
-            "subheading": "Ecco l'elenco di tutte le email presenti nel sistema"
+            "subheading": "Ecco l'elenco di tutte le email presenti nel sistema",
+            "sendemail": "Invia un'e-mail",
+            "condition": "Condizione",
+            "send_at": "Tempi di spedizione",
+            "button_url": "URL pulsante",
+            "old_customers": "Clienti precedenti (clienti che hanno già ordinato un servizio, che hanno un servizio più attivo)",
+            "customers_has_no_services": "Clienti senza servizio attivo",
+            "customers_has_active_services": "Clienti del servizio attivo",
+            "server": "Client con un servizio attivo sul server {_server}",
+            "product_active": "Cliente con servizio attivo del prodotto {_product}",
+            "product": "Cliente con un servizio del prodotto {_product}",
+            "product_active_type": "Cliente con un servizio di tipo {_type}",
+            "product_type": "Cliente con un servizio di tipo {_type}",
+            "all_customers": "Tutti i clienti che hanno avuto almeno un servizio",
+            "all_registered_customers": "Tutti i clienti registrati",
+            "emails": "Indirizzi e-mail precisi (facoltativo)",
+            "selected_emails": "E-mail selezionate",
+            "variables": "Variabili disponibili",
+            "success_job": "L'e-mail è stata pianificata correttamente per {_count} clienti a {_date}",
+            "conditions_help": "È possibile utilizzare più condizioni contemporaneamente per inviare a più condizioni.",
+            "create": {
+                "title": "Invia un'e-mail",
+                "subheading": "Inviare un'email a un cliente o a un gruppo di clienti",
+                "next": "Prossimo",
+                "send": "Invia",
+                "preview": "Anteprima"
+            }
         },
         "products": {
             "tariff": "Tariffa",
@@ -710,7 +743,13 @@
             },
             "title": "Bollette",
             "subheading": "Ecco l'elenco di tutte le fatture presenti nel sistema",
-            "deliveredsuccess": "Il prodotto è stato consegnato con successo"
+            "deliveredsuccess": "Il prodotto è stato consegnato con successo",
+            "notified": "Il cliente è stato avvisato",
+            "notify": "Avvisare il cliente",
+            "paidsuccess": "La fattura è stata contrassegnata come pagata correttamente",
+            "payinvoicebtn": "Addebitare",
+            "payinvoicetitle": "Paga il conto",
+            "payinvoicedescription": "Addebita da una fonte del cliente per pagare la fattura."
         },
         "admins": {
             "title": "Personale",
@@ -1013,6 +1052,11 @@
                         "title": "Aliquota IVA",
                         "vat_rate_by_country": "Aliquota IVA in base al paese del cliente",
                         "vat_rate_fixed": "Aliquota IVA fissa"
+                    },
+                    "display_product_price": {
+                        "title": "Visualizzazione del prezzo del prodotto",
+                        "included": "Incluso - Il prezzo visualizzato è comprensivo di IVA",
+                        "excluded": "Escluso - Il prezzo visualizzato è IVA esclusa"
                     }
                 },
                 "tax": "Gestione IVA"
@@ -1262,12 +1306,15 @@
         "404": {
             "title": "Pagina non trovata",
             "description": "Spiacenti, non è stato possibile trovare la pagina che stai cercando.",
-            "back": "Torna alla pagina precedente"
+            "back": "Torna alla pagina precedente",
+            "home": "Vai alla homepage",
+            "dashboard": "Vai alla dashboard"
         },
         "500": {
             "title": "Errore interno del server",
             "description": "Si è verificato un errore interno.",
-            "back": "Torna alla pagina precedente"
+            "back": "Torna alla pagina precedente",
+            "home": "Vai alla homepage"
         }
     },
     "lang.fr.extensions": {
@@ -1427,7 +1474,9 @@
         "cancel": "Annulla",
         "amount": "Importo",
         "already_sent": "Già inviato",
-        "email_trouble_clicking_button": "Se hai problemi a cliccare sul pulsante \"{_actionText}\", copia e incolla l'URL qui sotto"
+        "email_trouble_clicking_button": "Se hai problemi a cliccare sul pulsante \"{_actionText}\", copia e incolla l'URL qui sotto",
+        "value": "Valore",
+        "week": "Settimana"
     },
     "lang.fr.helpdesk": {
         "ticket": "Biglietto",
@@ -1717,7 +1766,8 @@
         "manage_coupons": "Gestisci i coupon",
         "manage_servers": "Gestire i server",
         "manage_personalization": "Gestire le personalizzazioni",
-        "staff_permissions": "Autorizzazioni del personale"
+        "staff_permissions": "Autorizzazioni del personale",
+        "send_email_messages": "Inviare e-mail"
     },
     "lang.fr.personalization": {
         "title": "Personalizzazione",
@@ -1759,7 +1809,14 @@
                 "support_admin_ticket_created": "Ticket di supporto creato",
                 "support_admin_ticket_reply": "Risposta di un cliente a un ticket di supporto",
                 "support_customer_ticket_reply": "Risposta a un ticket di supporto",
-                "notify_subscription_failed": "Notifica di mancato pagamento dell'abbonamento"
+                "notify_subscription_failed": "Notifica di mancato pagamento dell'abbonamento",
+                "virtualizor_cloud_vps": "Consegna VPS Virtualizor Rivenditore"
+            },
+            "import": {
+                "title": "Importare un modello di email",
+                "btn": "Importazione",
+                "invalid_file": "Il file deve essere un file blade HTML valido",
+                "success": "Il modello di e-mail è stato importato correttamente."
             }
         },
         "description": "Personalizza i menu nell'area clienti e i social network dell'azienda.",
@@ -1879,7 +1936,8 @@
                     "dark": "Oscuro",
                     "both": "Ambedue"
                 }
-            }
+            },
+            "themename": "Nome del tema"
         }
     },
     "lang.fr.provisioning": {
@@ -2020,7 +2078,10 @@
                     "initial_price": "Prezzo iniziale",
                     "max_renewals": "Numero massimo di rinnovi",
                     "expires_at": "Scadenza",
-                    "subheading": "Di seguito sono riportate le informazioni relative al servizio {_owner} creato il {_date}"
+                    "subheading": "Di seguito sono riportate le informazioni relative al servizio {_owner} creato il {_date}",
+                    "panel": {
+                        "title": "Pannello di gestione"
+                    }
                 },
                 "subheading": "Ecco l'elenco di tutti i servizi presenti nel sistema",
                 "renewals": {
@@ -2072,6 +2133,9 @@
                 },
                 "uncancel": {
                     "success": "Il servizio è stato ripristinato con successo"
+                },
+                "configoptions": {
+                    "btn": "Opzioni di servizio"
                 }
             },
             "subdomains_hosts": {
@@ -2089,6 +2153,23 @@
                 "choose_domain": "Scegli un dominio",
                 "use_subdomain": "Scegli un sottodominio {_app_name}",
                 "use_owndomain": "Utilizzare un dominio esistente"
+            },
+            "configoptions_services": {
+                "title": "Opzioni di configurazione del servizio",
+                "subheading": "Gestisci le opzioni di configurazione del servizio aggiuntive.",
+                "show": {
+                    "title": "Scheda opzione di configurazione {_name}",
+                    "see_service": "Visualizza il servizio",
+                    "subheading": "Di seguito sono riportate le informazioni relative a questa opzione di configurazione creata il {_date}"
+                }
+            },
+            "configoptions": {
+                "title": "Opzioni di configurazione",
+                "subheading": "Gestisci le opzioni di configurazione quando effettui un ordine.",
+                "show": {
+                    "title": "Scheda opzione di configurazione {_name}",
+                    "subheading": "Di seguito sono riportate le informazioni relative a questa opzione di configurazione creata il {_date}"
+                }
             }
         },
         "active_services": "Servizi attivi",
@@ -2102,7 +2183,8 @@
         "guaranteed_memory": "Memoria garantita",
         "vnc": "VNC",
         "region": "Regione",
-        "oses": "Sistemi operativi"
+        "oses": "Sistemi operativi",
+        "config_option": "Opzione di configurazione"
     },
     "lang.fr.recurring": {
         "onetime": "Vitalizio",
@@ -2175,7 +2257,9 @@
             "summary": "Sommario",
             "summary_description": "Controlla il tuo ordine",
             "billing": "Fatturazione",
-            "recurring_payment": "Pagamento ricorrente"
+            "recurring_payment": "Pagamento ricorrente",
+            "options": "Opzioni aggiuntive",
+            "onetime_payment": "Pagamento una tantum"
         },
         "mustpopular": "I più popolari",
         "qty": "Quantità",
@@ -2438,6 +2522,9 @@
         "ticket_answer": {
             "title": "Rispondere a un ticket",
             "description": "Un ticket ha ricevuto risposta"
+        },
+        "ticket_staff": {
+            "title": "Risposta a un ticket da parte del personale"
         }
     },
     "addons.fund.lang.fr.messages": {
@@ -2576,6 +2663,27 @@
                 "hostname_success": "Il nome host della macchina virtuale è stato modificato correttamente.",
                 "hostname_error": "Si è verificato un errore durante la modifica del nome host della macchina virtuale."
             }
+        }
+    },
+    "addons.purchasealert.lang.fr.messages": {
+        "neworder": "Un cliente ha effettuato un nuovo ordine",
+        "admin": {
+            "title": "Notifica di acquisto",
+            "description": "Mostra le notifiche di acquisto recenti sulla tua vetrina",
+            "timeout": "Visualizzazione del tempo in millisecondi",
+            "interval": "Intervallo di tempo tra le notifiche in millisecondi"
+        }
+    },
+    "addons.sentry.lang.fr.admin": {
+        "title": "Sentinella",
+        "description": "Configura il servizio di monitoraggio degli errori Sentry.",
+        "saved": "Le impostazioni sono state salvate con successo.",
+        "fields": {
+            "dsn": "DSN",
+            "sample_rate": "Frequenza di campionamento",
+            "traces_sample_rate": "Frequenza di campionamento delle tracce",
+            "profiles_sample_rate": "Frequenza di campionamento del profilo",
+            "environment": "Ambiente"
         }
     }
 }
