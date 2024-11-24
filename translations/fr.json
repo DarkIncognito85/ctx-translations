@@ -410,8 +410,8 @@
                 "ranges": {
                     "title": "Ajout rapide d'adresses IP",
                     "block": "Bloc",
-                    "block_help": "Il doit contenir \".XX\" qui sera remplace par l'addresse.",
-                    "description": "Importez facilement des ranges d'addresse dans votre IPAM.",
+                    "block_help": "Il doit contenir \".XX\" qui sera remplacé par la fin de l'adresse.",
+                    "description": "Importez facilement des ranges d'adresses dans votre IPAM.",
                     "range": "Range",
                     "success": "{_count} adresses IP ont été ajoutées avec succès.",
                     "import": "Importer"
