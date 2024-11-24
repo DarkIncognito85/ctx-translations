@@ -408,7 +408,7 @@
                 "title": "Créer une adresse IP",
                 "description": "Créer une nouvelle adresse IP dans l'IPAM.",
                 "ranges": {
-                    "title": "Ajout rapide d'adressess IP",
+                    "title": "Ajout rapide d'adresses IP",
                     "block": "Bloc",
                     "block_help": "Il doit contenir \".XX\" qui sera remplace par l'addresse.",
                     "description": "Importez facilement des ranges d'addresse dans votre IPAM.",
