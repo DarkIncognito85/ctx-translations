@@ -1098,7 +1098,7 @@
             "thank": "Thank you for your payment",
             "thankmessage": "If you have any questions, please do not hesitate to contact us.",
             "details": "Invoice Details",
-            "index": "My Invoices",
+            "index": "My invoices",
             "paymethod": "Payment method",
             "index_description": "Below is a list of your invoices.",
             "identifier": "Invoice ID",
