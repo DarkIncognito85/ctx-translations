@@ -57,7 +57,7 @@
         },
         "v1": {
             "importables": {
-                "products": "Producir",
+                "products": "Productos",
                 "groups": "Grupos",
                 "servers": "Servidores",
                 "services": "Servicios",
@@ -79,7 +79,7 @@
         },
         "whmcs": {
             "importables": {
-                "products": "Producir",
+                "products": "Productos",
                 "groups": "Grupos",
                 "servers": "Servidores",
                 "services": "Servicios",
