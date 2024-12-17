@@ -117,7 +117,7 @@
     },
     "addons.sameipdetector.lang.fr.admin": {
         "dashboard": {
-            "sameip_reports": "Cuentas Duales",
+            "sameip_reports": "Cuentas Dobles",
             "pendingusers": "Usuarios detectados como cuentas duales a la espera de verificación",
             "knowuser": "Usuario Asociado",
             "reject": "Rechazar",
