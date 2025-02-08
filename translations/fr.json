@@ -11,7 +11,7 @@
         "dropkey": "Réinitialiser la clé",
         "manual": {
             "installation": "Installation du bot personnalisé",
-            "step1text": "Téléchargez le bot personnalisé achetablé au préalable en cliquant sur <a href=\"https:\/\/clientxcms.com\/client\/download\" class=\"text-primary\" target=\"_blank\">ce lien<\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
+            "step1text": "Téléchargez le bot personnalisé achetablé au préalable en cliquant sur <a href=\"https:\/\/clientxcms.com\/client\/downloads\" class=\"text-primary\" target=\"_blank\">ce lien<\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
             "step2text": "Copiez le jeton suivant en sureté. <b><u>Attention il sera affichée qu'une seul fois<\/u><\/b>. En cas de perte il faudra la réinitialiser.",
             "step3text": "Décompressez le fichier téléchargé et suivez le fichier READ.ME pour installer & ajouter le bot à votre serveur.",
             "step4text": "Assurez vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au dessus du role à ajouter)."
@@ -192,6 +192,7 @@
             "title": "Notification d'achat",
             "description": "Affichez des notifications d'achat récent sur votre site vitrine",
             "timeout": "Durée d'affichage en millisecondes",
+            "days": "Nombre de jours maximum pour récupérer les achats récents",
             "interval": "Intervalle de temps entre les notifications en millisecondes"
         }
     },
@@ -1660,6 +1661,7 @@
         "disabled": "Désactivé",
         "enabled": "Activé",
         "no_results": "Aucun résultat",
+        "already_set": "Déjà défini",
         "save": "Enregistrer",
         "hidden": "Caché",
         "optional": "Optionnel",
@@ -1980,6 +1982,7 @@
         "addmenu": "Ajouter un élement unique",
         "addline": "Ajouter une ligne",
         "demo": "Démo",
+        "useful": "Informations utiles",
         "badge": "Badge",
         "adddropdownmenu": "Ajouter un menu déroulant",
         "icon_help2": "Vous pouvez mettre une URL d'une image à la place d'un icône",
@@ -2567,6 +2570,7 @@
         "title": "Boutique",
         "subtitle": "Découvrez nos offres",
         "ht": "HT",
+        "our_offers": "Nos offres",
         "ttc": "TTC",
         "transaction_fee": "Frais de transaction"
     },
