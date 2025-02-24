@@ -12,18 +12,18 @@
         "manual": {
             "installation": "Installation du bot personnalisé",
             "step1text": "Téléchargez le bot personnalisé acheté au préalable en cliquant sur <a href=\"https:\/\/clientxcms.com\/client\/downloads\" class=\"text-primary\" target=\"_blank\">ce lien<\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
-            "step2text": "Copiez le jeton suivant en sûreté. <b><u>Attention, il ne sera affiché qu'une seule fois.<\/u><\/b>. En cas de perte, vous devrez le réinitialiser.",
+            "step2text": "Copiez le jeton suivant en lieu sûr. <b><u>Attention, il ne sera affiché qu'une seule fois.</u></b> En cas de perte, vous devrez le réinitialiser.",
             "step3text": "Décompressez le fichier téléchargé et suivez le fichier READ.ME pour installer & ajouter le bot à votre serveur.",
-            "step4text": "Assurez-vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au-dessus du rôle à ajouter)."
+            "step4text": "Assurez-vous que le bot a les permissions nécessaires pour ajouter le rôle. (Le bot doit être au-dessus du rôle à ajouter)."
         },
         "community": {
             "installation": "Installation du bot Discord communautaire",
             "step1text": "Ajoutez le bot à votre serveur Discord en cliquant sur <a href=\"https:\/\/clientxcms.com\/ref\/discordbot\" class=\"text-primary\" target=\"_blank\">ce lien d'invitation<\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
-            "step2text": "Copiez la commande suivant dans votre serveur. <b><u>Attention, la clé sera affichée qu'une seule fois<\/u><\/b>. En cas de perte, vous devrez la réinitialiser.",
-            "step3text": "Executez la commande suivante dans votre serveur Discord en y ajoutant le rôle client. En cas de succès, le bot répondra avec un message de succès.",
-            "step4text": "Assurez-vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au-dessus du rôle à ajouter)."
+            "step2text": "Copiez la commande suivante dans votre serveur. <b><u>Attention, la clé sera affichée qu'une seule fois</u></b>. En cas de perte, vous devrez la réinitialiser.",
+            "step3text": "Exécutez la commande suivante dans votre serveur Discord en y ajoutant le rôle client. En cas de succès, le bot répondra avec un message de succès.",
+            "step4text": "Assurez-vous que le bot à les permissions nécessaires pour ajouter le rôle. (Le bot doit être au-dessus du rôle à ajouter)."
         },
-        "detection_type": "Type de detection",
+        "detection_type": "Type de détection",
         "detection_types": {
             "sync": "Compte synchronisé",
             "active_customers": "Clients ayant synchronisé leur compte avec un service actif",
@@ -119,14 +119,14 @@
                 "services": "Services",
                 "invoices": "Factures",
                 "clients": "Clients",
-                "pterodactyl": "Configuration pterodactyl",
-                "proxmox": "Configuration proxmox",
+                "pterodactyl": "Configuration de Pterodactyl",
+                "proxmox": "Configuration de Proxmox",
                 "oses": "Systèmes d'exploitation Proxmox",
-                "templates": "Templates Proxmox",
-                "plesk": "Configuration Plesk",
-                "socialauth": "Lien socialAuth",
+                "templates": "Modèles Proxmox",
+                "plesk": "Configuration de Plesk",
+                "socialauth": "Lien SocialAuth+",
                 "support": "Tickets & Départements de support",
-                "wisp": "Configuration Wisp",
+                "wisp": "Configuration de Wisp",
                 "proxmox_ipam": "Configuration IPAM Proxmox"
             },
             "fromv1": "Importer depuis l'ancienne version de ClientXCMS",
@@ -140,8 +140,8 @@
                 "servers": "Serveurs",
                 "services": "Services",
                 "clients": "Clients",
-                "pterodactyl": "Configuration pterodactyl",
-                "wisp": "Configuration wisp",
+                "pterodactyl": "Configuration de Pterodactyl",
+                "wisp": "Configuration de Wisp",
                 "invoices": "Factures"
             },
             "fromwhmcs": "Importer depuis WHMCS",
@@ -187,7 +187,7 @@
         }
     },
     "addons.purchasealert.lang.fr.messages": {
-        "neworder": "Un client à passé une nouvelle commande",
+        "neworder": "Un client a passé une nouvelle commande",
         "admin": {
             "title": "Notification d'achat",
             "description": "Affichez des notifications d'achat récent sur votre site vitrine",
@@ -1978,14 +1978,14 @@
     },
     "lang.fr.personalization": {
         "title": "Personnalisation",
-        "icon": "Icone (Bootstrap)",
-        "addmenu": "Ajouter un élement unique",
+        "icon": "Icône (Bootstrap)",
+        "addmenu": "Ajouter un élément unique",
         "addline": "Ajouter une ligne",
         "demo": "Démo",
         "useful": "Informations utiles",
         "badge": "Badge",
         "adddropdownmenu": "Ajouter un menu déroulant",
-        "icon_help2": "Vous pouvez mettre une URL d'une image à la place d'un icône",
+        "icon_help2": "Vous pouvez mettre une URL d'une image à la place d'une icône",
         "icon_help": "Voir la liste des icônes sur icons.getbootstrap.com",
         "email_templates": {
             "title": "Modèles d'email",
