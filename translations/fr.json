@@ -11,17 +11,17 @@
         "dropkey": "Réinitialiser la clé",
         "manual": {
             "installation": "Installation du bot personnalisé",
-            "step1text": "Téléchargez le bot personnalisé achetablé au préalable en cliquant sur <a href=\"https:\/\/clientxcms.com\/client\/downloads\" class=\"text-primary\" target=\"_blank\">ce lien<\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
-            "step2text": "Copiez le jeton suivant en sureté. <b><u>Attention il sera affichée qu'une seul fois<\/u><\/b>. En cas de perte il faudra la réinitialiser.",
+            "step1text": "Téléchargez le bot personnalisé acheté au préalable en cliquant sur <a href=\"https:\/\/clientxcms.com\/client\/downloads\" class=\"text-primary\" target=\"_blank\">ce lien<\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
+            "step2text": "Copiez le jeton suivant en sûreté. <b><u>Attention, il ne sera affiché qu'une seule fois.<\/u><\/b>. En cas de perte, vous devrez le réinitialiser.",
             "step3text": "Décompressez le fichier téléchargé et suivez le fichier READ.ME pour installer & ajouter le bot à votre serveur.",
-            "step4text": "Assurez vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au dessus du role à ajouter)."
+            "step4text": "Assurez-vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au-dessus du rôle à ajouter)."
         },
         "community": {
             "installation": "Installation du bot Discord communautaire",
             "step1text": "Ajoutez le bot à votre serveur Discord en cliquant sur <a href=\"https:\/\/clientxcms.com\/ref\/discordbot\" class=\"text-primary\" target=\"_blank\">ce lien d'invitation<\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
-            "step2text": "Copiez la commande suivant dans votre serveur. <b><u>Attention la clé sera affichée qu'une seul fois<\/u><\/b>. En cas de perte il faudra la réinitialiser.",
+            "step2text": "Copiez la commande suivant dans votre serveur. <b><u>Attention, la clé sera affichée qu'une seule fois<\/u><\/b>. En cas de perte, vous devrez la réinitialiser.",
             "step3text": "Executez la commande suivante dans votre serveur Discord en y ajoutant le rôle client. En cas de succès, le bot répondra avec un message de succès.",
-            "step4text": "Assurez vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au dessus du role à ajouter)."
+            "step4text": "Assurez-vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au-dessus du rôle à ajouter)."
         },
         "detection_type": "Type de detection",
         "detection_types": {
@@ -40,8 +40,8 @@
         "details": "Détails",
         "nocustomers": "Aucun {_type} détecté",
         "help": "Besoin d'aide ?",
-        "found": "Compte synchronisé détecté : voulez vous afficher les données dans ce ticket ?",
-        "infosync": "Ces données ce base sur les comptes ayant synchronisé leur compte Discord avec leur compte client via le module SocialAuth+."
+        "found": "Compte synchronisé détecté : voulez-vous afficher les données dans ce ticket ?",
+        "infosync": "Ces données sont basées sur les comptes ayant synchronisé leur compte Discord avec leur compte client via l'extension SocialAuth+."
     },
     "addons.fund.lang.fr.messages": {
         "transfer_title": "Transférer des fonds",
@@ -199,7 +199,7 @@
     "addons.sameipdetector.lang.fr.admin": {
         "dashboard": {
             "sameip_reports": "Double comptes",
-            "pendingusers": "Utilisateurs détectés comme double comptes en attente de vérification",
+            "pendingusers": "Utilisateurs détectés comme ayant un double compte en attente de vérification",
             "knowuser": "Utilisateur associé",
             "reject": "Rejeter",
             "accept": "Accepter",
@@ -207,7 +207,7 @@
         },
         "settings": {
             "title": "Paramètres Anti double compte",
-            "description": "Paramétrez l'action effectuée lors qu'un compte est rejeter.",
+            "description": "Paramétrez l’action effectuée lorsqu’un compte est rejeté.",
             "action": "Action à effectuer"
         }
     },
@@ -254,7 +254,7 @@
         },
         "panel": {
             "info": "Informations sur le VPS",
-            "serverneedrestart": "Le serveur a besoin d'être redémarré pour appliquer les modifications de resources."
+            "serverneedrestart": "Le serveur a besoin d'être redémarré pour appliquer les modifications de ressources."
         },
         "data": {
             "os": "Système d'exploitation",
@@ -417,7 +417,7 @@
         "delete_server": "Supprimer le serveur",
         "server_deleted": "Le serveur a été supprimé avec succès.",
         "server_updated": "Le serveur a été mis à jour avec succès.",
-        "resource_not_available": "Il y a plus assez de ressources pour ce serveur.",
+        "resource_not_available": "Il n'y a plus assez de ressources pour ce serveur.",
         "error_in_deletion": "Une erreur est survenue lors de la suppression du serveur.",
         "error_in_update": "Une erreur est survenue lors de la mise à jour du serveur.",
         "error_in_power": "Une erreur est survenue lors de l'action.",
@@ -2481,8 +2481,8 @@
         "quarterly": "Trimestriel",
         "semiannually": "Semestriel",
         "annually": "Annuel",
-        "biennially": "Biennal",
-        "triennially": "Triennal",
+        "biennially": "Biannuel",
+        "triennially": "Triannuel",
         "month": "mois",
         "year": "an",
         "years": "ans",
@@ -2555,7 +2555,7 @@
         "store": "Boutique",
         "per": "par",
         "subtotal": "Sous-total",
-        "store_subheading": "Découvrez nos offres",
+        "store_subheading": "Nos services d'hébergement",
         "from_price": "À partir de {_price} {_currency}",
         "taxes": "Taxes",
         "total": "Total",
