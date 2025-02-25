@@ -101,7 +101,7 @@
     },
     "addons.import.lang.fr.import": {
         "title": "Importation",
-        "description": "Importez une base de données avec l'ancienne version déjà existante ou depuis d'autre fournisseur dans NextGen",
+        "description": "Importez une base de données depuis l'ancienne version de ClientXCMS V1 ou depuis WHMCS vers cette instance de ClientXCMS NextGen en toute simplicité.",
         "importwhmcs": "L'importation via WHMCS sera bientôt disponible",
         "importclientxcms": "Importer depuis l'ancienne version de ClientXCMS",
         "db": {
@@ -357,7 +357,7 @@
         },
         "ipam": {
             "title": "IPAM",
-            "description": "Gestionnaire d'adresses IP du système Proxmox.",
+            "description": "Gestionnaire d'adresses IPv4 et IPv6 pour la distribution sur les services VPS de vos clients sur Proxmox.",
             "ip": "Adresse IP",
             "netmask": "CIDR",
             "gateway": "Passerelle",
@@ -517,7 +517,7 @@
     "lang.fr.actionslog": {
         "settings": {
             "title": "Journaux des actions",
-            "description": "Analysez toutes les actions réalisées par vos personnels et les utilisateurs clients.",
+            "description": "Analysez en détail l’ensemble des actions effectuées par vos personnels ainsi que par les utilisateurs clients afin d’assurer un suivi précis et une meilleure traçabilité des activités.",
             "subheading": "Historique des actions",
             "see_staff_actions_log": "Voir l'historique des actions du personnel",
             "user": "Utilisateur",
@@ -579,7 +579,7 @@
             "is_enabled": "Activée",
             "disabled": "Désactivée",
             "download_success": "Les fichiers de traduction ont été téléchargés avec succès.",
-            "description": "Gérez les langues disponibles pour l’interface utilisateur et administrateur. Activez, désactivez ou actualisez les traductions pour votre espace client."
+            "description": "Gérez les langues disponibles pour l’interface utilisateur et administrateur."
         },
         "dashboard": {
             "title": "Tableau de bord",
@@ -702,7 +702,7 @@
             "title": "Historique du système",
             "subheading": "Voici l'historique des messages d'erreur du système",
             "file": "Fichier  {_file}",
-            "description": "Consultez les logs système pour diagnostiquer des erreurs et suivre les actions critiques.",
+            "description": "Consultez les logs système afin de diagnostiquer d’éventuelles erreurs, analyser les événements récents et suivre en détail les actions critiques effectuées sur l’instance.",
             "bigfile": "Ce fichier est trop volumineux pour être affiché (max {_size})"
         },
         "database": {
@@ -1004,7 +1004,7 @@
                 "app": {
                     "title": "Paramètres globaux",
                     "success": "Les paramètres de l'espace client ont été enregistrés avec succès.",
-                    "description": "Configurez les paramètres principaux de l’espace client, incluant le nom de l'hébergeur, l’environnement, le mode debug, le fuseau horaire et les informations générales nécessaires à son bon fonctionnement.",
+                    "description": "Configurez les paramètres principaux de l’espace client et les informations générales nécessaires à son bon fonctionnement.",
                     "fields": {
                         "app_name": "Nom de l'espace client",
                         "app_env": "Environnement de l'espace client",
@@ -1020,7 +1020,7 @@
                 },
                 "security": {
                     "title": "Paramètres de sécurité",
-                    "description": "Configurez les options de sécurité, y compris les politiques de mot de passe, le driver de hash, les paramètres de captcha, les restrictions d’accès, les options d’inscription, la vérification des connexions et la gestion des mots de passe bannis.",
+                    "description": "Configurez les options de sécurité, y compris les politiques de mot de passe, les restrictions d’accès et les options d’inscription.",
                     "auth": "Authentification",
                     "captcha": {
                         "title": "Captcha",
@@ -1204,7 +1204,7 @@
         "admin": {
             "upgrades": {
                 "title": "Améliorations des services",
-                "description": "Observez les améliorations d'offres effectuées par les clients sur leurs services comme l’augmentation des ressources."
+                "description": "Observez les améliorations d'offres effectuées par les clients sur leurs services."
             },
             "global_balance": "Solde global",
             "settings": {
@@ -1518,7 +1518,7 @@
     },
     "lang.fr.extensions": {
         "title": "Extensions",
-        "description": "Gérez les extensions CLIENTXCMS, activez ou désactivez les extensions installées.",
+        "description": "Gérez les extensions ClientXCMS disponibles dans le Marketplace, visualisez, activez ou désactivez les extensions pour personnaliser l'expérience.",
         "settings": {
             "title": "Paramètres des extensions",
             "description": "Gérez les paramètres des extensions installées",
@@ -1757,7 +1757,7 @@
             "settings": {
                 "title": "Paramètres du centre d'aide",
                 "success": "Les paramètres du centre d'aide ont été enregistrés avec succès.",
-                "description": "Configurez le système de gestion des tickets de support, y compris la fermeture automatique, la réouverture des tickets, les notifications et les paramètres des pièces jointes.",
+                "description": "Configurez le système de gestion des tickets de support, y compris la fermeture, la réouverture et les notifications.",
                 "fields": {
                     "ticket_auto_close_days": "Fermeture automatique des tickets après inactivité (jours)",
                     "ticket_auto_close_days_help": "0 pour désactiver",
@@ -2083,7 +2083,7 @@
         },
         "bottom_menu": {
             "title": "Menu de bas de page",
-            "description": "Modifiez le pied de page pour inclure des liens rapides, des mentions légales et d’autres informations utiles.",
+            "description": "Modifiez le pied de page pour inclure des liens rapides, et d’autres informations utiles.",
             "help": "Attention, chaque URL doit être unique"
         },
         "sections": {
@@ -2095,7 +2095,7 @@
                 "advanced_personalization": "Veuillez activer le module de personnalisation avancée pour accéder à cette section"
             },
             "subheading": "Voici la liste de toutes les sections du système",
-            "description": "Gérez les différentes sections disponibles sur le site pour organiser le contenu de manière efficace.",
+            "description": "Gérez et personnalisez les différentes sections disponibles sur le site afin d’organiser et structurer le contenu de manière efficace et intuitive pour les utilisateurs.",
             "content": "Contenu",
             "show": {
                 "title": "Modification d'une section",
@@ -2138,7 +2138,7 @@
             "themename": "Nom du thème",
             "enabled": "Activé",
             "disabled": "Désactivé",
-            "description": "Activez et configurez un thème visuel personnalisé par ClientXCMS pour améliorer l'esthétique et l'apparence de votre espace client.",
+            "description": "Activez et configurez un thème visuel pour améliorer l'esthétique et l'apparence de votre espace client.",
             "success": "Les paramètres du thème ont été enregistrés avec succès.",
             "not_found": "Le thème n'a pas été trouvé.",
             "fields": {
@@ -2257,7 +2257,7 @@
                     "statuscode": "Code de statut"
                 },
                 "title": "Serveurs",
-                "subheading": "Consultez la liste des serveurs configurés et gérez leur état et les connexions.",
+                "subheading": "Consultez la liste des serveurs configurés, visualisez leurs détails et gérez leur état ainsi que les informations de connexion pour assurer un fonctionnement optimal.",
                 "hostname": "Nom d'hôte",
                 "address": "Adresse IP",
                 "port": "Port",
@@ -2417,7 +2417,7 @@
             },
             "configoptions": {
                 "title": "Options de configuration",
-                "subheading": "Gérez les options de configuration lors d'une commande.",
+                "subheading": "Gérez et personnalisez les différentes options de configuration disponibles afin d'assurer une adaptation optimale aux exigences spécifiques.",
                 "hidden": "Attention : cette option est cachée pour le moment afin de l'éditer. Vous pouvez la rendre visible une fois que vous avez terminé.",
                 "option_added": "L'option a été ajoutée avec succès",
                 "option_last": "Vous ne pouvez pas supprimer la dernière option",
