@@ -82,15 +82,15 @@
                 "subtitle": "Retrouvez ici la liste des transferts de fonds effectués"
             },
             "settings": {
-                "title": "Paramètres Fonds",
-                "subtitle": "Gestion des paramètres de l'extension Fonds",
+                "title": "Fonds",
+                "subtitle": "Gérez les paramètres de l'extension Fonds, y compris les montants minimum et maximum, ainsi que les transferts entre comptes.",
                 "success": "Paramètres enregistrés avec succès",
                 "fields": {
                     "max_amount": "Montant maximum",
                     "min_amount": "Montant minimum",
                     "for_add_credit": "Pour l'ajout de crédit",
                     "for_transfer": "Pour les transferts entre comptes",
-                    "minutes_delay": "Délai de transferts (en minutes)",
+                    "minutes_delay": "Délai de transfert (en minutes)",
                     "minutes_delay_description": "Délai de transfert entre les comptes",
                     "min_invoice": "Dépôt minimum pour pouvoir effectuer un transfert",
                     "min_invoice_description": "Montant ajouté au compte pour pouvoir effectuer un transfert. 0 pour désactiver",
@@ -172,7 +172,7 @@
         },
         "admin": {
             "title": "Pages",
-            "description": "Gérez des pages dynamique sur votre espace client.",
+            "description": "Créez, modifiez ou supprimez des pages dynamiques accessibles aux clients via l’espace client.",
             "count_views": "Nombre de vues",
             "views": "{_count} vue|{_count} vues",
             "see_page": "Voir la page",
@@ -516,8 +516,8 @@
     },
     "lang.fr.actionslog": {
         "settings": {
-            "title": "Historique des actions",
-            "description": "Liste des actions effectuées par le personnel et le système.",
+            "title": "Journaux des actions",
+            "description": "Analysez toutes les actions réalisées par vos personnels et les utilisateurs clients.",
             "subheading": "Historique des actions",
             "see_staff_actions_log": "Voir l'historique des actions du personnel",
             "user": "Utilisateur",
@@ -579,7 +579,7 @@
             "is_enabled": "Activée",
             "disabled": "Désactivée",
             "download_success": "Les fichiers de traduction ont été téléchargés avec succès.",
-            "description": "Retrouvez la liste des langues disponibles pour l'espace client. Activez ou désactivez les langues selon vos besoins."
+            "description": "Gérez les langues disponibles pour l’interface utilisateur et administrateur. Activez, désactivez ou actualisez les traductions pour votre espace client."
         },
         "dashboard": {
             "title": "Tableau de bord",
@@ -683,7 +683,7 @@
             "title": "Rôles",
             "role": "Rôle",
             "levelhelp": "Le niveau de permission est utilisé pour hiérarchiser les rôles. Par exemple un rôle avec un niveau 50 ne peut pas modifier un rôle avec un niveau 100.",
-            "description": "Gérez les rôles et les permissions des personnels de l'espace client.",
+            "description": "Définissez des rôles personnalisés pour contrôler les permissions du personnel et accorder ou restreindre l’accès à certaines fonctionnalités.",
             "level": "Niveau",
             "error_update": "Vous ne pouvez définir un rôle avec un niveau supérieur au vôtre",
             "error_update_level": "Vous ne pouvez pas modifier un rôle avec un niveau supérieur au vôtre",
@@ -699,10 +699,10 @@
             }
         },
         "history": {
-            "title": "Historique",
+            "title": "Historique du système",
             "subheading": "Voici l'historique des messages d'erreur du système",
             "file": "Fichier  {_file}",
-            "description": "Récupérez les messages de logs du système pour le débogage du système.",
+            "description": "Consultez les logs système pour diagnostiquer des erreurs et suivre les actions critiques.",
             "bigfile": "Ce fichier est trop volumineux pour être affiché (max {_size})"
         },
         "database": {
@@ -718,7 +718,7 @@
             "username": "Nom d'utilisateur",
             "password": "Mot de passe",
             "output": "Sortie",
-            "description": "Accédez à PHPMyAdmin de votre instance ou migrez votre base de données.",
+            "description": "Effectuez des migrations ou accédez à PHPMyAdmin pour gérer la base de données de votre instance",
             "subheading": "Attention, cette page est faite pour les administrateurs avancés"
         },
         "emails": {
@@ -951,7 +951,7 @@
             "title": "Personnels",
             "expires_at": "Expiration",
             "subheading": "Voici la liste de tout le personnel du système",
-            "description": "Gérez les accréditations du personnel pour l'espace d'administration",
+            "description": "Gérez les comptes du personnel, leurs permissions et leurs accès à l’espace d’administration.",
             "badge": {
                 "expires_at": "Expire le {_date}",
                 "expired_at": "Expiré le {_date}"
@@ -977,7 +977,7 @@
                 "description": "Paramètres généraux de CLIENTXCMS (nom, adresse, logo, favicon, mail)",
                 "mail": {
                     "title": "Paramètres de messagerie",
-                    "description": "Paramètres de messagerie de l'espace client",
+                    "description": "Définissez les configurations des notifications par e-mail et les paramètres de connexion du serveur d'envoi SMTP ou d'un fournisseur tier.",
                     "from_address": "Adresse d'envoi",
                     "from_name": "Nom d'envoi",
                     "greeting": "Salutation de début de mail",
@@ -1004,7 +1004,7 @@
                 "app": {
                     "title": "Paramètres globaux",
                     "success": "Les paramètres de l'espace client ont été enregistrés avec succès.",
-                    "description": "Paramètres de l'espace client",
+                    "description": "Configurez les paramètres principaux de l’espace client, incluant le nom de l'hébergeur, l’environnement, le mode debug, le fuseau horaire et les informations générales nécessaires à son bon fonctionnement.",
                     "fields": {
                         "app_name": "Nom de l'espace client",
                         "app_env": "Environnement de l'espace client",
@@ -1020,7 +1020,7 @@
                 },
                 "security": {
                     "title": "Paramètres de sécurité",
-                    "description": "Paramètres de sécurité de l'espace client",
+                    "description": "Configurez les options de sécurité, y compris les politiques de mot de passe, le driver de hash, les paramètres de captcha, les restrictions d’accès, les options d’inscription, la vérification des connexions et la gestion des mots de passe bannis.",
                     "auth": "Authentification",
                     "captcha": {
                         "title": "Captcha",
@@ -1075,7 +1075,7 @@
             "click_to_activate": "Cliquez ici pour activer ou réactiver votre licence",
             "title": "Licence",
             "subheading": "Veuillez valider votre licence pour activer votre produit",
-            "subheading2": "Gérez votre licence et les informations liées ou mettez à jour vos modules disponibles.",
+            "subheading2": "Actualisez les informations de votre licence ClientXCMS ainsi que les extensions complémentaires disponibles.",
             "expiration": "Votre licence expire le {_date}",
             "onetime": "Licence à vie",
             "modules": "Modules inclus",
@@ -1204,12 +1204,12 @@
         "admin": {
             "upgrades": {
                 "title": "Améliorations des services",
-                "description": "Gestion des améliorations des services"
+                "description": "Observez les améliorations d'offres effectuées par les clients sur leurs services comme l’augmentation des ressources."
             },
             "global_balance": "Solde global",
             "settings": {
                 "title": "Facturation",
-                "description": "Paramètres de facturation de la boutique. Activer la TVA, définir la devise, ou autre.",
+                "description": "Configurez les options de facturation telles que la devise, les taxes et les conditions de paiement.",
                 "success": "Les paramètres de facturation ont été enregistrés avec succès.",
                 "webhookoncheckout": "Webhook au checkout",
                 "tax": "Gestion de la TVA",
@@ -1253,7 +1253,7 @@
                     "subheading": "Créer un abonnement pour un client"
                 },
                 "title": "Abonnements",
-                "description": "Gestion des abonnements des services",
+                "description": "Gérez les abonnements à renouvellement automatique en cours des clients.",
                 "last_payment_at": "Dernier paiement",
                 "active_subscription": "Abonnements actifs",
                 "services_empty": "Aucun service trouvé",
@@ -1518,7 +1518,7 @@
     },
     "lang.fr.extensions": {
         "title": "Extensions",
-        "description": "Gérez les extensions de CLIENTXCMS, activez ou désactivez les extensions installées.",
+        "description": "Gérez les extensions CLIENTXCMS, activez ou désactivez les extensions installées.",
         "settings": {
             "title": "Paramètres des extensions",
             "description": "Gérez les paramètres des extensions installées",
@@ -1757,7 +1757,7 @@
             "settings": {
                 "title": "Paramètres du centre d'aide",
                 "success": "Les paramètres du centre d'aide ont été enregistrés avec succès.",
-                "description": "Configuration des tickets de support et du centre d'aide",
+                "description": "Configurez le système de gestion des tickets de support, y compris la fermeture automatique, la réouverture des tickets, les notifications et les paramètres des pièces jointes.",
                 "fields": {
                     "ticket_auto_close_days": "Fermeture automatique des tickets après inactivité (jours)",
                     "ticket_auto_close_days_help": "0 pour désactiver",
@@ -1784,7 +1784,7 @@
             },
             "departments": {
                 "title": "Départements de support",
-                "description": "Configurez les départements de support pour les tickets",
+                "description": "Créez des départements spécifiques pour traiter les tickets selon leur nature.",
                 "subheading": "Voici la liste de tous les départements du système",
                 "error_delete": "Impossible de supprimer ce département car il contient des tickets.",
                 "create": {
@@ -1903,7 +1903,7 @@
     "lang.fr.maintenance": {
         "settings": {
             "title": "Mode maintenance",
-            "description": "Activez ou désactiver le mode maintenance sur l'espace client",
+            "description": "Activez ou désactivez le mode maintenance pour rendre l’espace client temporairement inaccessible aux utilisateurs pendant les périodes de mise à jour.",
             "maintenance_enabled": "Activer le mode maintenance",
             "maintenance_url": "URL de maintenance",
             "maintenance_url_help": "URL permettant de passer outre le mode maintenance",
@@ -1989,7 +1989,7 @@
         "icon_help": "Voir la liste des icônes sur icons.getbootstrap.com",
         "email_templates": {
             "title": "Modèles d'email",
-            "description": "Personnalisez les modèles d'email de l'espace client",
+            "description": "Personnalisez les modèles d’emails envoyés automatiquement pour les notifications et les confirmations.",
             "subheading": "Voici la liste de tous les modèles d'email du système",
             "locale": "Langue",
             "shouldnotchanged": "Ce champs est laisser modifiable mais ne devrait pas être modifié hors cas exceptionnel",
@@ -2034,7 +2034,7 @@
         "description": "Personnalisez les menus de l'espaces client et les réseaux sociaux de l'entreprise.",
         "social": {
             "title": "Réseaux sociaux",
-            "description": "Personnalisez les réseaux sociaux de l'entreprise",
+            "description": "Intégrez les liens de vos réseaux sociaux pour permettre aux clients de suivre vos actualités.",
             "subheading": "Voici la liste de tous les réseaux sociaux du système",
             "create": {
                 "title": "Créer un réseau social",
@@ -2052,7 +2052,7 @@
         },
         "seo": {
             "title": "Paramètres SEO",
-            "description": "Personnalisez les paramètres SEO de l'espace client",
+            "description": "Optimisez les métadonnées SEO de l’espace client afin d’améliorer le référencement sur les moteurs de recherche.",
             "fields": {
                 "description": "Description de l'espace client",
                 "keywords": "Mots clés de l'espace client",
@@ -2068,7 +2068,7 @@
         },
         "primary": {
             "title": "Couleurs principales",
-            "description": "Personnalisez les couleurs principales de l'espace client",
+            "description": "Ajustez les couleurs dominantes de l’interface pour qu'elles correspondent à votre charte graphique.",
             "fields": {
                 "primary_color": "Couleur principale",
                 "secondary_color": "Couleur secondaire"
@@ -2078,12 +2078,12 @@
         },
         "front_menu": {
             "title": "Menu de haut de page",
-            "description": "Personnalisez le menu de haut de page de l'espace client",
+            "description": "Personnalisez le menu supérieur de navigation pour améliorer l’ergonomie de votre boutique.",
             "help": "Chaque URL doit être unique. Pour ajouter un lien externe, utilisez le format : https:\/\/www.example.com"
         },
         "bottom_menu": {
             "title": "Menu de bas de page",
-            "description": "Personnalisez le menu de bas de page de l'espace client",
+            "description": "Modifiez le pied de page pour inclure des liens rapides, des mentions légales et d’autres informations utiles.",
             "help": "Attention, chaque URL doit être unique"
         },
         "sections": {
@@ -2095,7 +2095,7 @@
                 "advanced_personalization": "Veuillez activer le module de personnalisation avancée pour accéder à cette section"
             },
             "subheading": "Voici la liste de toutes les sections du système",
-            "description": "Personnalisez les sections de l'espace client",
+            "description": "Gérez les différentes sections disponibles sur le site pour organiser le contenu de manière efficace.",
             "content": "Contenu",
             "show": {
                 "title": "Modification d'une section",
@@ -2122,7 +2122,7 @@
         },
         "home": {
             "title": "Page d'accueil",
-            "description": "Paramètres de la page d'accueil de l'espace client",
+            "description": "Configurez l’apparence et le contenu de la page d’accueil pour mettre en avant vos services.",
             "success": "Les paramètres de la page d'accueil ont été enregistrés avec succès.",
             "fields": {
                 "theme_home_title": "Titre de la page d'accueil",
@@ -2138,17 +2138,17 @@
             "themename": "Nom du thème",
             "enabled": "Activé",
             "disabled": "Désactivé",
-            "description": "Paramètres du thème de l'espace client",
+            "description": "Activez et configurez un thème visuel personnalisé par ClientXCMS pour améliorer l'esthétique et l'apparence de votre espace client.",
             "success": "Les paramètres du thème ont été enregistrés avec succès.",
             "not_found": "Le thème n'a pas été trouvé.",
             "fields": {
                 "theme_footer_description": "Description du pied de page",
                 "theme_footer_description_help": "Support de l'HTML",
-                "theme_footer_topheberg": "Badge HTML TopHeberg",
+                "theme_footer_topheberg": "HTML additionnel",
                 "theme_header_logo": "Afficher le logo dans le header au lieu du nom de l'entreprise",
                 "theme_switch_mode": {
                     "title": "Mode autorisé",
-                    "light": "Lumineux",
+                    "light": "Clair",
                     "dark": "Sombre",
                     "both": "Les deux"
                 }
@@ -2235,7 +2235,7 @@
                     "title": "Paramètres des services",
                     "webhookonrenew": "Webhook au renouvellement",
                     "success": "Les paramètres des services ont été enregistrés avec succès.",
-                    "description": "Paramètres des services",
+                    "description": "Configurez les options de gestion des services proposés aux clients, y compris les règles d'expiration et de renouvellement.",
                     "subscription": "Abonnement",
                     "fields": {
                         "days_before_creation_invoice_renewal": "Jours avant la création de la facture de renouvellement",
@@ -2257,7 +2257,7 @@
                     "statuscode": "Code de statut"
                 },
                 "title": "Serveurs",
-                "subheading": "Retrouvez la liste de tous les serveurs",
+                "subheading": "Consultez la liste des serveurs configurés et gérez leur état et les connexions.",
                 "hostname": "Nom d'hôte",
                 "address": "Adresse IP",
                 "port": "Port",
@@ -2382,7 +2382,7 @@
             "subdomains_hosts": {
                 "title": "Sous-domaines",
                 "subdomain": "Sous-domaine",
-                "subheading": "Gérez les domaines pouvant être utilisés avec un sous-domaine par les clients.",
+                "subheading": "Ajoutez ou gérez les sous-domaines autorisés que vos clients peuvent utiliser pour leurs services Web hébergés.",
                 "create": {
                     "title": "Créer un sous-domaine",
                     "subheading": "Créer un nouveau sous-domaine pour les clients."
@@ -2397,7 +2397,7 @@
             },
             "configoptions_services": {
                 "title": "Options de configuration des services",
-                "subheading": "Gérez les options de configuration additionnelles des services.",
+                "subheading": "Définissez les options supplémentaires disponibles pour les services de vos clients, incluant les personnalisations et les modules d'approvisionnement.",
                 "show": {
                     "title": "Fiche option de configuration {_name}",
                     "see_service": "Voir le service",
