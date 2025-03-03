@@ -2069,7 +2069,7 @@
         "server_description": "Server Description",
         "db": "Database",
         "dedicated_ip": "Dedicated IP",
-        "cores": "Hearts",
+        "cores": "Cores",
         "rate": "Debit",
         "sockets": "Sockets",
         "oom_kill": "Oom kill",
