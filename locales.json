@@ -24,6 +24,12 @@
         "name": "Italiano",
         "flag": "https://flagsapi.com/IT/flat/64.png"
     },
+
+    "nl_NL": {
+        "key": "nl",
+        "name": "Nederlands",
+        "flag": "https://flagsapi.com/NL/flat/64.png"
+    },
     "pt_PT": {
         "key": "pt",
         "name": "Português",
