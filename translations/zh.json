@@ -205,7 +205,8 @@
             "snapshot_restore": "快照已还原。",
             "backup_create": "备份已创建。",
             "backup_destroy": "备份已删除。",
-            "reinstall_done": "VM 的重新安装已成功完成。"
+            "reinstall_done": "VM 的重新安装已成功完成。",
+            "start_destroy": "虚拟机已停止。"
         },
         "graphs": {
             "title": "图形",
@@ -438,7 +439,8 @@
             "password_reset": "密码重置",
             "two_factor_enabled": "已启用双重身份验证",
             "two_factor_disabled": "禁用了双重身份验证",
-            "two_factor_recovery_codes_generated": "生成的双重身份验证恢复代码"
+            "two_factor_recovery_codes_generated": "生成的双重身份验证恢复代码",
+            "failed_login": "连接失败 IP地址 : {_ip}"
         }
     },
     "lang.fr.admin": {
@@ -520,7 +522,8 @@
                     "config_option": "配置选项",
                     "config_option_service": "续订配置选项",
                     "custom_item": "定制产品",
-                    "upgrade": "起色"
+                    "upgrade": "起色",
+                    "free_trial": "免费试用"
                 },
                 "gateway_canvas_help": "客户用于支付账单的付款方式",
                 "best_customers": "最佳客户",
@@ -538,7 +541,12 @@
                     "price_avg": "餐点平均价格",
                     "renewals_avg": "平均续订数"
                 }
-            }
+            },
+            "good_morning": "你好 {_name}",
+            "good_afternoon": "下午好 {_name}",
+            "good_evening": "晚上好 {_name}",
+            "welcome": "欢迎来到管理仪表板。当前时间是{_time}。这是您系统的概览。",
+            "assigned_tickets": "您已被分配到以下工单：{_tickets}。您可以在帮助中心查看它们。"
         },
         "roles": {
             "is_default_help": "此角色是默认角色，无法删除。",
@@ -635,7 +643,9 @@
             "descriptionplaceholder": "产品描述 （HTML 支持）",
             "create": {
                 "title": "创建产品",
-                "subheading": "为商店创建新产品"
+                "subheading": "为商店创建新产品",
+                "create_group_help": "您必须先创建一个组，然后才能创建产品。",
+                "create_product_help": "您必须先创建一个产品，然后才能创建一个报价"
             },
             "show": {
                 "title": "产品说明书 {_name}",
@@ -739,11 +749,16 @@
                 "send_password": "发送重置电子邮件",
                 "history": "客户操作历史记录",
                 "send_email": "发送电子邮件",
-                "disable2fa": "禁用双重身份验证"
+                "disable2fa": "禁用双重身份验证",
+                "email_already_confirmed": "账户已经确认",
+                "create_invoice": "创建发票",
+                "create_service": "提供服务",
+                "create_ticket": "创建一个工单"
             },
             "create": {
                 "title": "创建客户端",
-                "subheading": "为系统创建新客户端"
+                "subheading": "为系统创建新客户端",
+                "create_customer_help": "您必须先创建一个客户，然后才能执行此操作。"
             },
             "subheading": "以下是该系统的所有客户列表",
             "delete": {
@@ -1004,8 +1019,24 @@
             "is_enabled": "激活",
             "disabled": "禁用",
             "download_success": "翻译文件已成功上传。",
-            "description": "查找 Customer Area 的可用语言列表。根据需要开启或关闭语言。"
-        }
+            "description": "查找 Customer Area 的可用语言列表。根据需要开启或关闭语言。",
+            "download_error": "您无法在本地下载法语翻译文件。"
+        },
+        "api_keys": {
+            "title": "API 密钥",
+            "subheading": "管理您所有的CLIENTXCMS API密钥。",
+            "last_used": "最后使用",
+            "is_admin": "管理员权限",
+            "admin_help": "管理员API密钥可以访问系统的所有功能",
+            "create": {
+                "title": "创建API密钥",
+                "subheading": "为系统创建一个新的API密钥"
+            },
+            "documentation": "文档 OpenAPI",
+            "rotate": "再生",
+            "created": "API密钥已成功创建。应用程序API密钥：<b><code>{_key}</code></b><br/>注意，它在此页面后将不再显示。请复制并妥善保管。"
+        },
+        "doyouwantclone": "您真的想克隆这个元素吗？"
     },
     "lang.fr.auth": {
         "failed": "这些标识符与我们的记录不对应。",
@@ -1274,8 +1305,11 @@
                 "index": "改善服务",
                 "upgradebtn": "立即改进",
                 "index_description": "以下是您可以从当前服务升级的产品列表。",
-                "minimum_days_to_force_renewal_with_upgrade": "由于当前服务即将到期，续订将添加到升舱账单中。"
-            }
+                "minimum_days_to_force_renewal_with_upgrade": "由于当前服务即将到期，续订将添加到升舱账单中。",
+                "upgrade_notice": "通过接受改进，您同意您服务价格的永久上涨以及其性能的提高以及相关的"
+            },
+            "orderservice": "需要其他服务吗？马上订购吧！",
+            "expired_at": "在{_date}到期"
         },
         "profile": {
             "index": "我的个人资料",
@@ -1322,7 +1356,8 @@
             "account_suspended": "您的帐户已被暂停",
             "service_name_updated": "服务名称已更新",
             "service_billing_updated": "账单信息已更新",
-            "email_must_be_verified": "您的电子邮件地址必须经过验证才能访问此页面"
+            "email_must_be_verified": "您的电子邮件地址必须经过验证才能访问此页面",
+            "service_trial_ends_at": "试用服务于{_date}结束"
         }
     },
     "lang.fr.coupon": {
@@ -1515,7 +1550,10 @@
             "completed": "完成",
             "disabled": "禁用",
             "not_confirmed": "未确认",
-            "confirmed": "证实"
+            "confirmed": "证实",
+            "answered": "回复",
+            "yes": "是的",
+            "no": "不"
         },
         "add": "加",
         "invoice_was_cancelled": "发票刚刚被取消",
@@ -1566,7 +1604,30 @@
         "key": "钥匙",
         "week": "周",
         "updated": "更新",
-        "already_set": "已定义"
+        "already_set": "已定义",
+        "create": "创造",
+        "unkwown": "未知",
+        "deleted": "已删除",
+        "action": "行动",
+        "is_downloaded": "下载",
+        "is_default": "默认",
+        "download": "下载",
+        "update": "更新",
+        "disable": "禁用",
+        "enable": "激活",
+        "store": "添加",
+        "listing": "列斯特",
+        "suspend": "悬挂",
+        "unsuspend": "重新激活",
+        "terminate": "结束",
+        "next": "下一步",
+        "send": "发送",
+        "users": "用户",
+        "user": "用户",
+        "expiration": "过期",
+        "expires_at": "到期了",
+        "reset": "重置",
+        "server": "服务器"
     },
     "lang.fr.helpdesk": {
         "ticket": "票",
@@ -1605,7 +1666,20 @@
                 "closed": "此工单已关闭。你无法回答。如果您需要帮助，请打开新工单或重新打开此工单。",
                 "replyinticket": "回复工单",
                 "closed2": "此工单已关闭。你无法回答。",
-                "index_description": "以下是支持票证的详细信息。"
+                "index_description": "以下是支持票证的详细信息。",
+                "close_reason": "关闭原因",
+                "assigned_to": "被分配到",
+                "edit_message": "修改消息",
+                "edited_at": "消息已于{_date}修改",
+                "closed3": "此票已关闭。您无法回复。",
+                "comments": {
+                    "title": "评论",
+                    "add": "添加评论",
+                    "no_comments": "没有评论",
+                    "added": "评论已添加",
+                    "add_comment": "添加评论",
+                    "deleted": "评论已被删除"
+                }
             },
             "create": {
                 "index": "新票",
@@ -1633,7 +1707,10 @@
                     "name": "商业",
                     "description": "销售部"
                 }
-            }
+            },
+            "ticket_closed_by": "由{_name}关闭",
+            "ticket_auto_close": "票据在 {_days} 天后自动关闭",
+            "message_updated": "消息已更新"
         },
         "admin": {
             "title": "帮助中心",
@@ -1665,7 +1742,19 @@
                 "create": {
                     "title": "创建工单",
                     "subheading": "为客户创建新工单"
-                }
+                },
+                "graphs": "票务图表",
+                "closed_tickets": "关闭的请求",
+                "analytics": "票据分析",
+                "department_ticket_counts": "各部门票据数量",
+                "tickets_active": "请求待处理",
+                "tickets_active_description": "这是所有等待您回复的票据列表",
+                "tickets_to_reply_description": "这是客户待回复的所有票据列表",
+                "tickets_to_reply": "请求待回复",
+                "last_reply": "最后回答",
+                "no_department_stats": "目前未找到任何部门。",
+                "staff_message_counts": "每位工作人员的消息数量",
+                "no_staff_stats": "目前未找到任何工作人员。"
             },
             "departments": {
                 "title": "支持部门",
@@ -1680,6 +1769,16 @@
                     "subheading": "以下是在 {_date} 上创建的与此部门相关的信息"
                 },
                 "error_delete": "无法删除此部门，因为它包含工单。"
+            },
+            "create_ticket": "创建请求",
+            "widgets": {
+                "pending_tickets": "待处理请求",
+                "active_tickets": "处理中请求",
+                "total_tickets": "所有请求的总数",
+                "tickets_last_week": "上周的票",
+                "avg_reply_time": "平均响应时间",
+                "messages_sent": "已发送的消息",
+                "avg_resolution_time": "平均解决时间"
             }
         }
     },
@@ -1859,7 +1958,10 @@
         "manage_personalization": "管理自定义项",
         "staff_permissions": "员工权限",
         "manage_configoptions": "管理配置选项",
-        "send_email_messages": "发送电子邮件"
+        "send_email_messages": "发送电子邮件",
+        "show_helpdesk_analytics": "查看帮助中心的统计数据",
+        "manage_tickets_department": "仅管理 {_name} 部门的票据",
+        "manage_api_keys": "管理API密钥"
     },
     "lang.fr.personalization": {
         "title": "定制",
@@ -1902,7 +2004,10 @@
                 "support_admin_ticket_reply": "客户对支持工单的响应",
                 "support_customer_ticket_reply": "对支持票证的响应",
                 "notify_subscription_failed": "订阅付款失败通知",
-                "virtualizor_cloud_vps": "VPS 交付虚拟经销商"
+                "virtualizor_cloud_vps": "VPS 交付虚拟经销商",
+                "customer_banned": "客户被禁止",
+                "customer_suspended": "客户被暂停",
+                "customer_reactivated": "客户已重新激活"
             },
             "import": {
                 "title": "导入电子邮件模板",
@@ -1984,7 +2089,8 @@
             "disable": "关闭",
             "enable": "激活",
             "types": {
-                "subheading": "以下是可以轻松添加到 {_name} 类别中的部分列表"
+                "subheading": "以下是可以轻松添加到 {_name} 类别中的部分列表",
+                "title": "主题 {_name} 可用的部分"
             },
             "pages": {
                 "page_home": "主页",
@@ -1993,12 +2099,14 @@
                 "subheading": "以下是此页面的各部分列表",
                 "page_group": "{_name} 群组页面",
                 "page_checkout": "结帐页面",
-                "page_basket": "购物车页面"
+                "page_basket": "购物车页面",
+                "description": "管理页面 {_name} 的部分"
             },
             "errors": {
                 "notfound": "未找到部分",
                 "advanced_personalization": "请启用 Advanced Customization 模块以访问此部分"
-            }
+            },
+            "empty": "未找到该页面的任何部分。<br/>您可以从下面的主题导入一个。"
         },
         "home": {
             "title": "主页",
@@ -2038,7 +2146,30 @@
         "useful": "实用信息",
         "badge": "徽章",
         "adddropdownmenu": "添加下拉菜单",
-        "icon_help2": "您可以使用图像的 URL 代替图标"
+        "icon_help2": "您可以使用图像的 URL 代替图标",
+        "menu_links": {
+            "title": "菜单链接",
+            "description": "自定义客户空间的菜单链接",
+            "icon_help2": "您可以用图片的 URL 替代图标",
+            "allowed_role": "授权角色",
+            "link_type": "链接类型",
+            "new_tab": "新标签页",
+            "link": "链接",
+            "dropdown": "下拉菜单",
+            "parent": "父母",
+            "allowed_roles": {
+                "all": "所有人",
+                "logged": "连接的",
+                "customer": "拥有服务的客户",
+                "staff": "人员"
+            },
+            "link_types": {
+                "new_tab": "新标签",
+                "link": "链接",
+                "dropdown": "下拉菜单"
+            }
+        },
+        "addelement": "添加一个元素"
     },
     "lang.fr.provisioning": {
         "disk": "磁盘",
@@ -2140,7 +2271,9 @@
                 },
                 "create": {
                     "title": "创建服务器",
-                    "subheading": "创建一个新服务器以将其连接到系统"
+                    "subheading": "创建一个新服务器以将其连接到系统",
+                    "enable_extension": "启用扩展",
+                    "enable_extension_help": "您必须启用扩展才能创建服务器。您可以根据自己的使用情况选择 Pterodactyl、Plesk、Proxmox 或 Virtualizor 等。"
                 }
             },
             "services": {
@@ -2168,7 +2301,8 @@
                     "choose": "选择现有服务器",
                     "import": "<u> 或</u>&nbsp;导入服务",
                     "new": "创建新服务",
-                    "created": "服务已成功创建"
+                    "created": "服务已成功创建",
+                    "importbtn": "进口商"
                 },
                 "show": {
                     "customerbtn": "客户档案",
@@ -2181,7 +2315,9 @@
                     "subheading": "以下是与在 {_date} 创建的 {_owner} 服务的相关信息",
                     "panel": {
                         "title": "管理面板"
-                    }
+                    },
+                    "description_help": "您可以为此服务添加描述。客户将在其空间中看到。",
+                    "notes_help": "您可以为此服务添加备注。客户将看不到这些备注。"
                 },
                 "subheading": "以下是系统中所有服务的列表",
                 "renewals": {
@@ -2249,7 +2385,11 @@
                         "no_invoice": "改进无计费服务",
                         "add_in_next_invoice": "立即升级并添加到下一张续订发票"
                     }
-                }
+                },
+                "pricing_custom": "此服务的价格必须手动设置。您可以稍后修改。",
+                "pricing_custom2": "该服务的价格是手动配置的。它允许或不允许计费周期。",
+                "resync": "与产品重新同步",
+                "pricing_synchronized": "服务的价格与产品的价格同步。您可以根据需要仅为此服务修改价格。"
             },
             "subdomains_hosts": {
                 "title": "子域",
@@ -2358,7 +2498,9 @@
         "vnc": "VNC",
         "region": "地区",
         "oses": "操作系统",
-        "config_option": "配置选项"
+        "config_option": "配置选项",
+        "autologin_admin": "以管理员身份自动连接",
+        "doyouwantreallyreinstallvps": "您真的想重新安装这个服务器吗？"
     },
     "lang.fr.recurring": {
         "onetime": "终身",
@@ -2416,7 +2558,8 @@
             "mustbelogged": "您必须登录后才能下订单",
             "gateway_not_found": "未找到付款方式",
             "email_must_be_verified": "您必须确认您的帐户才能下订单",
-            "wrong_payment": "您的付款出现问题"
+            "wrong_payment": "您的付款出现问题",
+            "success": "您的订单已成功下达"
         },
         "product": {
             "setupmessage": "{_unit} 先支付 {_first} {_currency} {_tax}，然后 {_recurring} {_currency} {_tax}",
@@ -2702,6 +2845,10 @@
         },
         "ticket_staff": {
             "title": "工作人员对工单的回复"
+        },
+        "upgrade": {
+            "title": "服务升级",
+            "description": "服务已升级"
         }
     },
     "addons.fund.lang.fr.messages": {
@@ -2875,5 +3022,128 @@
             "location_id": "位置 ID Wisp",
             "dedicated_ip": "Wisp 专用 IP"
         }
+    },
+    "addons.contact.lang.fr.lang": {
+        "title": "联系人",
+        "pending": "待处理的联系请求",
+        "description": "在您的客户空间中处理用户的联系方式请求。",
+        "management_title": "联系请求管理",
+        "management_description": "所有联系请求的列表",
+        "show_title": "联系方式",
+        "show_description": "查看联系请求的详细信息",
+        "title_page": "联系我们",
+        "subject": "请求主题",
+        "content_label": "请描述您的请求",
+        "object_label": "请求的对象",
+        "max_characters": "限制在 {_max} 个字符内",
+        "send": "发送请求",
+        "subtitle_page": "我们很高兴收到您的留言。请填写下面的表格，我们会尽快回复您。",
+        "actions": {
+            "delete_success": "联系请求已成功删除",
+            "update_success": "联系请求的状态已成功更新",
+            "reply_email": "通过电子邮件回复",
+            "send_mail": "给客户发一封邮件",
+            "limit_error": "您在5分钟内已经发送了联系请求",
+            "store_success": "联系请求已成功记录"
+        },
+        "status": {
+            "read": "条约",
+            "unread": "未处理"
+        },
+        "webhook": {
+            "title": "新的联系请求",
+            "description": "收到了一条新的联系请求"
+        },
+        "errors": {
+            "not_found": "未找到联系请求",
+            "update_failed": "联系请求的更新失败"
+        },
+        "status_updated_at": "状态已于 {_date} 更新",
+        "settings": {
+            "title": "联系页面的偏好设置",
+            "description": "配置您的联系页面偏好设置。",
+            "security_settings": "安全设置",
+            "media_settings": "媒体设置",
+            "enable_captcha": "启用验证码",
+            "enable_captcha_description": "添加额外的防止垃圾邮件的保护",
+            "webhook": "通知一个外部 URL",
+            "webhook_description": "将联系请求发送到外部网址",
+            "subscribers": "通知人员",
+            "subscribers_description": "将联系请求发送给特定人员",
+            "require_login": "需要连接",
+            "require_login_description": "用户必须登录才能发送消息",
+            "page_image": "页面的图像",
+            "disabled": "禁用",
+            "enabled": "激活"
+        }
+    },
+    "addons.free_trial.lang.fr.lang": {
+        "trialbtn": "尝试",
+        "errors": {
+            "max_allowed_services": "试用服务配额已用完。请稍后再试。",
+            "max_services": "您已经达到了该服务的免费试用配额。"
+        },
+        "invoice": {
+            "name": "报价试验",
+            "description": "试用期优惠 {_product} ({_start}-{_end})。"
+        },
+        "config": {
+            "total_now": "现在需要支付的总额",
+            "total_after_trial": "试用后需支付的总额",
+            "start": "开始",
+            "title": "开始您的试用",
+            "period": "时期",
+            "details": "您可以在试用期结束后 {_days} 天内进行付款，符合适用的条款。您可以随时取消试用。",
+            "want_trial": "您想在购买之前先试用一下这个产品吗？",
+            "can_trial": "您可以在 {_days} 天内测试该产品。"
+        },
+        "service": {
+            "free": {
+                "title": "续订您的试用服务",
+                "subheading": "您可以在 {_date} 之前续订您的试用服务，直到它在 {_date2} 被取消。"
+            },
+            "trial": {
+                "title": "改善您的试用服务",
+                "subheading": "您可以在 {_date} 之前提升您的试用服务，否则它将在 {_date2} 被取消。"
+            }
+        },
+        "admin": {
+            "config": {
+                "current_allowed_services": "当前进行的试验数量",
+                "max_allowed_services": "进行中的最大尝试次数",
+                "title": "免费试用配置",
+                "subheading": "配置您的免费试用产品。",
+                "max_services": "每个客户的最大尝试次数",
+                "trial_days": "试用天数",
+                "current_trials": "正在进行的测试",
+                "trials_done": "进行的试验",
+                "trials_success": "测试成功",
+                "help": "0 以禁用",
+                "force_label": "测试类型",
+                "types": {
+                    "trial": "改善的尝试",
+                    "free": "免费试用"
+                },
+                "force": {
+                    "yes": "客户将被迫试用",
+                    "no": "客户将能够下订单或请求试用"
+                },
+                "create": {
+                    "title": "添加试用产品",
+                    "subheading": "添加一个试用产品。"
+                },
+                "show": {
+                    "title": "试用产品的修改",
+                    "subheading": "您可以修改试用参数。",
+                    "successfully": "测试成功",
+                    "table_title": "试验服务列表"
+                }
+            }
+        }
+    },
+    "addons.sitemap.lang.fr.admin": {
+        "title": "网站地图",
+        "description": "为您的网站生成一个 sitemap.xml 文件。",
+        "success": "sitemap.xml文件已成功更新。"
     }
 }
