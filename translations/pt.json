@@ -205,7 +205,8 @@
             "snapshot_restore": "O instantâneo foi restaurado.",
             "backup_create": "O backup foi criado.",
             "backup_destroy": "O backup foi excluído.",
-            "reinstall_done": "A reinstalação da VM foi concluída com êxito."
+            "reinstall_done": "A reinstalação da VM foi concluída com êxito.",
+            "start_destroy": "A máquina virtual foi parada."
         },
         "graphs": {
             "title": "Gráficos",
@@ -438,7 +439,8 @@
             "password_reset": "Redefinição de senha",
             "two_factor_enabled": "Autenticação de dois fatores ativada",
             "two_factor_disabled": "Autenticação de dois fatores desativada",
-            "two_factor_recovery_codes_generated": "Códigos de recuperação de autenticação de dois fatores gerados"
+            "two_factor_recovery_codes_generated": "Códigos de recuperação de autenticação de dois fatores gerados",
+            "failed_login": "Falha de conexão Endereço IP: {_ip}"
         }
     },
     "lang.fr.admin": {
@@ -520,7 +522,8 @@
                     "config_option": "Opção de configuração",
                     "config_option_service": "Opção de configuração de renovação",
                     "custom_item": "Produto personalizado",
-                    "upgrade": "Aperfeiçoamento"
+                    "upgrade": "Aperfeiçoamento",
+                    "free_trial": "Teste gratuito"
                 },
                 "gateway_canvas_help": "Métodos de pagamento usados pelos clientes para pagar suas contas",
                 "best_customers": "Melhores clientes",
@@ -538,7 +541,12 @@
                     "price_avg": "Preço médio",
                     "renewals_avg": "Média de renovações"
                 }
-            }
+            },
+            "good_morning": "Olá {_name}",
+            "good_afternoon": "Boa tarde {_name}",
+            "good_evening": "Boa noite {_name}",
+            "welcome": "Bem-vindo ao painel de administração. Atualmente são {_time}. Aqui está uma visão geral do seu sistema.",
+            "assigned_tickets": "Você foi designado para os seguintes tickets: {_tickets}. Você pode vê-los no centro de ajuda."
         },
         "roles": {
             "is_default_help": "Essa função é a função padrão e não pode ser excluída.",
@@ -635,7 +643,9 @@
             "descriptionplaceholder": "Descrição do produto (suporte HTML)",
             "create": {
                 "title": "Criar um produto",
-                "subheading": "Crie um novo produto para a loja"
+                "subheading": "Crie um novo produto para a loja",
+                "create_group_help": "Você precisa criar um grupo antes de criar um produto",
+                "create_product_help": "Você precisa criar um produto antes de criar uma oferta"
             },
             "show": {
                 "title": "Ficha do produto {_name}",
@@ -739,11 +749,16 @@
                 "send_password": "Enviar um e-mail de redefinição",
                 "history": "Histórico de ações do cliente",
                 "send_email": "Envie um e-mail",
-                "disable2fa": "Desativar autenticação de dois fatores"
+                "disable2fa": "Desativar autenticação de dois fatores",
+                "email_already_confirmed": "A conta já foi confirmada",
+                "create_invoice": "Criar uma fatura",
+                "create_service": "Prestar um serviço",
+                "create_ticket": "Criar um ticket"
             },
             "create": {
                 "title": "Criar um cliente",
-                "subheading": "Criar um novo cliente para o sistema"
+                "subheading": "Criar um novo cliente para o sistema",
+                "create_customer_help": "Você precisa criar um cliente antes de realizar esta ação."
             },
             "subheading": "Aqui está a lista de todos os clientes do sistema",
             "delete": {
@@ -1004,8 +1019,24 @@
             "is_enabled": "Ativado",
             "disabled": "Desactivado",
             "download_success": "Os arquivos de tradução foram carregados com sucesso.",
-            "description": "Encontre a lista de idiomas disponíveis para a área do cliente. Ative ou desative os idiomas conforme necessário."
-        }
+            "description": "Encontre a lista de idiomas disponíveis para a área do cliente. Ative ou desative os idiomas conforme necessário.",
+            "download_error": "Você não pode baixar os arquivos de tradução para a língua francesa localmente."
+        },
+        "api_keys": {
+            "title": "Chaves da API",
+            "subheading": "Gerencie todas as suas chaves de API CLIENTXCMS.",
+            "last_used": "Último uso",
+            "is_admin": "Permissão de administrador",
+            "admin_help": "As chaves de API de administradores têm acesso a todas as funcionalidades do sistema.",
+            "create": {
+                "title": "Criar uma chave de API",
+                "subheading": "Criar uma nova chave de API para o sistema"
+            },
+            "documentation": "Documentação OpenAPI",
+            "rotate": "Regerar",
+            "created": "A chave da API foi criada com sucesso. Chave da API do Aplicativo: \"<b><code>{_key}</code></b>\" <br/> Atenção, ela não será mais exibida após esta página. Por favor, copie e guarde em um lugar seguro."
+        },
+        "doyouwantclone": "Você realmente quer clonar este elemento?"
     },
     "lang.fr.auth": {
         "failed": "Esses identificadores não correspondem aos nossos registros.",
@@ -1274,8 +1305,11 @@
                 "index": "Melhore o serviço",
                 "upgradebtn": "Melhore agora",
                 "index_description": "Abaixo está a lista de produtos que você pode atualizar do seu serviço atual.",
-                "minimum_days_to_force_renewal_with_upgrade": "A renovação será adicionada à conta de atualização quando o serviço atual estiver prestes a expirar."
-            }
+                "minimum_days_to_force_renewal_with_upgrade": "A renovação será adicionada à conta de atualização quando o serviço atual estiver prestes a expirar.",
+                "upgrade_notice": "Ao aceitar uma melhoria, você aceita o aumento definitivo do preço do seu serviço e a melhoria de seu desempenho, assim como os"
+            },
+            "orderservice": "Precisa de outro serviço? Peça agora!",
+            "expired_at": "Expirou em {_date}"
         },
         "profile": {
             "index": "Meu perfil",
@@ -1322,7 +1356,8 @@
             "account_suspended": "Sua conta foi suspensa",
             "service_name_updated": "O nome do serviço foi atualizado",
             "service_billing_updated": "As informações de cobrança foram atualizadas",
-            "email_must_be_verified": "Seu endereço de e-mail deve ser verificado para acessar esta página"
+            "email_must_be_verified": "Seu endereço de e-mail deve ser verificado para acessar esta página",
+            "service_trial_ends_at": "O serviço de teste termina em {_date}"
         }
     },
     "lang.fr.coupon": {
@@ -1515,7 +1550,10 @@
             "completed": "Terminado",
             "disabled": "Desactivado",
             "not_confirmed": "Não confirmado",
-            "confirmed": "Inveterado"
+            "confirmed": "Inveterado",
+            "answered": "Respondido",
+            "yes": "Sim",
+            "no": "Não"
         },
         "add": "Adicionar",
         "invoice_was_cancelled": "A fatura acaba de ser cancelada",
@@ -1566,7 +1604,30 @@
         "key": "Chave",
         "week": "Semana",
         "updated": "Atualizado",
-        "already_set": "Já definido"
+        "already_set": "Já definido",
+        "create": "Criar",
+        "unkwown": "Desconhecido",
+        "deleted": "Suprimido",
+        "action": "Ação",
+        "is_downloaded": "Baixada",
+        "is_default": "Por padrão",
+        "download": "Baixar",
+        "update": "Atualizar",
+        "disable": "Desativar",
+        "enable": "Ativar",
+        "store": "Adicionar",
+        "listing": "Lister",
+        "suspend": "Suspender",
+        "unsuspend": "Reativar",
+        "terminate": "Terminar",
+        "next": "Seguinte",
+        "send": "Enviar",
+        "users": "Usuários",
+        "user": "Usuário",
+        "expiration": "Expiração",
+        "expires_at": "Expira",
+        "reset": "Reiniciar",
+        "server": "Servidor"
     },
     "lang.fr.helpdesk": {
         "ticket": "Bilhete",
@@ -1605,7 +1666,20 @@
                 "closed": "Este ticket está fechado. Você não pode responder. Se precisar de ajuda, abra um novo ticket ou reabra este ticket.",
                 "replyinticket": "Responder ao ticket",
                 "closed2": "Este ticket está fechado. Você não pode responder.",
-                "index_description": "Abaixo estão os detalhes do tíquete de suporte."
+                "index_description": "Abaixo estão os detalhes do tíquete de suporte.",
+                "close_reason": "Motivo do fechamento",
+                "assigned_to": "Atribuído a",
+                "edit_message": "Modificar a mensagem",
+                "edited_at": "Mensagem modificada em {_date}",
+                "closed3": "Este ticket está fechado. Você não pode responder.",
+                "comments": {
+                    "title": "Comentários",
+                    "add": "Adicionar um comentário",
+                    "no_comments": "Nenhum comentário",
+                    "added": "O comentário foi adicionado",
+                    "add_comment": "Adicionar um comentário",
+                    "deleted": "O comentário foi removido"
+                }
             },
             "create": {
                 "index": "Novo bilhete",
@@ -1633,7 +1707,10 @@
                     "name": "Comercial",
                     "description": "Departamento de vendas"
                 }
-            }
+            },
+            "ticket_closed_by": "Fechado por {_name}",
+            "ticket_auto_close": "O ticket foi fechado automaticamente após {_days} dias",
+            "message_updated": "A mensagem foi atualizada"
         },
         "admin": {
             "title": "Central de Ajuda",
@@ -1665,7 +1742,19 @@
                 "create": {
                     "title": "Criar um ticket",
                     "subheading": "Criar um novo ticket para um cliente"
-                }
+                },
+                "graphs": "Gráfico de bilhetes",
+                "closed_tickets": "Demandas fechadas",
+                "analytics": "Análise dos bilhetes",
+                "department_ticket_counts": "Número de bilhetes por departamento",
+                "tickets_active": "Solicitação aguardando processamento",
+                "tickets_active_description": "Aqui está a lista de todos os ingressos aguardando sua resposta.",
+                "tickets_to_reply_description": "Aqui está a lista de todos os tickets aguardando resposta do cliente",
+                "tickets_to_reply": "Pedido aguardando resposta",
+                "last_reply": "Última resposta",
+                "no_department_stats": "Nenhum departamento encontrado no momento.",
+                "staff_message_counts": "Número de mensagens por membro da equipe",
+                "no_staff_stats": "Nenhum membro da equipe encontrado no momento."
             },
             "departments": {
                 "title": "Departamentos de Suporte",
@@ -1680,6 +1769,16 @@
                     "subheading": "Aqui estão as informações relacionadas a este departamento criado em {_date}"
                 },
                 "error_delete": "Não é possível apagar este departamento porque ele contém tickets."
+            },
+            "create_ticket": "Criar um pedido",
+            "widgets": {
+                "pending_tickets": "Demandas pendentes",
+                "active_tickets": "Demandas em andamento",
+                "total_tickets": "Total de solicitações",
+                "tickets_last_week": "Ingressos da semana passada",
+                "avg_reply_time": "Prazo médio de resposta",
+                "messages_sent": "Mensagens enviadas",
+                "avg_resolution_time": "Prazo médio de resolução"
             }
         }
     },
@@ -1859,7 +1958,10 @@
         "manage_personalization": "Gerenciar personalizações",
         "staff_permissions": "Permissões da equipe",
         "manage_configoptions": "Gerenciar opções de configuração",
-        "send_email_messages": "Enviar e-mails"
+        "send_email_messages": "Enviar e-mails",
+        "show_helpdesk_analytics": "Ver as estatísticas do centro de ajuda",
+        "manage_tickets_department": "Gerenciar apenas os tickets do departamento {_name}",
+        "manage_api_keys": "Gerenciar as chaves de API"
     },
     "lang.fr.personalization": {
         "title": "Personalização",
@@ -1902,7 +2004,10 @@
                 "support_admin_ticket_reply": "A resposta de um cliente a um tíquete de suporte",
                 "support_customer_ticket_reply": "Resposta a um tíquete de suporte",
                 "notify_subscription_failed": "Notificação de falha no pagamento da assinatura",
-                "virtualizor_cloud_vps": "Revendedor Virtualizador de Entrega VPS"
+                "virtualizor_cloud_vps": "Revendedor Virtualizador de Entrega VPS",
+                "customer_banned": "Cliente banido",
+                "customer_suspended": "Cliente suspenso",
+                "customer_reactivated": "Cliente reativado"
             },
             "import": {
                 "title": "Importar um modelo de e-mail",
@@ -1984,7 +2089,8 @@
             "disable": "Desativar",
             "enable": "Ativar",
             "types": {
-                "subheading": "Aqui está a lista de seções que podem ser facilmente adicionadas na categoria {_name}"
+                "subheading": "Aqui está a lista de seções que podem ser facilmente adicionadas na categoria {_name}",
+                "title": "Seções disponíveis para o tema {_name}"
             },
             "pages": {
                 "page_home": "Página inicial",
@@ -1993,12 +2099,14 @@
                 "subheading": "Aqui está a lista de seções para esta página",
                 "page_group": "{_name} página do grupo",
                 "page_checkout": "Página de checkout",
-                "page_basket": "Página do carrinho"
+                "page_basket": "Página do carrinho",
+                "description": "Gerencie as seções para a página {_name}"
             },
             "errors": {
                 "notfound": "Seção não encontrada",
                 "advanced_personalization": "Ative o módulo de Personalização Avançada para acessar esta seção"
-            }
+            },
+            "empty": "Nenhuma seção encontrada para esta página.<br/> Você pode importar uma do tema abaixo."
         },
         "home": {
             "title": "Página inicial",
@@ -2038,7 +2146,30 @@
         "useful": "Informações úteis",
         "badge": "Distintivo",
         "adddropdownmenu": "Adicionar um menu suspenso",
-        "icon_help2": "Você pode colocar um URL de uma imagem no lugar de um ícone"
+        "icon_help2": "Você pode colocar um URL de uma imagem no lugar de um ícone",
+        "menu_links": {
+            "title": "Links dos menus",
+            "description": "Personalize os links dos menus do espaço do cliente",
+            "icon_help2": "Você pode colocar uma URL de uma imagem no lugar de um ícone.",
+            "allowed_role": "Papel autorizado",
+            "link_type": "Tipo de link",
+            "new_tab": "Nova aba",
+            "link": "Vínculo",
+            "dropdown": "Menu suspenso",
+            "parent": "Pai",
+            "allowed_roles": {
+                "all": "Todos",
+                "logged": "Conectado",
+                "customer": "Cliente com um serviço",
+                "staff": "Pessoal"
+            },
+            "link_types": {
+                "new_tab": "Nova aba",
+                "link": "Vínculo",
+                "dropdown": "Menu suspenso"
+            }
+        },
+        "addelement": "Adicionar um elemento"
     },
     "lang.fr.provisioning": {
         "disk": "Disco",
@@ -2140,7 +2271,9 @@
                 },
                 "create": {
                     "title": "Criar um servidor",
-                    "subheading": "Crie um novo servidor para conectá-lo ao sistema"
+                    "subheading": "Crie um novo servidor para conectá-lo ao sistema",
+                    "enable_extension": "Ativar uma extensão",
+                    "enable_extension_help": "Você deve ativar uma extensão para criar um servidor. Você pode escolher Pterodactyl, Plesk, Proxmox ou Virtualizor, por exemplo, de acordo com seu uso."
                 }
             },
             "services": {
@@ -2168,7 +2301,8 @@
                     "choose": "Escolha um servidor existente",
                     "import": "<u> OU </u>&nbsp; Importar um serviço",
                     "new": "Criar um novo serviço",
-                    "created": "O serviço foi criado com sucesso"
+                    "created": "O serviço foi criado com sucesso",
+                    "importbtn": "Importador"
                 },
                 "show": {
                     "customerbtn": "Arquivo do cliente",
@@ -2181,7 +2315,9 @@
                     "subheading": "Aqui estão as informações relacionadas ao serviço {_owner} criado em {_date}",
                     "panel": {
                         "title": "Painel de Gestão"
-                    }
+                    },
+                    "description_help": "Você pode adicionar uma descrição para este serviço. Ela será visível para o cliente em seu espaço.",
+                    "notes_help": "Você pode adicionar uma nota para este serviço. Ela não será visível para o cliente."
                 },
                 "subheading": "Aqui está a lista de todos os serviços do sistema",
                 "renewals": {
@@ -2249,7 +2385,11 @@
                         "no_invoice": "Melhore o serviço sem cobrança",
                         "add_in_next_invoice": "Atualize agora e adicione à próxima fatura de renovação"
                     }
-                }
+                },
+                "pricing_custom": "O preço deve ser configurado manualmente para este serviço. Você pode modificá-lo mais tarde.",
+                "pricing_custom2": "O preço é configurado manualmente para este serviço. Este permite autorizar ou não ciclos de faturamento.",
+                "resync": "Resincronizar com o produto",
+                "pricing_synchronized": "O preço do serviço está sincronizado com o preço do produto. Você pode alterá-lo se desejar apenas para este serviço."
             },
             "subdomains_hosts": {
                 "title": "Subdomínios",
@@ -2296,7 +2436,7 @@
                 "per_unit": "Os preços são por {_unit}",
                 "per_step": "Os preços são por {_step} {_unit}",
                 "show": {
-                    "title": "",
+                    "title": "Configuração de opção de ficha {_name}",
                     "subheading": "Aqui estão as informações relacionadas a esta opção de configuração criada em {_date}",
                     "options": {
                         "title": "Opções Disponíveis",
@@ -2358,7 +2498,9 @@
         "vnc": "VNC",
         "region": "Região",
         "oses": "Sistemas operacionais",
-        "config_option": "Opção de configuração"
+        "config_option": "Opção de configuração",
+        "autologin_admin": "Conexão automática como administrador",
+        "doyouwantreallyreinstallvps": "Você realmente quer reinstalar este servidor?"
     },
     "lang.fr.recurring": {
         "onetime": "Vitalício",
@@ -2416,7 +2558,8 @@
             "mustbelogged": "Você deve estar logado para fazer um pedido",
             "gateway_not_found": "Método de pagamento não encontrado",
             "email_must_be_verified": "Você deve confirmar sua conta para fazer um pedido",
-            "wrong_payment": "Algo deu errado com seu pagamento"
+            "wrong_payment": "Algo deu errado com seu pagamento",
+            "success": "Seu pedido foi realizado com sucesso"
         },
         "product": {
             "setupmessage": "Primeiro pagamento de {_first} {_currency} {_tax} e depois {_recurring} {_currency} {_tax} por {_unit}",
@@ -2702,6 +2845,10 @@
         },
         "ticket_staff": {
             "title": "Resposta a um ticket pela equipe"
+        },
+        "upgrade": {
+            "title": "Serviço de atualização",
+            "description": "Um serviço foi atualizado"
         }
     },
     "addons.fund.lang.fr.messages": {
@@ -2875,5 +3022,128 @@
             "location_id": "Localização ID Wisp",
             "dedicated_ip": "IP dedicado Wisp"
         }
+    },
+    "addons.contact.lang.fr.lang": {
+        "title": "Contatos",
+        "pending": "Demandas de contato pendentes",
+        "description": "Trate os pedidos de contato de seus usuários em sua área do cliente.",
+        "management_title": "Gestão de pedidos de contatos",
+        "management_description": "Lista de todos os pedidos de contato",
+        "show_title": "Detalhes do contato",
+        "show_description": "Ver os detalhes da solicitação de contato",
+        "title_page": "Entre em contato conosco",
+        "subject": "Assunto da solicitação",
+        "content_label": "Descreva seu pedido",
+        "object_label": "Objeto do pedido",
+        "max_characters": "Limitado a {_max} caracteres",
+        "send": "Enviar o pedido",
+        "subtitle_page": "Ficaríamos felizes em receber suas mensagens. Preencha o formulário abaixo e responderemos o mais breve possível.",
+        "actions": {
+            "delete_success": "A solicitação de contato foi removida com sucesso",
+            "update_success": "O status do pedido de contato foi atualizado com sucesso",
+            "reply_email": "Responder por email",
+            "send_mail": "Enviar um email ao cliente",
+            "limit_error": "Você já enviou um pedido de contato há menos de 5 minutos.",
+            "store_success": "O pedido de contato foi registrado com sucesso."
+        },
+        "status": {
+            "read": "Tratado",
+            "unread": "Não tratado"
+        },
+        "webhook": {
+            "title": "Novo pedido de contato",
+            "description": "Uma nova solicitação de contato foi recebida."
+        },
+        "errors": {
+            "not_found": "O pedido de contato não foi encontrado",
+            "update_failed": "A atualização do pedido de contato falhou"
+        },
+        "status_updated_at": "Status atualizado em {_date}",
+        "settings": {
+            "title": "Preferências da página de contato",
+            "description": "Configure suas preferências para a página de contato.",
+            "security_settings": "Configurações de segurança",
+            "media_settings": "Configurações de mídia",
+            "enable_captcha": "Ativar o captcha",
+            "enable_captcha_description": "Adicionar uma proteção extra contra spams",
+            "webhook": "Notificar uma URL externa",
+            "webhook_description": "Envie os pedidos de contato para uma URL externa",
+            "subscribers": "Notificar o pessoal",
+            "subscribers_description": "Envie os pedidos de contato a pessoas específicas",
+            "require_login": "Requerer uma conexão",
+            "require_login_description": "Os usuários devem estar conectados para enviar uma mensagem",
+            "page_image": "Imagem da página",
+            "disabled": "Desativado",
+            "enabled": "Ativado"
+        }
+    },
+    "addons.free_trial.lang.fr.lang": {
+        "trialbtn": "Tente",
+        "errors": {
+            "max_allowed_services": "O limite de serviços em teste foi excedido. Volte mais tarde.",
+            "max_services": "Você já atingiu o limite de teste(s) gratuito(s) para este serviço."
+        },
+        "invoice": {
+            "name": "Tentativa de oferta",
+            "description": "Período de teste da oferta {_product} ({_start}-{_end})."
+        },
+        "config": {
+            "total_now": "Total a pagar agora",
+            "total_after_trial": "Total a pagar após o teste",
+            "start": "Começar",
+            "title": "Comece seu ensaio",
+            "period": "Período",
+            "details": "Você poderá efetuar seu pagamento até {_days} dias após o término de seu período de teste, de acordo com as condições aplicáveis. Você terá a opção de cancelar o teste a qualquer momento.",
+            "want_trial": "Você quer testar o produto antes de comprá-lo?",
+            "can_trial": "Você pode testar o produto por {_days} dias."
+        },
+        "service": {
+            "free": {
+                "title": "Renove seu serviço de teste",
+                "subheading": "Você pode renovar o seu serviço de teste até o {_date} antes que ele seja cancelado no {_date2}."
+            },
+            "trial": {
+                "title": "Melhore seu serviço de teste",
+                "subheading": "Você pode melhorar seu serviço de teste até o {_date} antes que ele seja cancelado no {_date2}."
+            }
+        },
+        "admin": {
+            "config": {
+                "current_allowed_services": "Número atual de ensaios em andamento",
+                "max_allowed_services": "Número máximo de tentativas em andamento",
+                "title": "Configuração de testes gratuitos",
+                "subheading": "Configure seus produtos de teste grátis.",
+                "max_services": "Número máximo de tentativas por cliente",
+                "trial_days": "Número de dias do teste",
+                "current_trials": "Ensaios em andamento",
+                "trials_done": "Ensaios realizados",
+                "trials_success": "Ensaios conclusivos",
+                "help": "0 para desativar",
+                "force_label": "Tipo de ensaio",
+                "types": {
+                    "trial": "Ensaio para melhora",
+                    "free": "Teste gratuito"
+                },
+                "force": {
+                    "yes": "Os clientes serão obrigados a experimentar",
+                    "no": "Os clientes poderão fazer pedidos ou solicitar um teste."
+                },
+                "create": {
+                    "title": "Adição de um produto de teste",
+                    "subheading": "Adição de um produto de teste."
+                },
+                "show": {
+                    "title": "Modificação de um produto de teste",
+                    "subheading": "Você pode modificar as configurações de teste.",
+                    "successfully": "Teste conclusivo",
+                    "table_title": "Lista de serviços de teste"
+                }
+            }
+        }
+    },
+    "addons.sitemap.lang.fr.admin": {
+        "title": "Mapa do site",
+        "description": "Gerar um arquivo sitemap.xml para o seu site.",
+        "success": "O arquivo sitemap.xml foi atualizado com sucesso."
     }
 }

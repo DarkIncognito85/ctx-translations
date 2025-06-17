@@ -1027,7 +1027,7 @@
             "subheading": "Administra todas tus claves de API CLIENTXCMS.",
             "last_used": "Último uso",
             "is_admin": "Permiso de administrador",
-            "admin_help": "Las claves API de administrador tienen acceso a todas las funcionalidades del sistema",
+            "admin_help": "Las claves API de administrador tienen acceso a todas las funciones del sistema",
             "create": {
                 "title": "Crear una clave API",
                 "subheading": "Crear una nueva clave API para el sistema"
@@ -1744,7 +1744,7 @@
                     "subheading": "Crear un nuevo ticket para un cliente"
                 },
                 "graphs": "Gráfico de entradas",
-                "closed_tickets": "Solicitudes cerradas",
+                "closed_tickets": "Demandas cerradas",
                 "analytics": "Análisis de los tickets",
                 "department_ticket_counts": "Número de tickets por departamento",
                 "tickets_active": "Solicitud en espera de tratamiento",
@@ -2847,7 +2847,7 @@
             "title": "Respuesta a un ticket por parte de un miembro del Staff"
         },
         "upgrade": {
-            "title": "Servicio de actualización",
+            "title": "Servicio mejorado",
             "description": "Un servicio ha sido actualizado"
         }
     },
@@ -3070,7 +3070,7 @@
             "webhook_description": "Enviar las solicitudes de contacto a una URL externa",
             "subscribers": "Notificar al personal",
             "subscribers_description": "Enviar las solicitudes de contacto a personal específico",
-            "require_login": "Requerir una conexión",
+            "require_login": "Requiere una conexión",
             "require_login_description": "Los usuarios deben estar conectados para enviar un mensaje",
             "page_image": "Imagen de la página",
             "disabled": "Desactivado",
@@ -3093,7 +3093,7 @@
             "start": "Comenzar",
             "title": "Comienza tu ensayo",
             "period": "Período",
-            "details": "Podrá realizar su pago hasta {_days} días después de que finalice su período de prueba, de acuerdo con las condiciones aplicables. Tendrá la opción de cancelar la prueba en cualquier momento.",
+            "details": "Podrá realizar su pago hasta {_days} días después de que termine su período de prueba, de acuerdo con las condiciones aplicables. Tendrá la opción de cancelar la prueba en cualquier momento.",
             "want_trial": "¿Quieres probar el producto antes de comprarlo?",
             "can_trial": "Puede probar el producto durante {_days} días."
         },
