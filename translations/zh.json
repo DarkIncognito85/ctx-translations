@@ -1029,7 +1029,7 @@
             "is_admin": "管理员权限",
             "admin_help": "管理员API密钥可以访问系统的所有功能",
             "create": {
-                "title": "创建API密钥",
+                "title": "创建一个API密钥",
                 "subheading": "为系统创建一个新的API密钥"
             },
             "documentation": "文档 OpenAPI",
@@ -1309,7 +1309,7 @@
                 "upgrade_notice": "通过接受改进，您同意您服务价格的永久上涨以及其性能的提高以及相关的"
             },
             "orderservice": "需要其他服务吗？马上订购吧！",
-            "expired_at": "在{_date}到期"
+            "expired_at": "在{_date}过期"
         },
         "profile": {
             "index": "我的个人资料",
@@ -1746,7 +1746,7 @@
                 "graphs": "票务图表",
                 "closed_tickets": "关闭的请求",
                 "analytics": "票据分析",
-                "department_ticket_counts": "各部门票据数量",
+                "department_ticket_counts": "每个部门的票数",
                 "tickets_active": "请求待处理",
                 "tickets_active_description": "这是所有等待您回复的票据列表",
                 "tickets_to_reply_description": "这是客户待回复的所有票据列表",
@@ -2100,7 +2100,7 @@
                 "page_group": "{_name} 群组页面",
                 "page_checkout": "结帐页面",
                 "page_basket": "购物车页面",
-                "description": "管理页面 {_name} 的部分"
+                "description": "管理页面 {_name} 的各个部分"
             },
             "errors": {
                 "notfound": "未找到部分",
@@ -2149,7 +2149,7 @@
         "icon_help2": "您可以使用图像的 URL 代替图标",
         "menu_links": {
             "title": "菜单链接",
-            "description": "自定义客户空间的菜单链接",
+            "description": "个性化客户空间菜单的链接",
             "icon_help2": "您可以用图片的 URL 替代图标",
             "allowed_role": "授权角色",
             "link_type": "链接类型",
@@ -2164,7 +2164,7 @@
                 "staff": "人员"
             },
             "link_types": {
-                "new_tab": "新标签",
+                "new_tab": "新标签页",
                 "link": "链接",
                 "dropdown": "下拉菜单"
             }
@@ -2317,7 +2317,7 @@
                         "title": "管理面板"
                     },
                     "description_help": "您可以为此服务添加描述。客户将在其空间中看到。",
-                    "notes_help": "您可以为此服务添加备注。客户将看不到这些备注。"
+                    "notes_help": "您可以为此服务添加备注。客户将看不到它."
                 },
                 "subheading": "以下是系统中所有服务的列表",
                 "renewals": {
@@ -2386,10 +2386,10 @@
                         "add_in_next_invoice": "立即升级并添加到下一张续订发票"
                     }
                 },
-                "pricing_custom": "此服务的价格必须手动设置。您可以稍后修改。",
+                "pricing_custom": "此服务的价格必须手动设置。您可以稍后更改它。",
                 "pricing_custom2": "该服务的价格是手动配置的。它允许或不允许计费周期。",
                 "resync": "与产品重新同步",
-                "pricing_synchronized": "服务的价格与产品的价格同步。您可以根据需要仅为此服务修改价格。"
+                "pricing_synchronized": "服务价格与产品价格同步。如果您希望，可以仅为此服务修改价格。"
             },
             "subdomains_hosts": {
                 "title": "子域",
@@ -3043,22 +3043,22 @@
             "update_success": "联系请求的状态已成功更新",
             "reply_email": "通过电子邮件回复",
             "send_mail": "给客户发一封邮件",
-            "limit_error": "您在5分钟内已经发送了联系请求",
+            "limit_error": "您在5分钟内已经发送了一次联系请求",
             "store_success": "联系请求已成功记录"
         },
         "status": {
             "read": "条约",
-            "unread": "未处理"
+            "unread": "未经处理"
         },
         "webhook": {
             "title": "新的联系请求",
-            "description": "收到了一条新的联系请求"
+            "description": "收到了一份新的联系请求"
         },
         "errors": {
             "not_found": "未找到联系请求",
-            "update_failed": "联系请求的更新失败"
+            "update_failed": "更新联系请求失败"
         },
-        "status_updated_at": "状态已于 {_date} 更新",
+        "status_updated_at": "状态于{_date}更新",
         "settings": {
             "title": "联系页面的偏好设置",
             "description": "配置您的联系页面偏好设置。",
@@ -3091,7 +3091,7 @@
             "total_now": "现在需要支付的总额",
             "total_after_trial": "试用后需支付的总额",
             "start": "开始",
-            "title": "开始您的试用",
+            "title": "开始您的试验",
             "period": "时期",
             "details": "您可以在试用期结束后 {_days} 天内进行付款，符合适用的条款。您可以随时取消试用。",
             "want_trial": "您想在购买之前先试用一下这个产品吗？",
@@ -3100,7 +3100,7 @@
         "service": {
             "free": {
                 "title": "续订您的试用服务",
-                "subheading": "您可以在 {_date} 之前续订您的试用服务，直到它在 {_date2} 被取消。"
+                "subheading": "您可以在 {_date} 之前续订您的试用服务，否则它将在 {_date2} 被取消。"
             },
             "trial": {
                 "title": "改善您的试用服务",
@@ -3117,7 +3117,7 @@
                 "trial_days": "试用天数",
                 "current_trials": "正在进行的测试",
                 "trials_done": "进行的试验",
-                "trials_success": "测试成功",
+                "trials_success": "测试结论",
                 "help": "0 以禁用",
                 "force_label": "测试类型",
                 "types": {
@@ -3135,7 +3135,7 @@
                 "show": {
                     "title": "试用产品的修改",
                     "subheading": "您可以修改试用参数。",
-                    "successfully": "测试成功",
+                    "successfully": "成功的试验",
                     "table_title": "试验服务列表"
                 }
             }
