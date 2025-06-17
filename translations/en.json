@@ -546,7 +546,7 @@
             "good_afternoon": "Good afternoon {_name}",
             "good_evening": "Good evening {_name}",
             "welcome": "Welcome to the administration dashboard. It is currently {_time}. Here is an overview of your system.",
-            "assigned_tickets": "You have been assigned the following tickets: {_tickets}. You can view them in the help center."
+            "assigned_tickets": "You have been assigned to the following tickets: {_tickets}. You can view them in the help center."
         },
         "roles": {
             "is_default_help": "This role is the default role and cannot be deleted.",
@@ -1709,7 +1709,7 @@
                 }
             },
             "ticket_closed_by": "Closed by {_name}",
-            "ticket_auto_close": "The ticket was automatically closed after {_days} days",
+            "ticket_auto_close": "The ticket was automatically closed after {_days} days.",
             "message_updated": "The message has been updated"
         },
         "admin": {
@@ -1959,7 +1959,7 @@
         "staff_permissions": "Staff permissions",
         "manage_configoptions": "Manage configuration options",
         "send_email_messages": "Send emails",
-        "show_helpdesk_analytics": "View the help center statistics",
+        "show_helpdesk_analytics": "See the statistics of the help center",
         "manage_tickets_department": "Manage only the tickets of the department {_name}",
         "manage_api_keys": "Manage API keys"
     },
@@ -2150,7 +2150,7 @@
         "menu_links": {
             "title": "Menu links",
             "description": "Customize the menu links of the customer area",
-            "icon_help2": "You can place a URL of an image instead of an icon.",
+            "icon_help2": "You can use a URL of an image instead of an icon.",
             "allowed_role": "Authorized role",
             "link_type": "Type of link",
             "new_tab": "New tab",
@@ -3041,7 +3041,7 @@
         "actions": {
             "delete_success": "The contact request has been successfully deleted.",
             "update_success": "The status of the contact request has been successfully updated.",
-            "reply_email": "Respond by email",
+            "reply_email": "Reply by email",
             "send_mail": "Send an email to the client",
             "limit_error": "You have already sent a contact request less than 5 minutes ago.",
             "store_success": "The contact request has been successfully recorded."
@@ -3104,7 +3104,7 @@
             },
             "trial": {
                 "title": "Improve your trial service",
-                "subheading": "You can improve your trial service until {_date} before it is canceled on {_date2}."
+                "subheading": "You can improve your trial service until {_date} before it is cancelled on {_date2}."
             }
         },
         "admin": {
@@ -3115,7 +3115,7 @@
                 "subheading": "Set up your free trial products.",
                 "max_services": "Maximum number of attempts per client",
                 "trial_days": "Number of days of the trial",
-                "current_trials": "Ongoing trials",
+                "current_trials": "Ongoing tests",
                 "trials_done": "Tests carried out",
                 "trials_success": "Conclusive tests",
                 "help": "0 to deactivate",
