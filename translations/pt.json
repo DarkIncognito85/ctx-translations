@@ -1034,7 +1034,7 @@
             },
             "documentation": "Documentação OpenAPI",
             "rotate": "Regerar",
-            "created": "A chave da API foi criada com sucesso. Chave da API do Aplicativo: \"<b><code>{_key}</code></b>\" <br/> Atenção, ela não será mais exibida após esta página. Por favor, copie e guarde em um lugar seguro."
+            "created": "<span>A chave da API foi criada com sucesso. Chave da API do aplicativo: \"<b><code>{_key}</code></b>\" <br/> Atenção, ela não será mais exibida após esta página. Por favor, copie e guarde em um local seguro.</span>"
         },
         "doyouwantclone": "Você realmente quer clonar este elemento?"
     },
@@ -1625,7 +1625,7 @@
         "users": "Usuários",
         "user": "Usuário",
         "expiration": "Expiração",
-        "expires_at": "Expira",
+        "expires_at": "Expira o",
         "reset": "Reiniciar",
         "server": "Servidor"
     },
@@ -1749,7 +1749,7 @@
                 "department_ticket_counts": "Número de bilhetes por departamento",
                 "tickets_active": "Solicitação aguardando processamento",
                 "tickets_active_description": "Aqui está a lista de todos os ingressos aguardando sua resposta.",
-                "tickets_to_reply_description": "Aqui está a lista de todos os tickets aguardando resposta do cliente",
+                "tickets_to_reply_description": "Aqui está a lista de todos os tíquetes aguardando resposta do cliente",
                 "tickets_to_reply": "Pedido aguardando resposta",
                 "last_reply": "Última resposta",
                 "no_department_stats": "Nenhum departamento encontrado no momento.",
@@ -2389,7 +2389,7 @@
                 "pricing_custom": "O preço deve ser configurado manualmente para este serviço. Você pode modificá-lo mais tarde.",
                 "pricing_custom2": "O preço é configurado manualmente para este serviço. Este permite autorizar ou não ciclos de faturamento.",
                 "resync": "Resincronizar com o produto",
-                "pricing_synchronized": "O preço do serviço está sincronizado com o preço do produto. Você pode alterá-lo se desejar apenas para este serviço."
+                "pricing_synchronized": "O preço do serviço está sincronizado com o preço do produto. Você pode alterá-lo se desejar para este serviço exclusivamente."
             },
             "subdomains_hosts": {
                 "title": "Subdomínios",
@@ -2436,7 +2436,7 @@
                 "per_unit": "Os preços são por {_unit}",
                 "per_step": "Os preços são por {_step} {_unit}",
                 "show": {
-                    "title": "Configuração de opção de ficha {_name}",
+                    "title": "Opção de configuração {_name}",
                     "subheading": "Aqui estão as informações relacionadas a esta opção de configuração criada em {_date}",
                     "options": {
                         "title": "Opções Disponíveis",
@@ -2847,7 +2847,7 @@
             "title": "Resposta a um ticket pela equipe"
         },
         "upgrade": {
-            "title": "Serviço de atualização",
+            "title": "Serviço atualizado",
             "description": "Um serviço foi atualizado"
         }
     },
@@ -3040,7 +3040,7 @@
         "subtitle_page": "Ficaríamos felizes em receber suas mensagens. Preencha o formulário abaixo e responderemos o mais breve possível.",
         "actions": {
             "delete_success": "A solicitação de contato foi removida com sucesso",
-            "update_success": "O status do pedido de contato foi atualizado com sucesso",
+            "update_success": "O status do pedido de contato foi atualizado com sucesso.",
             "reply_email": "Responder por email",
             "send_mail": "Enviar um email ao cliente",
             "limit_error": "Você já enviou um pedido de contato há menos de 5 minutos.",
@@ -3052,7 +3052,7 @@
         },
         "webhook": {
             "title": "Novo pedido de contato",
-            "description": "Uma nova solicitação de contato foi recebida."
+            "description": "Uma nova solicitação de contato foi recebida"
         },
         "errors": {
             "not_found": "O pedido de contato não foi encontrado",
@@ -3104,7 +3104,7 @@
             },
             "trial": {
                 "title": "Melhore seu serviço de teste",
-                "subheading": "Você pode melhorar seu serviço de teste até o {_date} antes que ele seja cancelado no {_date2}."
+                "subheading": "Você pode melhorar seu serviço de teste até o {_date} antes que ele seja cancelado em {_date2}."
             }
         },
         "admin": {
