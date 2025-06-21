@@ -896,7 +896,9 @@
                         "app_favicon": "Customer Area Favicon",
                         "app_logotext": "Text logo of the customer area",
                         "app_locale": "Default language",
-                        "invoice_terms": "Invoice Terms and Conditions"
+                        "invoice_terms": "Invoice Terms and Conditions",
+                        "app_telemetry": "Enable telemetry",
+                        "app_telemetry_help": "This anonymized data is sent to CLIENTXCMS to help us improve the CMS, better understand your usage, fix bugs, and optimize your experience."
                     }
                 },
                 "security": {
@@ -1627,7 +1629,9 @@
         "expiration": "end",
         "expires_at": "Expire the",
         "reset": "reset",
-        "server": "server"
+        "server": "server",
+        "is_enabled": "Activated",
+        "is_disabled": "Disabled"
     },
     "lang.fr.helpdesk": {
         "ticket": "Ticket",
@@ -1876,7 +1880,8 @@
         },
         "register": {
             "title": "Registration",
-            "btn": "Create Account"
+            "btn": "Create Account",
+            "telemetry": "Send anonymized telemetry data. This helps us improve the CMS and fix bugs. You can disable this option later in the settings."
         },
         "summary": {
             "title": "Summary",
