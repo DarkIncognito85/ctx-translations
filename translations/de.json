@@ -896,7 +896,9 @@
                         "app_favicon": "Kundenbereich Favicon",
                         "app_logotext": "Textlogo des Kundenbereichs",
                         "app_locale": "Standardsprache",
-                        "invoice_terms": "Allgemeine Geschäftsbedingungen für Rechnungen"
+                        "invoice_terms": "Allgemeine Geschäftsbedingungen für Rechnungen",
+                        "app_telemetry": "Die Telemetrie aktivieren",
+                        "app_telemetry_help": "Diese anonymisierten Daten werden an CLIENTXCMS gesendet, um uns zu helfen, das CMS zu verbessern, Ihr Nutzung besser zu verstehen, Fehler zu beheben und Ihr Erlebnis zu optimieren."
                     }
                 },
                 "security": {
@@ -1627,7 +1629,9 @@
         "expiration": "Ablauf",
         "expires_at": "Verstehe es",
         "reset": "Zurücksetzen",
-        "server": "Server"
+        "server": "Server",
+        "is_enabled": "Aktiviert",
+        "is_disabled": "Deaktiviert"
     },
     "lang.fr.helpdesk": {
         "ticket": "Fahrkarte",
@@ -1876,7 +1880,8 @@
         },
         "register": {
             "title": "Registrierung",
-            "btn": "Konto erstellen"
+            "btn": "Konto erstellen",
+            "telemetry": "Anonyme Telemetriedaten senden. Dies hilft uns, das CMS zu verbessern und Fehler zu beheben. Sie können diese Option später in den Einstellungen deaktivieren."
         },
         "summary": {
             "title": "Zusammenfassung",
