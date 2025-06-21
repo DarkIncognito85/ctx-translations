@@ -896,7 +896,9 @@
                         "app_favicon": "Area Clienti Favicon",
                         "app_logotext": "Logo testuale dell'area clienti",
                         "app_locale": "Lingua predefinita",
-                        "invoice_terms": "Termini e condizioni della fattura"
+                        "invoice_terms": "Termini e condizioni della fattura",
+                        "app_telemetry": "Attivare la telemetria",
+                        "app_telemetry_help": "Questi dati anonimizzati vengono inviati a CLIENTXCMS per aiutarci a migliorare il CMS, comprendere meglio il tuo utilizzo, correggere i bug e ottimizzare la tua esperienza."
                     }
                 },
                 "security": {
@@ -1627,7 +1629,9 @@
         "expiration": "Scadenza",
         "expires_at": "Scade il",
         "reset": "Reimpostare",
-        "server": "Server"
+        "server": "Server",
+        "is_enabled": "Attivato",
+        "is_disabled": "Disattivato"
     },
     "lang.fr.helpdesk": {
         "ticket": "Biglietto",
@@ -1876,7 +1880,8 @@
         },
         "register": {
             "title": "Registrazione",
-            "btn": "Crea un account"
+            "btn": "Crea un account",
+            "telemetry": "Invia dati di telemetria anonimi. Questo ci aiuta a migliorare il CMS e a risolvere i bug. Puoi disattivare questa opzione in seguito nelle impostazioni."
         },
         "summary": {
             "title": "Sommario",
