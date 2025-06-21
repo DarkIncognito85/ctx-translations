@@ -1031,7 +1031,9 @@
                         "app_favicon": "Klantenzone Favicon",
                         "app_logotext": "Tekstlogo van het klantengedeelte",
                         "app_locale": "Standaard taal",
-                        "invoice_terms": "Algemene voorwaarden factuur"
+                        "invoice_terms": "Algemene voorwaarden factuur",
+                        "app_telemetry": "Activatie van de telemetrie",
+                        "app_telemetry_help": "Deze geanonimiseerde gegevens worden naar CLIENTXCMS gestuurd om ons te helpen het CMS te verbeteren, uw gebruik beter te begrijpen, bugs te corrigeren en uw ervaring te optimaliseren."
                     }
                 },
                 "security": {
@@ -1742,7 +1744,9 @@
         "expiration": "Vervaldatum",
         "expires_at": "Verloopt het",
         "reset": "Resetten",
-        "server": "Server"
+        "server": "Server",
+        "is_enabled": "Geactiveerd",
+        "is_disabled": "Deactiveer"
     },
     "lang.fr.helpdesk": {
         "ticket": "Kaartje",
@@ -1991,7 +1995,8 @@
         },
         "register": {
             "title": "Registratie",
-            "btn": "Account aanmaken"
+            "btn": "Account aanmaken",
+            "telemetry": "Verzend anonieme telemetriegegevens. Dit helpt ons om het CMS te verbeteren en bugs te verhelpen. U kunt deze optie later in de instellingen uitschakelen."
         },
         "summary": {
             "title": "Samenvatting",
