@@ -240,7 +240,7 @@
                 "pterodactyl": "Configuration de Pterodactyl",
                 "proxmox": "Configuration de Proxmox",
                 "oses": "Systèmes d'exploitation Proxmox",
-                "templates": "Modèle Proxmox",
+                "templates": "Modèles Proxmox",
                 "plesk": "Configuration de Plesk",
                 "socialauth": "Lien socialAuth+",
                 "support": "Tickets & Départements de support",
@@ -692,7 +692,7 @@
     "lang.fr.actionslog": {
         "settings": {
             "title": "Journaux des actions",
-            "description": "\"Analysez en détail l’ensemble des actions effectuées par vos personnels ainsi que par les utilisateurs clients afin d’assurer un suivi précis et une meilleure traçabilité des activités..",
+            "description": "Analysez en détail l’ensemble des actions effectuées par vos personnels ainsi que par les utilisateurs clients afin d’assurer un suivi précis et une meilleure traçabilité des activités..",
             "subheading": "Historique des actions",
             "see_staff_actions_log": "Voir l'historique des actions du personnel",
             "model": "Modèle",
@@ -889,7 +889,7 @@
             "title": "Historique",
             "subheading": "Voici l'historique des messages d'erreur du système",
             "file": "Fichier  {_file}",
-            "description": "Récupérez les messages de logs du système pour le débogage du système.",
+            "description": "Consultez les logs système afin de diagnostiquer d’éventuelles erreurs, analyser les événements récents et suivre en détail les actions critiques effectuées sur l’instance..",
             "bigfile": "Ce fichier est trop volumineux pour être affiché (max {_size})"
         },
         "database": {
@@ -1189,7 +1189,7 @@
                 "app": {
                     "title": "Paramètres globaux",
                     "success": "Configurez les paramètres principaux de l’espace client et les informations générales nécessaires à son bon fonctionnement.",
-                    "description": "Paramètres de l'espace client",
+                    "description": "Paramètres généraux de l’espace client (nom, adresse, logo, favicon, etc.)",
                     "fields": {
                         "app_name": "Nom de l'espace client",
                         "app_env": "Environnement de l'espace client",
@@ -1200,7 +1200,9 @@
                         "app_favicon": "Favicon de l'espace client",
                         "app_logotext": "Logo texte de l'espace client",
                         "app_locale": "Langue par défaut",
-                        "invoice_terms": "Termes et conditions de la facture"
+                        "invoice_terms": "Termes et conditions de la facture",
+                        "app_telemetry": "Activer la télémétrie",
+                        "app_telemetry_help": "Ces données anonymisées sont envoyées à CLIENTXCMS afin de nous aider à améliorer le CMS, mieux comprendre votre utilisation, corriger les bugs et optimiser votre expérience."
                     }
                 },
                 "security": {
@@ -1769,6 +1771,8 @@
         "action": "Action",
         "is_downloaded": "Téléchargée",
         "is_default": "Par défaut",
+        "is_enabled": "Activé",
+        "is_disabled": "Désactivé",
         "download": "Télécharger",
         "update": "Mettre à jour",
         "disable": "Désactiver",
@@ -1970,7 +1974,7 @@
             "settings": {
                 "title": "Paramètres du centre d'aide",
                 "success": "Les paramètres du centre d'aide ont été enregistrés avec succès.",
-                "description": "Configuration des tickets de support et du centre d'aide",
+                "description": "Configurez le système de gestion des tickets de support, y compris la fermeture, la réouverture et les notifications.",
                 "fields": {
                     "ticket_auto_close_days": "Fermeture automatique des tickets après inactivité (jours)",
                     "ticket_auto_close_days_help": "0 pour désactiver",
@@ -2117,7 +2121,8 @@
         },
         "register": {
             "title": "Inscription",
-            "btn": "Créer le compte"
+            "btn": "Créer le compte",
+            "telemetry": "Envoyer des données de télémétrie anonymisées. Cela nous aide à améliorer le CMS et à corriger les bugs. Vous pouvez désactiver cette option plus tard dans les paramètres."
         },
         "summary": {
             "title": "Résumé",
