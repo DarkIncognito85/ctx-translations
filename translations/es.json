@@ -3042,7 +3042,7 @@
         "object_label": "Objeto de la solicitud",
         "max_characters": "Limitado a {_max} caracteres",
         "send": "Enviar la solicitud",
-        "subtitle_page": "Estaríamos encantados de recibir sus mensajes. Complete el formulario a continuación y le responderemos a la brevedad.",
+        "subtitle_page": "Estaremos encantados de recibir sus mensajes. Complete el formulario a continuación y le responderemos con la mayor brevedad posible.",
         "actions": {
             "delete_success": "La solicitud de contacto ha sido eliminada con éxito",
             "update_success": "El estado de la solicitud de contacto se ha actualizado con éxito",
