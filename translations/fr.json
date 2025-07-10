@@ -217,6 +217,37 @@
             }
         }
     },
+    "addons.giftcard.lang.fr.messages": {
+        "modulename": "Carte-cadeau",
+        "description": "Gérez les cartes-cadeaux pour vos clients.",
+        "card": {
+            "code": "Code de la carte-cadeau"
+        },
+        "usage": "Utilisation de la carte-cadeau",
+        "giftcard_not_valid": "La carte-cadeau n'est pas valide.",
+        "giftcard_redeemed": "Carte-cadeau utilisée avec succès. Montant : {_amount}",
+        "admin": {
+            "types": {
+                "fixed": "Montant fixe",
+                "random": "Montant aléatoire"
+            },
+            "create": {
+                "title": "Créer une carte-cadeau",
+                "subheading": "Créez une nouvelle carte-cadeau pour vos clients."
+            },
+            "show": {
+                "title": "Détails de la carte-cadeau",
+                "subheading": "Voir les détails de la carte-cadeau.",
+                "table_title": "Utilisations de la carte-cadeau"
+            },
+            "max_uses": "Utilisations maximales",
+            "expires_at": "Expiration",
+            "min_random_amount": "Montant minimum aléatoire",
+            "allowed_customer": "Client autorisé",
+            "max_random_amount": "Montant maximum aléatoire",
+            "uses_help": "Le nombre maximum d'utilisations de cette carte-cadeau. 0 pour illimité."
+        }
+    },
     "addons.import.lang.fr.import": {
         "title": "Importation",
         "description": "Importez une base de données depuis l'ancienne version de ClientXCMS V1 ou depuis WHMCS vers cette instance de ClientXCMS NextGen en toute simplicité",
