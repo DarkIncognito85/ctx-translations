@@ -176,7 +176,8 @@
         },
         "panel": {
             "info": "VPS Information",
-            "serverneedrestart": "The server needs to be restarted to apply the resource changes."
+            "serverneedrestart": "The server needs to be restarted to apply the resource changes.",
+            "serverinrestore": "The server is being restored, please wait."
         },
         "data": {
             "os": "Operating system",
@@ -327,6 +328,42 @@
                     "description": "This IP address is unavailable for use."
                 }
             }
+        },
+        "disks": {
+            "volume": "Volume",
+            "format": "Format"
+        },
+        "backups": {
+            "nobackupstorage": "No backup storage is configured for this server. Please contact the administrator.",
+            "size": "Size",
+            "notes": "Notes",
+            "create_title": "Create a backup",
+            "is_protected": "Protege",
+            "automatic": "Automatic",
+            "restore": "Restore",
+            "limited": "You have reached the maximum number of allowed backups.",
+            "confirm_restore": "Are you sure you want to restore this backup? It will overwrite the current data of the virtual machine.",
+            "restore_success": "The backup restoration was successfully initiated.",
+            "restore_error": "An error occurred while restoring the backup.",
+            "confirm_delete": "Are you sure you want to delete this backup?",
+            "delete_success": "The backup has been successfully deleted.",
+            "delete_error": "An error occurred while deleting the backup.",
+            "create_success": "The backup has been successfully started. The creation may take some time depending on the size of the virtual machine.",
+            "create_error": "An error occurred while creating the backup."
+        },
+        "snapshots": {
+            "title": "Snapshots",
+            "create_invalid_notes": "The name of the snapshot can only contain letters, numbers, spaces, and underscores.",
+            "create_duplicate": "A snapshot with this name already exists.",
+            "confirm_restore": "Are you sure you want to restore this snapshot? This will overwrite the current data of the virtual machine.",
+            "restore_success": "The snapshot restoration has been successfully launched.",
+            "restore_error": "An error occurred while restoring the snapshot.",
+            "confirm_delete": "Are you sure you want to delete this snapshot?",
+            "delete_success": "The snapshot has been successfully deleted.",
+            "delete_error": "An error occurred while deleting the snapshot.",
+            "create_title": "Create a snapshot",
+            "create_success": "The snapshot was created successfully.",
+            "create_error": "An error occurred while creating the snapshot."
         }
     },
     "modules.pterobox.lang.fr.messages": {
@@ -1154,6 +1191,12 @@
                         "title": "Product price display",
                         "included": "Included - The price displayed is inclusive of VAT",
                         "excluded": "Excluded - The price displayed is excl. VAT"
+                    },
+                    "allow_add_balance_to_invoices": "Allow adding balance to invoices",
+                    "store_mode_tax": {
+                        "title": "Tax mode",
+                        "tax_included": "Tax included",
+                        "tax_excluded": "Tax excluded"
                     }
                 },
                 "tax": "VAT management"
@@ -1211,7 +1254,15 @@
             },
             "paid_date": "Payment Date",
             "deliver": "Deliver",
-            "renewal_description": "Added {_month_label} to the {_service_label} service"
+            "renewal_description": "Added {_month_label} to the {_service_label} service",
+            "pay_with_balance": "Pay part of the bill with the balance",
+            "balance": {
+                "success": "The balance was used to pay the bill.",
+                "balance_addition": "Addition of balance to the invoice",
+                "balance_addition_description": "Addition of {_amount} deducted from the invoice.",
+                "title": "Credit",
+                "balance_not_enough": "The balance is not enough to add it to the invoice."
+            }
         },
         "emails": {
             "index": "My emails",
@@ -1236,7 +1287,10 @@
             "errors": {
                 "not_supported": "This payment method is not supported",
                 "not_found": "This payment method was not found"
-            }
+            },
+            "payment_method_used": "Payment method used",
+            "invoices": "Invoices paid with means of payment",
+            "invoices_description": "You will find below the list of invoices paid with automatic withdrawals."
         },
         "services": {
             "index": "My services",
@@ -1283,7 +1337,8 @@
                 "saveandrenew": "Register and renew",
                 "date": "Date",
                 "manage": "Below is a list of your service renewals that have already been completed.",
-                "not_autorized_to_change_billing": "You are not allowed to change the billing method"
+                "not_autorized_to_change_billing": "You are not allowed to change the billing method",
+                "not_authorized_to_change_billing": "You are not authorized to change the billing mode."
             },
             "subscription": {
                 "cancelled": "Auto-renewal has been canceled. Your service will expire on {_date}.",
@@ -1293,7 +1348,12 @@
                 "cannot": "This service cannot be automatically renewed",
                 "success": "Auto-renewal has been enabled. The next payment will be made on {_date}.",
                 "add_payments_method": "You must add a payment method to enable auto-renewal. You can do this from the <a href=\"{_url}\" class=\"text-primary\"> payment methods page</a>.",
-                "enabled": "Auto-renewal is enabled for this service. The invoice will be generated automatically and then paid on {_date}."
+                "enabled": "Auto-renewal is enabled for this service. The invoice will be generated automatically and then paid on {_date}.",
+                "manage_subscriptions": {
+                    "index": "Manage your subscriptions",
+                    "index_description": "Below you will find the list of your services that can be automatically renewed. You can enable or disable automatic renewal for each service.",
+                    "next_renewal": "Next renewal"
+                }
             },
             "upgradeservice": "Improve service",
             "manageoptions": "Service Options",
@@ -1359,7 +1419,8 @@
             "service_name_updated": "The name of the service has been updated",
             "service_billing_updated": "Billing information has been updated",
             "email_must_be_verified": "Your email address must be verified to access this page",
-            "service_trial_ends_at": "The trial service ends on {_date}"
+            "service_trial_ends_at": "The trial service ends on {_date}",
+            "invoice_payment_failed": "The payment of your invoice has failed."
         }
     },
     "lang.fr.coupon": {
@@ -1420,8 +1481,10 @@
             "create": {
                 "title": "Create a coupon",
                 "subheading": "Create a new discount coupon"
-            }
-        }
+            },
+            "allowed_customer": "Authorized client (leave empty for all)"
+        },
+        "coupon_not_applicable": "This coupon is not applicable to your cart."
     },
     "lang.fr.errors": {
         "404": {
@@ -1631,7 +1694,8 @@
         "reset": "reset",
         "server": "server",
         "is_enabled": "Activated",
-        "is_disabled": "Disabled"
+        "is_disabled": "Disabled",
+        "home": "Home"
     },
     "lang.fr.helpdesk": {
         "ticket": "Ticket",
@@ -2394,7 +2458,8 @@
                 "pricing_custom": "The price must be set manually for this service. You can modify it later.",
                 "pricing_custom2": "The price is set manually for this service. This allows the authorization of billing cycles or not.",
                 "resync": "Resynchronize with the product",
-                "pricing_synchronized": "The price of the service is synchronized with the price of the product. You can modify it if you wish for this service only."
+                "pricing_synchronized": "The price of the service is synchronized with the price of the product. You can modify it if you wish for this service only.",
+                "tab_not_found": "Unable to find the tab"
             },
             "subdomains_hosts": {
                 "title": "Subdomains",
@@ -2505,7 +2570,8 @@
         "oses": "Operating systems",
         "config_option": "Configuration option",
         "autologin_admin": "Automatic login as administrator",
-        "doyouwantreallyreinstallvps": "Do you really want to reinstall this server?"
+        "doyouwantreallyreinstallvps": "Do you really want to reinstall this server?",
+        "disks": "Records"
     },
     "lang.fr.recurring": {
         "onetime": "Onetime",
@@ -2564,7 +2630,11 @@
             "gateway_not_found": "Payment method not found",
             "email_must_be_verified": "You must confirm your account to place an order",
             "wrong_payment": "Something went wrong with your payment",
-            "success": "Your order has been successfully placed."
+            "success": "Your order has been successfully placed.",
+            "choose_payment_method": "Registered payment methods",
+            "payment_method_not_found": "Payment method not found",
+            "not_use_payment_method": "Do not use a registered payment method.",
+            "choose_payment_method_description": "You can choose a saved payment method to avoid entering your payment information with each order."
         },
         "product": {
             "setupmessage": "First payment of {_first} {_currency} {_tax} then {_recurring} {_currency} {_tax} by {_unit}",
@@ -3150,5 +3220,36 @@
         "title": "Sitemap",
         "description": "Generate a sitemap.xml file for your website.",
         "success": "The sitemap.xml file has been successfully updated."
+    },
+    "addons.giftcard.lang.fr.messages": {
+        "modulename": "Gift card",
+        "description": "Manage gift cards for your customers.",
+        "card": {
+            "code": "Gift card code"
+        },
+        "usage": "Use of the gift card",
+        "giftcard_not_valid": "The gift card is not valid.",
+        "giftcard_redeemed": "Gift card used successfully. Amount: {_amount}",
+        "admin": {
+            "types": {
+                "fixed": "Fixed amount",
+                "random": "Random amount"
+            },
+            "create": {
+                "title": "Create a gift card",
+                "subheading": "Create a new gift card for your customers."
+            },
+            "show": {
+                "title": "Gift card details",
+                "subheading": "View the gift card details.",
+                "table_title": "Uses of the gift card"
+            },
+            "max_uses": "Maximum uses",
+            "expires_at": "Expiration",
+            "min_random_amount": "Random minimum amount",
+            "allowed_customer": "Authorized client",
+            "max_random_amount": "Random maximum amount",
+            "uses_help": "The maximum number of uses for this gift card. 0 for unlimited."
+        }
     }
 }
