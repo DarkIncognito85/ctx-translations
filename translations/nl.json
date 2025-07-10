@@ -254,7 +254,8 @@
         },
         "panel": {
             "info": "VPS-informatie",
-            "serverneedrestart": "De server moet opnieuw worden opgestart om de resourcewijzigingen toe te passen."
+            "serverneedrestart": "De server moet opnieuw worden opgestart om de resourcewijzigingen toe te passen.",
+            "serverinrestore": "De server is aan het herstellen, please wacht even."
         },
         "data": {
             "os": "Besturingssysteem",
@@ -405,6 +406,42 @@
                     "description": "Dit IP-adres is niet beschikbaar voor gebruik."
                 }
             }
+        },
+        "disks": {
+            "volume": "Volume",
+            "format": "Formaat"
+        },
+        "backups": {
+            "nobackupstorage": "Er is geen back-up opslag geconfigureerd voor deze server. Neem contact op met de beheerder.",
+            "size": "Maat",
+            "notes": "Aantekeningen",
+            "create_title": "Een back-up maken",
+            "is_protected": "Parel",
+            "automatic": "Automatisch",
+            "restore": "Herstellen",
+            "limited": "U heeft het maximumaantal toegestane back-ups bereikt.",
+            "confirm_restore": "Weet u zeker dat u deze back-up wilt herstellen? Dit zal de huidige gegevens van de virtuele machine overschrijven.",
+            "restore_success": "De herstelling van de back-up is succesvol gestart.",
+            "restore_error": "Er is een fout opgetreden bij het herstellen van de back-up.",
+            "confirm_delete": "Bent u er zeker van dat u deze back-up wilt verwijderen?",
+            "delete_success": "De back-up is succesvol verwijderd.",
+            "delete_error": "Er is een fout opgetreden bij het verwijderen van de back-up.",
+            "create_success": "De back-up is succesvol gestart. Het maken kan enige tijd duren, afhankelijk van de grootte van de virtuele machine.",
+            "create_error": "Er is een fout opgetreden bij het maken van de back-up."
+        },
+        "snapshots": {
+            "title": "Momentopnamen",
+            "create_invalid_notes": "De naam van de snapshot mag alleen letters, cijfers, spaties en liggende streepjes bevatten.",
+            "create_duplicate": "Er bestaat al een snapshot met deze naam.",
+            "confirm_restore": "Weet je zeker dat je deze snapshot wilt herstellen? Dit zal de huidige gegevens van de virtuele machine overschrijven.",
+            "restore_success": "De restauratie van de snapshot is succesvol gestart.",
+            "restore_error": "Er is een fout opgetreden bij het herstellen van de snapshot.",
+            "confirm_delete": "Weet u zeker dat u deze snapshot wilt verwijderen?",
+            "delete_success": "De snapshot is succesvol verwijderd.",
+            "delete_error": "Er is een fout opgetreden bij het verwijderen van de snapshot.",
+            "create_title": "Een snapshot maken",
+            "create_success": "De snapshot is succesvol aangemaakt.",
+            "create_error": "Er is een fout opgetreden bij het maken van de snapshot."
         }
     },
     "modules.pterobox.lang.fr.messages": {
@@ -1275,6 +1312,12 @@
                         "title": "Weergave van productprijzen",
                         "included": "Inbegrepen - De getoonde prijs is inclusief BTW",
                         "excluded": "Exclusief - De getoonde prijs is excl. BTW"
+                    },
+                    "allow_add_balance_to_invoices": "Toestaan dat het saldo aan de facturen wordt toegevoegd",
+                    "store_mode_tax": {
+                        "title": "Belastingmodus",
+                        "tax_included": "Inclusief belasting",
+                        "tax_excluded": "Exclusief belasting"
                     }
                 }
             },
@@ -1326,6 +1369,14 @@
                 "title": "Onze bankgegevens",
                 "setting_fielddescription": "Bankgegevens die op de factuur moeten worden weergegeven",
                 "flash": "Gelieve de betaling over te maken op de bankrekening die op de factuur staat vermeld. Uw bestelling wordt verwerkt zodra de betaling is ontvangen."
+            },
+            "pay_with_balance": "Een deel van de factuur betalen met het saldo",
+            "balance": {
+                "success": "Het saldo is gebruikt om de factuur te betalen.",
+                "balance_addition": "Toevoegen van saldo aan de factuur",
+                "balance_addition_description": "Toevoeging van {_amount} afgetrokken van de factuur.",
+                "title": "Krediet",
+                "balance_not_enough": "Het saldo is niet voldoende om het aan de factuur toe te voegen."
             }
         },
         "emails": {
@@ -1351,7 +1402,10 @@
             "errors": {
                 "not_supported": "Deze betaalmethode wordt niet ondersteund",
                 "not_found": "Deze betaalmethode is niet gevonden"
-            }
+            },
+            "payment_method_used": "Betalingsmethode gebruikt",
+            "invoices": "Facturen betaald met betaalmiddelen",
+            "invoices_description": "Hieronder vindt u de lijst van de betaalde facturen met automatische incasso."
         },
         "services": {
             "index": "Mijn diensten",
@@ -1404,7 +1458,8 @@
                 "saveandrenew": "Registreren en verlengen",
                 "date": "Datum",
                 "manage": "Hieronder vindt u een lijst met uw serviceverlengingen die al zijn voltooid.",
-                "not_autorized_to_change_billing": "Het is niet toegestaan om de factureringsmethode te wijzigen"
+                "not_autorized_to_change_billing": "Het is niet toegestaan om de factureringsmethode te wijzigen",
+                "not_authorized_to_change_billing": "U bent niet gemachtigd om de factureringsmodus te wijzigen."
             },
             "subscription": {
                 "cancelled": "Automatische verlenging is geannuleerd. Uw service verloopt op {_date}.",
@@ -1414,7 +1469,12 @@
                 "cannot": "Deze service kan niet automatisch worden verlengd",
                 "success": "Automatisch verlengen is ingeschakeld. De volgende betaling wordt gedaan op {_date}.",
                 "add_payments_method": "U moet een betaalmethode toevoegen om automatische verlenging in te schakelen. U kunt dit doen vanaf de pagina met betaalmethoden <a href=\"{_url}\" class=\"text-primary\"></a>.",
-                "enabled": "Automatische verlenging is ingeschakeld voor deze service. De factuur wordt automatisch gegenereerd en vervolgens betaald op {_date}."
+                "enabled": "Automatische verlenging is ingeschakeld voor deze service. De factuur wordt automatisch gegenereerd en vervolgens betaald op {_date}.",
+                "manage_subscriptions": {
+                    "index": "Beheer uw abonnementen",
+                    "index_description": "Hieronder vindt u de lijst van uw diensten die automatisch verlengd kunnen worden. U kunt de automatische verlenging voor elke dienst in- of uitschakelen.",
+                    "next_renewal": "Volgende vernieuwing"
+                }
             },
             "upgrade": {
                 "upgrade_to": "Upgraden naar {_product}",
@@ -1474,7 +1534,8 @@
             "service_name_updated": "De naam van de dienst is bijgewerkt",
             "service_billing_updated": "Factuurgegevens zijn bijgewerkt",
             "email_must_be_verified": "Uw e-mailadres moet worden geverifieerd om toegang te krijgen tot deze pagina",
-            "service_trial_ends_at": "De proefservice eindigt op {_date}"
+            "service_trial_ends_at": "De proefservice eindigt op {_date}",
+            "invoice_payment_failed": "De betaling van uw factuur is mislukt"
         }
     },
     "lang.fr.coupon": {
@@ -1535,8 +1596,10 @@
             "create": {
                 "title": "Maak een kortingsbon",
                 "subheading": "Maak een nieuwe kortingsbon aan"
-            }
-        }
+            },
+            "allowed_customer": "Toegestane klant (laat leeg voor iedereen)"
+        },
+        "coupon_not_applicable": "Deze coupon is niet van toepassing op uw winkelwagentje"
     },
     "lang.fr.errors": {
         "404": {
@@ -1746,7 +1809,8 @@
         "reset": "Resetten",
         "server": "Server",
         "is_enabled": "Geactiveerd",
-        "is_disabled": "Deactiveer"
+        "is_disabled": "Deactiveer",
+        "home": "Thuis"
     },
     "lang.fr.helpdesk": {
         "ticket": "Kaartje",
@@ -2522,7 +2586,8 @@
                 "pricing_custom": "De prijs moet handmatig worden ingesteld voor deze service. U kunt deze later wijzigen.",
                 "pricing_custom2": "De prijs is handmatig ingesteld voor deze service. Dit stelt in staat om wel of niet factureringscycli toe te staan.",
                 "resync": "Her-synchroniseren met het product",
-                "pricing_synchronized": "De prijs van de dienst is gesynchroniseerd met de prijs van het product. U kunt deze aanpassen als u dat wilt voor deze dienst alleen."
+                "pricing_synchronized": "De prijs van de dienst is gesynchroniseerd met de prijs van het product. U kunt deze aanpassen als u dat wilt voor deze dienst alleen.",
+                "tab_not_found": "Kan het tabblad niet vinden"
             },
             "subdomains_hosts": {
                 "title": "Subdomeinen",
@@ -2620,7 +2685,8 @@
             }
         },
         "autologin_admin": "Automatische verbinding als administrator",
-        "doyouwantreallyreinstallvps": "Wilt u deze server echt opnieuw installeren?"
+        "doyouwantreallyreinstallvps": "Wilt u deze server echt opnieuw installeren?",
+        "disks": "Schijven"
     },
     "lang.fr.recurring": {
         "onetime": "Levenslang",
@@ -2678,7 +2744,11 @@
             "gateway_not_found": "Betaalmethode niet gevonden",
             "email_must_be_verified": "U moet uw account bevestigen om een bestelling te plaatsen",
             "wrong_payment": "Er is iets misgegaan met uw betaling",
-            "success": "Uw bestelling is succesvol geplaatst"
+            "success": "Uw bestelling is succesvol geplaatst",
+            "choose_payment_method": "Opgeslagen betaalmethoden",
+            "payment_method_not_found": "Betalingsmethode niet gevonden",
+            "not_use_payment_method": "Gebruik geen geregistreerde betaalmethode",
+            "choose_payment_method_description": "U kunt een opgeslagen betaalmethode kiezen om te voorkomen dat u uw betalingsgegevens bij elke bestelling opnieuw moet invoeren."
         },
         "product": {
             "setupmessage": "Eerste betaling van {_first} {_currency} {_tax} dan {_recurring} {_currency} {_tax} door {_unit}",
@@ -3143,5 +3213,36 @@
         "public_downloads": "Openbare downloads",
         "no_downloads": "Geen download",
         "downloads_left": "U heeft nog {_downloads} downloads over"
+    },
+    "addons.giftcard.lang.fr.messages": {
+        "modulename": "Cadeaukaart",
+        "description": "Beheer de cadeaubonnen voor uw klanten.",
+        "card": {
+            "code": "Giftcardcode"
+        },
+        "usage": "Gebruik van de cadeaubon",
+        "giftcard_not_valid": "De cadeaubon is niet geldig.",
+        "giftcard_redeemed": "Cadeaukaart succesvol gebruikt. Bedrag: {_amount}",
+        "admin": {
+            "types": {
+                "fixed": "Vast bedrag",
+                "random": "Willekeurig bedrag"
+            },
+            "create": {
+                "title": "Een cadeaubon maken",
+                "subheading": "Maak een nieuwe cadeaubon voor uw klanten."
+            },
+            "show": {
+                "title": "Details van de cadeaubon",
+                "subheading": "Bekijk de details van de cadeaubon.",
+                "table_title": "Gebruik van de cadeaubon"
+            },
+            "max_uses": "Maximale toepassingen",
+            "expires_at": "Vervaldatum",
+            "min_random_amount": "Willekeurig minimaal bedrag",
+            "allowed_customer": "Geautoriseerde klant",
+            "max_random_amount": "Maximaal willekeurig bedrag",
+            "uses_help": "Het maximale aantal keren dat deze cadeaubon kan worden gebruikt. 0 voor onbeperkt."
+        }
     }
 }

@@ -176,7 +176,8 @@
         },
         "panel": {
             "info": "Información de VPS",
-            "serverneedrestart": "Es necesario reiniciar el servidor para aplicar los cambios en los recursos."
+            "serverneedrestart": "Es necesario reiniciar el servidor para aplicar los cambios en los recursos.",
+            "serverinrestore": "El servidor está en proceso de restauración, por favor espere."
         },
         "data": {
             "os": "Sistema operativo",
@@ -327,6 +328,42 @@
                     "description": "Esta dirección IP no está disponible para su uso."
                 }
             }
+        },
+        "disks": {
+            "volume": "Volumen",
+            "format": "Formato"
+        },
+        "backups": {
+            "nobackupstorage": "No se ha configurado almacenamiento de respaldo para este servidor. Por favor, contacte al administrador.",
+            "size": "Tamaño",
+            "notes": "Notas",
+            "create_title": "Crear una copia de seguridad",
+            "is_protected": "Protegido",
+            "automatic": "Automático",
+            "restore": "Restaurar",
+            "limited": "Ha alcanzado el número máximo de copias de seguridad permitidas.",
+            "confirm_restore": "¿Está seguro de que desea restaurar esta copia de seguridad? Esto sobrescribirá los datos actuales de la máquina virtual.",
+            "restore_success": "La restauración de la copia de seguridad se ha iniciado con éxito.",
+            "restore_error": "Ocurrió un error al restaurar la copia de seguridad.",
+            "confirm_delete": "¿Está seguro de que desea eliminar esta copia de seguridad?",
+            "delete_success": "La copia de seguridad se ha eliminado con éxito.",
+            "delete_error": "Ocurrió un error al eliminar la copia de seguridad.",
+            "create_success": "La copia de seguridad se ha iniciado con éxito. La creación puede tardar un tiempo según el tamaño de la máquina virtual.",
+            "create_error": "Ocurrió un error al crear la copia de seguridad."
+        },
+        "snapshots": {
+            "title": "Instantáneas",
+            "create_invalid_notes": "El nombre de la instantánea solo puede contener letras, números, espacios y guiones bajos.",
+            "create_duplicate": "Ya existe un snapshot con este nombre.",
+            "confirm_restore": "¿Está seguro de que desea restaurar esta instantánea? Esto sobrescribirá los datos actuales de la máquina virtual.",
+            "restore_success": "La restauración del snapshot se ha iniciado con éxito.",
+            "restore_error": "Se produjo un error al restaurar el snapshot.",
+            "confirm_delete": "¿Está seguro de que desea eliminar esta instantánea?",
+            "delete_success": "La instantánea se ha eliminado con éxito.",
+            "delete_error": "Se produjo un error al eliminar la instantánea.",
+            "create_title": "Crear una instantánea",
+            "create_success": "La instantánea se creó con éxito.",
+            "create_error": "Se produjo un error al crear la instantánea."
         }
     },
     "modules.pterobox.lang.fr.messages": {
@@ -1154,7 +1191,13 @@
                         "title": "Visualización del precio del producto"
                     },
                     "add_setupfee_on_upgrade": "Agregar cargos de configuración durante una actualización",
-                    "minimum_days_to_force_renewal_with_upgrade": "Tiempo mínimo en días para forzar la renovación con una mejora"
+                    "minimum_days_to_force_renewal_with_upgrade": "Tiempo mínimo en días para forzar la renovación con una mejora",
+                    "allow_add_balance_to_invoices": "Autorizar la adición de saldo a las facturas",
+                    "store_mode_tax": {
+                        "title": "Modo de impuesto",
+                        "tax_included": "Impuesto incluido",
+                        "tax_excluded": "Impuesto excluido"
+                    }
                 },
                 "tax": "Gestión del IVA"
             },
@@ -1211,7 +1254,15 @@
             },
             "paid_date": "Fecha de pago",
             "deliver": "Entregar",
-            "renewal_description": "Se ha añadido {_month_label} al servicio {_service_label}"
+            "renewal_description": "Se ha añadido {_month_label} al servicio {_service_label}",
+            "pay_with_balance": "Pagar una parte de la factura con el saldo",
+            "balance": {
+                "success": "El saldo se utilizó para pagar la factura.",
+                "balance_addition": "Añadir saldo a la factura",
+                "balance_addition_description": "Adición de {_amount} deducida de la factura.",
+                "title": "Crédito",
+                "balance_not_enough": "El saldo no es suficiente para agregarlo a la factura."
+            }
         },
         "emails": {
             "index": "Mis correos electrónicos",
@@ -1236,7 +1287,10 @@
             "errors": {
                 "not_supported": "Este método de pago no es compatible",
                 "not_found": "No se encontró este método de pago"
-            }
+            },
+            "payment_method_used": "Método de pago utilizado",
+            "invoices": "Facturas pagadas con medios de pago",
+            "invoices_description": "A continuación, encontrará la lista de las facturas pagadas con domiciliaciones automáticas."
         },
         "services": {
             "index": "Mis servicios",
@@ -1283,7 +1337,8 @@
                 "saveandrenew": "Regístrese y renueve",
                 "date": "Fecha",
                 "manage": "A continuación se muestra una lista de las renovaciones de servicio que ya se han completado.",
-                "not_autorized_to_change_billing": "No está permitido cambiar el método de facturación"
+                "not_autorized_to_change_billing": "No está permitido cambiar el método de facturación",
+                "not_authorized_to_change_billing": "No tienes permiso para cambiar el modo de facturación"
             },
             "subscription": {
                 "cancelled": "La renovación automática ha sido cancelada. Su servicio caducará el {_date}.",
@@ -1293,7 +1348,12 @@
                 "cannot": "Este servicio no se puede renovar automáticamente",
                 "success": "Se ha habilitado la renovación automática. El próximo pago se realizará el {_date}.",
                 "add_payments_method": "Debe agregar un método de pago para habilitar la renovación automática. Puedes hacerlo desde la página de métodos de pago <a href=\"{_url}\" class=\"text-primary\"></a>.",
-                "enabled": "La renovación automática está habilitada para este servicio. La factura se generará automáticamente y luego se pagará el {_date}."
+                "enabled": "La renovación automática está habilitada para este servicio. La factura se generará automáticamente y luego se pagará el {_date}.",
+                "manage_subscriptions": {
+                    "index": "Gestionar sus suscripciones",
+                    "index_description": "A continuación, encontrará la lista de sus servicios que pueden renovarse automáticamente. Puede activar o desactivar la renovación automática para cada servicio.",
+                    "next_renewal": "Próxima renovación"
+                }
             },
             "upgradeservice": "Mejorar el servicio",
             "manageoptions": "Opciones de servicio",
@@ -1359,7 +1419,8 @@
             "service_name_updated": "Se ha actualizado el nombre del servicio",
             "service_billing_updated": "La información de facturación se ha actualizado",
             "email_must_be_verified": "Su dirección de correo electrónico debe estar verificada para acceder a esta página",
-            "service_trial_ends_at": "El servicio de prueba termina el {_date}"
+            "service_trial_ends_at": "El servicio de prueba termina el {_date}",
+            "invoice_payment_failed": "El pago de su factura ha fallado"
         }
     },
     "lang.fr.coupon": {
@@ -1420,8 +1481,10 @@
             "create": {
                 "title": "Crear un cupón",
                 "subheading": "Crear un nuevo cupón de descuento"
-            }
-        }
+            },
+            "allowed_customer": "Cliente autorizado (dejar vacío para todos)"
+        },
+        "coupon_not_applicable": "Este cupón no es aplicable a su carrito"
     },
     "lang.fr.errors": {
         "404": {
@@ -1631,7 +1694,8 @@
         "reset": "Reiniciar",
         "server": "Servidor",
         "is_enabled": "Activé",
-        "is_disabled": "Desactivado"
+        "is_disabled": "Desactivado",
+        "home": "Inicio"
     },
     "lang.fr.helpdesk": {
         "ticket": "Ticket",
@@ -2394,7 +2458,8 @@
                 "pricing_custom": "El precio debe configurarse manualmente para este servicio. Puedes modificarlo más tarde.",
                 "pricing_custom2": "El precio se configura manualmente para este servicio. Este permite autorizar o no ciclos de facturación.",
                 "resync": "Resincronizar con el producto",
-                "pricing_synchronized": "El precio del servicio está sincronizado con el precio del producto. Puede modificarlo si lo desea para este servicio exclusivamente."
+                "pricing_synchronized": "El precio del servicio está sincronizado con el precio del producto. Puede modificarlo si lo desea para este servicio exclusivamente.",
+                "tab_not_found": "Imposible encontrar la pestaña"
             },
             "subdomains_hosts": {
                 "title": "Subdominios",
@@ -2505,7 +2570,8 @@
         "oses": "Sistemas operativos",
         "config_option": "Opción de configuración",
         "autologin_admin": "Conexión automática como administrador",
-        "doyouwantreallyreinstallvps": "¿Realmente quieres reinstalar este servidor?"
+        "doyouwantreallyreinstallvps": "¿Realmente quieres reinstalar este servidor?",
+        "disks": "Discos"
     },
     "lang.fr.recurring": {
         "onetime": "Toda la vida",
@@ -2564,7 +2630,11 @@
             "gateway_not_found": "Método de pago no encontrado",
             "email_must_be_verified": "Debe confirmar su cuenta para realizar un pedido",
             "wrong_payment": "Algo salió mal con su pago",
-            "success": "Su pedido ha sido realizado con éxito"
+            "success": "Su pedido ha sido realizado con éxito",
+            "choose_payment_method": "Medios de pago registrados",
+            "payment_method_not_found": "Método de pago no encontrado",
+            "not_use_payment_method": "No usar un medio de pago registrado",
+            "choose_payment_method_description": "Puedes elegir un método de pago guardado para evitar tener que ingresar tu información de pago en cada pedido."
         },
         "product": {
             "setupmessage": "Primer pago de {_first} {_currency} {_tax} luego {_recurring} {_currency} {_tax} por {_unit}",
@@ -3150,5 +3220,36 @@
         "title": "Mapa del sitio",
         "description": "Generar un archivo sitemap.xml para su sitio web.",
         "success": "El archivo sitemap.xml se ha actualizado con éxito."
+    },
+    "addons.giftcard.lang.fr.messages": {
+        "modulename": "Tarjeta de regalo",
+        "description": "Administra las tarjetas de regalo para tus clientes.",
+        "card": {
+            "code": "Código de la tarjeta de regalo"
+        },
+        "usage": "Uso de la tarjeta de regalo",
+        "giftcard_not_valid": "La tarjeta de regalo no es válida.",
+        "giftcard_redeemed": "Tarjeta de regalo utilizada con éxito. Monto: {_amount}",
+        "admin": {
+            "types": {
+                "fixed": "Cantidad fija",
+                "random": "Monto aleatorio"
+            },
+            "create": {
+                "title": "Crear una tarjeta de regalo",
+                "subheading": "Crea una nueva tarjeta de regalo para tus clientes."
+            },
+            "show": {
+                "title": "Detalles de la tarjeta de regalo",
+                "subheading": "Ver los detalles de la tarjeta de regalo.",
+                "table_title": "Usos de la tarjeta de regalo"
+            },
+            "max_uses": "Utilizaciones máximas",
+            "expires_at": "Expiración",
+            "min_random_amount": "Cantidad mínima aleatoria",
+            "allowed_customer": "Cliente autorizado",
+            "max_random_amount": "Monto máximo aleatorio",
+            "uses_help": "El número máximo de usos de esta tarjeta de regalo. 0 para ilimitado."
+        }
     }
 }

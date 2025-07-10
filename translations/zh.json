@@ -176,7 +176,8 @@
         },
         "panel": {
             "info": "VPS 信息",
-            "serverneedrestart": "需要重新启动服务器才能应用资源更改。"
+            "serverneedrestart": "需要重新启动服务器才能应用资源更改。",
+            "serverinrestore": "服务器正在恢复，请稍候。"
         },
         "data": {
             "os": "操作系统",
@@ -327,6 +328,42 @@
                     "description": "此 IP 地址不可用。"
                 }
             }
+        },
+        "disks": {
+            "volume": "音量",
+            "format": "格式"
+        },
+        "backups": {
+            "nobackupstorage": "此服务器未配置任何备份存储。请联系管理员。",
+            "size": "大小",
+            "notes": "笔记",
+            "create_title": "创建备份",
+            "is_protected": "代理人",
+            "automatic": "自动的",
+            "restore": "恢复",
+            "limited": "您已达到允许的最大备份数量。",
+            "confirm_restore": "您确定要恢复此备份吗？这将覆盖虚拟机当前的数据。",
+            "restore_success": "备份恢复已成功启动。",
+            "restore_error": "恢复备份时发生错误。",
+            "confirm_delete": "您确定要删除此备份吗？",
+            "delete_success": "备份已成功删除。",
+            "delete_error": "删除备份时发生错误。",
+            "create_success": "备份已成功启动。创建可能会根据虚拟机的大小花费一定时间。",
+            "create_error": "在创建备份时发生错误。"
+        },
+        "snapshots": {
+            "title": "快照",
+            "create_invalid_notes": "快照的名称只能包含字母、数字、空格和下划线。",
+            "create_duplicate": "已有一个同名的快照。",
+            "confirm_restore": "您确定要恢复此快照吗？这将覆盖虚拟机的当前数据。",
+            "restore_success": "快照恢复已成功启动。",
+            "restore_error": "恢复快照时发生错误。",
+            "confirm_delete": "您确定要删除此快照吗？",
+            "delete_success": "快照已成功删除。",
+            "delete_error": "删除快照时发生错误。",
+            "create_title": "创建快照",
+            "create_success": "快照已成功创建。",
+            "create_error": "创建快照时发生错误。"
         }
     },
     "modules.pterobox.lang.fr.messages": {
@@ -1154,6 +1191,12 @@
                         "title": "产品价格显示",
                         "included": "包含 - 显示的价格包含增值税",
                         "excluded": "不包含 - 显示的价格不含增值税"
+                    },
+                    "allow_add_balance_to_invoices": "允许在发票上添加余额",
+                    "store_mode_tax": {
+                        "title": "税务模式",
+                        "tax_included": "含税",
+                        "tax_excluded": "不含税"
                     }
                 },
                 "tax": "增值税管理"
@@ -1211,7 +1254,15 @@
             },
             "paid_date": "付款日期",
             "deliver": "提供",
-            "renewal_description": "向 {_service_label} 服务添加了 {_month_label}"
+            "renewal_description": "向 {_service_label} 服务添加了 {_month_label}",
+            "pay_with_balance": "用余额支付部分账单",
+            "balance": {
+                "success": "余额已被用来支付账单。",
+                "balance_addition": "在账单中添加余额",
+                "balance_addition_description": "从发票中扣除的金额为 {_amount}.",
+                "title": "信贷",
+                "balance_not_enough": "余额不足，无法将其添加到账单中。"
+            }
         },
         "emails": {
             "index": "我的电子邮件",
@@ -1236,7 +1287,10 @@
             "errors": {
                 "not_supported": "不支持此付款方式",
                 "not_found": "未找到此付款方式"
-            }
+            },
+            "payment_method_used": "使用的支付方式",
+            "invoices": "使用支付方式支付的发票",
+            "invoices_description": "您将在下面找到通过自动扣款支付的发票列表。"
         },
         "services": {
             "index": "我的服务",
@@ -1283,7 +1337,8 @@
                 "saveandrenew": "注册和续订",
                 "date": "日期",
                 "manage": "以下是已完成的服务续订列表。",
-                "not_autorized_to_change_billing": "您不能更改计费方式"
+                "not_autorized_to_change_billing": "您不能更改计费方式",
+                "not_authorized_to_change_billing": "您不被允许更改计费方式"
             },
             "subscription": {
                 "cancelled": "自动续费已取消。您的服务将于 {_date} 过期。",
@@ -1293,7 +1348,12 @@
                 "cannot": "此服务无法自动续订",
                 "success": "已开启自动续费。下一次付款将在 {_date} 进行。",
                 "add_payments_method": "您必须添加支付方式才能启用自动续订。您可以从 <a href=“{_url}” class=“text-primary”> 付款方式页面执行此操作</a>。",
-                "enabled": "此服务已开启自动续订。发票将自动生成，然后在 {_date} 支付。"
+                "enabled": "此服务已开启自动续订。发票将自动生成，然后在 {_date} 支付。",
+                "manage_subscriptions": {
+                    "index": "管理您的订阅",
+                    "index_description": "以下是您可以自动续订的服务列表。您可以为每项服务启用或禁用自动续订。",
+                    "next_renewal": "下一个续订"
+                }
             },
             "upgradeservice": "改善服务",
             "manageoptions": "服务选项",
@@ -1359,7 +1419,8 @@
             "service_name_updated": "服务名称已更新",
             "service_billing_updated": "账单信息已更新",
             "email_must_be_verified": "您的电子邮件地址必须经过验证才能访问此页面",
-            "service_trial_ends_at": "试用服务于{_date}结束"
+            "service_trial_ends_at": "试用服务于{_date}结束",
+            "invoice_payment_failed": "您的账单付款失败了"
         }
     },
     "lang.fr.coupon": {
@@ -1420,8 +1481,10 @@
             "create": {
                 "title": "创建优惠券",
                 "subheading": "创建新的折扣券"
-            }
-        }
+            },
+            "allowed_customer": "授权客户（留空表示所有）"
+        },
+        "coupon_not_applicable": "此优惠券不适用于您的购物车"
     },
     "lang.fr.errors": {
         "404": {
@@ -1631,7 +1694,8 @@
         "reset": "重置",
         "server": "服务器",
         "is_enabled": "激活",
-        "is_disabled": "禁用"
+        "is_disabled": "禁用",
+        "home": "首页"
     },
     "lang.fr.helpdesk": {
         "ticket": "票",
@@ -2394,7 +2458,8 @@
                 "pricing_custom": "此服务的价格必须手动设置。您可以稍后更改它。",
                 "pricing_custom2": "该服务的价格是手动配置的。它允许或不允许计费周期。",
                 "resync": "与产品重新同步",
-                "pricing_synchronized": "服务价格与产品价格同步。如果您希望，可以仅为此服务修改价格。"
+                "pricing_synchronized": "服务价格与产品价格同步。如果您希望，可以仅为此服务修改价格。",
+                "tab_not_found": "无法找到选项卡"
             },
             "subdomains_hosts": {
                 "title": "子域",
@@ -2505,7 +2570,8 @@
         "oses": "操作系统",
         "config_option": "配置选项",
         "autologin_admin": "以管理员身份自动连接",
-        "doyouwantreallyreinstallvps": "您真的想重新安装这个服务器吗？"
+        "doyouwantreallyreinstallvps": "您真的想重新安装这个服务器吗？",
+        "disks": "唱片"
     },
     "lang.fr.recurring": {
         "onetime": "终身",
@@ -2564,7 +2630,11 @@
             "gateway_not_found": "未找到付款方式",
             "email_must_be_verified": "您必须确认您的帐户才能下订单",
             "wrong_payment": "您的付款出现问题",
-            "success": "您的订单已成功下达"
+            "success": "您的订单已成功下达",
+            "choose_payment_method": "已登记的支付方式",
+            "payment_method_not_found": "支付方式未找到",
+            "not_use_payment_method": "请勿使用已注册的支付方式",
+            "choose_payment_method_description": "您可以选择一种已注册的付款方式，以避免每次下订单时输入付款信息。"
         },
         "product": {
             "setupmessage": "{_unit} 先支付 {_first} {_currency} {_tax}，然后 {_recurring} {_currency} {_tax}",
@@ -3150,5 +3220,36 @@
         "title": "网站地图",
         "description": "为您的网站生成一个 sitemap.xml 文件。",
         "success": "sitemap.xml文件已成功更新。"
+    },
+    "addons.giftcard.lang.fr.messages": {
+        "modulename": "礼品卡",
+        "description": "管理您客户的礼品卡。",
+        "card": {
+            "code": "礼品卡使用须知"
+        },
+        "usage": "使用礼品卡",
+        "giftcard_not_valid": "这张礼品卡无效。",
+        "giftcard_redeemed": "礼品卡成功使用。金额：{_amount}",
+        "admin": {
+            "types": {
+                "fixed": "固定金额",
+                "random": "随机金额"
+            },
+            "create": {
+                "title": "创建一张礼品卡",
+                "subheading": "为您的客户创建一张新的礼品卡。"
+            },
+            "show": {
+                "title": "礼品卡详情",
+                "subheading": "查看礼品卡的详情。",
+                "table_title": "礼品卡的使用方式"
+            },
+            "max_uses": "最大使用",
+            "expires_at": "过期",
+            "min_random_amount": "随机最低金额",
+            "allowed_customer": "授权客户",
+            "max_random_amount": "随机最高金额",
+            "uses_help": "此礼品卡的最大使用次数。0表示无限制。"
+        }
     }
 }
