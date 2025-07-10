@@ -65,7 +65,7 @@
         "dropkey": "Réinitialiser la clé",
         "manual": {
             "installation": "Installation du bot personnalisé",
-            "step1text": "Téléchargez le bot personnalisé achetablé au préalable en cliquant sur <a href=\"https:\\\/\\\/clientxcms.com\\\/client\\\/downloads\" class=\"text-primary\" target=\"_blank\">ce lien<\\\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
+            "step1text": "Téléchargez le bot personnalisé achetablé au préalable en cliquant sur <a href=\"https:\/\/clientxcms.com\/client\/downloads\" class=\"text-primary\" target=\"_blank\">ce lien<\/a>. Il permettra de faire la liaison entre votre serveur Discord et votre hébergeur.",
             "step2text": "Copiez le jeton suivant en sureté. <b><u>Attention il sera affichée qu'une seul fois<\\\/u><\\\/b>. En cas de perte il faudra la réinitialiser.",
             "step3text": "Décompressez le fichier téléchargé et suivez le fichier READ.ME pour installer & ajouter le bot à votre serveur.",
             "step4text": "Assurez vous que le bot à les permissions nécessaires pour ajouter le role. (Le bot doit être au dessus du role à ajouter)."
@@ -428,6 +428,7 @@
         },
         "panel": {
             "info": "Informations sur le VPS",
+            "serverinrestore": "Le serveur est en cours de restauration, veuillez patienter.",
             "serverneedrestart": "Le serveur a besoin d'être redémarré pour appliquer les modifications de resources."
         },
         "data": {
@@ -436,6 +437,10 @@
         },
         "console": {
             "title": "Console"
+        },
+        "disks": {
+            "volume": "Volume",
+            "format": "Format"
         },
         "logs": {
             "title": "Historique",
@@ -473,6 +478,38 @@
                 "month": "Dernier mois",
                 "year": "Dernière année"
             }
+        },
+        "backups": {
+            "nobackupstorage": "Aucun stockage de sauvegarde n'est configuré pour ce serveur. Veuillez contacter l'administrateur.",
+            "size": "Taille",
+            "notes": "Notes",
+            "create_title": "Créer une sauvegarde",
+            "is_protected": "Protégé",
+            "automatic": "Automatique",
+            "restore": "Restaurer",
+            "limited": "Vous avez atteint le nombre maximum de sauvegardes autorisées.",
+            "confirm_restore": "Êtes-vous sûr de vouloir restaurer cette sauvegarde ? Cela écrasera les données actuelles de la machine virtuelle.",
+            "restore_success": "La restoration de la sauvegarde a été lancée avec succès.",
+            "restore_error": "Une erreur est survenue lors de la restauration de la sauvegarde.",
+            "confirm_delete": "Êtes-vous sûr de vouloir supprimer cette sauvegarde ?",
+            "delete_success": "La sauvegarde a été supprimée avec succès.",
+            "delete_error": "Une erreur est survenue lors de la suppression de la sauvegarde.",
+            "create_success": "La sauvegarde a été lancée avec succès. La création peut prendre un certain temps en fonction de la taille de la machine virtuelle.",
+            "create_error": "Une erreur est survenue lors de la création de la sauvegarde."
+        },
+        "snapshots": {
+            "title": "Snapshots",
+            "create_invalid_notes": "Le nom du snapshot ne peut contenir que des lettres, des chiffres, des espaces et des tirets bas.",
+            "create_duplicate": "Un snapshot avec ce nom existe déjà.",
+            "confirm_restore": "Êtes-vous sûr de vouloir restaurer ce snapshot ? Cela écrasera les données actuelles de la machine virtuelle.",
+            "restore_success": "La restauration du snapshot a été lancée avec succès.",
+            "restore_error": "Une erreur est survenue lors de la restauration du snapshot.",
+            "confirm_delete": "Êtes-vous sûr de vouloir supprimer ce snapshot ?",
+            "delete_success": "Le snapshot a été supprimé avec succès.",
+            "delete_error": "Une erreur est survenue lors de la suppression du snapshot.",
+            "create_title": "Créer un snapshot",
+            "create_success": "Le snapshot a été créé avec succès.",
+            "create_error": "Une erreur est survenue lors de la création du snapshot."
         },
         "reinstallation": {
             "title": "Réinstallation",
@@ -1397,6 +1434,7 @@
                     "minimum_days_to_force_renewal_with_upgrade": "Délais minimum en jours pour forcer le renouvellement avec une amélioration",
                     "remove_pending_invoice": "Action sur les factures en attente après (jours)",
                     "remove_pending_invoice_help": "0 pour désactiver",
+                    "allow_add_balance_to_invoices": "Autoriser l'ajout de solde aux factures",
                     "remove_pending_invoice_types": {
                         "delete": "Supprimer",
                         "cancel": "Annuler"
@@ -1411,6 +1449,11 @@
                         "title": "Affichage des prix des produits",
                         "included": "Inclus - Le prix affiché est TTC",
                         "excluded": "Exclus - Le prix affiché est HT"
+                    },
+                    "store_mode_tax": {
+                        "title": "Mode de taxe",
+                        "tax_included": "Taxe incluse",
+                        "tax_excluded": "Taxe exclue"
                     }
                 }
             },
@@ -1447,6 +1490,7 @@
             "invoice_date": "Date de facturation",
             "print": "Imprimer",
             "download": "Télécharger",
+            "pay_with_balance": "Payer une partie de la facture avec le solde",
             "pay": "Payer la facture",
             "invoice_not_payable": "Cette facture ne peut pas être payée",
             "thank": "Merci pour votre paiement",
@@ -1462,6 +1506,13 @@
                 "title": "Nos informations bancaires",
                 "setting_fielddescription": "Informations bancaires à afficher sur la facture",
                 "flash": "Veuillez effectuer le paiement sur le compte bancaire indiqué sur la facture. Votre commande sera traitée une fois le paiement reçu."
+            },
+            "balance": {
+                "success": "Le solde a été utilisé pour payer la facture.",
+                "balance_addition": "Ajout de solde à la facture",
+                "balance_addition_description": "Ajout de {_amount} déduite de la facture.",
+                "title": "Crédit",
+                "balance_not_enough": "Le solde n'est pas suffisant pour l'ajouter à la facture."
             }
         },
         "emails": {
@@ -1484,6 +1535,9 @@
             "manage": "Gérer",
             "deleted": "Moyen de paiement supprimé",
             "add_paypal": "Ajouter un compte PayPal",
+            "payment_method_used": "Moyen de paiement utilisé",
+            "invoices": "Factures payées avec des moyens de paiement",
+            "invoices_description": "Vous trouverez ci-dessous la liste des factures payées avec des prélèvements automatiques.",
             "errors": {
                 "not_supported": "Ce moyen de paiement n'est pas supporté",
                 "not_found": "Ce moyen de paiement n'a pas été trouvé"
@@ -1507,10 +1561,6 @@
             "dayremaining": "{_days} jour restant",
             "daysremaining": "{_days} jours restants",
             "expired_at": "Expiré le {_date}",
-            "subusers": {
-                "index": "Sous-utilisateurs",
-                "manage": "Gérer les accès"
-            },
             "options": {
                 "index": "Options du service",
                 "index_description": "Vous trouverez ci-dessous les options de votre service. Les options avec la même date d'expiration que le service seront renouvelées automatiquement avec celui ci."
@@ -1536,7 +1586,7 @@
                 "saveandrenew": "Enregistrer et renouveler",
                 "date": "Date",
                 "manage": "Vous trouverez ci-dessous la liste des renouvellements de votre service déjà effectués.",
-                "not_autorized_to_change_billing": "Vous n'êtes pas autorisé à changer le mode de facturation"
+                "not_authorized_to_change_billing": "Vous n'êtes pas autorisé à changer le mode de facturation"
             },
             "subscription": {
                 "cancelled": "Le renouvellement automatique a été annulé. Votre service expirera le {_date}.",
@@ -1546,7 +1596,12 @@
                 "cannot": "Ce service ne peut pas être renouvelé automatiquement",
                 "success": "Le renouvellement automatique a été activé. Le prochain paiement sera effectué le {_date}.",
                 "add_payments_method": "Vous devez ajouter un moyen de paiement pour activer le renouvellement automatique. Vous pouvez le faire depuis la page <a href=\"{_url}\" class=\"text-primary\">des moyens de paiement<\/a>.",
-                "enabled": "Le renouvellement automatique est activé pour ce service. La facture sera générée automatiquement puis payer le {_date}."
+                "enabled": "Le renouvellement automatique est activé pour ce service. La facture sera générée automatiquement puis payer le {_date}.",
+                "manage_subscriptions": {
+                    "index": "Gérer vos abonnements",
+                    "index_description": "Vous trouverez ci-dessous la liste de vos services pouvant être renouvelés automatiquement. Vous pouvez activer ou désactiver le renouvellement automatique pour chaque service.",
+                    "next_renewal": "Prochain renouvellement"
+                }
             },
             "upgrade": {
                 "upgrade_to": "Améliorer vers {_product}",
@@ -1600,6 +1655,7 @@
             "service_uncancelled": "Le service a été réactivé",
             "vpsnotfound": "Le VPS n'a pas été trouvé",
             "spam": "Spam détecté",
+            "invoice_payment_failed": "Le paiement de votre facture a échoué",
             "account_blocked": "Votre compte a été bloqué pour la raison {_reason}. Veuillez nous contacter pour plus d'informations.",
             "account_suspended": "Votre compte a été suspendu pour la raison {_reason}. Veuillez nous contacter pour plus d'informations.",
             "service_name_updated": "Le nom du service a été mis à jour",
@@ -1611,6 +1667,7 @@
         "not_found": "Coupon introuvable",
         "coupon_not_started": "Le coupon n'a pas encore commencé",
         "coupon_expired": "Le coupon a expiré",
+        "coupon_not_applicable": "Ce coupon n'est pas applicable à votre panier",
         "first_order_only": "Ce coupon est valable uniquement pour la première commande",
         "coupon_max_uses": "Ce coupon a atteint le nombre maximum d'utilisations",
         "coupon_max_uses_per_customer": "Ce coupon a atteint le nombre maximum d'utilisations par client",
@@ -1651,6 +1708,7 @@
             "minimum_order_amount": "Montant minimum de la commande",
             "applied_month_help": "-1 pour illimité, 0 pour le premier paiement uniquement. (Ex : 3 récurrences = premier paiement + 3 renouvellements)",
             "code": "Code",
+            "allowed_customer": "Client autorisé (laissez vide pour tous)",
             "pricelabel": "Réduction",
             "used_at": "Utilisé le",
             "usage": "Utilisation",
@@ -1758,6 +1816,7 @@
         "products": "Produits",
         "description": "Description",
         "slug": "Slug",
+        "home": "Accueil",
         "darkmode": "Mode sombre",
         "select": "Sélectionner",
         "years": "ans",
@@ -2412,6 +2471,7 @@
     },
     "lang.fr.provisioning": {
         "disk": "Disque",
+        "disks": "Disques",
         "in_gb": "Valeur en Go",
         "in_mb": "Valeur en Mo",
         "network_speed": "Vitesse du réseau",
@@ -2539,6 +2599,7 @@
                 "title": "Services",
                 "add_days": "Ajouter des jours",
                 "sub_days": "Soustraire des jours",
+                "tab_not_found": "Impossible de trouver l'onglet",
                 "add_days_question": "Combien de jours voulez-vous ajouter ?",
                 "sub_days_question": "Combien de jours voulez-vous soustraire ?",
                 "invalid_product_type": "Type de service invalide. Vous avez demandé un produit de type {_product} et sélectionné un type {_type}. Veuillez choisir un même type.",
@@ -2791,7 +2852,11 @@
             "gateway_not_found": "Moyen de paiement non trouvé",
             "email_must_be_verified": "Vous devez confirmer votre compte pour passer commande",
             "wrong_payment": "Quelque chose s'est mal passé avec votre paiement",
-            "success": "Votre commande a été passée avec succès"
+            "success": "Votre commande a été passée avec succès",
+            "choose_payment_method": "Moyens de paiement enregistrés",
+            "payment_method_not_found": "Moyen de paiement non trouvé",
+            "not_use_payment_method": "Ne pas utiliser de moyen de paiement enregistré",
+            "choose_payment_method_description": "Vous pouvez choisir un moyen de paiement enregistré pour éviter de saisir vos informations de paiement à chaque commande."
         },
         "product": {
             "setupmessage": "Premier paiement de {_first} {_currency} {_tax} puis {_recurring} {_currency} {_tax} par {_unit}",
